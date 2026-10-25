@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Y-IT Phase 1 — v2.0 Assembled Edition (Chapters 1 &amp; 2)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=IBM+Plex+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Outfit:wght@700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: 6.125in 9.25in;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  :root {
+    --cream: #F5F2EC;
+    --warm-neutral: #E5E0D8;
+    --charcoal: #3A3A3A;
+    --dark-char: #55524D;
+    --navy: #1E2B38;
+    --blue: #5D7BEA;
+    --pale-blue: #EBF0FF;
+    --red: #E35050;
+    --green: #22C55E;
+    --yellow: #F8C952;
+    --orange: #F5A25D;
+    --sage: #7CB8B8;
+    --rust: #B3502B;
+    --signal-yellow: #E8E928;
+    --white: #FFFFFF;
+    --gray: #C7C3BA;
+    --font-display: 'Big Shoulders Display', Impact, sans-serif;
+    --font-body: 'Work Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-italic: 'Lora', Georgia, serif;
+    --font-topic: 'Outfit', sans-serif;
+  }
+  body {
+    background: #222;
+    font-family: var(--font-body);
+    color: var(--charcoal);
+  }
+  /* 441pt x 666pt = 6.125in x 9.25in */
+  .cpage {
+    position: relative;
+    width: 6.125in;
+    height: 9.25in;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    background: var(--cream);
+  }
+  .cpage-white {
+    background: var(--white);
+  }
+  .halftone {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(93, 123, 234, 0.16) 1.1px, transparent 1.4px);
+    background-size: 8px 8px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .folio-left {
+    position: absolute;
+    bottom: 0.40in;
+    left: 0.625in;
+    font-family: var(--font-mono);
+    font-size: 8.5pt;
+    color: var(--charcoal);
+    z-index: 10;
+  }
+  .folio-right {
+    position: absolute;
+    bottom: 0.40in;
+    right: 0.625in;
+    font-family: var(--font-mono);
+    font-size: 8.5pt;
+    color: var(--charcoal);
+    z-index: 10;
+  }
+  /* Ad Module Cards (Chapter 1 Collage) */
+  .ad-card {
+    position: absolute;
+    background: var(--white);
+    border: 1.4px solid var(--charcoal);
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.12);
+    z-index: 3;
+    overflow: hidden;
+  }
+  .ad-card-navy {
+    position: absolute;
+    background: var(--navy);
+    color: var(--cream);
+    border: 1.5px solid var(--charcoal);
+    box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.16);
+    z-index: 3;
+    overflow: hidden;
+  }
+  .src-tag {
+    font-family: var(--font-mono);
+    font-size: 5.6pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.72;
+  }
+  /* Manual Figure Box with Registration Marks (Chapter 2) */
+  .manual-fig {
+    position: absolute;
+    border: 1.2px solid var(--charcoal);
+    background: var(--white);
+    z-index: 3;
+  }
+  .reg-mark {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    pointer-events: none;
+  }
+  .reg-tl { top: -4px; left: -4px; border-top: 1px solid var(--charcoal); border-left: 1px solid var(--charcoal); }
+  .reg-tr { top: -4px; right: -4px; border-top: 1px solid var(--charcoal); border-right: 1px solid var(--charcoal); }
+  .reg-bl { bottom: -4px; left: -4px; border-bottom: 1px solid var(--charcoal); border-left: 1px solid var(--charcoal); }
+  .reg-br { bottom: -4px; right: -4px; border-bottom: 1px solid var(--charcoal); border-right: 1px solid var(--charcoal); }
+  .fig-label {
+    position: absolute;
+    left: 6px;
+    bottom: 4px;
+    font-family: var(--font-mono);
+    font-size: 6.5pt;
+    color: var(--dark-char);
+    background: var(--white);
+    padding: 0 3px;
+  }
+  .step-badge {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid var(--charcoal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 13pt;
+    color: var(--charcoal);
+    background: var(--white);
+    flex-shrink: 0;
+  }
+  .step-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 15.5pt;
+    text-transform: uppercase;
+    line-height: 1.0;
+    color: var(--charcoal);
+  }
+  .step-action {
+    font-family: var(--font-body);
+    font-size: 9.5pt;
+    line-height: 1.42;
+    color: var(--charcoal);
+    margin: 6px 0;
+  }
+  .tip-box {
+    font-family: var(--font-mono);
+    font-size: 7.4pt;
+    line-height: 1.35;
+    color: var(--dark-char);
+    background: #F4F7FF;
+    border-left: 3px solid var(--blue);
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+  .verdict-band {
+    position: absolute;
+    background: var(--navy);
+    color: var(--cream);
+    border-left: 5px solid var(--yellow);
+    padding: 9px 14px;
+    z-index: 5;
+  }
+  .verdict-stat {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 7pt;
+    letter-spacing: 0.2em;
+    color: var(--yellow);
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .verdict-text {
+    font-family: var(--font-body);
+    font-size: 8.8pt;
+    line-height: 1.35;
+    color: var(--cream);
+  }
+</style>
+</head>
+<body>
+
+<!-- =====================================================================
+     PAGE 1 (RECTO): SERIES TITLE & EDITORIAL NOTICE
+     ===================================================================== -->
+<section class="cpage">
+  <div class="halftone"></div>
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.75in; border-top:2px solid var(--charcoal); border-bottom:1px solid var(--charcoal); padding:4px 0; display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:7pt; letter-spacing:0.22em; color:var(--blue);">
+    <span>Y-IT NONFICTION SERIES</span>
+    <span>ISSUE NO. 01 · FOREX &amp; PROP FIRMS</span>
+    <span>PHASE 1 EDITION (v2.0)</span>
+  </div>
+
+  <div style="position:absolute; left:0.625in; right:0.625in; top:2.4in; text-align:left;">
+    <div style="font-family:var(--font-display); font-weight:900; font-size:44pt; line-height:1.02; color:var(--charcoal); text-transform:uppercase;">
+      Why It
+      <span style="text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:3px; opacity:0.55;">Could.</span>
+      <span style="text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:3px; opacity:0.55;">Would.</span>
+      <span style="text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:3px; opacity:0.55;">Has.</span>
+      <span style="text-decoration:line-through; text-decoration-color:var(--red); text-decoration-thickness:3px; opacity:0.55;">Might.</span><br>
+      <span style="color:var(--blue);">Probably Won't.</span>
+      <span style="color:var(--red); font-size:52pt;">WORK</span>
+    </div>
+    <div style="font-family:var(--font-italic); font-style:italic; font-size:18pt; color:var(--dark-char); margin-top:10px;">
+      — Phase 1: The Dream &amp; The Idealized Pathway
+    </div>
+  </div>
+
+  <div style="position:absolute; left:0.625in; right:0.625in; bottom:0.85in; background:var(--white); border:1.5px solid var(--charcoal); box-shadow:3px 4px 0 rgba(0,0,0,0.12); padding:14px 16px;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:7.2pt; letter-spacing:0.2em; color:var(--blue); margin-bottom:5px;">
+      STATUTORY &amp; EDITORIAL NOTICE
+    </div>
+    <p style="font-family:var(--font-body); font-size:8.3pt; line-height:1.42; color:var(--charcoal);">
+      <strong>FOR EDUCATIONAL AND ILLUSTRATIVE PURPOSES ONLY. NOT FINANCIAL OR INVESTMENT ADVICE.</strong> Phase 1 (Chapters 1 &amp; 2) presents the retail proprietary trading ("funded trader") pitch and operational pathway in its best light, built directly from authentic first-party promotional headlines (<code>SRC-001..SRC-004</code>) and institutional market turnover data (<code>SRC-006</code>).
+    </p>
+  </div>
+  <div class="folio-right">01</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 2 (VERSO): PART ONE OPENER — THE ASCENT
+     Redesigned v3.0: Architectural Staircase Layout featuring Nano Banana
+     Hero Illustration, zero statistics, convenient corporate simplicity,
+     and backhanded structural allusion to Phase 2.
+     ===================================================================== -->
+<section class="cpage" style="background:var(--cream);">
+  <div class="halftone"></div>
+
+  <!-- Top Hairline Architectural Rail -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.48in; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:6.8pt; letter-spacing:0.22em; color:var(--charcoal); border-top:1.5px solid var(--charcoal); border-bottom:1px solid var(--charcoal); padding:4px 0; z-index:3;">
+    <span>Y-IT ARCHITECTURAL NONFICTION · VOL. 01</span>
+    <span style="color:var(--blue); font-weight:700;">PART ONE · THE ASCENT</span>
+    <span>CHAPTERS 01–02</span>
+  </div>
+
+  <!-- Top-Left Title & Stepped Tagline Lockup -->
+  <div style="position:absolute; left:0.625in; top:0.88in; width:2.20in; z-index:3;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:7.5pt; letter-spacing:0.32em; color:var(--blue); text-transform:uppercase;">
+      PART ONE
+    </div>
+    <div style="font-family:var(--font-display); font-weight:900; font-size:48pt; line-height:0.86; color:var(--navy); text-transform:uppercase; margin-top:2px; letter-spacing:-0.035em;">
+      THE<br>
+      <span style="color:var(--blue);">ASCENT.</span>
+    </div>
+
+    <!-- Stepped Tagline: "Everything / is up / from here." -->
+    <div style="margin-top:10px; font-family:var(--font-body); font-weight:700; font-size:11pt; line-height:1.22; color:var(--navy);">
+      <div>Everything</div>
+      <div style="margin-left:16px; color:var(--blue);">is up</div>
+      <div style="margin-left:32px; color:var(--charcoal);">from here.</div>
+    </div>
+
+    <div style="margin-top:8px; font-family:var(--font-italic); font-style:italic; font-size:8.2pt; line-height:1.30; color:var(--dark-char);">
+      The pitch in its clearest light, followed by the effortless steps on the box.
+    </div>
+  </div>
+
+  <!-- Top-Right Hero Illustration Card (Nano Banana Artwork) -->
+  <div style="position:absolute; right:0.625in; top:0.88in; width:2.55in; z-index:3;">
+    <!-- Yellow Accent Offset Shadow -->
+    <div style="position:absolute; inset:-4px 4px 4px -4px; background:var(--yellow); border:1.5px solid var(--charcoal); z-index:1;"></div>
+    <!-- Image Frame -->
+    <div style="position:relative; border:1.8px solid var(--charcoal); background:var(--white); z-index:2; box-shadow:3px 4px 0 rgba(0,0,0,0.12); overflow:hidden;">
+      <img src="assets/phase1_cover_hero_staircase.jpg" style="width:100%; height:1.92in; object-fit:cover; display:block;">
+      <div style="position:absolute; bottom:6px; left:6px; background:var(--navy); color:var(--cream); font-family:var(--font-mono); font-size:5.8pt; letter-spacing:0.14em; padding:2px 6px;">
+        FIG. 1.0 · THE GENTLE CLIMB
+      </div>
+      <div style="position:absolute; top:6px; right:6px; background:var(--green); color:var(--navy); font-family:var(--font-mono); font-weight:700; font-size:5.8pt; letter-spacing:0.12em; padding:2px 6px;">
+        ZERO RESISTANCE
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Architectural Staircase Section (Chapters 1 & 2 as Physical Steps) -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:3.48in; z-index:3;">
+
+    <!-- Section Kicker Rule -->
+    <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+      <span style="font-family:var(--font-mono); font-weight:700; font-size:6.8pt; letter-spacing:0.2em; color:var(--dark-char); text-transform:uppercase;">CONTENTS OF THIS MOVEMENT</span>
+      <div style="flex:1; height:1px; background:var(--charcoal); opacity:0.3;"></div>
+      <span style="font-family:var(--font-mono); font-size:6.8pt; letter-spacing:0.1em; color:var(--blue);">EASY ASSEMBLY</span>
+    </div>
+
+    <!-- TREAD 01: CHAPTER 01 — THE PROMISE -->
+    <div style="background:var(--white); border:1.8px solid var(--charcoal); box-shadow:3px 4px 0 rgba(30,43,56,0.14); padding:11px 14px; margin-bottom:12px; position:relative;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:32px; height:32px; background:var(--navy); color:var(--yellow); border:1.5px solid var(--charcoal); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; font-size:16pt; flex-shrink:0;">
+            01
+          </div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:6.5pt; letter-spacing:0.2em; color:var(--blue); font-weight:700; text-transform:uppercase;">
+              CHAPTER ONE · THE PROMISE
+            </div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:18pt; line-height:1.0; color:var(--navy); text-transform:uppercase;">
+              VIBRANT HOPE &amp; THE $7.5T VAULT
+            </div>
+          </div>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:6.8pt; color:var(--charcoal); background:var(--warm-neutral); border:1px solid var(--charcoal); padding:2px 6px;">
+          PAGE 03
+        </div>
+      </div>
+      <p style="font-family:var(--font-body); font-size:8.3pt; line-height:1.40; color:var(--dark-char); margin-top:7px;">
+        Authentic promotional collage from the industry's premier funded trader firms. Sunlit oceans, remote laptop freedom, 90% profit splits, and verified payouts—presented in the pristine light of the sales floor.
+      </p>
+      <div style="display:flex; gap:6px; margin-top:7px; font-family:var(--font-mono); font-size:5.8pt; letter-spacing:0.1em; color:var(--charcoal);">
+        <span style="background:var(--cream); padding:1px 5px; border:1px solid var(--gray);">SRC-001..004</span>
+        <span style="background:var(--cream); padding:1px 5px; border:1px solid var(--gray);">LIFESTYLE FREEDOM</span>
+        <span style="background:var(--cream); padding:1px 5px; border:1px solid var(--gray);">REAL-MONEY REWARDS</span>
+      </div>
+    </div>
+
+    <!-- TREAD 02: CHAPTER 02 — THE PATHWAY -->
+    <div style="background:var(--pale-blue); border:1.8px solid var(--charcoal); box-shadow:3px 4px 0 rgba(30,43,56,0.14); padding:11px 14px; position:relative;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="width:32px; height:32px; background:var(--blue); color:var(--white); border:1.5px solid var(--charcoal); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; font-size:16pt; flex-shrink:0;">
+            02
+          </div>
+          <div>
+            <div style="font-family:var(--font-mono); font-size:6.5pt; letter-spacing:0.2em; color:var(--navy); font-weight:700; text-transform:uppercase;">
+              CHAPTER TWO · THE PATHWAY
+            </div>
+            <div style="font-family:var(--font-display); font-weight:900; font-size:18pt; line-height:1.0; color:var(--navy); text-transform:uppercase;">
+              THE 7-STEP FLAT-PACK MANUAL
+            </div>
+          </div>
+        </div>
+        <div style="font-family:var(--font-mono); font-size:6.8pt; color:var(--navy); background:var(--white); border:1px solid var(--charcoal); padding:2px 6px;">
+          PAGE 06
+        </div>
+      </div>
+      <p style="font-family:var(--font-body); font-size:8.3pt; line-height:1.40; color:var(--navy); margin-top:7px;">
+        The seller's turnkey assembly guide. Seven simple, standardized steps from picking your challenge tier to unlocking scaling accounts up to $4,000,000. Step-by-step guidance accompanied by PosiBot.
+      </p>
+      <div style="display:flex; gap:6px; margin-top:7px; font-family:var(--font-mono); font-size:5.8pt; letter-spacing:0.1em; color:var(--navy);">
+        <span style="background:var(--white); padding:1px 5px; border:1px solid var(--blue);">FLAT-PACK BLUEPRINT</span>
+        <span style="background:var(--white); padding:1px 5px; border:1px solid var(--blue);">14-DAY EVALUATION</span>
+        <span style="background:var(--white); padding:1px 5px; border:1px solid var(--blue);">$4M SCALING TIER</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Eerie Convenience & Innocence Bar -->
+  <div style="position:absolute; left:0.625in; right:0.625in; bottom:0.80in; border-top:1px dashed var(--charcoal); padding-top:8px; display:flex; justify-content:space-between; align-items:center; z-index:3;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:6.4pt; letter-spacing:0.10em; color:var(--charcoal); white-space:nowrap;">
+      TERMS: <span style="color:var(--green);">☺ NONE REQUIRED</span>
+    </div>
+    <div style="font-family:var(--font-body); font-style:italic; font-size:7.6pt; color:var(--dark-char); display:flex; align-items:center; gap:5px; white-space:nowrap;">
+      <span style="display:inline-block; width:5px; height:5px; border-radius:50%; background:var(--green);"></span>
+      &ldquo;That&rsquo;s the whole thing!&rdquo; &mdash; PosiBot
+    </div>
+    <div style="font-family:var(--font-mono); font-size:6.6pt; letter-spacing:0.12em; color:var(--charcoal); opacity:0.50; white-space:nowrap;">
+      PART TWO ↘
+    </div>
+  </div>
+
+  <div class="folio-left" style="color:var(--charcoal);">02</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 3 (RECTO): CHAPTER 01 OPENER — THE PROMISE (MAGAZINE-AD COLLAGE P1)
+     Pure v2.0 Collage: 26-word scene context + ART-001, ART-002, ART-004, ART-006, ART-007, ART-010a
+     ===================================================================== -->
+<section class="cpage">
+  <div class="halftone"></div>
+
+  <!-- Top Magazine Masthead Rule -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.62in; height:0.24in; border-top:2.2px solid var(--charcoal); border-bottom:1px solid var(--charcoal); display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:7.5pt; letter-spacing:0.24em; color:var(--blue); z-index:3;">
+    <span>FEATURE</span>
+    <span>THE PROMISE ISSUE</span>
+    <span>VOL. 02</span>
+  </div>
+
+  <!-- Giant Numeral 01 -->
+  <div style="position:absolute; left:0.60in; top:0.98in; font-family:var(--font-display); font-weight:900; font-size:126pt; line-height:0.78; letter-spacing:-0.035em; color:var(--blue); z-index:2;">
+    01
+  </div>
+
+  <!-- Chapter One / Vibrant Hope Stacked Right -->
+  <div style="position:absolute; right:0.625in; top:1.72in; text-align:right; font-family:var(--font-mono); font-size:8pt; letter-spacing:0.26em; line-height:1.85; color:var(--dark-char); z-index:2;">
+    CHAPTER ONE<br>VIBRANT HOPE
+  </div>
+
+  <!-- THE Promise Title -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:2.55in; font-family:var(--font-display); font-weight:900; font-size:46pt; line-height:0.95; color:var(--charcoal); z-index:2;">
+    THE <span style="font-family:var(--font-italic); font-style:italic; font-weight:400; color:var(--blue);">Promise</span>
+  </div>
+
+  <!-- ONLY Scene-Setting Context Across Chapter 1 (26 words total — v2.0 <= 45-word rule) -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:3.28in; background:rgba(255,255,255,0.88); border-left:3.5px solid var(--blue); padding:6px 10px; font-family:var(--font-italic); font-style:italic; font-size:9.8pt; line-height:1.35; color:var(--charcoal); z-index:3;">
+    Every day, $7.5 trillion moves through global currency markets. Modern prop firms have opened the vault: pass a digital audition, trade their capital, keep 90%.
+  </div>
+
+  <!-- LEFT HERO AD MODULE: ART-001 (FTMO) + ART-002 (FundedNext) + ART-004 (The5ers) -->
+  <div class="ad-card-navy" style="left:0.625in; top:3.98in; width:2.22in; height:4.55in; padding:12px 12px; display:flex; flex-direction:column; justify-content:space-between;">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,0.2); padding-bottom:5px;">
+        <span style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.18em; color:var(--yellow);">PROP EVALUATION</span>
+        <span class="src-tag" style="color:#B9C4EE;">ART-001 · SRC-001</span>
+      </div>
+      <!-- ART-001 Verbatim (6 words) -->
+      <div style="font-family:var(--font-display); font-weight:900; font-size:25pt; line-height:0.94; color:var(--white); text-transform:uppercase; margin-top:8px;">
+        “GROW &amp; MONETIZE YOUR DEMO TRADING”
+      </div>
+      <!-- ART-002 Verbatim (5 words) -->
+      <div style="margin-top:9px; background:rgba(93,123,234,0.25); border:1px solid var(--blue); padding:6px 8px;">
+        <div style="font-family:var(--font-body); font-weight:700; font-size:9.5pt; color:var(--yellow); line-height:1.2;">
+          “We sponsor your trading journey”
+        </div>
+        <div class="src-tag" style="color:#D5DFEB; margin-top:2px;">ART-002 · FUNDEDNEXT (SRC-002)</div>
+      </div>
+    </div>
+
+    <!-- ART-004 Verbatim (7 words) + Account Tier Display -->
+    <div style="background:#131C26; border:1.2px solid var(--yellow); padding:9px 8px; margin-top:8px;">
+      <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.16em; color:var(--yellow);">CAPITAL SCALING CEILING</div>
+      <div style="font-family:var(--font-display); font-weight:900; font-size:16.5pt; line-height:0.98; color:var(--white); text-transform:uppercase; margin:4px 0;">
+        “Get qualified and manage up to $4,000,000!”
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:3px; margin-top:6px; font-family:var(--font-mono); font-weight:700; font-size:6.2pt; text-align:center;">
+        <span style="background:#263545; color:#B9C4EE; padding:3px 0;">$10K</span>
+        <span style="background:#263545; color:#B9C4EE; padding:3px 0;">$100K</span>
+        <span style="background:var(--blue); color:var(--white); padding:3px 0;">$2M</span>
+        <span style="background:var(--yellow); color:var(--navy); padding:3px 0;">$4M</span>
+      </div>
+      <div class="src-tag" style="color:#B9C4EE; margin-top:4px;">ART-004 · THE5ERS (SRC-003)</div>
+    </div>
+
+    <!-- CTA Pill -->
+    <div style="background:var(--yellow); color:var(--navy); text-align:center; font-family:var(--font-display); font-weight:900; font-size:13.5pt; letter-spacing:0.06em; padding:6px 0; text-transform:uppercase;">
+      START CHALLENGE · FREE TRIAL →
+    </div>
+  </div>
+
+  <!-- RIGHT TOP: BLEED LIFESTYLE PHOTO AD (ART-010a — SRC-003 Verbatim 7 words) -->
+  <div style="position:absolute; left:2.96in; right:0in; top:3.98in; height:2.62in; overflow:hidden; border-left:1.5px solid var(--charcoal); border-bottom:1.5px solid var(--charcoal); z-index:2;">
+    <img src="assets/ad_ch1_hero_beach.jpg" style="width:100%; height:100%; object-fit:cover;">
+    <div style="position:absolute; top:8px; right:10px; background:rgba(30,43,56,0.85); color:var(--yellow); font-family:var(--font-mono); font-size:5.8pt; padding:2px 6px; letter-spacing:0.12em;">
+      ART-010 · SRC-003
+    </div>
+    <div style="position:absolute; left:0; right:0; bottom:0; background:linear-gradient(to top, rgba(18,26,36,0.92), rgba(18,26,36,0.0)); padding:18px 12px 9px 12px;">
+      <div style="font-family:var(--font-display); font-weight:900; font-size:20pt; line-height:0.94; color:var(--white); text-transform:uppercase;">
+        “TURNING YOUR PASSION INTO A TRADING CAREER”
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT BOTTOM LEFT: SPEED GUARANTEE SEAL (ART-007 — SRC-002 Verbatim 10 words) -->
+  <div class="ad-card" style="left:2.96in; top:6.72in; width:1.36in; height:1.81in; padding:8px 7px; text-align:center; background:var(--white); border:1.5px solid var(--charcoal); display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="background:var(--blue); color:var(--white); font-family:var(--font-mono); font-weight:700; font-size:5.8pt; letter-spacing:0.12em; padding:2px 0;">
+      24H GUARANTEE
+    </div>
+    <div style="font-family:var(--font-display); font-weight:900; font-size:14.5pt; line-height:0.96; color:var(--charcoal); text-transform:uppercase;">
+      “Get rewarded in 3 days · 99.99% processed within 24 hours”
+    </div>
+    <div style="background:var(--yellow); color:var(--charcoal); font-family:var(--font-mono); font-weight:700; font-size:6pt; padding:3px 2px;">
+      OR GET $1,000 EXTRA
+    </div>
+    <div class="src-tag" style="color:var(--dark-char);">ART-007 · SRC-002</div>
+  </div>
+
+  <!-- RIGHT BOTTOM RIGHT: POSIBOT WHITEBOARD (ART-006 — SRC-006 6 words) -->
+  <div class="ad-card" style="left:4.40in; right:0.20in; top:6.72in; height:1.81in; padding:4px; background:var(--white); display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
+    <img src="assets/posibot_pose2_whiteboard.jpg" style="width:100%; height:1.38in; object-fit:contain;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:5.7pt; color:var(--navy); text-align:center; line-height:1.15;">
+      $7.5T DAILY FX TURNOVER (SRC-006)
+    </div>
+  </div>
+
+  <div class="folio-right">03</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 4 (VERSO): CHAPTER 01 SPREAD — MAGAZINE-AD COLLAGE P2
+     Pure v2.0 Collage: Top 3-col Collage -> Middle Payout Showcase (Singular "Payout" + Mock Names) -> Bottom Foundation Banner (ART-005)
+     ===================================================================== -->
+<section class="cpage">
+  <div class="halftone"></div>
+
+  <!-- LEFT TOP: SCALING PLAN ROCKET CURVE AD (CLM-002 · SRC-001) — PUSHED UP TO 0.55in -->
+  <div class="ad-card" style="left:0.625in; top:0.55in; width:1.68in; height:2.75in; background:var(--pale-blue); padding:10px 10px; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.15em; color:var(--blue);">
+      CAPITAL GROWTH · SRC-001
+    </div>
+    <svg viewBox="0 0 160 125" style="width:100%; height:1.35in; overflow:visible;">
+      <line x1="10" y1="10" x2="10" y2="112" stroke="#3A3A3A" stroke-width="1.5"/>
+      <line x1="10" y1="112" x2="150" y2="112" stroke="#3A3A3A" stroke-width="1.5"/>
+      <path d="M 12 108 Q 70 102, 100 68 T 144 14" fill="none" stroke="#5D7BEA" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="144" cy="14" r="5" fill="#22C55E" stroke="#1E2B38" stroke-width="1.2"/>
+      <text x="88" y="24" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="11.5" fill="#1E2B38">$2,000,000</text>
+    </svg>
+    <div>
+      <div style="font-family:var(--font-display); font-weight:900; font-size:18.5pt; line-height:0.94; color:var(--navy); text-transform:uppercase;">
+        “SCALING PLAN: GROW UP TO $2M”
+      </div>
+      <div class="src-tag" style="color:var(--dark-char); margin-top:3px;">CLM-002 · FTMO (SRC-001)</div>
+    </div>
+  </div>
+
+  <!-- LEFT BOTTOM: LOW-BARRIER BADGE (ART-008 · SRC-002 Verbatim 7 words) — PUSHED UP TO 3.45in -->
+  <div class="ad-card" style="left:0.625in; top:3.45in; width:1.68in; height:2.05in; background:var(--white); padding:10px 10px; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="background:var(--green); color:var(--navy); font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.14em; padding:2px 6px; display:inline-block; align-self:flex-start;">
+      FAST QUALIFICATION
+    </div>
+    <div style="font-family:var(--font-display); font-weight:900; font-size:19pt; line-height:0.95; color:var(--charcoal); text-transform:uppercase;">
+      “2 Minimum Profitable Days in each Phase”
+    </div>
+    <div style="font-family:var(--font-mono); font-size:6.5pt; color:var(--dark-char); line-height:1.35;">
+      ✓ 85%–90% Reward Share<br>
+      ✓ No Maximum Time Limit
+    </div>
+    <div class="src-tag">ART-008 · FUNDEDNEXT (SRC-002)</div>
+  </div>
+
+  <!-- CENTER HERO CALLOUT: POSIBOT TILTED SIGN (ART-003 · SRC-004 Verbatim 7 words) — PUSHED UP TO 0.55in -->
+  <div class="ad-card" style="left:2.44in; top:0.55in; width:1.92in; height:4.95in; background:var(--white); padding:10px 10px; display:flex; flex-direction:column; justify-content:space-between; align-items:center; text-align:center;">
+    <div style="width:100%; border-bottom:1.5px solid var(--charcoal); padding-bottom:4px; display:flex; justify-content:space-between; align-items:center;">
+      <span style="font-family:var(--font-mono); font-weight:700; font-size:6pt; color:var(--blue); letter-spacing:0.14em;">PROFIT SHARE</span>
+      <span class="src-tag">ART-003 · SRC-004</span>
+    </div>
+
+    <img src="assets/posibot_pose1_tilted_sign.jpg" style="width:1.72in; height:2.55in; object-fit:contain; margin:4px 0;">
+
+    <div style="background:var(--navy); color:var(--white); padding:9px 8px; width:100%;">
+      <div style="font-family:var(--font-display); font-weight:900; font-size:20pt; line-height:0.94; color:var(--yellow); text-transform:uppercase;">
+        “KEEP UP TO 90% OF YOUR PROFITS.”
+      </div>
+      <div style="font-family:var(--font-body); font-size:7.8pt; line-height:1.28; color:var(--cream); margin-top:5px;">
+        “Learn and trade futures with our prop firm capital.”
+      </div>
+      <div class="src-tag" style="color:#B9C4EE; margin-top:4px;">TOPSTEP · SRC-004</div>
+    </div>
+  </div>
+
+  <!-- RIGHT FLANK 1: STARBURST (FREE TRIAL AVAILABLE — SRC-001) — PUSHED UP TO 0.55in -->
+  <svg viewBox="0 0 110 110" style="position:absolute; right:0.52in; top:0.55in; width:1.05in; height:1.05in; z-index:4; overflow:visible;">
+    <g transform="rotate(-8 55 55)">
+      <polygon points="55,5 63,16 74,8 78,21 91,17 90,31 103,32 97,45 108,52 98,62 106,73 93,78 96,91 82,91 80,104 67,99 60,110 50,100 39,108 34,95 21,98 21,84 8,82 14,69 3,61 13,51 6,39 19,34 17,20 31,21 35,8 47,16" fill="#F8C952" stroke="#3A3A3A" stroke-width="1.6"/>
+      <text x="55" y="44" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="16" fill="#1E2B38">FREE</text>
+      <text x="55" y="60" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="15" fill="#E35050">TRIAL</text>
+      <text x="55" y="74" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#1E2B38">SRC-001</text>
+    </g>
+  </svg>
+
+  <!-- RIGHT FLANK 2: FEE REFUND COUPON (SRC-001 / SRC-002) — PUSHED UP TO 1.78in -->
+  <div style="position:absolute; right:0.52in; top:1.78in; width:1.02in; height:1.72in; background:var(--white); border:1.6px dashed var(--charcoal); padding:8px 5px; text-align:center; transform:rotate(-2deg); box-shadow:2px 3px 0 rgba(0,0,0,0.12); z-index:4; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.12em; color:var(--blue);">FEE REFUND</div>
+    <div style="font-family:var(--font-display); font-weight:900; font-size:25pt; line-height:0.92; color:var(--green);">100%<br>BACK</div>
+    <div style="font-family:var(--font-body); font-weight:600; font-size:6.8pt; line-height:1.2; color:var(--charcoal);">Refunded with first reward split</div>
+    <div class="src-tag">SRC-001 · SRC-002</div>
+  </div>
+
+  <!-- RIGHT FLANK 3: INSTANT PAYOUT BADGE (SRC-002) — PUSHED UP TO 3.68in -->
+  <div style="position:absolute; right:0.52in; top:3.68in; width:1.02in; height:1.80in; background:var(--blue); color:var(--white); border:1.5px solid var(--charcoal); padding:8px 6px; text-align:center; transform:rotate(2deg); box-shadow:2px 3px 0 rgba(0,0,0,0.15); z-index:4; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.12em; color:var(--yellow);">FAST DISBURSE</div>
+    <div style="font-family:var(--font-display); font-weight:900; font-size:26pt; line-height:0.92;">24HR</div>
+    <div style="font-family:var(--font-display); font-weight:800; font-size:12pt; line-height:1; color:var(--yellow);">REWARD PAYOUT</div>
+    <div style="font-family:var(--font-mono); font-size:5.5pt; opacity:0.9;">99.99% ON TIME (SRC-002)</div>
+  </div>
+
+  <!-- MIDDLE SOCIAL PROOF TICKER (PUSHED UP TO 5.66in): Singular "Payout" + Mock Trader Names -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:5.66in; height:1.68in; background:var(--white); border:1.6px solid var(--charcoal); box-shadow:3px 4px 0 rgba(0,0,0,0.12); padding:8px 12px; z-index:4;">
+    <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1.2px solid var(--charcoal); padding-bottom:4px; margin-bottom:8px;">
+      <span style="font-family:var(--font-mono); font-weight:700; font-size:6.8pt; letter-spacing:0.18em; color:var(--blue);">
+        FUNDED TRADER PAYOUT SHOWCASE · VIS-002
+      </span>
+      <span class="src-tag">ART-009 · THE5ERS (SRC-003)</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;">
+      <div style="background:var(--pale-blue); border:1.2px solid var(--blue); padding:7px 6px; text-align:center;">
+        <div style="color:var(--yellow); font-size:8pt; -webkit-text-stroke:0.4px var(--charcoal);">★★★★★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:19.5pt; line-height:1; color:var(--navy); margin:4px 0;">
+          “Payout of $98,038”
+        </div>
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6.4pt; color:var(--blue);">— Tradey McNoRisk</div>
+      </div>
+      <div style="background:var(--pale-blue); border:1.2px solid var(--blue); padding:7px 6px; text-align:center;">
+        <div style="color:var(--yellow); font-size:8pt; -webkit-text-stroke:0.4px var(--charcoal);">★★★★★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:19.5pt; line-height:1; color:var(--navy); margin:4px 0;">
+          “Payout of $35,000”
+        </div>
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6.4pt; color:var(--blue);">— Pippy Longstacking</div>
+      </div>
+      <div style="background:var(--pale-blue); border:1.2px solid var(--blue); padding:7px 6px; text-align:center;">
+        <div style="color:var(--yellow); font-size:8pt; -webkit-text-stroke:0.4px var(--charcoal);">★★★★★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:19.5pt; line-height:1; color:var(--navy); margin:4px 0;">
+          “Payout of $21,769”
+        </div>
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6.4pt; color:var(--blue);">— Chad Candlewick</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM FOUNDATION BANNER: ART-005 (FTMO SRC-001 Verbatim 6 words) — ANCHORED AT 7.50in -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:7.50in; height:0.92in; background:var(--navy); border:1.5px solid var(--charcoal); border-left:5px solid var(--yellow); box-shadow:3px 4px 0 rgba(0,0,0,0.14); padding:8px 14px; display:flex; justify-content:space-between; align-items:center; z-index:4;">
+    <div>
+      <div style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.2em; color:var(--yellow);">
+        HOW IT WORKS · ART-005 (FTMO · SRC-001)
+      </div>
+      <div style="font-family:var(--font-display); font-weight:900; font-size:24pt; line-height:0.96; color:var(--white); text-transform:uppercase; margin-top:2px;">
+        “PROVE YOUR SKILLS. EARN REAL-MONEY REWARDS.”
+      </div>
+    </div>
+    <div style="text-align:right; font-family:var(--font-mono); font-size:6pt; color:#B9C4EE; line-height:1.45; border-left:1px solid rgba(255,255,255,0.2); padding-left:10px;">
+      TRADINGVIEW<br>METATRADER 5<br>cTRADER SUITE
+    </div>
+  </div>
+
+  <div class="folio-left">04</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 5 (RECTO): CHAPTER 01 CLOSING — LIFESTYLE & AWARD COLLAGE P3
+     Balanced space usage in Top-Right Navy Panel & Bottom-Right Enrollment Card
+     ===================================================================== -->
+<section class="cpage">
+  <div class="halftone"></div>
+
+  <!-- TOP DOMINANT VISUAL SHOWCASE: BEFORE / AFTER LIFESTYLE AD (ART-010b) -->
+  <div class="ad-card" style="left:0.625in; right:0.625in; top:0.58in; height:3.62in; padding:8px; background:var(--white); display:grid; grid-template-columns:1.30fr 1.05fr; gap:10px;">
+    <div style="position:relative; height:100%; border:1.2px solid var(--charcoal); overflow:hidden;">
+      <img src="assets/ad_ch1_before_after.jpg" style="width:100%; height:100%; object-fit:cover;">
+      <span style="position:absolute; left:8px; top:8px; background:var(--charcoal); color:var(--white); font-family:var(--font-mono); font-weight:700; font-size:6.5pt; padding:2px 6px;">BEFORE · CUBICLE</span>
+      <span style="position:absolute; left:8px; bottom:8px; background:var(--blue); color:var(--white); font-family:var(--font-mono); font-weight:700; font-size:6.5pt; padding:2px 6px;">AFTER · FUNDED TRADER</span>
+    </div>
+    <!-- Balanced Right Navy Panel with Middle Perk Stack -->
+    <div style="background:var(--navy); color:var(--cream); padding:11px 11px; display:flex; flex-direction:column; justify-content:space-between;">
+      <div>
+        <div class="src-tag" style="color:var(--yellow);">ART-010 · SRC-002 &amp; SRC-003</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:21pt; line-height:0.93; color:var(--white); text-transform:uppercase; margin-top:4px;">
+          “TURNING YOUR PASSION INTO A TRADING CAREER”
+        </div>
+        <div style="font-family:var(--font-italic); font-style:italic; font-size:9.8pt; color:var(--yellow); margin-top:5px; line-height:1.25;">
+          “We sponsor your trading journey.”
+        </div>
+      </div>
+
+      <!-- Middle Feature Stack (Fills the space purposefully) -->
+      <div style="display:flex; flex-direction:column; gap:4px; my:4px;">
+        <div style="background:rgba(255,255,255,0.08); border-left:2.5px solid var(--green); padding:3.5px 7px; font-family:var(--font-mono); font-size:6.3pt; color:var(--white);">
+          ✓ <strong>UP TO 90%</strong> PROFIT SHARE KEPT
+        </div>
+        <div style="background:rgba(255,255,255,0.08); border-left:2.5px solid var(--blue); padding:3.5px 7px; font-family:var(--font-mono); font-size:6.3pt; color:var(--white);">
+          ✓ <strong>24-HOUR</strong> REWARD PROCESSING
+        </div>
+        <div style="background:rgba(255,255,255,0.08); border-left:2.5px solid var(--yellow); padding:3.5px 7px; font-family:var(--font-mono); font-size:6.3pt; color:var(--white);">
+          ✓ <strong>DEMO CAPITAL</strong> · ZERO SAVINGS RISK
+        </div>
+      </div>
+
+      <div style="background:#131C26; border:1px solid var(--yellow); padding:6px 8px; text-align:center;">
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:5.8pt; color:var(--yellow); letter-spacing:0.14em;">GLOBAL PROP SCALE CEILING</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:15.5pt; color:var(--white); line-height:1.0; margin-top:2px;">
+          UP TO $4,000,000 ALLOCATION
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIDDLE ROW: AWARD LAUREL CREST STRIP (ART-011 · SRC-003 Verbatim 9 words · VIS-003) -->
+  <div class="ad-card" style="left:0.625in; right:0.625in; top:4.36in; height:1.26in; background:var(--white); padding:8px 12px;">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+      <span style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.2em; color:var(--blue);">INDUSTRY RECOGNITION &amp; TRUST BADGES · VIS-003</span>
+      <span class="src-tag">ART-011 · THE5ERS (SRC-003)</span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; text-align:center;">
+      <div style="border:1.2px solid var(--yellow); background:#FFFDF5; padding:6px 4px;">
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; color:var(--rust);">★ AWARD WINNER ★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:13pt; line-height:0.98; color:var(--charcoal); margin-top:2px;">
+          “MOST USER FRIENDLY PROP FIRM”
+        </div>
+      </div>
+      <div style="border:1.2px solid var(--yellow); background:#FFFDF5; padding:6px 4px;">
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; color:var(--rust);">★ AWARD WINNER ★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:13pt; line-height:0.98; color:var(--charcoal); margin-top:2px;">
+          “BEST SCALING STRUCTURE”
+        </div>
+      </div>
+      <div style="border:1.2px solid var(--yellow); background:#FFFDF5; padding:6px 4px;">
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6pt; color:var(--rust);">★ RATED EXCELLENT ★</div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:13pt; line-height:0.98; color:var(--charcoal); margin-top:2px;">
+          “95% CUSTOMER SATISFACTION”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM ROW: POSIBOT MEGAPHONE + BALANCED CLOSING CTA CARD (ART-012) -->
+  <div class="ad-card" style="left:0.625in; top:5.78in; width:2.10in; height:2.62in; padding:8px; text-align:center; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.16em; color:var(--blue);">OFFICIAL BRAND AMBASSADOR</div>
+    <img src="assets/posibot_pose3_megaphone.jpg" style="width:100%; height:1.85in; object-fit:contain;">
+    <div style="background:var(--pale-blue); border:1px solid var(--blue); padding:3px 4px; font-family:var(--font-display); font-weight:900; font-size:12pt; color:var(--navy); text-transform:uppercase;">
+      TRADE FIRM CAPITAL · KEEP UP TO 90%
+    </div>
+  </div>
+
+  <!-- RIGHT TEAR-OUT ENROLLMENT CARD: Balanced Vertical Space (ART-012) -->
+  <div style="position:absolute; left:2.88in; right:0.625in; top:5.78in; height:2.62in; background:var(--white); border:2px dashed var(--charcoal); padding:10px 12px; box-shadow:3px 4px 0 rgba(0,0,0,0.12); display:flex; flex-direction:column; justify-content:space-between; z-index:4;">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.16em; color:var(--red);">✂ INSTANT ENROLLMENT</span>
+        <span class="src-tag">ART-012 · SRC-002</span>
+      </div>
+      <!-- ART-012 Verbatim (5 words) -->
+      <div style="font-family:var(--font-display); font-weight:900; font-size:22pt; line-height:0.94; color:var(--charcoal); text-transform:uppercase; margin-top:3px;">
+        “YOUR CHALLENGE IS OPEN NOW.”
+      </div>
+    </div>
+
+    <!-- Structured Tier Selector Rows (Balances the card body cleanly) -->
+    <div style="display:flex; flex-direction:column; gap:4px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; background:#F8FAFC; border:1px solid var(--gray); padding:4px 7px; font-family:var(--font-mono); font-size:6.8pt;">
+        <span>☑ <strong>$10,000</strong> Starter Tier</span>
+        <span style="color:var(--blue); font-weight:700;">90% SPLIT</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; background:var(--pale-blue); border:1.2px solid var(--blue); padding:4px 7px; font-family:var(--font-mono); font-size:6.8pt;">
+        <span>☑ <strong>$100,000</strong> Flagship Tier</span>
+        <span style="background:var(--blue); color:var(--white); padding:1px 4px; font-size:5.8pt; font-weight:700;">POPULAR</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center; background:#F8FAFC; border:1px solid var(--gray); padding:4px 7px; font-family:var(--font-mono); font-size:6.8pt;">
+        <span>☑ <strong>$200,000</strong> Max Evaluation</span>
+        <span style="color:var(--green); font-weight:700;">SCALE TO $4M</span>
+      </div>
+    </div>
+
+    <!-- Coupon Bonus Bar + Next Page CTA -->
+    <div>
+      <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:5.8pt; color:var(--dark-char); margin-bottom:4px; border-top:1px dashed var(--gray); padding-top:3px;">
+        <span>✓ FREE DEMO TRIAL AVAILABLE</span>
+        <span>✓ 100% FEE REFUND</span>
+      </div>
+      <div style="background:var(--navy); color:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:7pt; text-align:center; padding:6px 4px; letter-spacing:0.08em;">
+        TURN PAGE: THE 7-STEP SETUP MANUAL →
+      </div>
+    </div>
+  </div>
+
+  <div class="folio-right">05</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 6 (RECTO): CHAPTER 02 OPENER — REIMAGINED FLAT-PACK MANUAL HEADER
+     + CANONICAL 4-PART UNPACKING TRAY (fig. 1) + STEPS 1 & 2 (Unboxed Window)
+     ===================================================================== -->
+<section class="cpage cpage-white">
+  <!-- REIMAGINED ARCHITECTURAL FLAT-PACK MANUAL MASTHEAD (Replaces old dark-charcoal slab) -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.48in; height:1.84in; background:var(--cream); border:2px solid var(--charcoal); box-shadow:4px 4px 0 var(--charcoal); z-index:2; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between;">
+    <!-- Top Blueprint Meta Strip -->
+    <div style="background:var(--navy); color:var(--cream); padding:4px 10px; display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-size:5.8pt; letter-spacing:0.12em; white-space:nowrap;">
+      <span>Y-IT FLAT-PACK OPERATING MANUAL · CHAPTER 02</span>
+      <span style="color:var(--yellow);">MODEL FOREX-PROP-5000 · REV 2.0</span>
+    </div>
+
+    <!-- Main Header Grid: Stencil Number Badge + Title + Mini Hardware Spec -->
+    <div style="display:grid; grid-template-columns:0.92in 1fr; flex:1; border-bottom:1.5px solid var(--charcoal);">
+      <!-- Left Stencil Number Block -->
+      <div style="background:var(--blue); color:var(--white); border-right:1.5px solid var(--charcoal); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:4px;">
+        <span style="font-family:var(--font-mono); font-size:6pt; letter-spacing:0.18em; color:var(--yellow);">MANUAL</span>
+        <span style="font-family:var(--font-display); font-weight:900; font-size:48pt; line-height:0.84;">02</span>
+      </div>
+      <!-- Right Title & Idealized Pathway Subtitle -->
+      <div style="padding:6px 12px; display:flex; flex-direction:column; justify-content:center;">
+        <div style="font-family:var(--font-mono); font-weight:700; font-size:6.2pt; letter-spacing:0.16em; color:var(--blue);">
+          THE SELLER'S IDEALIZED PATHWAY
+        </div>
+        <div style="font-family:var(--font-display); font-weight:900; font-size:25pt; line-height:0.94; color:var(--charcoal); text-transform:uppercase; margin-top:2px;">
+          QUICK-START ASSEMBLY GUIDE
+        </div>
+        <div style="font-family:var(--font-italic); font-style:italic; font-size:8.6pt; color:var(--dark-char); margin-top:3px;">
+          Seven breezy steps from unboxing your challenge to collecting 90% rewards.
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom 4-Column Hardware Spec Bar -->
+    <div style="display:grid; grid-template-columns:repeat(4, 1fr); background:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:5.7pt; color:var(--charcoal); text-align:center; height:0.28in; align-items:center; white-space:nowrap;">
+      <div style="border-right:1px solid var(--charcoal); padding:2px 0;">STEPS: 01–07 INCLUDED</div>
+      <div style="border-right:1px solid var(--charcoal); padding:2px 0;">TOOLS: LAPTOP + WI-FI</div>
+      <div style="border-right:1px solid var(--charcoal); padding:2px 0;">PACE: 2 GREEN DAYS</div>
+      <div style="padding:2px 0;">RATING: EFFORTLESS ✓</div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       CANONICAL REIMAGINED "WHAT'S IN THE BOX" (top: 2.50in, height: 2.12in)
+       Exploded Molded Tray Diagram (Left) + 2x2 Hardware Part Tiles (Right)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:2.48in; height:2.12in; border:1.6px solid var(--charcoal); background:var(--white); z-index:3; display:grid; grid-template-columns:2.05in 1fr;">
+    <!-- Left: Canonical Molded Unpacking Tray Diagram (fig. 1) -->
+    <div style="border-right:1.4px solid var(--charcoal); background:#F9F8F4; position:relative; padding:6px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; font-family:var(--font-mono); font-weight:700; font-size:6pt; letter-spacing:0.12em; color:var(--charcoal); border-bottom:1px solid var(--gray); padding-bottom:3px;">
+        <span>UNPACKING TRAY</span>
+        <span style="color:var(--blue);">FIG. 01</span>
+      </div>
+      <svg viewBox="0 0 190 155" style="width:100%; height:1.72in;">
+        <!-- Outer Molded Flat-Pack Carton Tray -->
+        <rect x="8" y="8" width="174" height="138" rx="6" fill="#E5E0D8" stroke="#3A3A3A" stroke-width="1.8"/>
+        <rect x="14" y="14" width="162" height="126" rx="4" fill="#F5F2EC" stroke="#3A3A3A" stroke-width="1" stroke-dasharray="3 2"/>
+
+        <!-- Compartment A (Top-Left): Challenge Dashboard Screen -->
+        <rect x="20" y="20" width="72" height="54" rx="3" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.3"/>
+        <rect x="26" y="26" width="60" height="32" rx="2" fill="#EBF0FF" stroke="#5D7BEA" stroke-width="1.2"/>
+        <text x="56" y="45" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7.5" fill="#1E2B38">$100K TIER</text>
+        <circle cx="28" cy="65" r="6" fill="#1E2B38"/><text x="28" y="68" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7" fill="#F8C952">A</text>
+        <text x="60" y="68" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6" fill="#3A3A3A">DASHBOARD</text>
+
+        <!-- Compartment B (Top-Right): Platform Login Key -->
+        <rect x="98" y="20" width="72" height="54" rx="3" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.3"/>
+        <rect x="110" y="28" width="48" height="26" rx="3" fill="#1E2B38"/>
+        <circle cx="122" cy="41" r="4" fill="#22C55E"/>
+        <text x="142" y="44" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#FFFFFF">MT5/TV</text>
+        <circle cx="106" cy="65" r="6" fill="#1E2B38"/><text x="106" y="68" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7" fill="#F8C952">B</text>
+        <text x="138" y="68" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6" fill="#3A3A3A">LOGIN KEY</text>
+
+        <!-- Compartment C (Bottom-Left): Auto Loss Guardrail Meter -->
+        <rect x="20" y="80" width="72" height="54" rx="3" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.3"/>
+        <line x1="26" y1="92" x2="86" y2="92" stroke="#22C55E" stroke-width="2.5"/>
+        <path d="M 28 110 Q 52 106, 84 95" fill="none" stroke="#5D7BEA" stroke-width="2.2"/>
+        <line x1="26" y1="114" x2="86" y2="114" stroke="#F8C952" stroke-width="2" stroke-dasharray="3 2"/>
+        <circle cx="28" cy="125" r="6" fill="#1E2B38"/><text x="28" y="128" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7" fill="#F8C952">C</text>
+        <text x="60" y="128" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6" fill="#3A3A3A">GUARDRAILS</text>
+
+        <!-- Compartment D (Bottom-Right): 90% Certificate & $4M Ladder -->
+        <rect x="98" y="80" width="72" height="54" rx="3" fill="#FFFFFF" stroke="#3A3A3A" stroke-width="1.3"/>
+        <rect x="106" y="86" width="56" height="28" rx="2" fill="#F8C952" stroke="#1E2B38" stroke-width="1.2"/>
+        <text x="134" y="103" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="11" fill="#1E2B38">90% · $4M</text>
+        <circle cx="106" cy="125" r="6" fill="#1E2B38"/><text x="106" y="128" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7" fill="#F8C952">D</text>
+        <text x="138" y="128" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6" fill="#3A3A3A">REWARD KIT</text>
+      </svg>
+    </div>
+
+    <!-- Right: 2x2 Canonical Hardware Manifest Grid -->
+    <div style="padding:6px 9px; display:flex; flex-direction:column; justify-content:space-between;">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1.5px solid var(--charcoal); padding-bottom:3px; white-space:nowrap;">
+        <span style="font-family:var(--font-mono); font-weight:700; font-size:6.4pt; letter-spacing:0.12em; color:var(--charcoal);">WHAT'S IN THE BOX</span>
+        <span style="font-family:var(--font-mono); font-size:5.6pt; background:var(--green); color:var(--navy); font-weight:700; padding:1px 5px;">✓ 4 / 4 PARTS INCLUDED</span>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:5px; height:1.68in; margin-top:4px;">
+        <!-- Part A Tile -->
+        <div style="border:1px solid var(--charcoal); background:#FBF9F5; padding:5px 6px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="background:var(--navy); color:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:6pt; padding:1px 5px;">PART A ×1</span>
+            <span style="font-family:var(--font-mono); font-size:5.5pt; color:var(--dark-char);">#FP-TIER</span>
+          </div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:11.5pt; line-height:0.98; color:var(--charcoal);">CHALLENGE DASHBOARD</div>
+          <div style="font-family:var(--font-body); font-size:6.8pt; color:var(--dark-char); line-height:1.2;">Pre-loaded $10K–$200K evaluation balance</div>
+        </div>
+        <!-- Part B Tile -->
+        <div style="border:1px solid var(--charcoal); background:#FBF9F5; padding:5px 6px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="background:var(--navy); color:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:6pt; padding:1px 5px;">PART B ×1</span>
+            <span style="font-family:var(--font-mono); font-size:5.5pt; color:var(--dark-char);">#FP-PLUG</span>
+          </div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:11.5pt; line-height:0.98; color:var(--charcoal);">PLATFORM LOGIN KEY</div>
+          <div style="font-family:var(--font-body); font-size:6.8pt; color:var(--dark-char); line-height:1.2;">Instant TradingView, MT5 &amp; cTrader bridge</div>
+        </div>
+        <!-- Part C Tile -->
+        <div style="border:1px solid var(--charcoal); background:#FBF9F5; padding:5px 6px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="background:var(--navy); color:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:6pt; padding:1px 5px;">PART C ×1</span>
+            <span style="font-family:var(--font-mono); font-size:5.5pt; color:var(--dark-char);">#FP-RAIL</span>
+          </div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:11.5pt; line-height:0.98; color:var(--charcoal);">AUTO LOSS GUARDRAILS</div>
+          <div style="font-family:var(--font-body); font-size:6.8pt; color:var(--dark-char); line-height:1.2;">Built-in daily &amp; max drawdown meters</div>
+        </div>
+        <!-- Part D Tile -->
+        <div style="border:1px solid var(--charcoal); background:#FBF9F5; padding:5px 6px; display:flex; flex-direction:column; justify-content:space-between;">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="background:var(--navy); color:var(--yellow); font-family:var(--font-mono); font-weight:700; font-size:6pt; padding:1px 5px;">PART D ×1</span>
+            <span style="font-family:var(--font-mono); font-size:5.5pt; color:var(--dark-char);">#FP-90SPLIT</span>
+          </div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:11.5pt; line-height:0.98; color:var(--charcoal);">90% REWARD &amp; $4M PLAN</div>
+          <div style="font-family:var(--font-body); font-size:6.8pt; color:var(--dark-char); line-height:1.2;">24h payout split + $4,000,000 scaling path</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       STEP 1: PICK YOUR ACCOUNT SIZE (top: 4.82in — Unboxed Window Graphic!)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:4.80in; height:1.72in; border-top:1.5px solid var(--charcoal); padding-top:10px; display:grid; grid-template-columns:2.10in 1fr; gap:14px; align-items:center;">
+    <!-- Unboxed Browser Window Diagram (No outer manual-fig box!) -->
+    <div style="border:1.8px solid var(--charcoal); border-radius:6px; background:var(--white); box-shadow:3px 4px 0 rgba(0,0,0,0.12); overflow:hidden;">
+      <div style="background:var(--charcoal); padding:4px 8px; display:flex; justify-content:space-between; align-items:center;">
+        <div style="display:flex; gap:4px;">
+          <span style="width:6px; height:6px; border-radius:50%; background:var(--red); display:inline-block;"></span>
+          <span style="width:6px; height:6px; border-radius:50%; background:var(--yellow); display:inline-block;"></span>
+          <span style="width:6px; height:6px; border-radius:50%; background:var(--green); display:inline-block;"></span>
+        </div>
+        <span style="font-family:var(--font-mono); font-size:5.5pt; color:var(--cream);">fig. 2 · tier selector</span>
+      </div>
+      <div style="padding:8px 8px; text-align:center;">
+        <div style="display:grid; grid-template-columns:1fr 1.3fr 1fr; gap:4px; margin-bottom:6px; font-family:var(--font-mono); font-size:6pt;">
+          <div style="border:1px solid var(--gray); padding:4px 2px; color:var(--dark-char);">$10,000</div>
+          <div style="border:1.5px solid var(--blue); background:var(--pale-blue); padding:4px 2px; font-weight:700; color:var(--navy);">$100,000 ✓</div>
+          <div style="border:1px solid var(--gray); padding:4px 2px; color:var(--dark-char);">$200,000</div>
+        </div>
+        <div style="background:var(--green); color:var(--navy); font-family:var(--font-mono); font-weight:700; font-size:7.2pt; padding:5px 0; border-radius:3px;">
+          ACTIVATE CHALLENGE DASHBOARD →
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 1 Copy -->
+    <div>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <span class="step-badge" style="background:var(--navy); color:var(--yellow);">1</span>
+        <span class="step-title">PICK YOUR ACCOUNT SIZE</span>
+      </div>
+      <p class="step-action">
+        Select your desired evaluation balance—from $10,000 up to $200,000—and activate your challenge dashboard.
+      </p>
+      <div class="tip-box">
+        <strong>TINY TIP:</strong> Start with the free practice trial.
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       STEP 2: CONNECT YOUR CHARTING PLATFORM (top: 6.70in)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:6.68in; height:1.72in; border-top:1.5px solid var(--charcoal); padding-top:10px; display:grid; grid-template-columns:1fr 2.10in; gap:14px; align-items:center;">
+    <!-- Step 2 Copy -->
+    <div>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <span class="step-badge" style="background:var(--navy); color:var(--yellow);">2</span>
+        <span class="step-title">CONNECT YOUR CHARTING PLATFORM</span>
+      </div>
+      <p class="step-action">
+        Log into TradingView or MetaTrader 5 using the credentials emailed to your inbox.
+      </p>
+      <div class="tip-box">
+        <strong>TINY TIP:</strong> All major platforms work out-of-the-box.
+      </div>
+    </div>
+
+    <!-- Step 2 Plug-and-Play Graphic -->
+    <div style="border:1.5px solid var(--charcoal); background:#F9F8F4; padding:8px; border-radius:4px; position:relative;">
+      <svg viewBox="0 0 190 110" style="width:100%; height:1.25in;">
+        <!-- Laptop Screen -->
+        <rect x="14" y="12" width="96" height="64" rx="4" fill="#1E2B38" stroke="#3A3A3A" stroke-width="1.6"/>
+        <rect x="20" y="18" width="84" height="52" fill="#EBF0FF"/>
+        <path d="M 26 56 L 46 42 L 64 48 L 96 24" fill="none" stroke="#5D7BEA" stroke-width="2.5"/>
+        <text x="62" y="64" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.8" fill="#1E2B38">TRADINGVIEW / MT5</text>
+        <polygon points="6,76 118,76 124,88 0,88" fill="#E5E0D8" stroke="#3A3A3A" stroke-width="1.4"/>
+        <!-- Instant Plug Connection -->
+        <line x1="110" y1="44" x2="142" y2="44" stroke="#22C55E" stroke-width="3.5" stroke-dasharray="4 2"/>
+        <rect x="142" y="24" width="42" height="40" rx="5" fill="#1E2B38" stroke="#22C55E" stroke-width="1.6"/>
+        <circle cx="163" cy="38" r="6" fill="#22C55E"/>
+        <text x="163" y="56" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#F8C952">LINKED</text>
+      </svg>
+      <div style="font-family:var(--font-mono); font-size:5.8pt; color:var(--dark-char); text-align:right;">fig. 3 · instant bridge</div>
+    </div>
+  </div>
+
+  <div class="folio-right">06</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 7 (VERSO): CHAPTER 02 MANUAL P2 — STEPS 3, 4 & 5
+     Zero Excessive White Space + Unboxed Calendar Cards + Free Unboxed PosiBot!
+     ===================================================================== -->
+<section class="cpage cpage-white">
+  <!-- Running Head -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.48in; display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:6.3pt; letter-spacing:0.13em; white-space:nowrap; color:var(--dark-char); border-bottom:1.5px solid var(--charcoal); padding-bottom:4px;">
+    <span>MODEL FOREX-PROP-5000</span>
+    <span>THE SELLER'S IDEALIZED PATHWAY — STEPS 3 TO 5</span>
+  </div>
+
+  <!-- =================================================================
+       STEP 3: STAY INSIDE THE LOSS GUARDRAILS (Full-Width Rich Panel: top 0.78in)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.78in; height:2.38in; background:#F9F8F4; border:1.5px solid var(--charcoal); padding:10px 12px; display:grid; grid-template-columns:2.35in 1fr; gap:14px; align-items:center;">
+    <!-- Left: Full-bleed Channel & Meter Diagram -->
+    <div style="background:var(--white); border:1.2px solid var(--charcoal); height:100%; padding:6px 8px; display:flex; flex-direction:column; justify-content:space-between;">
+      <div style="display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:5.8pt; font-weight:700; color:var(--navy);">
+        <span>AUTO-GUARDRAIL MONITOR</span>
+        <span style="color:var(--green);">● LIVE METERS ON</span>
+      </div>
+      <svg viewBox="0 0 210 135" style="width:100%; height:1.65in;">
+        <rect x="8" y="8" width="194" height="20" rx="3" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.4"/>
+        <text x="105" y="21" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7.5" fill="#166534">PROFIT TARGET ZONE (+8%)</text>
+
+        <!-- Smooth Equity Curve Gliding Upward -->
+        <path d="M 14 92 Q 65 86, 105 58 T 192 34" fill="none" stroke="#5D7BEA" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="192" cy="34" r="5.5" fill="#22C55E" stroke="#1E2B38" stroke-width="1.4"/>
+
+        <!-- Padded Bumper Rails -->
+        <line x1="8" y1="102" x2="202" y2="102" stroke="#F8C952" stroke-width="2.5" stroke-dasharray="5 3"/>
+        <text x="105" y="112" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#B45309">DAILY LOSS BUMPER (AUTO-TRACKED)</text>
+
+        <rect x="8" y="117" width="194" height="14" rx="2" fill="#1E2B38"/>
+        <text x="105" y="127" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#F8C952">MAXIMUM DRAWDOWN FLOOR</text>
+      </svg>
+      <div style="font-family:var(--font-mono); font-size:5.6pt; color:var(--dark-char); text-align:right;">fig. 4 · automatic bumper rails</div>
+    </div>
+
+    <!-- Right: Step 3 Copy + Live Meter Pills -->
+    <div style="display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="step-badge" style="background:var(--navy); color:var(--yellow);">3</span>
+          <span class="step-title">STAY INSIDE THE LOSS GUARDRAILS</span>
+        </div>
+        <p class="step-action" style="margin-top:7px;">
+          Keep your daily dip above the daily loss line and your overall balance above maximum drawdown.
+        </p>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-family:var(--font-mono); font-size:6.2pt;">
+        <div style="background:var(--white); border:1px solid var(--charcoal); padding:4px 6px;">
+          <span style="color:var(--green); font-weight:700;">● DAILY RAIL</span><br>Tracked automatically
+        </div>
+        <div style="background:var(--white); border:1px solid var(--charcoal); padding:4px 6px;">
+          <span style="color:var(--green); font-weight:700;">● MAX FLOOR</span><br>Built-in dashboard alert
+        </div>
+      </div>
+      <div class="tip-box" style="margin-top:0;">
+        <strong>TINY TIP:</strong> Built-in dashboard meters track everything automatically.
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       STEP 4: LOG TWO PROFITABLE DAYS (PHASE 1) (top 3.36in — Unboxed Calendar Cards!)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:3.36in; height:2.15in; border:1.5px solid var(--charcoal); background:var(--white); padding:10px 12px; display:grid; grid-template-columns:1fr 2.25in; gap:14px; align-items:center;">
+    <!-- Left: Step 4 Copy -->
+    <div style="display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="step-badge" style="background:var(--navy); color:var(--yellow);">4</span>
+          <span class="step-title">LOG TWO PROFITABLE DAYS (PHASE 1)</span>
+        </div>
+        <p class="step-action" style="margin-top:7px;">
+          Hit the Phase 1 profit target across at least two green trading days to advance.
+        </p>
+      </div>
+      <div style="background:#F8FAFC; border:1px dashed var(--blue); padding:5px 8px; font-family:var(--font-mono); font-size:6.4pt; color:var(--navy);">
+        ✓ Minimum Requirement: <strong>Just 2 Green Days</strong> (SRC-002)
+      </div>
+      <div class="tip-box" style="margin-top:0;">
+        <strong>TINY TIP:</strong> No maximum time limit pressure.
+      </div>
+    </div>
+
+    <!-- Right: Unboxed Tactile Calendar Day Cards + Phase 1 Complete Ribbon -->
+    <div style="display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <!-- Calendar Card 1 -->
+        <div style="border:1.6px solid var(--charcoal); border-radius:5px; background:var(--pale-blue); overflow:hidden; text-align:center; box-shadow:2px 3px 0 rgba(0,0,0,0.10);">
+          <div style="background:var(--blue); color:var(--white); font-family:var(--font-mono); font-weight:700; font-size:7pt; padding:3px 0;">TRADING DAY 01</div>
+          <div style="font-size:24pt; color:var(--green); line-height:1.1; margin-top:4px;">★</div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:13pt; color:var(--navy); margin-bottom:4px;">GREEN DAY ✓</div>
+        </div>
+        <!-- Calendar Card 2 -->
+        <div style="border:1.6px solid var(--charcoal); border-radius:5px; background:var(--pale-blue); overflow:hidden; text-align:center; box-shadow:2px 3px 0 rgba(0,0,0,0.10);">
+          <div style="background:var(--blue); color:var(--white); font-family:var(--font-mono); font-weight:700; font-size:7pt; padding:3px 0;">TRADING DAY 02</div>
+          <div style="font-size:24pt; color:var(--green); line-height:1.1; margin-top:4px;">★</div>
+          <div style="font-family:var(--font-display); font-weight:900; font-size:13pt; color:var(--navy); margin-bottom:4px;">GREEN DAY ✓</div>
+        </div>
+      </div>
+      <div style="background:var(--navy); border:1.5px solid var(--green); border-radius:4px; padding:6px 8px; text-align:center; font-family:var(--font-mono); font-weight:700; font-size:7.5pt; color:var(--yellow);">
+        ★ PHASE 1 COMPLETE · ADVANCE TO STAGE 2 ✓
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       STEP 5: CONFIRM IN PHASE 2 (top 5.72in — FREE UNBOXED POSIBOT!)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:5.70in; height:2.72in; display:grid; grid-template-columns:2.15in 1fr; gap:12px; align-items:center;">
+    <!-- Left: Free-Standing Unboxed PosiBot with Speech Callout Pill -->
+    <div style="position:relative; height:100%; display:flex; align-items:center; justify-content:center;">
+      <div style="position:absolute; top:2px; left:4px; background:var(--yellow); border:1.5px solid var(--charcoal); padding:3px 8px; font-family:var(--font-mono); font-weight:700; font-size:6.2pt; color:var(--charcoal); transform:rotate(-3deg); box-shadow:2px 2px 0 rgba(0,0,0,0.12); z-index:5;">
+        POSIBOT CHECK: ALL CLEAR! ✓
+      </div>
+      <img src="assets/posibot_pose4_clipboard.jpg" style="width:2.10in; height:2.52in; object-fit:contain; mix-blend-mode:multiply;">
+    </div>
+
+    <!-- Right: Step 5 Card + Phase 2 Verification Checklist -->
+    <div style="border:1.5px solid var(--charcoal); background:#F9F8F4; padding:10px 12px; height:2.48in; display:flex; flex-direction:column; justify-content:space-between; box-shadow:3px 4px 0 rgba(0,0,0,0.08);">
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="step-badge" style="background:var(--navy); color:var(--yellow);">5</span>
+          <span class="step-title">CONFIRM IN PHASE 2</span>
+        </div>
+        <p class="step-action" style="margin-top:6px;">
+          Repeat your routine to clear the smaller Phase 2 verification target under the same rules.
+        </p>
+      </div>
+
+      <!-- Mini Clipboard Verification List -->
+      <div style="background:var(--white); border:1px solid var(--gray); padding:6px 8px; font-family:var(--font-mono); font-size:6.4pt; line-height:1.45; color:var(--charcoal);">
+        ☑ <strong>Same Guardrails:</strong> Identical loss meters<br>
+        ☑ <strong>Smaller Target:</strong> Half the Phase 1 goal<br>
+        ☑ <strong>2-Day Minimum:</strong> Same relaxed schedule
+      </div>
+
+      <div class="tip-box" style="margin-top:0;">
+        <strong>TINY TIP:</strong> Instant-funding plans skip right past this.
+      </div>
+    </div>
+  </div>
+
+  <div class="folio-left">07</div>
+</section>
+
+<!-- =====================================================================
+     PAGE 8 (RECTO): CHAPTER 02 CLOSING — STEPS 6 & 7 + SINGLE FINAL BAR
+     Unboxed Gold Certificate (No Box-in-a-Box!) + Expanded Scaling Showcase + Zero Redundancy
+     ===================================================================== -->
+<section class="cpage cpage-white">
+  <!-- Running Head -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.48in; display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:6.3pt; letter-spacing:0.13em; white-space:nowrap; color:var(--dark-char); border-bottom:1.5px solid var(--charcoal); padding-bottom:4px;">
+    <span>THE SELLER'S IDEALIZED PATHWAY — STEPS 6 &amp; 7</span>
+    <span>MODEL FOREX-PROP-5000</span>
+  </div>
+
+  <!-- =================================================================
+       STEP 6: ACTIVATE YOUR FUNDED DEMO ACCOUNT (top: 0.80in — UNBOXED CERTIFICATE!)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:0.80in; height:2.55in; display:grid; grid-template-columns:1fr 2.38in; gap:14px; align-items:center;">
+    <!-- Left: Step 6 Copy + 3-Step Activation Pill Chain -->
+    <div style="display:flex; flex-direction:column; justify-content:space-between; height:2.35in;">
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="step-badge" style="background:var(--navy); color:var(--yellow);">6</span>
+          <span class="step-title">ACTIVATE YOUR FUNDED DEMO ACCOUNT</span>
+        </div>
+        <p class="step-action" style="margin-top:7px;">
+          Upload your ID, sign the digital trader agreement, and unlock your monetized funded account.
+        </p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:4px; font-family:var(--font-mono); font-size:6.3pt;">
+        <div style="background:#F8FAFC; border:1px solid var(--gray); padding:4px 7px;">
+          <strong>1. UPLOAD ID</strong> · Automated KYC check ✓
+        </div>
+        <div style="background:#F8FAFC; border:1px solid var(--gray); padding:4px 7px;">
+          <strong>2. SIGN CONTRACT</strong> · Digital trader agreement ✓
+        </div>
+        <div style="background:var(--pale-blue); border:1px solid var(--blue); padding:4px 7px; color:var(--navy); font-weight:700;">
+          <strong>3. UNLOCK DESK</strong> · Monetized account live ✓
+        </div>
+      </div>
+
+      <div class="tip-box" style="margin-top:0;">
+        <strong>TINY TIP:</strong> Approval takes just a few hours.
+      </div>
+    </div>
+
+    <!-- Right: UNBOXED Standalone Gold-Embossed Funded Trader Certificate (No outer white box!) -->
+    <div style="height:2.35in; background:var(--navy); border:3px double var(--yellow); border-radius:6px; box-shadow:4px 5px 0 rgba(0,0,0,0.18); padding:12px 12px; display:flex; flex-direction:column; justify-content:space-between; position:relative; color:var(--cream);">
+      <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(248,201,82,0.35); padding-bottom:4px;">
+        <span style="font-family:var(--font-mono); font-size:6pt; letter-spacing:0.18em; color:var(--yellow);">OFFICIAL CERTIFICATE</span>
+        <span style="font-family:var(--font-mono); font-size:5.8pt; color:#B9C4EE;">#FP-5000</span>
+      </div>
+
+      <div style="text-align:center; margin:4px 0;">
+        <div style="font-family:var(--font-display); font-weight:900; font-size:24pt; line-height:0.95; color:var(--white); letter-spacing:0.03em;">
+          FUNDED TRADER
+        </div>
+        <div style="font-family:var(--font-italic); font-style:italic; font-size:9.5pt; color:var(--yellow); margin-top:4px;">
+          Awarded to: Tradey McNoRisk
+        </div>
+        <div style="font-family:var(--font-mono); font-size:6.2pt; color:#B9C4EE; margin-top:4px;">
+          MONETIZED DEMO ALLOCATION ACTIVE
+        </div>
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid rgba(248,201,82,0.35); padding-top:6px;">
+        <div style="font-family:var(--font-mono); font-size:5.8pt; color:#B9C4EE; line-height:1.3;">
+          STATUS: <strong style="color:var(--green);">APPROVED ✓</strong><br>
+          SPLIT: <strong style="color:var(--yellow);">UP TO 90%</strong>
+        </div>
+        <div style="width:36px; height:36px; border-radius:50%; background:var(--yellow); color:var(--navy); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:900; font-size:11pt; border:1.5px solid var(--white);">
+          90%
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       STEP 7: COLLECT 90% REWARDS & SCALE TO $4M (Full-Width Showcase: top 3.55in)
+       ================================================================= -->
+  <div style="position:absolute; left:0.625in; right:0.625in; top:3.58in; height:3.52in; border:1.6px solid var(--charcoal); background:#F9F8F4; padding:12px 14px; display:flex; flex-direction:column; justify-content:space-between;">
+    <!-- Top Row: Step 7 Header + Action + Tip -->
+    <div style="display:grid; grid-template-columns:1.25fr 1fr; gap:12px; align-items:start;">
+      <div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="step-badge" style="background:var(--charcoal); color:var(--yellow);">7</span>
+          <span class="step-title">COLLECT 90% REWARDS &amp; SCALE TO $4M</span>
+        </div>
+        <p class="step-action" style="margin-top:6px; margin-bottom:0;">
+          Click withdraw to receive up to 90% of your simulated profits—processed within 24 hours—and scale to $4,000,000.
+        </p>
+      </div>
+      <div class="tip-box" style="margin-top:2px; background:var(--white);">
+        <strong>TINY TIP:</strong> Initial challenge fee refunded with first reward.
+      </div>
+    </div>
+
+    <!-- Bottom Row: Full-Width 4-Stage Scaling Staircase & 24H Direct Deposit Diagram -->
+    <div style="background:var(--white); border:1.4px solid var(--charcoal); padding:8px 10px; height:2.12in; position:relative;">
+      <svg viewBox="0 0 440 165" style="width:100%; height:100%;">
+        <!-- Top Left 24-Hour Payout Guarantee Banner inside SVG -->
+        <rect x="10" y="8" width="225" height="32" rx="4" fill="#1E2B38" stroke="#22C55E" stroke-width="1.5"/>
+        <text x="122" y="22" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="8" fill="#22C55E">✓ 90% REWARD PAYOUT IN 24 HOURS</text>
+        <text x="122" y="34" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6.8" fill="#F8C952">+ 100% CHALLENGE FEE REFUND INCLUDED</text>
+
+        <!-- 4-Step Capital Scaling Staircase -->
+        <!-- Tier 1: $100K -->
+        <rect x="14" y="108" width="88" height="46" rx="3" fill="#E5E0D8" stroke="#3A3A3A" stroke-width="1.4"/>
+        <text x="58" y="128" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="16" fill="#3A3A3A">$100,000</text>
+        <text x="58" y="142" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6.5" fill="#55524D">STAGE 1 FUNDED</text>
+
+        <!-- Tier 2: $500K -->
+        <rect x="116" y="86" width="92" height="68" rx="3" fill="#D5DFEB" stroke="#3A3A3A" stroke-width="1.4"/>
+        <text x="162" y="110" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="17" fill="#1E2B38">$500,000</text>
+        <text x="162" y="125" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6.5" fill="#1E2B38">SCALE MILESTONE 1</text>
+
+        <!-- Tier 3: $2,000,000 -->
+        <rect x="222" y="58" width="96" height="96" rx="3" fill="#B9C4EE" stroke="#3A3A3A" stroke-width="1.4"/>
+        <text x="270" y="86" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="16" fill="#1E2B38">$2,000,000</text>
+        <text x="270" y="102" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="6.2" font-weight="700" fill="#1E2B38">FTMO CEILING (SRC-001)</text>
+
+        <!-- Tier 4: $4,000,000 Max Scale -->
+        <rect x="332" y="20" width="96" height="134" rx="4" fill="#F8C952" stroke="#1E2B38" stroke-width="2"/>
+        <text x="380" y="46" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#B3502B">★ MAX ALLOCATION ★</text>
+        <text x="380" y="74" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-weight="900" font-size="17.5" fill="#1E2B38">$4,000,000</text>
+        <text x="380" y="92" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="6.5" fill="#1E2B38">THE5ERS CEILING</text>
+        <rect x="344" y="108" width="72" height="22" rx="3" fill="#1E2B38"/>
+        <text x="380" y="122" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-weight="700" font-size="7" fill="#22C55E">KEEP UP TO 90%</text>
+
+        <!-- Smooth Ascending Trajectory Arrow -->
+        <path d="M 58 98 Q 170 55 322 28" fill="none" stroke="#22C55E" stroke-width="3.2" stroke-dasharray="5,3"/>
+        <circle cx="322" cy="28" r="5" fill="#22C55E"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- =================================================================
+       SINGLE CLEAN CLOSING BAR (No Redundant Table!)
+       ================================================================= -->
+  <div class="verdict-band" style="left:0.625in; right:0.625in; top:7.32in; height:1.02in; display:flex; flex-direction:column; justify-content:space-between;">
+    <div style="display:flex; justify-content:space-between; align-items:center; white-space:nowrap;">
+      <span class="verdict-stat" style="margin-bottom:0; font-size:6.6pt; letter-spacing:0.15em;">ASSEMBLY COMPLETE · MODEL FOREX-PROP-5000 READY</span>
+      <span style="font-family:var(--font-mono); font-size:6.4pt; color:var(--green); font-weight:700;">STEPS 01–07 ✓</span>
+    </div>
+    <div class="verdict-text">
+      Your evaluation dashboard is active, your charting bridge is linked, the automatic loss meters are running, and the $4,000,000 scaling ladder is open. ■
+    </div>
+  </div>
+
+  <div class="folio-right">08</div>
+</section>
+
+</body>
+</html>
