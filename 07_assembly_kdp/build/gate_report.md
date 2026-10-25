@@ -1,7 +1,7 @@
 # Y-IT Downhill Factory — Programmatic Gate Report (`G1`–`G7`)
 
 - **Topic Slug:** `forex-prop-firms`
-- **Executed At:** `2026-10-25T01:41:11Z`
+- **Executed At:** `2026-10-25T02:26:45Z`
 - **Overall Exit Code:** `0`
 - **Stitched KDP Book Interior (`book_complete_kdp.pdf`):** `64 pages` (Target Range: `50–80 pages`)
 - **2-Chapter Freebie Giveaway (`ch1_ch2_free_giveaway.pdf`):** `14 pages`
