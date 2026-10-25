@@ -1,0 +1,22 @@
+# Case mold menu: an owner-approved copy (decision 0002), 2026-10-05.
+# Source: y-it-auto-designer docs/contracts/research-needs.v1.md §6 (from outline.v1 §5.2), at commit 282d710.
+# Copied, one way, never auto-synced. If the source changes, the owner approves a new copy.
+# A case row carries one of these codes in `mold`, or `new?` for a pattern outside the menu.
+# Each mold is named for what the system did, never for what the person did.
+molds:
+  # E: the edge nobody mentions (structure, not effort)
+  - { code: E1, name: "The Head Start", exhibit: Timeline, mechanism: "money already in hand bought the runway, and the runway did the work" }
+  - { code: E2, name: "The Built-In Audience", exhibit: "Gap bar", mechanism: "an existing following meant never paying for customers" }
+  - { code: E3, name: "The Inside Track", exhibit: "Range strip", mechanism: "industry contacts and know-how gave margins outsiders can't get" }
+  - { code: E4, name: "The Open Window", exhibit: Timeline, mechanism: "got in before the method was sold to everyone; the window has closed" }
+  # H: what the pitch hid
+  - { code: H1, name: "The Kit", exhibit: Waterfall, mechanism: "everything the course said you need, priced. The costs were real; the revenue never was" }
+  - { code: H2, name: "The Auction", exhibit: "Gap bar", mechanism: "customers are bought at auction, and one customer costs more than one sale earns" }
+  - { code: H3, name: "The Hidden Hours", exhibit: "Hourly meter", mechanism: "\"passive\" took full-time hours, and the pay per hour fell below the wage" }
+  - { code: H4, name: "The Upsell Ladder", exhibit: "Split bar", mechanism: "each course sells the next one; the ecosystem earns from the learners" }
+  - { code: H5, name: "The Tool Tax", exhibit: Waterfall, mechanism: "subscriptions and fees start before the first sale and never stop" }
+  # C: constraints no effort beats
+  - { code: C1, name: "The Runway Gap", exhibit: Timeline, mechanism: "profit, if it comes, arrives later than an ordinary household can wait" }
+  - { code: C2, name: "The Crowded Market", exhibit: "Unit grid", mechanism: "the same method was sold to thousands at once, and saturation set the ceiling" }
+  - { code: C3, name: "The Rule Change", exhibit: "Before/after cliff", mechanism: "the platform, its fees or the law changed overnight" }
+  - { code: C4, name: "The Ceiling", exhibit: "Range strip", mechanism: "even done well, margin and volume cap the income below a wage" }

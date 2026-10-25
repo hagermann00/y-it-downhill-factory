@@ -1,0 +1,74 @@
+topic_slug: forex-prop-firms
+entries:
+    - entry_id: FR-01
+      stage: 'Stage 1: Entry Capital'
+      promised_state: Start a $100,000 funded account for a one-time refundable $497 fee ($89 starter).
+      documented_reality: Median participant buys 4.2 evaluations/resets ($1,428) + $412 tools = $1,840 total Stake.
+      cost_delta: +$1,343 above headline fee
+      attrition_rate: 93.4% fail Phase 1+2
+      tier: 2
+      claim_row_id: C-003
+      fact_row_id: F-001
+    - entry_id: FR-02
+      stage: 'Stage 2: Execution Venue'
+      promised_state: Trade institutional capital in the $7.5T/day interbank FX market.
+      documented_reality: 98.4% of prop trades stay on an internal simulated B-book server funded by evaluation fees.
+      cost_delta: 100% simulated B-book exposure
+      attrition_rate: 98.4% never reach A-book
+      tier: 1
+      claim_row_id: C-001
+      fact_row_id: F-011
+    - entry_id: FR-03
+      stage: 'Stage 3: Time to Funded Payout'
+      promised_state: Pass in 14 days and collect bi-weekly 90% profit splits.
+      documented_reality: Median Wait among the 2.4% who reach net profitability is 14.0 months.
+      cost_delta: +13.5 months longer than pitched
+      attrition_rate: 97.6% net-unprofitable at 12mo
+      tier: 2
+      claim_row_id: C-001
+      fact_row_id: F-009
+    - entry_id: FR-04
+      stage: 'Stage 4: Effective Hourly Pay'
+      promised_state: Make $10,000/month working 45 minutes a day at the London-NY overlap.
+      documented_reality: Survivors work 26.5 hours/week and net a median of $6.40/hr (vs $29.76/hr US median wage).
+      cost_delta: -$23.36/hr below US median wage
+      attrition_rate: 94.2% earn below minimum wage
+      tier: 2
+      claim_row_id: C-002
+      fact_row_id: F-003
+    - entry_id: FR-05
+      stage: 'Stage 5: Drawdown Geometry'
+      promised_state: Keep 90% of profits with a simple 1:5 risk-to-reward bracket strategy.
+      documented_reality: Asymmetric 8-10% target vs 5% daily trailing drawdown requires a 64% raw win rate before time limits.
+      cost_delta: Asymmetric 2:1 barrier against trader
+      attrition_rate: 93.4% breach drawdown
+      tier: 2
+      claim_row_id: C-010
+      fact_row_id: F-007
+    - entry_id: FR-06
+      stage: 'Stage 6: Second Payout Survival'
+      promised_state: Scale seamlessly to $200,000+ after your first funded certificate.
+      documented_reality: 'Slippage scripts, consistency clauses, and daily loss tripwires terminate 91.6% of funded accounts before payout #2.'
+      cost_delta: 91.6% post-funding termination
+      attrition_rate: 91.6% lost before 2nd split
+      tier: 1
+      claim_row_id: C-008
+      fact_row_id: F-010
+    - entry_id: FR-07
+      stage: 'Stage 7: Educator Incentive'
+      promised_state: Gurus teach their exact profitable institutional order-flow system.
+      documented_reality: Educators earn 20%–25% affiliate CPA on every blown challenge reset ($54,000 median affiliate income vs $0 net trading).
+      cost_delta: 100% educator revenue from referrals
+      attrition_rate: Mold E2 edge hidden
+      tier: 3
+      claim_row_id: C-007
+      fact_row_id: K-003
+    - entry_id: FR-08
+      stage: 'Stage 8: Counterparty Solvency'
+      promised_state: Zero personal capital at risk; payouts guaranteed every 14 days.
+      documented_reality: Unregulated prop firms and offshore brokers have 0% SIPC protection; license revocations freeze payouts overnight.
+      cost_delta: $0 statutory SIPC coverage
+      attrition_rate: 120-day card chargeback limit
+      tier: 1
+      claim_row_id: C-006
+      fact_row_id: F-021

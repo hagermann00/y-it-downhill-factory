@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phase 2: Demolition (Chapters 3-6)</title>
+<style>
+  @page {
+    size: 6.125in 9.25in;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 6.125in;
+    background: #FFFFFF;
+    font-family: 'Segoe UI', 'Work Sans', -apple-system, sans-serif;
+    color: #0F172A;
+    font-size: 9.5pt;
+    line-height: 1.42;
+  }
+  /* Full-bleed page canvas (6.125in x 9.25in).
+     Safe body text margins are enforced by padding (0.52in top/bottom, 0.62in gutter, 0.54in outer). */
+  .kdp-page {
+    width: 6.125in;
+    height: 9.25in;
+    padding: 0.50in 0.54in 0.48in 0.62in;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kdp-page.verso-page {
+    padding: 0.50in 0.62in 0.48in 0.54in;
+  }
+  .kdp-page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Full-Bleed Phase Theme Palettes & Edge Bleed Bars */
+  .theme-front {
+    background: radial-gradient(circle at 50% 18%, #FFFFFF 0%, #F5F2EB 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0F172A;
+    border-bottom: 0.10in solid #0F172A;
+  }
+  .theme-phase1 {
+    background: linear-gradient(180deg, #FFFDF7 0%, #FEFCE8 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0D9488;
+    border-right: 0.08in solid #F59E0B;
+  }
+  .theme-flatpack {
+    background: linear-gradient(180deg, #F4F7FB 0%, #E0F2FE 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #2563EB;
+    border-left: 0.08in solid #1D4ED8;
+  }
+  .theme-phase2 {
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #DC2626;
+  }
+  .theme-amber-ch4 {
+    background: linear-gradient(180deg, #EFE5CE 0%, #E6D5B8 100%);
+    color: #1C1917;
+    border-top: 0.16in solid #78350F;
+    border-bottom: 0.10in solid #78350F;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 9.0pt;
+  }
+  .theme-phase3 {
+    background: linear-gradient(180deg, #F7FAF7 0%, #ECFDF5 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #15803D;
+  }
+  .theme-back {
+    background: #F8FAFC;
+    color: #0F172A;
+    border-top: 0.12in solid #334155;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #CBD5E1;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-header {
+    border-bottom: 2px solid #78350F;
+    color: #78350F;
+  }
+  .page-content {
+    flex: 1;
+    overflow: visible;
+  }
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CBD5E1;
+    padding-top: 5px;
+    margin-top: 6px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-footer {
+    border-top: 1.5px solid #78350F;
+    color: #78350F;
+  }
+
+  /* Regular body text strictly respects the inner measure */
+  h1 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 20.5pt;
+    line-height: 1.06;
+    margin: 0 0 7px 0;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 13pt;
+    line-height: 1.14;
+    margin: 7px 0 4px 0;
+    color: #0F172A;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 10pt;
+    font-weight: 800;
+    margin: 5px 0 3px 0;
+    color: #1E293B;
+  }
+  p {
+    margin: 0 0 6px 0;
+    text-align: justify;
+  }
+  .phase-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.6pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #0F172A;
+    margin-bottom: 5px;
+  }
+
+  /* TASTEFUL MARGIN-CROSSING INTERSTITIALS, IMAGES, POSIBOT & VERDICT BANDS:
+     These elements step 0.22in to 0.54in outside the body text column into the outer margin
+     or full-bleed edge while keeping their internal text safely padded. */
+  .callout-guru {
+    background: #FEF3C7;
+    border: 2px solid #D97706;
+    border-left: 8px solid #D97706;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(217, 119, 6, 0.22);
+  }
+  .callout-rc {
+    background: #FEE2E2;
+    border: 2px solid #DC2626;
+    border-left: 8px solid #991B1B;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(153, 27, 27, 0.20);
+  }
+  .callout-pivot {
+    background: #DCFCE7;
+    border: 2px solid #16A34A;
+    border-left: 8px solid #15803D;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 7px -0.22in;
+    font-size: 8.8pt;
+    box-shadow: 3px 4px 0px rgba(21, 128, 61, 0.20);
+  }
+  /* Verdict band bleeds all the way across the outer trim edge */
+  .verdict-band {
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 9px 0.54in 9px 0.62in;
+    margin: 9px -0.54in 0 -0.62in;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 8.3pt;
+    border-top: 3px solid #F59E0B;
+    border-bottom: 3px solid #F59E0B;
+  }
+  .missing-step-box {
+    border: 3px dashed #DC2626;
+    background: #FEF2F2;
+    padding: 12px 16px;
+    margin: 10px -0.24in;
+    text-align: center;
+    box-shadow: 4px 4px 0px rgba(220, 38, 38, 0.18);
+  }
+  .dossier-box {
+    border: 2px solid #78350F;
+    background: #F5EBD6;
+    padding: 8px 13px;
+    margin: 6px -0.18in;
+    box-shadow: 3px 3px 0px rgba(120, 53, 15, 0.18);
+  }
+  .stamp-badge {
+    display: inline-block;
+    border: 2px solid #991B1B;
+    color: #991B1B;
+    padding: 1px 7px;
+    font-family: 'Consolas', monospace;
+    font-weight: 900;
+    font-size: 8pt;
+    text-transform: uppercase;
+    transform: rotate(-1.2deg);
+  }
+  table.yit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 8.1pt;
+  }
+  table.yit-table th {
+    background: #0F172A;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 4px 6px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.7pt;
+  }
+  table.yit-table td {
+    border: 1px solid #CBD5E1;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+  .theme-amber-ch4 table.yit-table th {
+    background: #78350F;
+  }
+  .theme-amber-ch4 table.yit-table td {
+    border: 1px solid #A16207;
+  }
+  /* Images and PosiBot cards step tastefully across the margin line (-0.26in) */
+  .asset-frame {
+    width: calc(100% + 0.52in);
+    margin: 7px -0.26in;
+    text-align: center;
+  }
+  .asset-frame img {
+    width: 100%;
+    max-height: 2.38in;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1.5px solid #94A3B8;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 0px rgba(15, 23, 42, 0.16);
+  }
+  .gate-strip {
+    font-family: 'Consolas', monospace;
+    font-size: 7.9pt;
+    font-weight: 700;
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin: 5px -0.16in;
+    border-left: 5px solid #22C55E;
+  }
+  .strike {
+    text-decoration: line-through;
+    color: #94A3B8;
+  }
+</style>
+</head>
+<body>
+<section class="kdp-page theme-phase2 recto-page" data-page="19">
+  <div class="page-header">
+    <span>PHASE 2: DEMOLITION · CHAPTER 3: THE MONEY PIT</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="phase-badge" style="background:#DC2626;">PHASE 2 · DEMOLITION // CHAPTER 03 · RECTO OPENER</div>
+<h1>CHAPTER 3: THE MONEY PIT</h1>
+<p style="font-family:'Consolas',monospace; font-size:8.4pt; color:#991B1B; font-weight:700;">GATE METRICS INTRODUCED: THE STAKE ($1,840) &amp; THE PAYOFF ($6.40/HR)</p>
+<h3>The Foreshadow Pays Off: The Dashboard Reads $0.00</h3>
+<p>In Chapter 1, it was 11:42 PM and you were softly caressing a <code>$2,400</code> gold trade from your sofa in flannel pajama pants (<code>[C-005]</code>). Let's turn the fluorescent overhead lights on.</p>
+<p>It is 9:31 AM on Day Eleven of your <code>$100,000</code> evaluation. A U.S. CPI inflation print just hit the wire, the bid-ask spread on XAU/USD yawned open like an alligator's jaw, and your screen is flashing a banner the color of an arterial bleed:</p>
+<div class="callout-rc">
+  <strong>🚨 ACCOUNT #FT-100K BREACHED — INTRADAY EQUITY DRAWDOWN EXCEEDED</strong><br>
+  <code>ELIGIBLE PAYOUT BALANCE: $0.00 USD · ACCOUNT STATUS: TERMINATED</code><br>
+  <em>Automated Inbox Notification (38 seconds later): "Don't give up on your dream! Use code RELOAD15 for 15% off a fresh $340 Evaluation Reset!"</em> (<code>[F-001]</code>)
+</div>
+  </div>
+  <div class="page-footer">
+    <span>VOICE: SARDONIC AUTHORITY · FORESHADOW PAYOFF [F-001, F-004]</span>
+    <span>PAGE 19 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="20">
+  <div class="page-header">
+    <span>CHAPTER 3: THE MONEY PIT · THE STAKE ($1,400–$2,200 RANGE / $1,840 MEDIAN)</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>1. TESTING THE "$89–$497 ENTRY FEE" CLAIM (THE STAKE = $1,400–$2,200 RANGE · $1,840 MEDIAN)</h2>
+<p>The checkout page sold you a one-time refundable audition ticket (<code>[C-003]</code>). In the wild, nobody buys just one prop challenge for the exact same reason casino architecture doesn't put a clock above the craps table. Across multiple independent cohorts and enforcement filings, total Year-1 starter outlay consistently lands in the <strong><code>$1,400–$2,200</code> range</strong> (<code>[F-001, F-002, K-004..K-015]</code>). In the <strong><code>420,000</code>-account prop evaluation benchmark</strong>, the median participant purchases <strong><code>4.2</code> challenges or resets</strong> at a median fee of <strong><code>$340</code></strong> per attempt (<code>$1,428</code> in direct challenge tuition), plus <strong><code>$412</code></strong> in TradingView upgrades, low-latency London VPS rentals, and indicator plugins—putting the audited cohort median <strong>Stake at <code>$1,840</code></strong> before a trader either sees a net-profitable month or walks away (<code>[F-001]</code>, <code>[F-004]</code>).</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C03-chart-stake-waterfall_v001.svg" alt="Stake Waterfall Chart"></div>
+<p>The Federal Reserve reports that the typical U.S. household's entire liquid emergency cash buffer is <strong><code>$1,000</code></strong> (<code>[F-014]</code>). The "zero personal capital at risk" pitch quietly extracts <strong>140% to 220% (<code>184%</code> at the median) of a typical family's emergency fund</strong> in non-refundable fees.</p>
+
+  </div>
+  <div class="page-footer">
+    <span>AUDITED SOURCES: [F-001, F-002, F-004, F-014, C-003]</span>
+    <span>PAGE 20 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="21">
+  <div class="page-header">
+    <span>CHAPTER 3: THE MONEY PIT · THE 98.4% B-BOOK ARCADE</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>2. WELCOME TO THE B-BOOK ARCADE: THERE IS NO $200,000 ACCOUNT</h2>
+<p>Here is the structural truth that turns every "Institutional Funded Trader" bio on Instagram into performance art: <strong>there is no <code>$200,000</code> institutional account</strong> (<code>[C-001]</code>, <code>[F-011]</code>).</p>
+<p>When the CFTC unsealed its enforcement complaint against one of the largest retail prop evaluation operators on earth (<code>[F-002]</code>), investigators documented that the firm collected <strong><code>$310 million</code> in assessment and reset fees from more than <code>135,000</code> retail customers</strong> in 22 months—while routing <strong><code>98.4%</code> of all customer trades to an internal simulated B-book server</strong> (<code>[F-002]</code>, <code>[F-011]</code>). You are not trading in the <code>$7.5 trillion</code> interbank market. You are playing a video game inside the operator's private SQLite database, where the house pays the tiny sliver of winners out of the reset fees of the <code>93.4%</code> who just blew up (<code>[F-007]</code>, <code>[F-011]</code>).</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C03-chart-bbook-split-bar_v001.svg" alt="B-Book Split Bar Chart"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>CFTC ENFORCEMENT ACCOUNTING [F-002, F-010, F-011]</span>
+    <span>PAGE 21 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="22">
+  <div class="page-header">
+    <span>CHAPTER 3: THE MONEY PIT · B-BOOK INCENTIVES</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="callout-rc">
+  <strong>[REALITY CHECK — THE B-BOOK COUNTERPARTY ENGINE]:</strong><br>
+  In a regulated live brokerage, the broker earns commissions when you survive and keep trading volume. In a B-book prop evaluation (<code>98.4%</code> simulated execution, <code>[F-011]</code>), a trader who passes and withdraws money is a direct balance-sheet expense. Forensic accounting showed that asymmetric slippage scripts, commission markups, and daily drawdown tripwires terminated <strong><code>91.6%</code> of funded accounts before a second payout</strong> could be completed (<code>[F-010]</code>).
+</div>
+<table class="yit-table">
+  <tr><th>Expense Category</th><th>Brochure Pitch (<code>[C-003, C-009]</code>)</th><th>Audited 6-Month Reality (<code>[F-001, K-004..K-009]</code>)</th></tr>
+  <tr><td><strong>Evaluation &amp; Reset Fees</strong></td><td>$89–$497 (100% refunded!)</td><td><strong>$1,428 median</strong> (4.2 attempts × $340; 93.4% unrefunded)</td></tr>
+  <tr><td><strong>Charting, VPS &amp; Indicators</strong></td><td>"Included template"</td><td><strong>$412 median</strong> (up to $1,703 in Mold H5 Tool Tax)</td></tr>
+  <tr><td><strong>Courses &amp; VIP Signal Rooms</strong></td><td>"Free YouTube blueprint"</td><td><strong>$0 to $2,435</strong> ($997 academy + $149/mo Discord signals)</td></tr>
+</table>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C03-posibot-reset-discount-code_v001.svg" alt="PosiBot Whiteboard Fifth Reset"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>AUDITED SOURCES: [F-001, F-010, F-011]</span>
+    <span>PAGE 22 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="23">
+  <div class="page-header">
+    <span>CHAPTER 3: THE MONEY PIT · THE PAYOFF ($4.50–$8.50/HR RANGE · $6.40/HR MEDIAN)</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>3. TESTING THE "$10,000/MO IN 45 MINUTES" CLAIM (THE PAYOFF = $4.50–$8.50/HR · $6.40/HR MEDIAN)</h2>
+<p>What if you actually beat the <code>96.5%–98.5%</code> (<code>97.6%</code> cohort median) first-year attrition wall (<code>[F-008]</code>)? Across surviving retail FX and prop cohorts (the top <strong><code>1.5%–3.5%</code></strong>, with a <strong><code>2.4%</code></strong> cohort midpoint), logged screen, backtesting, and session-waiting time spans <strong><code>20 to 30 hours per week</code></strong> (<code>26.5 hrs/wk</code> median)—yielding an effective net <strong>Payoff in the <code>$4.50 to $8.50 per hour</code> range, with an audited cohort median of <code>$6.40 per hour</code></strong> (<code>[F-003, F-005]</code>).</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C03-chart-payoff-hourly-meter_v001.svg" alt="Hourly Meter Chart"></div>
+<p>That <code>$4.50–$8.50/hr</code> (<code>$6.40/hr</code> median) survivor wage is less than a quarter of the <strong><code>$29.76/hr</code></strong> U.S. median hourly wage (<code>[F-013]</code>), and corroborates multi-year regulatory cohorts showing <strong><code>94.2%</code> of leveraged retail FX traders earn below prevailing minimum wage</strong> (<code>[F-005]</code>).</p>
+
+  </div>
+  <div class="page-footer">
+    <span>AUDITED SOURCES: [F-003, F-005, F-008, F-013]</span>
+    <span>PAGE 23 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="24">
+  <div class="page-header">
+    <span>CHAPTER 3: THE MONEY PIT · GLOBAL REGULATORY LEDGER</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>4. THE GLOBAL REGULATORY CONSENSUS: CFTC, ESMA &amp; FCA</h2>
+<p>Think the prop-challenge numbers are an anomaly? Look at regulated cash forex accounts where traders aren't even fighting a 5% trailing drawdown tripwire:</p>
+<table class="yit-table">
+  <tr><th>Regulatory Authority</th><th>Mandated Cohort Finding</th><th>Citation</th></tr>
+  <tr><td><strong>U.S. CFTC (RFED Filings)</strong></td><td><strong>72%</strong> of active U.S. retail forex accounts unprofitable across trailing 4 quarters; median deposit exhausted in <strong>4.5 months</strong>.</td><td><code>[F-012]</code></td></tr>
+  <tr><td><strong>ESMA &amp; UK FCA Disclosures</strong></td><td>Between <strong>74% and 89%</strong> of retail investor accounts lose money trading CFDs and spot FX.</td><td><code>[F-005]</code></td></tr>
+  <tr><td><strong>Longitudinal Day-Trader Study</strong></td><td><strong>94.2%</strong> of leveraged retail FX participants earn less than prevailing minimum wage after spread and swap drag.</td><td><code>[F-005]</code></td></tr>
+</table>
+<div class="verdict-band">
+  <strong>CHAPTER 3 VERDICT BAND:</strong> The brochure promised <code>$10,000/month</code> for <code>$497</code> down (<code>[C-002, C-003]</code>). The ledger shows a <strong><code>$1,840</code> median Stake</strong> (<code>[F-004]</code>), a <strong><code>98.4%</code> simulated B-book server</strong> (<code>[F-011]</code>), and a <strong><code>$6.40/hr</code> survivor Payoff</strong> (<code>[F-003]</code>).
+</div>
+  </div>
+  <div class="page-footer">
+    <span>AUDITED SOURCES: [F-005, F-012]</span>
+    <span>PAGE 24 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="25">
+  <div class="page-header">
+    <span>CHAPTER 4: TALES FROM THE TRENCHES · FORENSIC INSERT</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">FORENSIC AUTOPSY INSERT · STANDALONE CORONER'S LEDGER</div>
+<h1 style="color:#451A03; margin-top:8px;">CHAPTER 4: TALES FROM THE TRENCHES</h1>
+<p><strong>PROTOCOL NOTICE (<code>outline-spine.v1.yaml §5.2</code>):</strong> PosiBot does not appear in this chapter. There are no punchlines in this chapter. The numbers are the joke.</p>
+<div class="dossier-box">
+  <strong>SELECTION &amp; COMPOSITE RULE:</strong> Every persona in this insert is a composite synthesized from <strong>at all times at least three documented real-world cases</strong> (<code>[K-001]</code> through <code>[K-015]</code>), grouped by the structural mechanism that decided their outcome. All financial figures printed below are the <strong>exact medians</strong> of the underlying case rows.
+</div>
+<table class="yit-table">
+  <tr><th>File #</th><th>Mold Code &amp; Name</th><th>Composite Persona</th><th>Cases</th><th>Outcome</th></tr>
+  <tr><td><code>#01</code></td><td><code>E2</code> · The Built-In Audience</td><td><strong>Marcus Conviction™</strong></td><td><code>K-001..K-003</code> (3)</td><td><strong>WON</strong> (Affiliate Edge)</td></tr>
+  <tr><td><code>#02</code></td><td><code>H4</code> · The Upsell Ladder</td><td><strong>Elena Diligence</strong></td><td><code>K-004..K-006</code> (3)</td><td><strong>EXITED</strong> (-$4,110)</td></tr>
+  <tr><td><code>#03</code></td><td><code>H5</code> · The Tool Tax</td><td><strong>Devon Precision</strong></td><td><code>K-007..K-009</code> (3)</td><td><strong>EXITED</strong> (-$2,923)</td></tr>
+  <tr><td><code>#04</code></td><td><code>C1</code> · The Runway Gap</td><td><strong>Hannah Patience</strong></td><td><code>K-010..K-012</code> (3)</td><td><strong>EXITED</strong> ($1.11/hr)</td></tr>
+  <tr><td><code>#05</code></td><td><code>C3</code> · The Rule Change</td><td><strong>Victor Discipline</strong></td><td><code>K-013..K-015</code> (3)</td><td><strong>EXITED</strong> ($5.1k Frozen)</td></tr>
+</table>
+  </div>
+  <div class="page-footer">
+    <span>AGED AMBER DOSSIER STOCK (#EFE5CE) · ZERO POSIBOT · ZERO JOKES</span>
+    <span>PAGE 25 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="26">
+  <div class="page-header">
+    <span>CASE FILE #01 · MOLD E2: THE BUILT-IN AUDIENCE</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">CASE FILE #01 · MOLD E2: THE BUILT-IN AUDIENCE</div>
+<h2>PERSONA: "MARCUS CONVICTION™"</h2>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-caricature-case1-e2-marcus_v001.svg" alt="Marcus Conviction Caricature"></div>
+<div class="dossier-box">
+  • <strong>Life Position:</strong> Short-form lifestyle &amp; finance creator (52,000 to 145,000 existing subscribers across YouTube/TikTok/Newsletter, <code>[K-001..K-003]</code>).<br>
+  • <strong>Sold By Claim:</strong> <code>[C-001]</code> (<em>"Pass our 2-Step Challenge in 14 days and trade up to a $200,000 funded account — keep 90% of the profits!"</em>).<br>
+  • <strong>What It Took (Range &amp; Medians):</strong> <code>$540–$900</code> (<code>$600</code> median) in challenge fees over <code>7 months</code>; <strong><code>-$1,900 to +$1,400</code> (<code>$0</code> median) net trading profit</strong>; <strong><code>$41,200–$68,400</code> (<code>$54,000</code> median) in affiliate CPA commissions</strong> from <code>88,000</code> followers (<code>[K-001..K-003]</code>, <code>[F-024]</code>).
+</div>
+<p><strong>1. Month 1:</strong> Purchased a <code>$100,000</code> evaluation (<code>$540–$600</code>) and filmed "Day in the Life of a Funded Trader" vlogs with a <code>20%</code> discount code paying <code>$108</code> CPA per viewer checkout (<code>[K-001, F-024]</code>). <strong>2. Month 3:</strong> Breached two live evaluations while viewer referrals paid <code>$6,000–$9,500/mo</code>. <strong>3. Month 7:</strong> Collected a median of <strong><code>$54,000</code> in affiliate commissions</strong> while cumulative net trading profit sat at <strong><code>$0</code></strong> (<code>[K-001..K-003]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>COMPOSITE OF 3 DOCUMENTED CASES [K-001, K-002, K-003]</span>
+    <span>PAGE 26 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="27">
+  <div class="page-header">
+    <span>CASE FILE #01 EXHIBIT · MOLD E2 GAP BAR</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FORENSIC EXHIBIT #01: TRADING PAYOUT VS. AFFILIATE REFERRAL REVENUE</h3>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-exhibit-case1-e2-gap-bar_v001.svg" alt="Case 1 E2 Gap Bar"></div>
+<div class="dossier-box">
+  <strong>SYSTEM MECHANISM (MOLD E2):</strong> An existing following meant never paying for customers—and never needing to win a trade. The referral link paid 20%–25% on every viewer's evaluation purchase regardless of whether the creator or the viewer ever passed Phase 2.<br><br>
+  <strong>OUTCOME:</strong> <span class="stamp-badge">WON (VIA AFFILIATE DISTRIBUTION, NOT TRADING)</span><br>
+  <strong>STAMP:</strong> <em>Composite of 3 documented cases (<code>K-001, K-002, K-003</code>).</em>
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>STAMP: COMPOSITE OF 3 DOCUMENTED CASES [K-001..K-003]</span>
+    <span>PAGE 27 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="28">
+  <div class="page-header">
+    <span>CASE FILE #02 · MOLD H4: THE UPSELL LADDER</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">CASE FILE #02 · MOLD H4: THE UPSELL LADDER</div>
+<h2>PERSONA: "ELENA DILIGENCE"</h2>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-caricature-case2-h4-elena_v001.svg" alt="Elena Diligence Caricature"></div>
+<div class="dossier-box">
+  • <strong>Life Position:</strong> Full-time shift supervisor / healthcare / logistics worker (<code>[K-004..K-006]</code>).<br>
+  • <strong>Sold By Claim:</strong> <code>[C-002]</code> (<em>"45 minutes a day during the London-NY overlap using our institutional Smart Money Concepts blueprint."</em>).<br>
+  • <strong>What It Took (Range &amp; Medians):</strong> <strong><code>$3,680–$4,650</code> (<code>$4,110</code> median) cash spent</strong>, <strong><code>9 months</code></strong>, <strong><code>620 hours</code> logged</strong>, <strong><code>$0.00</code> withdrawn</strong> (<code>[K-004..K-006]</code>).
+</div>
+<p><strong>1. Month 1:</strong> Purchased a <code>$49–$297</code> intro workshop; when demo trades failed during choppy London opens, the curriculum diagnosed the loss as "missing advanced institutional order-flow mentorship." <strong>2. Month 3:</strong> Upgraded to a <code>$997–$1,497</code> private academy plus a <code>$149/mo</code> VIP Discord signal room (<code>$1,341</code> median spend, <code>[K-004]</code>). <strong>3. Months 5–9:</strong> Bought <code>5</code> challenges/resets (<code>$1,675</code> median) mirroring delayed Discord alerts; exited at Month 9 down <strong><code>$4,110</code></strong> with <strong><code>$0</code></strong> withdrawn (<code>[K-004..K-006]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>COMPOSITE OF 3 DOCUMENTED CASES [K-004, K-005, K-006]</span>
+    <span>PAGE 28 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="29">
+  <div class="page-header">
+    <span>CASE FILE #02 EXHIBIT · MOLD H4 SPLIT BAR</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FORENSIC EXHIBIT #02: THE $4,110 CURRICULUM &amp; SIGNAL ESCALATOR</h3>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-exhibit-case2-h4-split-bar_v001.svg" alt="Case 2 H4 Split Bar"></div>
+<div class="dossier-box">
+  <strong>SYSTEM MECHANISM (MOLD H4):</strong> Each course sells the next one; when a student loses a challenge, the curriculum frames the loss as a missing tier of paid secret knowledge rather than a negative-expectancy B-book rule.<br><br>
+  <strong>OUTCOME:</strong> <span class="stamp-badge">EXITED ($4,110 SPENT · $0 WITHDRAWN)</span><br>
+  <strong>STAMP:</strong> <em>Composite of 3 documented cases (<code>K-004, K-005, K-006</code>).</em>
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>STAMP: COMPOSITE OF 3 DOCUMENTED CASES [K-004..K-006]</span>
+    <span>PAGE 29 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="30">
+  <div class="page-header">
+    <span>CASE FILE #03 · MOLD H5: THE TOOL TAX</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">CASE FILE #03 · MOLD H5: THE TOOL TAX</div>
+<h2>PERSONA: "DEVON PRECISION"</h2>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-caricature-case3-h5-devon_v001.svg" alt="Devon Precision Caricature"></div>
+<div class="dossier-box">
+  • <strong>Life Position:</strong> Technical operator (mechanical drafter, IT helpdesk tech, warehouse systems lead, <code>[K-007..K-009]</code>).<br>
+  • <strong>Sold By Claim:</strong> <code>[C-009]</code> (<em>"Load our proprietary Smart-Money Indicator template on TradingView."</em>).<br>
+  • <strong>What It Took (Range &amp; Medians):</strong> <strong><code>$2,590–$3,280</code> (<code>$2,923</code> median) cash spent</strong>, <strong><code>7 months</code></strong>, <strong><code>490 hours</code> logged</strong>, <strong><code>$0.00</code> withdrawn</strong> (<code>[K-007..K-009]</code>).
+</div>
+<p><strong>1. Month 1:</strong> Activated TradingView Premium (<code>$59/mo</code>), LuxAlgo/footprint overlays (<code>$68/mo</code>), FXReplay backtesting, and a London VPS (<code>$45/mo</code>) before placing a single evaluation trade (<code>[K-007, K-009]</code>). <strong>2. Month 4:</strong> After two manual breaches, paid <code>$499</code> for an "Automated Prop-Pass Gold EA Bot" on Telegram (<code>[K-007, K-008]</code>). <strong>3. Month 7:</strong> Fourth evaluation (<code>$1,220</code> cumulative resets) terminated automatically by the firm's risk server for "prohibited shared EA signature / IP clustering" with <code>$0</code> payout (<code>[K-008]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>COMPOSITE OF 3 DOCUMENTED CASES [K-007, K-008, K-009]</span>
+    <span>PAGE 30 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="31">
+  <div class="page-header">
+    <span>CASE FILE #03 EXHIBIT · MOLD H5 WATERFALL</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FORENSIC EXHIBIT #03: THE $2,923 SUBSCRIPTION &amp; AUTOMATION WATERFALL</h3>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-exhibit-case3-h5-waterfall_v001.svg" alt="Case 3 H5 Waterfall"></div>
+<div class="dossier-box">
+  <strong>SYSTEM MECHANISM (MOLD H5):</strong> Subscriptions, data feeds, VPS servers, and bot licenses begin billing on Day 1 and never stop—turning a "$340 evaluation" into a <code>$2,923</code> software tax before a single dollar of payout is eligible.<br><br>
+  <strong>OUTCOME:</strong> <span class="stamp-badge">EXITED ($2,923 SPENT · $0 WITHDRAWN)</span><br>
+  <strong>STAMP:</strong> <em>Composite of 3 documented cases (<code>K-007, K-008, K-009</code>).</em>
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>STAMP: COMPOSITE OF 3 DOCUMENTED CASES [K-007..K-009]</span>
+    <span>PAGE 31 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="32">
+  <div class="page-header">
+    <span>CASE FILE #04 · MOLD C1: THE RUNWAY GAP</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">CASE FILE #04 · MOLD C1: THE RUNWAY GAP</div>
+<h2>PERSONA: "HANNAH PATIENCE"</h2>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-caricature-case4-c1-hannah_v001.svg" alt="Hannah Patience Caricature"></div>
+<div class="dossier-box">
+  • <strong>Life Position:</strong> Part-time bookkeeper / civil engineering tech / quantitative hobbyist (<code>[K-010..K-012]</code>).<br>
+  • <strong>Sold By Claim:</strong> <code>[C-008]</code> (<em>"Hit your 8% Phase 1 and 5% Phase 2 targets and withdraw 90% bi-weekly payouts."</em>).<br>
+  • <strong>What It Took (Range &amp; Medians):</strong> <strong><code>$1,850–$2,450</code> (<code>$2,150</code> median) in fees</strong>, <strong><code>12–16 months</code> (<code>14 mo</code> median)</strong>, <strong><code>1,120 hours</code></strong>, <strong><code>$1,250</code> net profit = <code>$1.11/hr</code></strong> (<code>[K-010..K-012]</code>).
+</div>
+<p><strong>1. Months 1–8:</strong> Cycled through 3 to 5 evaluations (<code>$2,150</code> median fees) because responsible <code>0.25%</code> risk sizing required dozens of winning trades to reach <code>+8%</code> and <code>+5%</code>. <strong>2. Months 9–12:</strong> Passed Phase 1 and Phase 2, then waited through minimum trading-day windows and bi-weekly payout holds. <strong>3. Month 14:</strong> Withdrew <code>$3,400</code> gross (<code>$1,250</code> net after <code>$2,150</code> fees) across <code>1,120</code> logged hours—an effective wage of <strong><code>$1.11 per hour</code></strong> (<code>[K-010..K-012]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>COMPOSITE OF 3 DOCUMENTED CASES [K-010, K-011, K-012]</span>
+    <span>PAGE 32 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="33">
+  <div class="page-header">
+    <span>CASE FILE #04 EXHIBIT · MOLD C1 TIMELINE</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FORENSIC EXHIBIT #04: 14 MONTHS &amp; 1,120 HOURS FOR $1.11 AN HOUR</h3>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-exhibit-case4-c1-timeline_v001.svg" alt="Case 4 C1 Timeline"></div>
+<div class="dossier-box">
+  <strong>SYSTEM MECHANISM (MOLD C1):</strong> Profit, even when it arrives for a disciplined top-3% survivor, arrives later than an ordinary household can wait—and once sunk evaluation fees and screen hours are deducted, pays <code>$1.11/hr</code>.<br><br>
+  <strong>OUTCOME:</strong> <span class="stamp-badge">EXITED ($1,250 NET OVER 1,120 HOURS = $1.11/HR)</span><br>
+  <strong>STAMP:</strong> <em>Composite of 3 documented cases (<code>K-010, K-011, K-012</code>).</em>
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>STAMP: COMPOSITE OF 3 DOCUMENTED CASES [K-010..K-012]</span>
+    <span>PAGE 33 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="34">
+  <div class="page-header">
+    <span>CASE FILE #05 · MOLD C3: THE RULE CHANGE</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="stamp-badge">CASE FILE #05 · MOLD C3: THE RULE CHANGE</div>
+<h2>PERSONA: "VICTOR DISCIPLINE"</h2>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-caricature-case5-c3-victor_v001.svg" alt="Victor Discipline Caricature"></div>
+<div class="dossier-box">
+  • <strong>Life Position:</strong> Experienced swing trader / night-shift machinist / dental hygienist (<code>[K-013..K-015]</code>).<br>
+  • <strong>Sold By Claim:</strong> <code>[C-006]</code> (<em>"Currency pairs never ask for refunds, and pay out in pure cash every 14 days."</em>).<br>
+  • <strong>What It Took (Range &amp; Medians):</strong> <strong><code>$680–$1,180</code> (<code>$920</code> median) spent</strong>, <strong><code>5 months</code></strong>, <strong><code>380 hours</code></strong>, <strong><code>+$4,200 to +$6,800</code> (<code>+$5,100</code> median) funded profit frozen $\rightarrow$ <code>$0</code> payout</strong> (<code>[K-013..K-015]</code>).
+</div>
+<p><strong>1. Months 1–4:</strong> Passed Phase 1 and Phase 2 cleanly (<code>$920</code> median spend) and built a <code>$4,200–$6,800</code> funded profit cushion (<code>$5,100</code> median, <code>[K-013..K-015]</code>). <strong>2. Month 5 (Withdrawal Request):</strong> In <code>K-013</code>, the firm retroactively invoked a "30% single-trade consistency rule"; in <code>K-014</code>, MetaQuotes revoked the offshore broker's white-label MT5 license; in <code>K-015</code>, news-event spread slippage widened by 18 pips during CPI. <strong>3. Month 5 Close:</strong> All three accounts were frozen or breached with <strong><code>$0</code> disbursed from trading profits</strong> (<code>[K-013..K-015]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>COMPOSITE OF 3 DOCUMENTED CASES [K-013, K-014, K-015]</span>
+    <span>PAGE 34 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 recto-page" data-page="35">
+  <div class="page-header">
+    <span>CASE FILE #05 EXHIBIT · MOLD C3 BEFORE/AFTER CLIFF</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FORENSIC EXHIBIT #05: THE OVERNIGHT RULE CHANGE &amp; LICENSE FREEZE</h3>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C04-exhibit-case5-c3-cliff_v001.svg" alt="Case 5 C3 Before After Cliff"></div>
+<div class="dossier-box">
+  <strong>SYSTEM MECHANISM (MOLD C3):</strong> Even when a trader beats the <code>6.6%</code> evaluation hurdle, an unregulated offshore B-book operator controls the price feed, writes retroactive consistency clauses, and carries <code>0%</code> statutory SIPC protection (<code>[F-010, F-021]</code>).<br><br>
+  <strong>OUTCOME:</strong> <span class="stamp-badge">EXITED ($5,100 FROZEN · $540 RECOVERED VIA CHARGEBACK IN AFTERMATH)</span><br>
+  <strong>STAMP:</strong> <em>Composite of 3 documented cases (<code>K-013, K-014, K-015</code>).</em>
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>STAMP: COMPOSITE OF 3 DOCUMENTED CASES [K-013..K-015]</span>
+    <span>PAGE 35 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-amber-ch4 verso-page" data-page="36">
+  <div class="page-header">
+    <span>CHAPTER 4: TALES FROM THE TRENCHES · CORONER'S SUMMARY</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>CROSS-CASE SYNTHESIS: FIVE MOLDS, FIFTEEN LEDGERS</h2>
+<table class="yit-table">
+  <tr><th>Persona &amp; Mold</th><th>Median Cash In</th><th>Median Hours</th><th>Net Trading Payout</th><th>System Mechanism</th></tr>
+  <tr><td><strong>Marcus Conviction™ (E2)</strong></td><td><code>$600</code></td><td><code>140 hrs</code></td><td><code>$0</code> (+$54k Affiliate)</td><td>Referral link monetized viewer churn</td></tr>
+  <tr><td><strong>Elena Diligence (H4)</strong></td><td><code>$4,110</code></td><td><code>620 hrs</code></td><td><code>$0</code></td><td>Course &amp; VIP signal upsell escalator</td></tr>
+  <tr><td><strong>Devon Precision (H5)</strong></td><td><code>$2,923</code></td><td><code>490 hrs</code></td><td><code>$0</code></td><td>Software, VPS, EA bot &amp; reset tax</td></tr>
+  <tr><td><strong>Hannah Patience (C1)</strong></td><td><code>$2,150</code></td><td><code>1,120 hrs</code></td><td><code>+$1,250</code> ($1.11/hr)</td><td>14-month multi-stage runway gap</td></tr>
+  <tr><td><strong>Victor Discipline (C3)</strong></td><td><code>$920</code></td><td><code>380 hrs</code></td><td><code>$0</code> ($5.1k Frozen)</td><td>Retroactive rule / MT5 license freeze</td></tr>
+</table>
+<div class="verdict-band">
+  <strong>CHAPTER 4 VERDICT BAND:</strong> Across 15 documented practitioner files, the only participant who cleared a living wage did so by selling discount codes to his subscribers (<code>[K-001..K-003]</code>). Everyone who relied on the trading terminal itself either lost <code>$920–$4,110</code> or worked 14 months for <code>$1.11</code> an hour.
+</div>
+  </div>
+  <div class="page-footer">
+    <span>END OF STANDALONE AMBER INSERT · 15 DOCUMENTED CASES [K-001..K-015]</span>
+    <span>PAGE 36 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="37">
+  <div class="page-header">
+    <span>PHASE 2: DEMOLITION · CHAPTER 5: EXIT LIQUIDITY</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="phase-badge" style="background:#DC2626;">PHASE 2 · DEMOLITION // CHAPTER 05 · RECTO OPENER</div>
+<h1>CHAPTER 5: EXIT LIQUIDITY</h1>
+<p style="font-family:'Consolas',monospace; font-size:8.4pt; color:#991B1B; font-weight:700;">WHO ACTUALLY OWNS THE $7.5 TRILLION CASINO—AND WHY YOUR STOP-LOSS IS THEIR LUNCH</p>
+<h3>1. Paying Off the "$7.5 Trillion Market" Claim (<code>[C-002]</code> $\rightarrow$ <code>[F-006]</code>)</h3>
+<p>Every forex webinar on earth opens with the same breathless statistic from the Bank for International Settlements: <em>"The foreign exchange market trades <strong><code>$7.5 trillion per day</code></strong>—you just need a microscopic crumb!"</em> (<code>[C-002]</code>, <code>[F-006]</code>).</p>
+<p>Let's read the actual BIS Triennial Central Bank Survey (<code>[F-006]</code>). <strong><code>93%</code> of that <code>$7.5 trillion</code> daily turnover is executed between institutional reporting dealers, Tier-1 investment banks, quantitative hedge funds, and central banks</strong>, while all retail spot traders worldwide account for <strong>less than <code>2.8%</code></strong> (<code>[F-006]</code>).</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C05-chart-fx-market-log-ladder_v001.svg" alt="FX Market Log Ladder"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>GATE METRICS INTRODUCED: THE ODDS (2.4%) & THE WAIT (14.0 MO) [F-006]</span>
+    <span>PAGE 37 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="38">
+  <div class="page-header">
+    <span>CHAPTER 5: EXIT LIQUIDITY · THE DRAWDOWN WOODCHIPPER</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>2. PAYING OFF MISSING STEP 7: THE $5,000 ACCOUNT IN A $100,000 HALLOWEEN COSTUME</h2>
+<p>Why was Step 7 missing from Chapter 2's flat-pack assembly brochure (<code>[C-010]</code>)? Because when a prop firm sells you a "$100,000 account with a 10% maximum drawdown and a 5% daily trailing drawdown" (<code>[C-001]</code>, <code>[F-007]</code>), you do not have <code>$100,000</code> of capital. <strong>You have a <code>$5,000</code> account wearing a <code>$100,000</code> Halloween costume</strong> (<code>[F-007]</code>).</p>
+<p>If your balance drops by <code>$5,000</code> in a single day, your account is executed on the spot. Asking a trader to make <code>+8%</code> (<code>$8,000</code>) in Phase 1 and <code>+5%</code> (<code>$5,000</code>) in Phase 2 without ever touching a <code>-$5,000</code> daily floor is actually asking them to generate a <strong>+260% return on their true <code>$5,000</code> daily risk allowance</strong> while paying synthetic spread and commission markups that force a <strong><code>64%</code> raw win-rate hurdle</strong> just to break even (<code>[C-010]</code>).</p>
+<div class="callout-rc">
+  <strong>[REALITY CHECK — THE HIGH-WATER-MARK RATCHET]:</strong><br>
+  In many prop evaluations, the 5% trailing drawdown locks to your <em>intraday unrealized high-water mark</em>. If your open trade spikes up +$4,000 during a news candle and pulls back to +$0, you just lost $4,000 of your $5,000 daily allowance on a trade that never even went red (<code>[C-010]</code>, <code>[F-007]</code>).
+</div>
+  </div>
+  <div class="page-footer">
+    <span>PAYING OFF MISSING STEP 7 [C-010 -> F-007, F-010]</span>
+    <span>PAGE 38 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="39">
+  <div class="page-header">
+    <span>CHAPTER 5: EXIT LIQUIDITY · THE ODDS (2.4%) & THE WAIT (14 MO)</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>3. THE ODDS (2.4%) AND THE WAIT (14.0 MONTHS)</h2>
+<p>Let's follow <code>1,000</code> hopeful starters walking into the evaluation funnel with credit cards in hand (<code>[F-007..F-010]</code>):</p>
+<p>• Out of <code>1,000</code> starters, <strong><code>934</code> blow up during Phase 1 or Phase 2</strong> (only <strong><code>6.6%</code></strong> pass both stages, <code>[F-007]</code>).<br>
+• Of the <code>66</code> who receive a funded certificate, asymmetric slippage and drawdown tripwires <strong>terminate <code>91.6%</code> before a second payout</strong> (<code>[F-010]</code>).<br>
+• At the 12-month mark, after subtracting all challenge fees, resets, and tool subscriptions, <strong>only <code>24</code> out of <code>1,000</code> (<code>2.4%</code>) are net-profitable</strong> (<strong>The Odds</strong>, <code>[F-008]</code>)—and their median time to reach consistent net profitability (<strong>The Wait</strong>) is <strong><code>14.0 months</code></strong> (<code>[F-009]</code>).</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C05-chart-prop-attrition-funnel_v001.svg" alt="Prop Attrition Funnel"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>COHORT TELEMETRY (420,000 ACCOUNTS) [F-007, F-008, F-009, F-010]</span>
+    <span>PAGE 39 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="40">
+  <div class="page-header">
+    <span>CHAPTER 5: EXIT LIQUIDITY · THE ECOSYSTEM FOOD CHAIN</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>4. THE ECOSYSTEM FOOD CHAIN: WHO EATS WHOM</h2>
+<table class="yit-table">
+  <tr><th>Tier</th><th>Participant</th><th>Revenue Source</th><th>12-Mo Win Rate</th></tr>
+  <tr><td><strong>1. Top Apex</strong></td><td>B-Book Prop Operators (<code>[F-002]</code>)</td><td>$310M+ in challenge &amp; reset fees (98.4% simulated)</td><td><strong>~100% House Margin</strong></td></tr>
+  <tr><td><strong>2. Barkers</strong></td><td>Affiliate Gurus (Mold E2, <code>[F-024]</code>)</td><td>20%–25% CPA ($108/sale) + $149/mo Discord rooms</td><td><strong>$54,000/yr Median</strong></td></tr>
+  <tr><td><strong>3. Shovel Sellers</strong></td><td>TradingView / VPS / EA Vendors (<code>[K-007]</code>)</td><td>$45–$68/mo recurring SaaS &amp; $499 bot licenses</td><td><strong>Guaranteed Monthly Billing</strong></td></tr>
+  <tr><td><strong>4. Exit Liquidity</strong></td><td>Retail Challenge Buyers (<code>[F-008]</code>)</td><td>Attempting to beat a 5% trailing drawdown barrier</td><td><strong>2.4% Net-Profitable</strong></td></tr>
+</table>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C05-posibot-gladiator-liquidity_v001.svg" alt="PosiBot Sandwich Board Liquidity"></div>
+<div class="verdict-band">
+  <strong>CHAPTER 5 VERDICT BAND:</strong> In a <code>$7.5 trillion</code> ocean controlled <code>93%</code> by institutional sharks (<code>[F-006]</code>), the prop challenge locks you inside a 5% drawdown fishbowl where <strong><code>97.6%</code> of starters end the year in the red</strong> (<code>[F-008]</code>).
+</div>
+
+  </div>
+  <div class="page-footer">
+    <span>AUDITED SOURCES: [F-002, F-006, F-011, F-024]</span>
+    <span>PAGE 40 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="41">
+  <div class="page-header">
+    <span>PHASE 2: DEMOLITION · CHAPTER 6: THE VERDICT</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="phase-badge" style="background:#991B1B;">PHASE 2 · DEMOLITION // CHAPTER 06 · RECTO OPENER</div>
+<h1>CHAPTER 6: THE VERDICT</h1>
+<p style="font-family:'Consolas',monospace; font-size:8.4pt; color:#991B1B; font-weight:700;">THE 4-METRIC MECHANICAL GATE SCORECARD · ZERO DIALS, PURE ARITHMETIC</p>
+<p>We don't grade business models on vibes, rented Lamborghinis, or cropped screenshots of blue MetaTrader numbers (<code>[C-013]</code>). Every venture in the Y-IT canon runs through the exact same four mechanical gates defined in <code>outline-spine.v1.yaml §5.3</code>. Unless all four pass, the verdict is automatic.</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C06-chart-four-metric-scorecard_v001.svg" alt="Four Metric Gate Scorecard"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>THE 4-METRIC GATE SCORECARD [F-001..F-014]</span>
+    <span>PAGE 41 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="42">
+  <div class="page-header">
+    <span>CHAPTER 6: THE VERDICT · GATE-BY-GATE BREAKDOWN</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>THE FOUR GATES: LINE BY LINE</h2>
+<table class="yit-table">
+  <tr><th>Gate Metric</th><th>The Question &amp; Passing Rule</th><th>Audited Figure</th><th>Gate Status</th></tr>
+  <tr><td><strong>1. THE STAKE</strong></td><td>What must I put at risk before I know?<br><em>Passes when &le; $1,000 US emergency savings (<code>[F-014]</code>).</em></td><td><strong><code>$1,840</code></strong><br>(4.2 tries + $412 tools, <code>[F-001, F-004]</code>)</td><td><span class="stamp-badge">MISS (+84% OVER)</span></td></tr>
+  <tr><td><strong>2. THE WAIT</strong></td><td>How long until it pays?<br><em>Passes when &le; 6.0 months to net profit.</em></td><td><strong><code>14.0 months</code></strong><br>(Median survivor runway, <code>[F-009]</code>)</td><td><span class="stamp-badge">MISS (2.3x LONGER)</span></td></tr>
+  <tr><td><strong>3. THE ODDS</strong></td><td>How many make it at 12 months?<br><em>Passes when &ge; 50.0% (1 in 2 starters).</em></td><td><strong><code>2.4%</code></strong><br>(6.6% pass Phase 1+2, <code>[F-007, F-008]</code>)</td><td><span class="stamp-badge">MISS (97.6% LOSE)</span></td></tr>
+  <tr><td><strong>4. THE PAYOFF</strong></td><td>What does winning pay per hour?<br><em>Passes when &ge; $29.76/hr US median wage (<code>[F-013]</code>).</em></td><td><strong><code>$6.40 / hr</code></strong><br>(Across 26.5 hrs/wk, <code>[F-003]</code>)</td><td><span class="stamp-badge">MISS (-78% BELOW)</span></td></tr>
+</table>
+<div class="callout-rc">
+  <strong>COMPUTED VERDICT RULE (<code>outline-spine.v1.yaml §5.3</code>):</strong><br>
+  • <strong>Gates Passed:</strong> <code>0 of 4</code>.<br>
+  • <strong>Mandatory Series Verdict:</strong> <strong>PROBABLY WON'T WORK.</strong>
+</div>
+  </div>
+  <div class="page-footer">
+    <span>AUDITED GATE COMPUTATION [F-001, F-003, F-004, F-007, F-008, F-009, F-013, F-014]</span>
+    <span>PAGE 42 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 recto-page" data-page="43">
+  <div class="page-header">
+    <span>CHAPTER 6: THE VERDICT · HOUSE EDGE COMPARISON</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>HOW PROP CHALLENGES STACK UP AGAINST LAS VEGAS &amp; REAL WORK</h2>
+<table class="yit-table">
+  <tr><th>Activity / Venture</th><th>Median Stake</th><th>12-Month / Session Odds</th><th>Median Hourly / Annual Return</th></tr>
+  <tr><td><strong>Retail Prop Challenge (<code>[F-001..F-009]</code>)</strong></td><td><code>$1,840</code></td><td><strong>2.4%</strong> net-profitable (12mo)</td><td><strong>$6.40 / hr</strong> (for the top 2.4%)</td></tr>
+  <tr><td><strong>Single-Zero European Roulette</strong></td><td><code>$100</code> table</td><td><strong>48.6%</strong> single-spin win</td><td>-2.70% house edge (Free drinks included)</td></tr>
+  <tr><td><strong>Basic-Strategy Blackjack</strong></td><td><code>$100</code> table</td><td><strong>~49.5%</strong> hand odds</td><td>-0.50% house edge (No $149/mo Discord)</td></tr>
+  <tr><td><strong>SQL / Financial BI Analyst (<code>[F-016]</code>)</strong></td><td><code>$320</code> prep</td><td><strong>78.0%</strong> placement (12mo)</td><td><strong>$44.50 / hr ($92,560 / yr)</strong></td></tr>
+</table>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/04_phase2_run/assets/T01-P2-C06-posibot-verdict-receipt-tape_v001.svg" alt="PosiBot Receipt Tape Verdict"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>POSIBOT DELIVERY METHOD: RECEIPT TAPE [F-004, F-008]</span>
+    <span>PAGE 43 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase2 verso-page" data-page="44">
+  <div class="page-header">
+    <span>CHAPTER 6: THE VERDICT · WHO STILL COULD?</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>WHO STILL COULD? (NAMING THE WINNERS' EDGES)</h2>
+<p>Why does the cover say <strong>"Probably Won't Work"</strong> instead of "Never Works"? Because <code>2.4%</code> is not zero (<code>[F-008]</code>), and because Chapter 4 showed us the exact structural edges the system actually rewards:</p>
+<p><strong>1. The Built-In Media Audience (Mold E2, <code>Marcus Conviction™</code>, <code>[K-001..K-003]</code>):</strong> If you already command <code>50,000+</code> followers, the prop-firm affiliate program pays you <code>$108</code> every time a viewer buys a <code>$540</code> challenge (<code>[F-024]</code>)—yielding <code>$54,000</code> in commissions even when your own trading net is <code>$0</code>.</p>
+<p><strong>2. Pre-Existing Quantitative &amp; Emotional Capital (Mold C1, <code>Hannah Patience</code>, <code>[K-010..K-012]</code>):</strong> If you already have 5+ years of institutional risk-sizing discipline and 14 months of spare runway, you can extract a positive payout—though the hourly math still caps out near <code>$1.11</code> to <code>$6.40/hr</code> (<code>[F-003, K-010]</code>).</p>
+<div class="verdict-band">
+  <strong>PHASE 2 FINAL VERDICT BAND:</strong> <strong>0 of 4 gates passed.</strong> You are risking <code>$1,840</code> and waiting <code>14.0 months</code> for a <code>2.4%</code> shot at <code>$6.40/hr</code>. Turn to Page 45: let's salvage the skill and leave the casino behind.
+</div>
+  </div>
+  <div class="page-footer">
+    <span>END OF PHASE 2 (DEMOLITION) · PHASE 3 OPENS ON PAGE 45</span>
+    <span>PAGE 44 OF 64</span>
+  </div>
+</section>
+</body>
+</html>

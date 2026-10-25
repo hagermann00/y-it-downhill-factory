@@ -1,0 +1,20 @@
+{
+  "asset_id": "T01-P3-C07-posibot-keep-the-day-job_v001",
+  "topic": 1,
+  "phase": 3,
+  "chapter": 7,
+  "slot": "posibot",
+  "slug": "keep-the-day-job",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P3-C07-posibot-keep-the-day-job_v001.svg",
+  "prompt_path": "T01-P3-C07-posibot-keep-the-day-job_v001.prompt.md",
+  "meta_path": "T01-P3-C07-posibot-keep-the-day-job_v001.json",
+  "sha256": "467111ad5b4536e9a4699942111bd2cce6e9f7cd0ced2769fd7834343f2f5890",
+  "prompt_sha256": "84763b33f42df5c660001bfa1d68b0bdc8efff767029a8456572c04ca762fd5e",
+  "delivery_method": "flip chart",
+  "cited_rows": [
+    "F-016"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+  <rect x="2" y="2" width="556" height="356" rx="10" fill="#F8FAFC" stroke="#0F172A" stroke-width="2.5"/>
+  <rect x="14" y="12" width="532" height="32" rx="5" fill="#0F172A"/>
+  <text x="280" y="33" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="700" fill="#F8FAFC">[PAGE COMIC — 3D PAPERCRAFT DIORAMA] // FOREX PROP CHALLENGE TO PRACTICAL PIVOT</text>
+
+  <!-- Panel 1 -->
+  <g transform="translate(16, 54)">
+    <rect x="0" y="0" width="256" height="136" rx="6" fill="#FEF3C7" stroke="#92400E" stroke-width="2"/>
+    <text x="10" y="18" font-family="'IBM Plex Mono', monospace" font-size="9.5" font-weight="700" fill="#92400E">PANEL 01 · THE $100K PAPER CROWN</text>
+    <polygon points="40,115 80,55 120,115" fill="#F59E0B" stroke="#78350F" stroke-width="1.5"/>
+    <rect x="135" y="48" width="105" height="66" rx="4" fill="#FFFBEB" stroke="#78350F" stroke-width="1.5"/>
+    <text x="187" y="75" text-anchor="middle" font-family="'Work Sans', sans-serif" font-size="10.5" font-weight="700" fill="#1E293B">"I MANAGE $200K!"</text>
+    <text x="187" y="95" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#78350F">(Simulated Demo Server #4)</text>
+  </g>
+
+  <!-- Panel 2 -->
+  <g transform="translate(288, 54)">
+    <rect x="0" y="0" width="256" height="136" rx="6" fill="#FEE2E2" stroke="#991B1B" stroke-width="2"/>
+    <text x="10" y="18" font-family="'IBM Plex Mono', monospace" font-size="9.5" font-weight="700" fill="#991B1B">PANEL 02 · THE 5% TRAILING TRAPDOOR</text>
+    <path d="M 24 55 L 95 45 L 115 112 L 220 112" fill="none" stroke="#DC2626" stroke-width="4"/>
+    <rect x="122" y="38" width="120" height="56" rx="4" fill="#FFFFFF" stroke="#991B1B" stroke-width="1.5"/>
+    <text x="182" y="62" text-anchor="middle" font-family="'Work Sans', sans-serif" font-size="10" font-weight="700" fill="#991B1B">ACCOUNT BREACHED</text>
+    <text x="182" y="80" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#475569">Reset Fee: $540.00</text>
+  </g>
+
+  <!-- Panel 3 -->
+  <g transform="translate(16, 204)">
+    <rect x="0" y="0" width="256" height="136" rx="6" fill="#E0F2FE" stroke="#075985" stroke-width="2"/>
+    <text x="10" y="18" font-family="'IBM Plex Mono', monospace" font-size="9.5" font-weight="700" fill="#075985">PANEL 03 · POSIBOT FOLDS THE BROCHURE</text>
+    <rect x="24" y="42" width="58" height="72" rx="6" fill="#C8A27A" stroke="#785A3C" stroke-width="2"/>
+    <rect x="32" y="50" width="42" height="28" rx="4" fill="#0F172A"/>
+    <circle cx="44" cy="61" r="3.5" fill="#00F0FF"/>
+    <circle cx="62" cy="61" r="3.5" fill="#00F0FF"/>
+    <path d="M 42 70 Q 53 76 64 70" fill="none" stroke="#00F0FF" stroke-width="2.5"/>
+    <rect x="96" y="44" width="145" height="72" rx="4" fill="#FFFFFF" stroke="#075985" stroke-width="1.5"/>
+    <text x="168" y="72" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-size="15" font-weight="800" fill="#0F172A">"SELL THE SHOVELS!"</text>
+    <text x="168" y="94" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#0369A1">(Or get paid $42/hr for the SQL)</text>
+  </g>
+
+  <!-- Panel 4 -->
+  <g transform="translate(288, 204)">
+    <rect x="0" y="0" width="256" height="136" rx="6" fill="#DCFCE7" stroke="#166534" stroke-width="2"/>
+    <text x="10" y="18" font-family="'IBM Plex Mono', monospace" font-size="9.5" font-weight="700" fill="#166534">PANEL 04 · THE PRACTICAL PIVOT DESK</text>
+    <rect x="22" y="42" width="212" height="74" rx="6" fill="#FFFFFF" stroke="#166534" stroke-width="1.8"/>
+    <text x="128" y="68" text-anchor="middle" font-family="'Work Sans', sans-serif" font-size="11" font-weight="700" fill="#14532D">4 OF 4 GATES PASSED</text>
+    <text x="128" y="88" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#166534">Stake: $0 · Payoff: $44.50/hr</text>
+    <text x="128" y="104" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="8.5" fill="#475569">Sleep Schedule: Intact</text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+topic_slug: forex-prop-firms
+phase: 2
+voice_register: "Sardonic Authority (Ch 3, 5, 6) / Forensic Zero-Joke Autopsy (Ch 4)"
+ch4_posibot_count: 0
+prompts:
+  - asset_id: "T01-P2-C03-chart-stake-waterfall_v001"
+    chapter: 3
+    chart_type: "waterfall"
+    cited_rows: ["F-001", "F-004", "C-003"]
+  - asset_id: "T01-P2-C04-exhibit-case1-e2-gap-bar_v001"
+    chapter: 4
+    chart_type: "gap bar"
+    cited_rows: ["K-001", "K-002", "K-003"]
+  - asset_id: "T01-P2-C05-chart-prop-attrition-funnel_v001"
+    chapter: 5
+    chart_type: "funnel"
+    cited_rows: ["F-007", "F-008", "F-010"]
+  - asset_id: "T01-P2-C06-chart-four-metric-scorecard_v001"
+    chapter: 6
+    chart_type: "scorecard"
+    cited_rows: ["F-001", "F-003", "F-004", "F-007", "F-008", "F-009", "F-013", "F-014"]

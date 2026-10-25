@@ -1,0 +1,20 @@
+topic_slug: forex-prop-firms
+phase: 3
+voice_register: "Constructive Solidarity (Ch 7) / Quiet Reckoning (Ch 8)"
+prompts:
+  - asset_id: "T01-P3-C07-comic-papercraft-diorama-strip_v001"
+    chapter: 7
+    slot: "comic"
+    cited_rows: ["F-016", "F-017"]
+  - asset_id: "T01-P3-C07-chart-pivot-payoff-comparison_v001"
+    chapter: 7
+    chart_type: "range strip"
+    cited_rows: ["F-003", "F-013", "F-015", "F-016", "F-017"]
+  - asset_id: "T01-P3-C07-posibot-keep-the-day-job_v001"
+    chapter: 7
+    delivery_method: "flip chart"
+    cited_rows: ["F-016"]
+  - asset_id: "T01-P3-C08-posibot-ninety-day-paper-test_v001"
+    chapter: 8
+    delivery_method: "picket sign"
+    cited_rows: ["F-023", "F-026"]

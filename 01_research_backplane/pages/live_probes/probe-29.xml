@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/aDXw6wIffJZTy5VpczEUGrYPLUY</id>
+  <title>arXiv Query: search_query=all:limit OR all:order OR all:book OR all:slippage OR all:execution&amp;id_list=&amp;start=0&amp;max_results=4</title>
+  <updated>2026-10-25T01:40:54Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:limit+OR+(all:order+OR+(all:book+OR+(all:slippage+OR+all:execution)))&amp;start=0&amp;max_results=4&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>4</opensearch:itemsPerPage>
+  <opensearch:totalResults>897367</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2511.20606v2</id>
+    <title>Limit Order Book Dynamics in Matching Markets: Microstructure, Spread, and Execution Slippage</title>
+    <updated>2025-11-26T04:14:16Z</updated>
+    <link href="https://arxiv.org/abs/2511.20606v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.20606v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conventional models of matching markets assume that monetary transfers can clear markets by compensating for utility differentials. However, empirical patterns show that such transfers often fail to close structural preference gaps. This paper introduces a market microstructure framework that models matching decisions as a limit order book system with rigid bid ask spreads. Individual preferences are represented by a latent preference state matrix, where the spread between an agent's internal ask price (the unconditional maximum) and the market's best bid (the reachable maximum) creates a structural liquidity constraint. We establish a Threshold Impossibility Theorem showing that linear compensation cannot close these spreads unless it induces a categorical identity shift. A dynamic discrete choice execution model further demonstrates that matches occur only when the market to book ratio crosses a time decaying liquidity threshold, analogous to order execution under inventory pressure. Numerical experiments validate persistent slippage, regional invariance of preference orderings, and high tier zero spread executions. The model provides a unified microstructure explanation for matching failures, compensation inefficiency, and post match regret in illiquid order driven environments.</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-25T18:34:46Z</published>
+    <arxiv:comment>33 pages, 7 figures, 5 experiments, 6 appendices. Primary category: q-fin.TR; Secondary: cs.SI. Code: https://github.com/Republic1024/Limit-Order-Matching-Microstructure</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <author>
+      <name>Yao Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1105.4789v1</id>
+    <title>Stochastic Price Dynamics Implied By the Limit Order Book</title>
+    <updated>2011-05-24T14:50:39Z</updated>
+    <link href="https://arxiv.org/abs/1105.4789v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1105.4789v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we present a novel approach to the determination of fat tails in financial data by studying the information contained in the limit order book. In an order-driven market buyers and sellers may submit limit orders, which are executed when the price touches a pre-specified lower, respectively higher, limit-price. We show that, in equilibrium, the collection of all such orders - the limit order book - implies a volatility smile, similar to observations from option pricing in the Black-Scholes model. We also show how a jump-diffusion process can be explicitly inferred to account for the volatility smile.</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2011-05-24T14:50:39Z</published>
+    <arxiv:comment>Limit order book, limit orders, volatility smile, jump process, double-exponential jump process, impatience rate, jump diffusion</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <author>
+      <name>Alex Langnau</name>
+    </author>
+    <author>
+      <name>Yanko Punchev</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.03724v1</id>
+    <title>SoK: Hardware Defenses Against Speculative Execution Attacks</title>
+    <updated>2023-01-09T23:58:25Z</updated>
+    <link href="https://arxiv.org/abs/2301.03724v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.03724v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speculative execution attacks leverage the speculative and out-of-order execution features in modern computer processors to access secret data or execute code that should not be executed. Secret information can then be leaked through a covert channel. While software patches can be installed for mitigation on existing hardware, these solutions can incur big performance overhead. Hardware mitigation is being studied extensively by the computer architecture community. It has the benefit of preserving software compatibility and the potential for much smaller performance overhead than software solutions.
+  This paper presents a systematization of the hardware defenses against speculative execution attacks that have been proposed. We show that speculative execution attacks consist of 6 critical attack steps. We propose defense strategies, each of which prevents a critical attack step from happening, thus preventing the attack from succeeding. We then summarize 20 hardware defenses and overhead-reducing features that have been proposed. We show that each defense proposed can be classified under one of our defense strategies, which also explains why it can thwart the attack from succeeding. We discuss the scope of the defenses, their performance overhead, and the security-performance trade-offs that can be made.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-09T23:58:25Z</published>
+    <arxiv:comment>Accepted to 2021 International Symposium on Secure and Private Execution Environment Design (SEED)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <arxiv:journal_ref>2021 International Symposium on Secure and Private Execution Environment Design (SEED), 2021, pp. 108-120</arxiv:journal_ref>
+    <author>
+      <name>Guangyuan Hu</name>
+    </author>
+    <author>
+      <name>Zecheng He</name>
+    </author>
+    <author>
+      <name>Ruby Lee</name>
+    </author>
+    <arxiv:doi>10.1109/SEED51797.2021.00023</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/SEED51797.2021.00023" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1603.05313v3</id>
+    <title>Market Dynamics vs. Statistics: Limit Order Book Example</title>
+    <updated>2016-03-30T19:23:20Z</updated>
+    <link href="https://arxiv.org/abs/1603.05313v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1603.05313v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Commonly used limit order book attributes are empirically considered based on NASDAQ ITCH data. It is shown that some of them have the properties drastically different from the ones assumed in many market dynamics study. Because of this difference we propose to make a transition from "Statistical" type of order book study (typical for academics) to "Dynamical" type of study (typical for market practitioners). Based on market data analysis we conclude, that most of market dynamics information is contained in attributes with spikes (e.g. executed trades flow $I=dv/dt$), there is no any "stationary case" on the market and typical market dynamics is a "fast excitation and then slow relaxation" type of behavior with a wide distribution of excitation frequencies and relaxation times. A computer code, providing full depth order book information and recently executed trades is available from authors [1].</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.CP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-03-16T23:24:58Z</published>
+    <arxiv:comment>Grammar fixes. Best price level orders execution pattern clarification (10% execution, 90% cancellation)</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <author>
+      <name>Vladislav Gennadievich Malyshkin</name>
+    </author>
+    <author>
+      <name>Ray Bakhramov</name>
+    </author>
+  </entry>
+</feed>

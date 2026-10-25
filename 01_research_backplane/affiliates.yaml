@@ -1,0 +1,32 @@
+topic_slug: forex-prop-firms
+affiliates:
+    - affiliate_id: AFF-01
+      program: Prop Firm Evaluation Referral Tier 1
+      commission: 20% recurring commission ($108 per $540 challenge)
+      seller_key: S-01
+      seen: "2026-10-17"
+      source_id: SRC-08
+    - affiliate_id: AFF-02
+      program: Offshore Funded Account Affiliate CPA
+      commission: 25% first-time evaluation purchase CPA
+      seller_key: S-02
+      seen: "2026-10-17"
+      source_id: SRC-08
+    - affiliate_id: AFF-03
+      program: TradingView Pro/Premium Partner Program
+      commission: $30 flat CPA per paid charting upgrade
+      seller_key: S-06
+      seen: "2026-10-17"
+      source_id: SRC-08
+    - affiliate_id: AFF-04
+      program: Automated Gold/FX EA Bot License Funnel
+      commission: 50% revenue share on $997 software license
+      seller_key: S-04
+      seen: "2026-10-17"
+      source_id: SRC-08
+    - affiliate_id: AFF-05
+      program: VIP Discord Liquidity Signal Room
+      commission: $149/month recurring subscription (80% creator keep)
+      seller_key: S-05
+      seen: "2026-10-17"
+      source_id: SRC-08

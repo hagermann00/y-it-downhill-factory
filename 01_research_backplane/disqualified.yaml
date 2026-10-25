@@ -1,0 +1,8 @@
+topic_slug: forex-prop-firms
+disqualified:
+  - row_candidate: "DISC-01"
+    url: "https://example-unverified-forex-blog.invalid/100x-returns"
+    reason: "No verbatim primary regulatory backing; uncorroborated single-post claim."
+  - row_candidate: "DISC-02"
+    url: "https://example-telegram-bot-vendor.invalid/results"
+    reason: "Fabricated MT4 screenshot metadata detected during trace audit."

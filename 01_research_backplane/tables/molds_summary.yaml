@@ -1,0 +1,54 @@
+topic_slug: forex-prop-firms
+market: US
+composites:
+  - mold: E2
+    name: "Marcus Conviction™"
+    mold_title: "The Built-In Audience"
+    exhibit: "gap bar"
+    case_rows: ["K-001", "K-002", "K-003"]
+    median_stake: "$600"
+    median_months: 7
+    median_trading_net: "$0"
+    median_affiliate_net: "$54,000"
+    outcome: "WON (via affiliate referrals, not trading)"
+  - mold: H4
+    name: "Elena Diligence"
+    mold_title: "The Upsell Ladder"
+    exhibit: "split bar"
+    case_rows: ["K-004", "K-005", "K-006"]
+    median_stake: "$4,110"
+    median_months: 9
+    median_hours: 620
+    median_payout: "$0"
+    outcome: "EXITED"
+  - mold: H5
+    name: "Devon Precision"
+    mold_title: "The Tool Tax"
+    exhibit: "waterfall"
+    case_rows: ["K-007", "K-008", "K-009"]
+    median_stake: "$2,923"
+    median_months: 7
+    median_hours: 490
+    median_payout: "$0"
+    outcome: "EXITED"
+  - mold: C1
+    name: "Hannah Patience"
+    mold_title: "The Runway Gap"
+    exhibit: "timeline"
+    case_rows: ["K-010", "K-011", "K-012"]
+    median_stake: "$2,150"
+    median_months: 14
+    median_hours: 1120
+    median_net_profit: "$1,250 ($1.11/hr)"
+    outcome: "EXITED"
+  - mold: C3
+    name: "Victor Discipline"
+    mold_title: "The Rule Change"
+    exhibit: "before/after cliff"
+    case_rows: ["K-013", "K-014", "K-015"]
+    median_stake: "$920"
+    median_months: 5
+    median_hours: 380
+    median_frozen_profit: "$5,100"
+    median_payout: "$0 ($540 chargeback recovered in aftermath)"
+    outcome: "EXITED"

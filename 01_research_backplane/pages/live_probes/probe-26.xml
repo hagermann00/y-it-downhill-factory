@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/LYdQSfKNZwOOysR27GcM3DDxW08</id>
+  <title>arXiv Query: search_query=all:foreign OR all:exchange OR all:retail OR all:trading&amp;id_list=&amp;start=0&amp;max_results=4</title>
+  <updated>2026-10-25T01:40:52Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:foreign+OR+(all:exchange+OR+(all:retail+OR+all:trading))&amp;start=0&amp;max_results=4&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>4</opensearch:itemsPerPage>
+  <opensearch:totalResults>101611</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2004.12011v1</id>
+    <title>Trading Foreign Exchange Triplets</title>
+    <updated>2020-04-24T22:35:45Z</updated>
+    <link href="https://arxiv.org/abs/2004.12011v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.12011v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We develop the optimal trading strategy for a foreign exchange (FX) broker who must liquidate a large position in an illiquid currency pair. To maximize revenues, the broker considers trading in a currency triplet which consists of the illiquid pair and two other liquid currency pairs. The liquid pairs in the triplet are chosen so that one of the pairs is redundant. The broker is risk-neutral and accounts for model ambiguity in the FX rates to make her strategy robust to model misspecification. When the broker is ambiguity neutral (averse) the trading strategy in each pair is independent (dependent) of the inventory in the other two pairs in the triplet. We employ simulations to illustrate how the robust strategies perform. For a range of ambiguity aversion parameters, we find the mean Profit and Loss (P&amp;L) of the strategy increases and the standard deviation of the P&amp;L decreases as ambiguity aversion increases.</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.MF" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-24T22:35:45Z</published>
+    <arxiv:comment>35 pages, 14 figures, 1 table</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <arxiv:journal_ref>Forthcoming, SIAM J. Financial Mathematics, 2020</arxiv:journal_ref>
+    <author>
+      <name>Álvaro Cartea</name>
+    </author>
+    <author>
+      <name>Sebastian Jaimungal</name>
+    </author>
+    <author>
+      <name>Tianyi Jia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1912.04492v1</id>
+    <title>151 Estrategias de Trading (151 Trading Strategies)</title>
+    <updated>2019-11-14T14:58:13Z</updated>
+    <link href="https://arxiv.org/abs/1912.04492v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1912.04492v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This book, which is in Spanish, provides detailed descriptions, including over 550 mathematical formulas, for over 150 trading strategies across a host of asset classes (and trading styles). This includes stocks, options, fixed income, futures, ETFs, indexes, commodities, foreign exchange, convertibles, structured assets, volatility (as an asset class), real estate, distressed assets, cash, cryptocurrencies, miscellany (such as weather, energy, inflation), global macro, infrastructure, and tax arbitrage. Some strategies are based on machine learning algorithms (such as artificial neural networks, Bayes, k-nearest neighbors). We also give: source code for illustrating out-of-sample backtesting with explanatory notes; around 2,000 bibliographic references; and over 900 glossary, acronym and math definitions. The presentation is intended to be descriptive and pedagogical.
+  -----
+  Este libro proporciona descripciones detalladas, que incluyen más de 550 fórmulas matemáticas, para más de 150 estrategias de trading para una gran cantidad de clases de activos y estilos de trading. Esto incluye acciones, opciones, bonos (renta fija), futuros, ETFs, índices, commodities, divisas, bonos convertibles, activos estructurados, volatilidad (como clase de activos), bienes inmuebles, activos en distress, efectivo, criptomonedas, misceláneos (como clima, energía, inflación), macro global, infraestructura y arbitraje impositivo. Algunas estrategias se basan en algoritmos de aprendizaje automático (como redes neuronales artificiales, Bayes, k vecinos más cercanos). El libro también incluye código para backtesting fuera de la muestra con notas explicativas; cerca de 2,000 referencias bibliográficas; más de 900 términos que comprenden el glosario, acrónimos y definiciones matemáticas. La presentación pretende ser descriptiva y pedagógica.</summary>
+    <category term="q-fin.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.MF" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.PM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-11-14T14:58:13Z</published>
+    <arxiv:comment>398 pages; in Spanish; complete English version is freely downloadable from https://ssrn.com/abstract=3247865; English edition: Z. Kakushadze and J.A. Serur. 151 Trading Strategies. Cham, Switzerland: Palgrave Macmillan, an imprint of Springer Nature, 1st Edition (2018), XX, 480 pp; ISBN 978-3-030-02791-9</arxiv:comment>
+    <arxiv:primary_category term="q-fin.GN"/>
+    <arxiv:journal_ref>151 Estrategias de Trading (Spanish Edition, 2019), 398 pp; ISBN 978-1071261873</arxiv:journal_ref>
+    <author>
+      <name>Zura Kakushadze</name>
+    </author>
+    <author>
+      <name>Juan Andrés Serur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1411.2153v1</id>
+    <title>Evolving intraday foreign exchange trading strategies utilizing multiple instruments price series</title>
+    <updated>2014-11-08T19:22:55Z</updated>
+    <link href="https://arxiv.org/abs/1411.2153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1411.2153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a Genetic Programming architecture for the generation of foreign exchange trading strategies. The system's principal features are the evolution of free-form strategies which do not rely on any prior models and the utilization of price series from multiple instruments as input data. This latter feature constitutes an innovation with respect to previous works documented in literature. In this article we utilize Open, High, Low, Close bar data at a 5 minutes frequency for the AUD.USD, EUR.USD, GBP.USD and USD.JPY currency pairs. We will test the implementation analyzing the in-sample and out-of-sample performance of strategies for trading the USD.JPY obtained across multiple algorithm runs. We will also evaluate the differences between strategies selected according to two different criteria: one relies on the fitness obtained on the training set only, the second one makes use of an additional validation dataset. Strategy activity and trade accuracy are remarkably stable between in and out of sample results. From a profitability aspect, the two criteria both result in strategies successful on out-of-sample data but exhibiting different characteristics. The overall best performing out-of-sample strategy achieves a yearly return of 19%.</summary>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-11-08T19:22:55Z</published>
+    <arxiv:comment>15 pages, 10 figures, 9 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.NE"/>
+    <author>
+      <name>Simone Cirillo</name>
+    </author>
+    <author>
+      <name>Stefan Lloyd</name>
+    </author>
+    <author>
+      <name>Peter Nordin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2105.14194v1</id>
+    <title>Constraint-Based Inference of Heuristics for Foreign Exchange Trade Model Optimization</title>
+    <updated>2021-05-11T00:36:02Z</updated>
+    <link href="https://arxiv.org/abs/2105.14194v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2105.14194v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The Foreign Exchange (Forex) is a large decentralized market, on which trading analysis and algorithmic trading are popular. Research efforts have been focusing on proof of efficiency of certain technical indicators. We demonstrate, however, that the values of indicator functions are not reproducible and often reduce the number of trade opportunities, compared to price-action trading.
+  In this work, we develop two dataset-agnostic Forex trading heuristic templates with high rate of trading signals. In order to determine most optimal parameters for the given heuristic prototypes, we perform a machine learning simulation of 10 years of Forex price data over three low-margin instruments and 6 different OHLC granularities. As a result, we develop a specific and reproducible list of most optimal trade parameters found for each instrument-granularity pair, with 118 pips of average daily profit for the optimized configuration.</summary>
+    <category term="q-fin.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-05-11T00:36:02Z</published>
+    <arxiv:comment>8 pages</arxiv:comment>
+    <arxiv:primary_category term="q-fin.ST"/>
+    <author>
+      <name>Nikolay Ivanov</name>
+    </author>
+    <author>
+      <name>Qiben Yan</name>
+    </author>
+  </entry>
+</feed>

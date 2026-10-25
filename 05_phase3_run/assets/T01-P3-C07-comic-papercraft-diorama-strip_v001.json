@@ -1,0 +1,20 @@
+{
+  "asset_id": "T01-P3-C07-comic-papercraft-diorama-strip_v001",
+  "topic": 1,
+  "phase": 3,
+  "chapter": 7,
+  "slot": "comic",
+  "slug": "papercraft-diorama-strip",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.svg",
+  "prompt_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.prompt.md",
+  "meta_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.json",
+  "sha256": "3d873983412666b564d100a6e780c5417f7a3089d9f84a0e32664cb98b4a6b40",
+  "prompt_sha256": "dba70c06be9ace8e710ce08ea6665980dc6675764719e7b270862747163441c8",
+  "cited_rows": [
+    "F-016",
+    "F-017"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

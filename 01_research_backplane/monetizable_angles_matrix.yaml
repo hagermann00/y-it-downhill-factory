@@ -1,0 +1,71 @@
+topic_slug: forex-prop-firms
+authority: "ADR 0038 + ADR 0050 + Owner Directive (In-The-Weeds Monetizable Angles Mapped Across All 54 Topics)"
+
+monetizable_angles:
+  - angle_id: "MON-01"
+    title: "Ethical Skill-Pivot & Tool Affiliate Engine ('For Our Own Profit')"
+    research_hook_in_stage01: "affiliate_deep_dive.yaml (Layer 1C: YIT-AFF-01..06) + P3-Q3 Career Pivot validation + P3-Q14 Picks & Shovels"
+    where_integrated:
+      - "Chapter 7 Pivot Starter Directory (via clean QR shortlinks y-it.co/r/...)"
+      - "Stage 06 Back-Matter Resource Page & 'Results Typical' FTC disclosure"
+      - "Stage 08 3-Email Post-Read Drip Sequence (Emails #2 & #3)"
+      - "Stage 09 Podcap Mid-Roll & Outro Sponsor Read"
+    unit_economics: "$35-$100 CPA / 20%-35% Rev-Share on vetted SQL/Python BI certs, exam prep, and subscription-cancellation tools"
+
+  - angle_id: "MON-02"
+    title: "The $1.99 Post-Sale Success & Exit Companion Pamphlet (Modules P1-P7)"
+    research_hook_in_stage01: "beneficial_mechanisms_deep_dive.yaml (BM-01..BM-08) + P3-Q10..Q17 Honest Way, Do-Nots & Exit rows"
+    where_integrated:
+      - "Chapter 8 Companion Segue (Page 56)"
+      - "Stage 06 companion_pamphlet_199.md & Stage 07 8-Page Pamphlet PDF (pamphlet_companion_199.pdf)"
+      - "ADR 0038 Model A Physical-to-Digital Add-On ($1.99 with print book code; $4.99 standalone)"
+    unit_economics: "95%+ gross margin digital upsell converting 18%-30% of book buyers"
+
+  - angle_id: "MON-03"
+    title: "Interactive 'Run the 4 Gates on Your Own Numbers' Web Mini-App & Unlocked Topic Chatbot"
+    research_hook_in_stage01: "tables/gate_metrics.yaml + magnitude_convergence_matrix.yaml + 53-row stockpile"
+    where_integrated:
+      - "Pamphlet Module P5 (Live Web Gate Calculator & Trade-vs-Index Historical Simulator)"
+      - "Stage 08 Landing Page Free Lead Magnet -> $4.99 Unlocked Topic Chatbot Upsell (ADR 0038)"
+    unit_economics: "$0.00 lead capture (35%+ email opt-in) -> $4.99 chatbot/simulator add-on or $49.99/mo Y-IT Pro"
+
+  - angle_id: "MON-04"
+    title: "'De-Guru'd' Practitioner Spreadsheet & Open-Source Template Pack"
+    research_hook_in_stage01: "Reverse-engineered S-01..S-06 guru tool stacks + GitHub Open-Source Benchmark (Round 3)"
+    where_integrated:
+      - "Pamphlet Module P4 Spreadsheets (a: Gate Calculator, b: Drawdown Ruin Sheet, c: Runway Tracker, d: Hours Log, e: Stop-Rule Dashboard)"
+      - "ADR 0038 $2.99 Full Digital Bundle Add-On"
+    unit_economics: "Replaces $499-$997 guru templates with audited spreadsheets inside the $1.99-$2.99 digital bundle"
+
+  - angle_id: "MON-05"
+    title: "High-CPC 'Before-You-Buy / Scam / Payout Denial' Search & Social Ad Arbitrage"
+    research_hook_in_stage01: "RM-01 Slug Expansion + S-01..S-06 checkout funnel pain keywords + CFTC/FTC enforcement dockets"
+    where_integrated:
+      - "Stage 06/07 14-Page 2-Chapter Freebie Giveaway PDF (freebie_2ch_giveaway.pdf)"
+      - "Stage 08 5 Landing Page Angles & Social Ad Pack (08_ads_and_copy/)"
+      - "Stage 09 25-Min Dual-Persona Podcap + 30-60s TikTok/Reels/Shorts clips"
+    unit_economics: "Captures $8-$25 CPC buyer-intent traffic organically via Podcap/Shorts into the Free 2-Chapter PDF funnel"
+
+  - angle_id: "MON-06"
+    title: "Sunk-Cost Recovery, Chargeback & Subscription-Cancellation Kit (Module P6)"
+    research_hook_in_stage01: "P3-Q5..Q7 ToS clauses, 120-day Visa/MC dispute rules [F-020], hardware resale benchmarks [F-019]"
+    where_integrated:
+      - "Chapter 8 Exit Ramp Checklist (Pages 54-55)"
+      - "Pamphlet Module P6 (Dispute Letter Templates + Cancellation Priority Sheet)"
+      - "Stage 08 Email #2 Hook ('Recover $480-$900 in Sunk Fees & Hardware')"
+    unit_economics: "Immediate cash-saving utility ($260/mo saved + $480-$900 recovered) that makes the $1.99 pamphlet an instant no-brainer"
+
+  - angle_id: "MON-07"
+    title: "Contagion-Mapped Multi-Book Cross-Sell Bundles ('Next Pitches to Watch For')"
+    research_hook_in_stage01: "P3-Q8 Next-Pitch retargeting map [F-022] + topic-churn-catalog-54.yaml adjacency graph"
+    where_integrated:
+      - "Chapter 8 'Next Pitches to Watch For' (Crypto Prop Bots, 0DTE Options Discord Rooms, 'Challenge Recovery' Agencies)"
+      - "Back-Matter 54-Topic Series Catalog & 3-Book Speculation Autopsy Bundle ($24.99)"
+    unit_economics: "Lifts average order value (AOV) from $14.99 single book to $24.99-$34.99 multi-book bundle"
+
+  - angle_id: "MON-08"
+    title: "Y-IT Pro All-Access Subscription & B2B Consumer-Protection Intelligence Dataset"
+    research_hook_in_stage01: "Standardized 15-field rows.yaml + affiliates.yaml + live_harvest_ledger.yaml across all 54 topics"
+    where_integrated:
+      - "ADR 0038 Model C: $49.99/month Y-IT Pro Subscription (all 44+ books, extended Podcaps, unlimited chatbot)"
+    unit_economics: "$49.99/mo recurring ARR backed by the growing 54-topic empirical lakehouse"

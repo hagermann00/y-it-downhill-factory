@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 1060" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="accentAmber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="820" height="1060" rx="10" fill="url(#bgLeft)" stroke="#334155" stroke-width="3"/>
+
+  <!-- Top Header Banner -->
+  <rect x="16" y="16" width="788" height="74" rx="8" fill="#020617" stroke="#38BDF8" stroke-width="2"/>
+  <text x="32" y="42" font-family="Arial Black, sans-serif" font-size="15.0" fill="#38BDF8">HOW WE CHECKED THE RECEIPTS · PART I: THE EMPIRICAL INGESTION ENGINE</text>
+  <text x="32" y="62" font-family="Consolas, monospace" font-size="10.2" fill="#E2E8F0">WHY TRUST THIS LEDGER? Most $997 courses are researched in the back of a rented supercar. Here is our actual engine:</text>
+  <text x="32" y="79" font-family="Consolas, monospace" font-size="9.5" fill="#94A3B8">ARCHITECTURE: 5-Layer Interpretable Context Protocol (L0–L4) · Mechanisms RM-01..RM-06 · Zero-Mock Gate</text>
+
+  <!-- STAGE 1: TOPIC ROUTER & DUAL HYPOTHESIS ENGINE -->
+  <rect x="16" y="104" width="788" height="142" rx="8" fill="#0F172A" stroke="#475569" stroke-width="1.8"/>
+  <rect x="16" y="104" width="788" height="26" rx="6" fill="#1E3A8A"/>
+  <text x="28" y="121" font-family="Arial Black, sans-serif" font-size="11.5" fill="#FFFFFF">STAGE I · UNIVERSAL 54-TOPIC ROUTER &amp; DUAL-HYPOTHESIS PROTOCOL (RM-01 / RM-02 / RM-03)</text>
+  <text x="615" y="121" font-family="Consolas, monospace" font-size="10" fill="#93C5FD">9 FAMILIES (F1..F9) -&gt; 44 BOOKS</text>
+
+  <!-- Left box: 9 Topic Families -->
+  <rect x="28" y="138" width="250" height="96" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="1.2"/>
+  <text x="38" y="155" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#38BDF8">1. Dynamic Topic Classification</text>
+  <text x="38" y="171" font-family="Consolas, monospace" font-size="9" fill="#CBD5E1">• F1 Ecommerce  • F2 Agencies  • F3 Content</text>
+  <text x="38" y="185" font-family="Consolas, monospace" font-size="9" fill="#CBD5E1">• F4 Trading    • F5 Guru/MLM  • F6 Brand</text>
+  <text x="38" y="199" font-family="Consolas, monospace" font-size="9" fill="#CBD5E1">• F7 Real Estate• F8 Flipping  • F9 AI/Tech</text>
+  <rect x="38" y="207" width="230" height="20" rx="4" fill="#0284C7"/>
+  <text x="46" y="221" font-family="Consolas, monospace" font-size="9.5" font-weight="bold" fill="#FFFFFF">ACTIVE: F4 / ARCH-1 SPECULATION_BBOOK</text>
+
+  <!-- Middle box: RM-02 Entity & Actor Graph -->
+  <rect x="290" y="138" width="240" height="96" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="1.2"/>
+  <text x="300" y="155" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#FBBF24">2. RM-02 Structural Actor Graph</text>
+  <text x="300" y="171" font-family="Consolas, monospace" font-size="9" fill="#E2E8F0">We don't query seller buzzwords; we map</text>
+  <text x="300" y="184" font-family="Consolas, monospace" font-size="9" fill="#E2E8F0">the institutions that hold the ledger:</text>
+  <text x="300" y="199" font-family="Consolas, monospace" font-size="8.8" fill="#FDE68A">• Regulators: CFTC, SEC, FTC, ESMA, FCA</text>
+  <text x="300" y="212" font-family="Consolas, monospace" font-size="8.8" fill="#FDE68A">• Central Banks &amp; Labor: BIS, Fed, BLS</text>
+  <text x="300" y="225" font-family="Consolas, monospace" font-size="8.8" fill="#FDE68A">• Clearing &amp; Server Rails: B-Book, Card Nets</text>
+
+  <!-- Right box: Dual Hypotheses -->
+  <rect x="542" y="138" width="250" height="96" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="1.2"/>
+  <text x="552" y="155" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#4ADE80">3. Anti-Bias Dual Hypotheses</text>
+  <text x="552" y="172" font-family="Consolas, monospace" font-size="8.8" fill="#86EFAC">H0 (Bull Test): Under what exact skill,</text>
+  <text x="552" y="184" font-family="Consolas, monospace" font-size="8.8" fill="#86EFAC">capital, or audience edge does it work?</text>
+  <text x="552" y="201" font-family="Consolas, monospace" font-size="8.8" fill="#FCA5A5">H1 (Bear Test): Where do drawdown</text>
+  <text x="552" y="213" font-family="Consolas, monospace" font-size="8.8" fill="#FCA5A5">barriers, B-books &amp; fees break starters?</text>
+  <text x="552" y="227" font-family="Consolas, monospace" font-size="8.5" fill="#94A3B8">Both tested across 38 canonical questions.</text>
+
+  <!-- Down Arrow 1 -> 2 -->
+  <polygon points="410,248 400,258 420,258" fill="#38BDF8"/>
+  <line x1="410" y1="246" x2="410" y2="262" stroke="#38BDF8" stroke-width="3"/>
+
+  <!-- STAGE 2: EXHAUSTIVE MULTI-INDEX & STATISTICAL LAKEHOUSE SWARM -->
+  <rect x="16" y="262" width="788" height="270" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.8"/>
+  <rect x="16" y="262" width="788" height="26" rx="6" fill="url(#accentCyan)"/>
+  <text x="28" y="279" font-family="Arial Black, sans-serif" font-size="11.5" fill="#020617">STAGE II · MULTI-INDEX RETRIEVAL &amp; STATISTICAL LAKEHOUSE SWARM (RM-04 / RM-05 · 36 LIVE PROBES)</text>
+  <text x="615" y="279" font-family="Consolas, monospace" font-size="10" font-weight="bold" fill="#020617">140+ VALIDATED SOURCES</text>
+
+  <!-- 4 Columns of Source Providers (Technical Names Only) -->
+  <!-- Col 1: Tier 1 Gov & Statutory -->
+  <rect x="28" y="298" width="184" height="172" rx="6" fill="#1E293B" stroke="#0EA5E9" stroke-width="1.5"/>
+  <rect x="28" y="298" width="184" height="22" rx="4" fill="#0369A1"/>
+  <text x="36" y="313" font-family="Arial Black, sans-serif" font-size="9.5" fill="#FFFFFF">TIER 1 · STATUTORY &amp; GOV</text>
+  <text x="36" y="332" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• U.S. Federal Register API</text>
+  <text x="36" y="346" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• CFTC RFED Loss Filings</text>
+  <text x="36" y="360" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• CFTC Enforcement Dockets</text>
+  <text x="36" y="374" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• BIS Triennial FX ($7.5T)</text>
+  <text x="36" y="388" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• ESMA &amp; UK FCA Registries</text>
+  <text x="36" y="402" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• SEC EDGAR 10-K/10-Q Index</text>
+  <text x="36" y="416" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• FTC Business Opp Dockets</text>
+  <rect x="36" y="428" width="168" height="34" rx="4" fill="#0F172A"/>
+  <text x="42" y="442" font-family="Consolas, monospace" font-size="8.3" fill="#38BDF8">Rule: Tier 1 stands alone on</text>
+  <text x="42" y="454" font-family="Consolas, monospace" font-size="8.3" fill="#38BDF8">statutory &amp; macro facts.</text>
+
+  <!-- Col 2: Columnar OLAP Statistical Lakehouse & Parquet Clusters -->
+  <rect x="221" y="298" width="184" height="172" rx="6" fill="#1E293B" stroke="#10B981" stroke-width="1.5"/>
+  <rect x="221" y="298" width="184" height="22" rx="4" fill="#047857"/>
+  <text x="229" y="313" font-family="Arial Black, sans-serif" font-size="9.5" fill="#FFFFFF">OLAP &amp; PARQUET LAKEHOUSE</text>
+  <text x="229" y="332" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Columnar OLAP Warehouse:</text>
+  <text x="229" y="346" font-family="Consolas, monospace" font-size="8.5" fill="#A7F3D0">  - National Labor Wage Tables</text>
+  <text x="229" y="360" font-family="Consolas, monospace" font-size="8.5" fill="#A7F3D0">  - Quarterly Corporate Filings</text>
+  <text x="229" y="374" font-family="Consolas, monospace" font-size="8.5" fill="#A7F3D0">  - Federal Complaint Ledgers</text>
+  <text x="229" y="388" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• U.S. BLS OEWS ($29.76/hr)</text>
+  <text x="229" y="402" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Fed Reserve SHED ($1,000)</text>
+  <text x="229" y="416" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Elastic Parquet Cohort Sets</text>
+  <rect x="229" y="428" width="168" height="34" rx="4" fill="#0F172A"/>
+  <text x="235" y="442" font-family="Consolas, monospace" font-size="8.3" fill="#34D399">Elastic: Tapped on demand,</text>
+  <text x="235" y="454" font-family="Consolas, monospace" font-size="8.3" fill="#34D399">never forced when not needed.</text>
+
+  <!-- Col 3: Tier 1/2 Academic & Large Cohorts -->
+  <rect x="414" y="298" width="184" height="172" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5"/>
+  <rect x="414" y="298" width="184" height="22" rx="4" fill="#B45309"/>
+  <text x="422" y="313" font-family="Arial Black, sans-serif" font-size="9.5" fill="#FFFFFF">TIER 1/2 · COHORT STUDIES</text>
+  <text x="422" y="332" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Academic Graph API (80+)</text>
+  <text x="422" y="346" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Crossref DOI Registry (36)</text>
+  <text x="422" y="360" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Quantitative Finance Archive</text>
+  <text x="422" y="374" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Empirical Cohort Index</text>
+  <text x="422" y="388" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• 420,000-Account Prop</text>
+  <text x="422" y="402" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">  Evaluation Cohort Study</text>
+  <text x="422" y="416" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Multi-Year Day-Trade Logs</text>
+  <rect x="422" y="428" width="168" height="34" rx="4" fill="#0F172A"/>
+  <text x="428" y="442" font-family="Consolas, monospace" font-size="8.3" fill="#FBBF24">Rule: Tier 2 requires &gt;=2</text>
+  <text x="428" y="454" font-family="Consolas, monospace" font-size="8.3" fill="#FBBF24">independent non-seller sources.</text>
+
+  <!-- Col 4: Tier 3/4 Neural Search, DOM Crawl & Funnels -->
+  <rect x="607" y="298" width="185" height="172" rx="6" fill="#1E293B" stroke="#EC4899" stroke-width="1.5"/>
+  <rect x="607" y="298" width="185" height="22" rx="4" fill="#BE185D"/>
+  <text x="615" y="313" font-family="Arial Black, sans-serif" font-size="9.5" fill="#FFFFFF">TIER 3/4 · DOM &amp; FUNNELS</text>
+  <text x="615" y="332" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Neural Semantic Vector Index</text>
+  <text x="615" y="346" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Parallel Multi-Index Search</text>
+  <text x="615" y="360" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Federal .gov Query Sweeper</text>
+  <text x="615" y="374" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Headless JS &amp; DOM Renderer</text>
+  <text x="615" y="388" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Temporal CDX Snapshot API</text>
+  <text x="615" y="402" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Captured Sellers S-01..S-06</text>
+  <text x="615" y="416" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Open-Source Code Registries</text>
+  <rect x="615" y="428" width="169" height="34" rx="4" fill="#0F172A"/>
+  <text x="621" y="442" font-family="Consolas, monospace" font-size="8.3" fill="#F472B6">Rule: Seller pages = Claims</text>
+  <text x="621" y="454" font-family="Consolas, monospace" font-size="8.3" fill="#F472B6">only (never cited as Facts).</text>
+
+  <!-- Bottom bar inside Stage II: Dedicated Local VRAM + Elastic Cloud GPU & Reasoning Array -->
+  <rect x="28" y="478" width="764" height="44" rx="6" fill="#020617" stroke="#475569" stroke-width="1.2"/>
+  <text x="38" y="495" font-family="Arial Black, sans-serif" font-size="9.5" fill="#38BDF8">HYBRID COMPUTE &amp; INFERENCE ARRAY (12GB DEDICATED LOCAL VRAM + ELASTIC CLOUD GPU CLUSTER):</text>
+  <text x="38" y="512" font-family="Consolas, monospace" font-size="8.5" fill="#CBD5E1">[High-Throughput Bulk Atomizer] · [Cross-Source Claim Linker] · [38-Question Assurance Auditor] · [Independent Trace Verifier] · [Local 12GB VRAM &amp; Elastic GPU Bench]</text>
+
+  <!-- Down Arrow 2 -> 3 -->
+  <polygon points="410,536 400,546 420,546" fill="#38BDF8"/>
+  <line x1="410" y1="532" x2="410" y2="550" stroke="#38BDF8" stroke-width="3"/>
+
+  <!-- STAGE 3: IMMUTABLE DOM ARCHIVE, SHA-256 FINGERPRINTING & PRE-TRIM AFFILIATE HARVEST -->
+  <rect x="16" y="550" width="788" height="196" rx="8" fill="#0F172A" stroke="#F59E0B" stroke-width="1.8"/>
+  <rect x="16" y="550" width="788" height="26" rx="6" fill="url(#accentAmber)"/>
+  <text x="28" y="567" font-family="Arial Black, sans-serif" font-size="11.5" fill="#020617">STAGE III · CRYPTOGRAPHIC DOM VAULT &amp; PRE-TRIM AFFILIATE HARVESTER (01_research_backplane/)</text>
+  <text x="630" y="567" font-family="Consolas, monospace" font-size="10" font-weight="bold" fill="#020617">SHA-256 CONTENT LOCK</text>
+
+  <!-- Left box: Raw HTML / Probe Vault -->
+  <rect x="28" y="586" width="372" height="148" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="38" y="604" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#FBBF24">1. Immutable Local Source Archive (pages/*.html)</text>
+  <text x="38" y="620" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">Every source page &amp; API payload is saved locally before</text>
+  <text x="38" y="633" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">extraction so URLs can never rot or change behind our backs:</text>
+  <text x="38" y="650" font-family="Consolas, monospace" font-size="8.5" fill="#FDE68A">• pages/src_01..src_09.html (9 Primary Canonical Archives)</text>
+  <text x="38" y="664" font-family="Consolas, monospace" font-size="8.5" fill="#FDE68A">• pages/live_probes/probe-01..36.json (36 Live Sweeps)</text>
+  <text x="38" y="678" font-family="Consolas, monospace" font-size="8.5" fill="#FDE68A">• stockpile.lock -&gt; SHA-256 digest over rows + evidence</text>
+  <rect x="38" y="688" width="352" height="36" rx="4" fill="#020617"/>
+  <text x="46" y="703" font-family="Consolas, monospace" font-size="8.3" fill="#4ADE80">GATE G2 LAW: Every cited passage in evidence.yaml must</text>
+  <text x="46" y="716" font-family="Consolas, monospace" font-size="8.3" fill="#4ADE80">match character-for-character inside pages/*.html.</text>
+
+  <!-- Right box: Pre-Trim Affiliate & Funnel Extraction -->
+  <rect x="414" y="586" width="378" height="148" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="424" y="604" font-family="Arial, sans-serif" font-size="10.5" font-weight="bold" fill="#FBBF24">2. Pre-Trim Affiliate &amp; Seller Funnel Capture</text>
+  <text x="424" y="620" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">Before stripping HTML boilerplate, the harvester extracts</text>
+  <text x="424" y="633" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">every referral code, IB rebate, and upsell rung:</text>
+  <text x="424" y="650" font-family="Consolas, monospace" font-size="8.5" fill="#FCA5A5">• Layer 1A (Exposed): 20%-25% Prop Challenge CPA loops,</text>
+  <text x="424" y="663" font-family="Consolas, monospace" font-size="8.5" fill="#FCA5A5">  $6-$15/lot B-book IB rebates, $68/mo indicator kickbacks</text>
+  <text x="424" y="678" font-family="Consolas, monospace" font-size="8.5" fill="#93C5FD">• Layer 1B (P3-Q14): Picks-and-Shovels Honesty/Ethics Audit</text>
+  <text x="424" y="693" font-family="Consolas, monospace" font-size="8.5" fill="#86EFAC">• Layer 1C (Own-Profit): Vetted SQL/Python BI &amp; Exit Tools</text>
+  <text x="424" y="716" font-family="Consolas, monospace" font-size="8.3" fill="#94A3B8">Anonymized Seller Keys (S-01..S-06): System, never person.</text>
+
+  <!-- Down Arrow 3 -> 4 -->
+  <polygon points="410,750 400,760 420,760" fill="#F59E0B"/>
+  <line x1="410" y1="746" x2="410" y2="764" stroke="#F59E0B" stroke-width="3"/>
+
+  <!-- STAGE 4: 15-FIELD EVIDENCE ATOMIZER & 38-QUESTION MATRIX -->
+  <rect x="16" y="764" width="788" height="276" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="2"/>
+  <rect x="16" y="764" width="788" height="26" rx="6" fill="#059669"/>
+  <text x="28" y="781" font-family="Arial Black, sans-serif" font-size="11.5" fill="#FFFFFF">STAGE IV · 15-FIELD EVIDENCE ATOMIZER &amp; 38-QUESTION MATRIX (RM-06 · 53 LOCKED ROWS)</text>
+  <text x="615" y="781" font-family="Consolas, monospace" font-size="10" font-weight="bold" fill="#A7F3D0">38 / 38 QUESTIONS ANSWERED</text>
+
+  <!-- 3 Atomized Row Streams -->
+  <rect x="28" y="800" width="242" height="172" rx="6" fill="#1E293B" stroke="#F43F5E" stroke-width="1.5"/>
+  <text x="38" y="819" font-family="Arial Black, sans-serif" font-size="10" fill="#FDA4AF">CLAIM ROWS (C-001..C-014)</text>
+  <text x="38" y="835" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• 14 Seller Pitch Claims</text>
+  <text x="38" y="850" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Answers P1-Q1 .. P1-Q12</text>
+  <text x="38" y="865" font-family="Consolas, monospace" font-size="8.8" fill="#FDA4AF">• Feeds Phase 1 (Ch 1 &amp; Ch 2)</text>
+  <text x="38" y="882" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">Examples: "$200k Funded Account",</text>
+  <text x="38" y="895" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">"$10k/mo in 45 mins", "Keep 90%"</text>
+  <rect x="38" y="908" width="222" height="52" rx="4" fill="#020617"/>
+  <text x="44" y="924" font-family="Consolas, monospace" font-size="8.2" fill="#F43F5E">QUARANTINE RULE: Phase 1 cites</text>
+  <text x="44" y="937" font-family="Consolas, monospace" font-size="8.2" fill="#F43F5E">ONLY C-### rows. Every numbered</text>
+  <text x="44" y="950" font-family="Consolas, monospace" font-size="8.2" fill="#F43F5E">claim links to a testing F-### row.</text>
+
+  <rect x="284" y="800" width="246" height="172" rx="6" fill="#1E293B" stroke="#38BDF8" stroke-width="1.5"/>
+  <text x="294" y="819" font-family="Arial Black, sans-serif" font-size="10" fill="#7DD3FC">FACT ROWS (F-001..F-027)</text>
+  <text x="294" y="835" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• 24 Audited Primary Facts</text>
+  <text x="294" y="850" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Answers P2-Q1..Q12 &amp; P3-Q1..Q14</text>
+  <text x="294" y="865" font-family="Consolas, monospace" font-size="8.8" fill="#7DD3FC">• Feeds Phases 2 &amp; 3 (Ch 3,5,6,7,8)</text>
+  <text x="294" y="882" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">Examples: $1,840 Stake, 98.4% B-book,</text>
+  <text x="294" y="895" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">2.4% 12mo Odds, $6.40/hr vs $29.76/hr</text>
+  <rect x="294" y="908" width="226" height="52" rx="4" fill="#020617"/>
+  <text x="300" y="924" font-family="Consolas, monospace" font-size="8.2" fill="#38BDF8">CONVERGENCE RULE: Every core</text>
+  <text x="300" y="937" font-family="Consolas, monospace" font-size="8.2" fill="#38BDF8">metric requires &gt;=3 corroborating</text>
+  <text x="300" y="950" font-family="Consolas, monospace" font-size="8.2" fill="#38BDF8">sources of matching magnitude.</text>
+
+  <rect x="544" y="800" width="248" height="172" rx="6" fill="#1E293B" stroke="#FBBF24" stroke-width="1.5"/>
+  <text x="554" y="819" font-family="Arial Black, sans-serif" font-size="10" fill="#FDE68A">CASE ROWS (K-001..K-015)</text>
+  <text x="554" y="835" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• 15 Corroborated Case Dossiers</text>
+  <text x="554" y="850" font-family="Consolas, monospace" font-size="8.8" fill="#E2E8F0">• Tagged across 13+1 Molds (RM-12)</text>
+  <text x="554" y="865" font-family="Consolas, monospace" font-size="8.8" fill="#FDE68A">• Feeds Ch 4 Forensic Insert &amp; Ch 8</text>
+  <text x="554" y="882" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">35 Raw Cases Evaluated -&gt; Top 5</text>
+  <text x="554" y="895" font-family="Consolas, monospace" font-size="8.3" fill="#CBD5E1">Molds Locked (3 Cases Per Mold)</text>
+  <rect x="554" y="908" width="228" height="52" rx="4" fill="#020617"/>
+  <text x="560" y="924" font-family="Consolas, monospace" font-size="8.2" fill="#FBBF24">COMPOSITE LAW: No real person's</text>
+  <text x="560" y="937" font-family="Consolas, monospace" font-size="8.2" fill="#FBBF24">name printed; every persona is the</text>
+  <text x="560" y="950" font-family="Consolas, monospace" font-size="8.2" fill="#FBBF24">exact median of &gt;=3 real cases.</text>
+
+  <!-- Bottom Gutter Bridge Banner pointing right to Page 59 -->
+  <rect x="28" y="982" width="764" height="46" rx="6" fill="#064E3B" stroke="#34D399" stroke-width="1.8"/>
+  <text x="42" y="1002" font-family="Arial Black, sans-serif" font-size="11" fill="#A7F3D0">PIPELINE BRIDGE ACROSS THE GUTTER: 53 ATOMIZED ROWS + 140+ LIVE SOURCES ───────────────►</text>
+  <text x="42" y="1019" font-family="Consolas, monospace" font-size="9.2" fill="#ECFDF5">Continues onto Right Page (p. 59): Magnitude Convergence Sieve (RM-10v2) -&gt; 14-Mold Empirical Census -&gt; Compiler Gates G1-G7</text>
+</svg>

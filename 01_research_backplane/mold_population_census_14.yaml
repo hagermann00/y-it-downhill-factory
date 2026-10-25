@@ -1,0 +1,133 @@
+topic_slug: forex-prop-firms
+architecture_note: >
+  Reduced from the legacy 21-archetype character bank via ADR 0039 and ADR 0049 into the canonical
+  13+1 Mold Menu (E1..E4, H1..H5, C1..C4, new?). Stage 01 (RM-12) tags all discovered practitioner cases
+  across all 14 codes without pre-selection. Stage 02 dynamically selects the 5 molds populated most
+  efficiently (>= 3 corroborated cases each).
+
+total_raw_cases_evaluated: 35
+vetted_composite_cases_locked: 15
+minimum_cases_per_selected_mold: 3
+
+mold_population_table:
+  # --- SELECTED TOP 5 MOLDS (MOST EFFICIENTLY POPULATED, >= 3 VETTED CASES EACH) ---
+  - mold_code: "E2"
+    mold_name: "The Built-In Audience"
+    category: "Edge (Why the winner won)"
+    raw_candidates_found: 5
+    vetted_cases_locked: 3
+    case_ids: ["K-001", "K-002", "K-003"]
+    selected_for_ch4: true
+    selection_rank: 1
+    composite_persona: "Marcus Conviction™"
+    caricature_asset: "T01-P2-C04-caricature-case1-e2-marcus_v001.svg"
+    exhibit_asset: "T01-P2-C04-exhibit-case1-e2-gap-bar_v001.svg"
+    empirical_rationale: "Highest-density winner mold: $0 median net trading profit vs $41k-$68k ($54,000 median) in 20%-25% prop affiliate referral CPA commissions."
+
+  - mold_code: "H4"
+    mold_name: "The Upsell Ladder"
+    category: "Hidden Step (What the pitch left out)"
+    raw_candidates_found: 6
+    vetted_cases_locked: 3
+    case_ids: ["K-004", "K-005", "K-006"]
+    selected_for_ch4: true
+    selection_rank: 2
+    composite_persona: "Elena Diligence"
+    caricature_asset: "T01-P2-C04-caricature-case2-h4-elena_v001.svg"
+    exhibit_asset: "T01-P2-C04-exhibit-case2-h4-split-bar_v001.svg"
+    empirical_rationale: "Most densely populated hidden-step mechanism: $297 course -> $997 mentorship -> $149/mo VIP Discord signals -> 5x challenge resets ($4,110 median spent, $0 withdrawn)."
+
+  - mold_code: "H5"
+    mold_name: "The Tool Tax"
+    category: "Hidden Step (What the pitch left out)"
+    raw_candidates_found: 5
+    vetted_cases_locked: 3
+    case_ids: ["K-007", "K-008", "K-009"]
+    selected_for_ch4: true
+    selection_rank: 3
+    composite_persona: "Devon Precision"
+    caricature_asset: "T01-P2-C04-caricature-case3-h5-devon_v001.svg"
+    exhibit_asset: "T01-P2-C04-exhibit-case3-h5-waterfall_v001.svg"
+    empirical_rationale: "High-density technical trap: TradingView Premium + LuxAlgo/footprint overlays + London VPS + $499 Telegram Gold EA bot ($2,923 median spent, terminated for shared EA IP)."
+
+  - mold_code: "C3"
+    mold_name: "The Rule Change"
+    category: "Constraint (Where the math or clock breaks)"
+    raw_candidates_found: 5
+    vetted_cases_locked: 3
+    case_ids: ["K-013", "K-014", "K-015"]
+    selected_for_ch4: true
+    selection_rank: 4
+    composite_persona: "Victor Discipline"
+    caricature_asset: "T01-P2-C04-caricature-case5-c3-victor_v001.svg"
+    exhibit_asset: "T01-P2-C04-exhibit-case5-c3-cliff_v001.svg"
+    empirical_rationale: "Defining prop-firm structural risk: traders who actually pass and build a +$5,100 funded cushion get denied via retroactive 30% consistency rules, MetaQuotes MT5 license freezes, or 18-pip news slippage."
+
+  - mold_code: "C1"
+    mold_name: "The Runway Gap"
+    category: "Constraint (Where the math or clock breaks)"
+    raw_candidates_found: 4
+    vetted_cases_locked: 3
+    case_ids: ["K-010", "K-011", "K-012"]
+    selected_for_ch4: true
+    selection_rank: 5
+    composite_persona: "Hannah Patience"
+    caricature_asset: "T01-P2-C04-caricature-case4-c1-hannah_v001.svg"
+    exhibit_asset: "T01-P2-C04-exhibit-case4-c1-timeline_v001.svg"
+    empirical_rationale: "Proves what happens even when a disciplined 0.25%-risk trader wins: 14 months and 1,120 hours to clear $1,250 net after $2,150 in fees ($1.11/hr effective wage)."
+
+  # --- NON-SELECTED MOLDS (BELOW >=3 THRESHOLD OR ABSORBED INTO HIGHER-DENSITY MOLDS) ---
+  - mold_code: "E1"
+    mold_name: "The Second Attempt"
+    raw_candidates_found: 1
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "Only 1 documented case had prior institutional FX desk experience; below >=3 composite threshold."
+  - mold_code: "E3"
+    mold_name: "The Early Mover"
+    raw_candidates_found: 1
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "2020-2021 early prop affiliates merged into E2 Built-In Audience; below >=3 threshold for current starters."
+  - mold_code: "E4"
+    mold_name: "The Full-Time Grind"
+    raw_candidates_found: 2
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "2 cases found; hourly time-log reality folded into C1 (Hannah Patience, 1,120 hours)."
+  - mold_code: "H1"
+    mold_name: "The Capital Floor"
+    raw_candidates_found: 1
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "Primary in F1 Ecommerce / F7 Real Estate; in prop trading, capital floor manifests via H4/H5 reset & tool loops."
+  - mold_code: "H2"
+    mold_name: "The Ad Tax"
+    raw_candidates_found: 0
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "0 retail trader cases buy Meta/TikTok ads (dominant in Dropshipping/FBA, not Forex)."
+  - mold_code: "H3"
+    mold_name: "The Hidden Hours"
+    raw_candidates_found: 2
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "2 standalone cases; screen-time dilution captured in C1 ($1.11/hr) and Chapter 3 Payoff ($6.40/hr)."
+  - mold_code: "C2"
+    mold_name: "The Margin Squeeze"
+    raw_candidates_found: 1
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "Spread/swap drag documented in Chapter 3/5 cohort tables; below >=3 standalone case threshold."
+  - mold_code: "C4"
+    mold_name: "The Concentration Trap"
+    raw_candidates_found: 2
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "Single-firm counterparty dependency folded into C3 (The Rule Change / Broker Freeze)."
+  - mold_code: "new?"
+    mold_name: "Unclassified / Candidate New Mold"
+    raw_candidates_found: 0
+    vetted_cases_locked: 0
+    selected_for_ch4: false
+    empirical_rationale: "All 35 raw cases mapped cleanly onto the 13 canonical molds; zero unclassified anomalies."

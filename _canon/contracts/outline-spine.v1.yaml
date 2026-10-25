@@ -1,0 +1,830 @@
+# outline-spine.v1.yaml: the series spine as data (the outline's fixed layer).
+#
+# This file restates docs/contracts/outline.v1.md (ADR 0048-0050), plus the
+# packet parts in phase-packet.v1.md. It is for the Outline stage and its
+# checker, and it adds no rule. If this file and outline.v1 ever differ,
+# outline.v1 wins and this file is corrected. It changes only together with
+# outline.v1, through a dated ADR.
+#
+# Who reads what:
+#   - The Outline agent for Phase N reads `outline_agent`, `rows`, `market`, the
+#     shared blocks (`interstitials`, `posibot`, `charts`, `gate`, `molds`,
+#     `tone`, `payoff_map`) and `phases.phase_N`. Nothing else in this file.
+#   - The checker reads the same blocks, and checks the packet against
+#     `phases.phase_N.checker`.
+#   - Research reads nothing here. Its listing is research-needs.v1.md.
+#
+# Conventions:
+#   - `count` and `range` are [min, max], inclusive. A single number means exactly that many.
+#   - `from` lists the evidence questions that feed a part or a dial. Their
+#     full text is in research-needs.v1.md §5.
+#   - `rule` is the spine's own wording, shortened. outline.v1 has the full text.
+
+spine: outline.v1
+status: "CANON: restates outline.v1 and adds no rule; if they differ, outline.v1 wins"
+file_version: 1
+date: 2026-10-02
+decided_in: [ADR 0048, ADR 0049, ADR 0050]
+
+# ---------------------------------------------------------------------------
+# The Outline stage (outline.v1 §1-§2)
+# ---------------------------------------------------------------------------
+outline_agent:
+  runs: "once per topic, after Research: one isolated agent per phase, in phase order"
+  reads_only:
+    - "this file: the shared blocks and its own phase's block"
+    - "the rows distributed to its phase (outline.v1 §3)"
+    - "the topic seed"
+    - "for Phases 2 and 3: the setups the earlier phases handed on, read-only"
+  does:
+    - "maps evidence to the spine's parts and sets each dial within its range"
+    - "lets a rule decide wherever a rule can; judges only what the rules leave open"
+    - "logs every departure from a default: the dial, the value, the reason, the row IDs"
+    - "applies the spine's fallback when evidence is missing, or flags the owner"
+  never:
+    - "writes prose: the book's sentences, PosiBot lines and image prompts are written in Composition"
+    - "invents evidence"
+    - "asks Research for more: research takes nothing from downstream (ADR 0046)"
+    - "drops a required part, moves an interstitial out of its phase home (ADR 0020), or adds a part type the spine doesn't list"
+  output: "one phase packet (phase-packet.v1), frozen once the checker passes it"
+  checker: "a mechanical check, not an agent; on a failure the run stops and lists what failed, for the owner"
+  approval: "the owner approves the packets by hand for the first two topics"
+
+# ---------------------------------------------------------------------------
+# Research rows (outline.v1 §3). Research owns the table format; every row
+# carries these fields.
+# ---------------------------------------------------------------------------
+rows:
+  kinds:
+    claim:
+      id_prefix: "C-"
+      meaning: "the pitch's own words, as sold"
+    fact:
+      id_prefix: "F-"
+      meaning: "an audited finding"
+    case:
+      id_prefix: "K-"
+      meaning: "one documented real person's experience: what they did, spent and earned, how it ended, and their life position"
+      use: "feeds only composites (Ch 4) and Ch 8's callbacks; never printed as an individual"
+  fields:            # per kind: required | optional | the condition under which it is required
+    id:       { claim: required, fact: required, case: required }
+    kind:     { claim: required, fact: required, case: required }
+    question: { claim: required, fact: required, case: required }
+    phases:   { claim: required, fact: required, case: required, note: "a row may go to more than one phase" }
+    text:     { claim: "required, quoted exactly", fact: required, case: required }
+    number:   { claim: optional, fact: optional, case: optional, note: "the value, the unit, and the wording as stated" }
+    venue:    { claim: required }
+    seen:     { claim: required }
+    seller:   { claim: required, note: "an anonymous key (S-01, S-02, ...), never printed" }
+    capture:  { claim: "required for visual claims" }
+    tier:     { fact: required, case: required }
+    market:   { fact: required, case: required, note: "US (the default), or world for a relevant worldwide figure that sits alongside the US one; world flags potential market expansion" }
+    tests:    { claim: "required when the claim carries a number", note: "the IDs of the fact rows that test it; Research supplies them" }
+    mold:     { case: required, note: "a mold ID from `molds`, or new?" }
+    source:   { claim: required, fact: required, case: required, note: "kept for vetting; its exact passages are on the evidence list; never printed as a person's name" }
+  venues: [course page, sales page, ad, video, webinar, social post, forum, other]
+  tiers:             # as printed in Appendix A
+    1: "academic and government"
+    2: "industry research firms"
+    3: "platform-published data"
+    4: "documented analysis, corroborated by Tiers 1-3"
+  collect_wide:      # outline.v1 §2 (owner, 2026-10-06; ADR 0030 amendment)
+    rule: "Research may collect as much as it finds; the spine's counts say how the Outline stage uses rows and never cap what Research collects"
+    limits:
+      - "every row is on the evidence list"
+      - "nothing collected deletes or overwrites earlier evidence"
+      - "nothing contradicts canon"
+    disagreement: "rows that disagree are both kept, and the disagreement is reported"
+    off_question: "findings that answer no evidence question stay in Research's own store and never reach a packet"
+  beside_rows:       # outline.v1 §3 (owner, 2026-10-03 and 2026-10-06; ADR 0050 decision 11, ADR 0030 amendment)
+    evidence_list:   # required
+      key: "row ID"
+      entries: "one per source behind a row, as many as the vetting rule counts"
+      entry_fields:
+        row: "the row ID"
+        url: "the page's real address (the one the source list prints); never a redirect or a research tool's grounding link"
+        passage: "the words on the page that hold the row's statement, copied exactly, with the row's number in it as stated"
+        retrieved: "the date it was read"
+        archive: "an archived copy or saved capture, when the page allows one"
+      rule: "no passage, no row: anything worked out rather than found (a median, a stop rule, an example value) can't be a row"
+      trace_audit: "before hand-over, an independent checker fetches each address and matches the passage and the number; a row that fails is disqualified, never patched"
+    affiliate_register: "every affiliate link found in any source, extracted before any trimming and kept, never stripped: the link, the program it pays, the seller key that placed it, where and when it was seen, its source. It feeds P3-Q14; the book never prints a link from it"
+    source_list: "every source behind the rows, exported for the Sources appendix: one bullet per source, fields separated by commas (publisher or outlet, title, date, link, tier); never a person's name"
+    chart_tables:    # optional; owner, 2026-10-03; ADR 0030 amendment
+      - "views over the rows: every number cites its row IDs; the rows stay the source of truth"
+      - "no selecting: every case row by mold and every alternative with its gate values; the Outline stage picks"
+      - "found, never made: each figure checked against a named source; medians computed from rows; nothing estimated"
+      - "the gate's figures use gate.metrics measures (the Odds: profitable at 12 months; the Payoff: survivors' hourly earnings)"
+      - "Research's side only: never bound to the designer's components; data reaches the designer through the packet and the manuscript"
+      - "cover every chart type's data needs; every fact table carries market"
+
+market:              # outline.v1 §2 (owner, 2026-10-03; ADR 0049 decisions 12 and 13)
+  book: US
+  rule: "every audited figure is a US figure; claims are quoted as sold, whatever their reach"
+  world: "where a world figure is relevant, it sits alongside the US one, labelled as worldwide, on a row marked world"
+  expansion_flag: "a row marked world flags potential market expansion"
+  minimum_wage: "never used; the median wage is the benchmark"
+
+# ---------------------------------------------------------------------------
+# Shared blocks
+# ---------------------------------------------------------------------------
+interstitials:       # ADR 0020: each has a fixed phase home
+  guru:          { home: phase_1 }
+  reality_check: { home: phase_2, label: "always specific" }
+  pivot:         { home: phase_3 }
+
+posibot:             # ADR 0022, ADR 0044, notes/CONTEXT.md
+  look: "the tan robot; its face never changes"
+  message: "lettered in the image, not overlaid"
+  delivery_methods:
+    approved: [signpost, whiteboard easel, thought bubble, speech bubble, flip chart, sandwich board, picket sign, clipboard, megaphone with shout bubble, receipt tape, held placard]
+    omitted: [chalk A-frame, sticky note]
+    questionable: [laptop or slide presenting]
+    rejected: [text on his face screen, neon or LED, skywriting, T-shirt, fortune cookie]
+  spacing: "the same method is never used near itself, including across the Ch 2 -> Ch 3 and Ch 6 -> Ch 7 seams"
+
+charts:              # docs/chart-menu.md (ADR 0049, ADR 0050): the 14 types and 8 rules
+  types: [waterfall, survival curve, gap bar, log ladder, unit grid, split bar, range strip, funnel, hourly meter, timeline, before/after cliff, scorecard, gate strip, big number]
+  only_in:
+    scorecard: ch6
+    gate strip: "ch7, built into each Pivot card, plus one reference strip for the topic; never a standalone figure"
+  never_in: [ch1, ch2]   # except the numberless pastiche "rocket chart" ads, which are collage artifacts
+  rules: "docs/chart-menu.md, rules 1-8"
+
+tone:                # outline.v1 §5.1 (ADR 0049); holds in Phases 2 and 3
+  rule: "the facts are about the system, never the person"
+  focus: "the costs the pitch hid, the burdens no effort removes, the timelines and constraints that were never realistic, the naivety the marketing cultivated and cashed in on"
+  people: "people stop, exit or run out of runway; they never fail or quit"
+  person_blame_examples: ["failed", "quit", "should have", "didn't try", "lazy"]   # "and the like"; Review also reads for tone
+
+gate:                # outline.v1 §5.3 (ADR 0049): Ch 6's scorecard
+  metrics:
+    stake:
+      question: "What must I put at risk before I know?"
+      measured_as: "median cash spent up to the first profitable month or the exit"
+      passes_when: "at most a typical US household's emergency savings (P2-Q12)"
+      from: [P2-Q4]
+      first_shown: ch3
+    wait:
+      question: "How long until it pays?"
+      measured_as: "median months to the first profitable month"
+      passes_when: "6 months or less"
+      from: [P2-Q8]
+      first_shown: ch5
+    odds:
+      question: "How many make it?"
+      measured_as: "share of starters profitable at 12 months"
+      passes_when: "at least 1 in 2"
+      from: [P2-Q7]
+      first_shown: ch5
+    payoff:
+      question: "What does winning pay?"
+      measured_as: "the survivors' hourly earnings"
+      passes_when: "at least the US median hourly wage (P2-Q12)"
+      from: [P2-Q3]
+      first_shown: ch3
+  verdict:           # computed from the gate; never a dial
+    unless_all_four_pass: "Probably won't work"
+    all_four_pass: "Could work"           # rare for a y-it topic; it also flags the owner
+    never: ["Would", "Has", "Might"]
+    reasoning: "names who still could: the winners' edges from Ch 4"
+  cover_sticker: "the topic seed's verdict comes from the Odds, so the cover and Ch 6 always agree"
+  beneficiary_split: "explains why, not whether: a Ch 3 split bar, never a gate"
+
+molds:               # outline.v1 §5.2 (ADR 0049): named for what the system did, never for what the person did
+  blocks:
+    E: "the edge nobody mentions (structure, not effort)"
+    H: "what the pitch hid"
+    C: "constraints no effort beats"
+  E1: { name: "The Head Start",        exhibit: timeline,           mechanism: "money already in hand bought the runway, and the runway did the work" }
+  E2: { name: "The Built-In Audience", exhibit: gap bar,            mechanism: "an existing following meant never paying for customers" }
+  E3: { name: "The Inside Track",      exhibit: range strip,        mechanism: "industry contacts and know-how gave margins outsiders can't get" }
+  E4: { name: "The Open Window",       exhibit: timeline,           mechanism: "got in before the method was sold to everyone; the window has closed" }
+  H1: { name: "The Kit",               exhibit: waterfall,          mechanism: "everything the course said you need, priced. The costs were real; the revenue never was" }
+  H2: { name: "The Auction",           exhibit: gap bar,            mechanism: "customers are bought at auction, and one customer costs more than one sale earns" }
+  H3: { name: "The Hidden Hours",      exhibit: hourly meter,       mechanism: "\"passive\" took full-time hours, and the pay per hour fell below the wage" }
+  H4: { name: "The Upsell Ladder",     exhibit: split bar,          mechanism: "each course sells the next one; the ecosystem earns from the learners" }
+  H5: { name: "The Tool Tax",          exhibit: waterfall,          mechanism: "subscriptions and fees start before the first sale and never stop" }
+  C1: { name: "The Runway Gap",        exhibit: timeline,           mechanism: "profit, if it comes, arrives later than an ordinary household can wait" }
+  C2: { name: "The Crowded Market",    exhibit: unit grid,          mechanism: "the same method was sold to thousands at once, and saturation set the ceiling" }
+  C3: { name: "The Rule Change",       exhibit: before/after cliff, mechanism: "the platform, its fees or the law changed overnight" }
+  C4: { name: "The Ceiling",           exhibit: range strip,        mechanism: "even done well, margin and volume cap the income below a wage" }
+
+payoff_map:          # outline.v1 §5.5: where Phase 2 pays off each Phase 1 numbered claim
+  market size:              { chapter: ch5, as: "log ladder (\"your share is pending\")" }
+  income:                   { chapter: ch3, as: "hourly meter", also: "ch6, the Payoff" }
+  low cost or no inventory: { chapter: ch3, as: "waterfall or gap bar" }
+  the missing step:         { chapter: ch5, as: "the auction", also: "ch6, the verdict" }
+
+# ---------------------------------------------------------------------------
+# The three phases
+# ---------------------------------------------------------------------------
+phases:
+
+  # -------------------------------------------------------------------------
+  phase_1:           # outline.v1 §4 (ADR 0048)
+    name: "Vibrant Hope"
+    chapters_in_phase: [ch1, ch2]
+    job: "Sell the dream exactly as the pitch does: \"You should want in.\""
+    voice_register: "Corporate Sincerity: professional mockumentary, clinical, deadpan; ruthless about the pitch, never about the people who fell for it"
+    look: "cream and blue; zero audited statistics (ADR 0012); the pitch's own numbers stay"
+    row_kinds: [claim]
+    questions: [P1-Q1, P1-Q2, P1-Q3, P1-Q4, P1-Q5, P1-Q6, P1-Q7, P1-Q8, P1-Q9, P1-Q10, P1-Q11, P1-Q12]
+    interstitials: [guru]            # no Reality Check, no Pivot
+    posibot: { message: "up to six words, shouted" }
+    page_rules: "page sequence (ADR 0014); chapters open and close on a recto (ADR 0018); images stay with their paragraph (ADR 0045); one verdict band per chapter, at its close"
+
+    opener:
+      beats: { from: [P1-Q4], count: "per the opener arrangement" }
+      foreshadow:
+        role: "the first result reads zero (for dropshipping, \"the dashboard reads 0\")"
+        picture: "chosen per topic"
+        pays_off: "the start of Ch 3"
+
+    chapters:
+      ch1:
+        title: "The Promise"
+        format: "magazine-ad collage (ADR 0017)"
+        contents_line: "What they're selling you."
+        parts:
+          sections:     { dial: ch1.sections }
+          artifacts:    { dial: ch1.artifacts }
+          guru:         { dial: ch1.guru }
+          posibot:      { dial: ch1.posibot }
+          hero:         { count: [1, 2] }
+          testimonies:  { dial: ch1.testimonies }
+          verdict_band: { count: 1, stat_line: "a pitch number or no number, never an audited one" }
+        never: [charts, ledgers, tables, technical images]
+      ch2:
+        title: "The Sucker's Roadmap"
+        format: "flat-pack assembly manual (ADR 0017)"
+        contents_line: "How the pitch assembles."
+        parts:
+          steps:           { dial: ch2.steps, each: "one succinct directive with one flat-pack figure, and an optional TIP" }
+          after_last_step: ["Step N+1 was not provided.", "a TROUBLESHOOTING block"]
+          parts_box:       { dial: ch2.parts, fixed_last_item: "0× instructions for step N+1" }
+          missing_step:    { dial: ch2.missing_step }
+          tips:            { dial: ch2.tips }
+          guru:            { dial: ch2.guru }
+          posibot:         { dial: ch2.posibot }
+          hero:            { count: 0, note: "the figures come from the format" }
+          verdict_band:    { count: 1 }
+        never: [charts, ledgers, tables, technical images]
+
+    dials:           # outline.v1 §4.4: the topic layer may change these, and only these
+      ch1.sections:
+        default: 5
+        range: [3, 6]
+        from: [P1-Q1]
+        rule: "one section per distinct promise with at least two P1-Q1 rows"
+        over_max: "merge the thinnest"
+        under_min: flag
+      ch1.section_titles:
+        default: ["The Vision", "The Feeling", "The Plan", "The Name", "The Gurus"]
+        allowed: "titles in the pitch's own vocabulary"
+        rule: "each section gets an angle, a title and its row IDs"
+      ch1.artifacts:
+        default: "the built mix"
+        allowed: [lifestyle photo ad, "numberless \"rocket chart\" ad", before/after pair, coupon, classified, masthead, order form, PosiBot mascot card]
+        from: [P1-Q11]
+        rule: "weighted by where the pitch lives"
+        new_type: "needs a spine change plus a designer component"
+      ch1.guru:
+        default: 1
+        range: [1, 2]
+        from: [P1-Q5]
+        rule: "always composite. The label is in the pitch's vocabulary (default \"GURU PITCH HALL OF FAME\"). If a platform or an upline makes the pitch instead of a guru, the quote speaks as that pitcher: still a composite, never a real person"
+      ch1.posibot:
+        default: 3
+        range: [3, 3]
+        rule: "each line draws on a claim row (it may carry a pitch number) or comes from the stock hype set; the delivery method comes from the approved list"
+      ch1.testimonies:
+        default: 2
+        range: [1, 3]
+        from: [P1-Q6]
+        rule: "composite, with no statistics"
+      ch2.steps:
+        default: 5
+        range: [3, 7]
+        from: [P1-Q7]
+        rule: "the pitch's own step count, in the pitch's own order"
+        over_max: "merge adjacent steps and log it"
+        under_min: "flag; never invent a step"
+      ch2.parts:
+        default: 3
+        range: [2, 4]
+        from: [P1-Q8]
+        rule: "kit items with quoted prices; the fixed last item follows them"
+      ch2.missing_step:
+        default: "customer acquisition"
+        range: [1, 1]
+        from: [P1-Q9]
+        rule: "one omission; this is the setup for Phase 2"
+      ch2.tips:
+        default: "as needed"
+        from: [P1-Q10]
+        rule: "TIP lines and troubleshooting lines"
+      ch2.guru:
+        default: 1
+        range: [1, 1]
+        rule: "default label \"SYSTEM™ INSTRUCTIONS\""
+      ch2.posibot:
+        default: 1
+        range: [1, 2]
+        rule: "its delivery method differs from Ch 1's last one"
+      opener.beats:
+        default: "the built beats"
+        from: [P1-Q4]
+        rule: "the foreshadow keeps its role and changes its picture"
+      ch1.visual_trend:
+        default: none
+        from: [P1-Q12]
+        rule: "a rule, not a judgment: a trait qualifies only if P1-Q12 rows show it for at least three different seller keys, each with a capture; otherwise the dial stays at none"
+        shapes_only: "the Ch 1 collage artifacts and the opener's image prompts; never the book's palette, type or page design"
+        never: "logos, product names or a real person's likeness"
+      vocabulary:
+        range: [3, 8]
+        rule: "the pitch's own words (\"passive income\", \"the system\", \"scale\"); later phases use them unchanged"
+      words:
+        set_per_topic: false
+        rule: "derived from the formats: the designer publishes each format's capacity (words per Ch 1 feature section; words per Ch 2 step with its TIP); the target is that capacity times ch1.sections or ch2.steps; Layout's fit loop settles the final count (ADR 0025)"
+        status: "the capacities are not yet published (designer card)"
+
+    setups_out:      # outline.v1 §4.5: the only Phase 1 outputs a later phase reads
+      numbered_claims: "every claim cited with a number, its tests IDs, and the chapter that pays it off (payoff_map)"
+      foreshadow: "the zero, paid off at the start of Ch 3"
+      vocabulary: "the terms fixed in `vocabulary`"
+      last_posibot_method: "the last PosiBot delivery method in Ch 2, so Ch 3 opens with a different one"
+
+    checker:         # outline.v1 §4.6
+      p1.1: "every dial is within its range, and every required part is present in its count"
+      p1.2: "there are no charts, ledgers, tables, Reality Checks or Pivots, and no technical images"
+      p1.3: "every cited row exists, is a claim, and is distributed to Phase 1"
+      p1.4: "every number in the packet cites a row"
+      p1.5: "the Ch 2 steps keep the pitch's order, and every merge or drop is logged"
+      p1.6: "PosiBot delivery methods are on the approved list, no two neighbours match, and the last Ch 2 method is recorded"
+      p1.7: "every numbered claim cited has at least one tests link"
+      p1.8: "every departure from a default is in the change log"
+      p1.9: "if ch1.visual_trend is set, every trait cites rows from at least three different sellers, each with a capture"
+
+    packet:          # phase-packet.v1, Phase 1 parts (plus the common parts below)
+      ch1:
+        sections: "each with title, angle, rows"
+        artifacts: "ranked list of type, beat, rows"
+        visual_trend: "none, or traits, each with its rows"
+        guru: "label, angle, rows"
+        posibot: "three entries, each with a source (a row, or the stock hype set) and a delivery method"
+        hero: "beat, rows"
+        testimonies: "angle, rows"
+        verdict: "angle, plus a stat-line source (a row or none)"
+        words: "the target (the format's capacity × ch1.sections)"
+      ch2:
+        steps: "N entries, each with the step as sold (a row), the directive's angle, TIP rows and a figure beat"
+        parts: "kit items, each with its price row; the fixed last item follows them"
+        missing_step: "the omission, rows"
+        troubleshooting: "rows"
+        guru: "label, angle, rows"
+        posibot: "one or two entries, each with a source and a delivery method"
+        verdict: "angle"
+        words: "the target (the format's capacity × ch2.steps)"
+      opener:
+        beats: "each a beat with its rows"
+        foreshadow: "what the zero looks like for this topic"
+      setups_out: "numbered claims (row, tests, payoff chapter), vocabulary, foreshadow, last PosiBot method"
+
+  # -------------------------------------------------------------------------
+  phase_2:           # outline.v1 §5 (ADR 0049)
+    name: "Demolition"
+    chapters_in_phase: [ch3, ch4, ch5, ch6]
+    job: "test the pitch against reality; state the system's hidden costs, its constraints and the odds, definitively"
+    voice_register:
+      ch3: "Sardonic Authority"
+      ch4: "no jokes: the numbers are the joke"
+      ch5: "Sardonic Authority"
+      ch6: "Sardonic Authority"
+    look: "slate to warm, red; Ch 4 is aged paper and amber, standalone, with no opener of its own"
+    row_kinds: [fact, case, "claim (only the Phase 1 claims it tests, received as setups)"]
+    evidence_standard: "definitive, not a science journal: no citations in the running text; one short source line under each chart in Ch 3, 5 and 6; the full trail in the Sources appendix; Ch 4 uses its composite stamp instead of a source line"
+    questions: [P2-Q1, P2-Q2, P2-Q3, P2-Q4, P2-Q5, P2-Q6, P2-Q7, P2-Q8, P2-Q9, P2-Q10, P2-Q11, P2-Q12]
+    interstitials: [reality_check]   # the Guru quote is rare in Ch 3, 5 and 6, and absent from Ch 4
+    setups_in: "phase_1.setups_out, read-only"
+
+    opener:
+      beats: { from: "Phase 2's evidence", count: "per its built arrangement" }
+      foreshadow: "if the arrangement has a foreshadow panel, it points to Phase 3"
+
+    chapters:
+      ch3:
+        title: "The Money Pit"
+        parts:
+          opening:       { count: 1, what: "the Phase 1 foreshadow pays off, with the zero as a big number" }
+          charts:        { dial: ch3.charts, count: [2, 4], defaults: [waterfall, split bar, hourly meter], required: "a gap bar for each cost claim it tests" }
+          gate_figures:  [stake, payoff]
+          reality_check: { count: [1, 2] }
+          posibot:       { count: [2, 3] }
+          hero:          { count: [1, 2] }
+          guru:          { count: [0, 1] }
+          verdict_band:  { count: 1 }
+      ch4:
+        title: "Tales from the Trenches"
+        insert: "sits inside Phase 2 and keeps its own format"
+        parts:
+          case_files:    { dial: ch4.cases, count: 5 }
+          exhibits:      { count: 5, rule: "exactly one per case file, of its mold's chart type" }
+          reality_check: { count: [0, 1] }
+          posibot:       { count: 0 }
+          hero:          { count: 0 }
+          guru:          { count: 0 }
+          verdict_band:  { count: 1 }
+        case_file_parts:             # in this order
+          - name: "by the naming rule"
+          - life_position: "one line, taken from the real cases"
+          - disposition: "the sympathetic trait the pitch played on (hope, determination, caution, trust, ambition): the hook, never the cause"
+          - sold: "the Phase 1 claim that pulled them in, by row ID"
+          - took: "the real money, hours and months; for a winner, the edge nobody mentioned"
+          - happened: "three to five dated beats, saying exactly what they did"
+          - exhibit: "the mold's chart type"
+          - mechanism: "one plain sentence naming the system, never the person"
+          - outcome: "WON, LOST or EXITED"
+          - composite_stamp: "Composite of N documented cases"
+        selection_rule:              # a rule, not a judgment
+          - "Research tags each case row with one mold"
+          - "the five mirror the evidence: winner slots are five times the share of starters who win, rounded; if documented winners exist there is at least one winner slot, and never more than two; the H and C molds with the most cases fill the rest"
+          - "each mold appears once, and each needs at least three case rows"
+          - "order: the winner first (the testimonial, with its edge exposed), then H molds from most to least common, then any C mold last"
+          - "a pattern outside the menu is flagged to the owner as a candidate for a new mold; it is never forced into one"
+        numbers: "the median of the case file's rows, never the extreme; the exhibit sets them against a typical starter's numbers from Ch 3"
+        naming_rule:
+          - "an ordinary first name"
+          - "a surname that names the disposition, gently; never a flaw or the mechanism"
+          - "the ™ treatment only for an E-mold winner who became the pitch's poster child"
+          - "never a real person's name"
+        dropshipping_defaults:
+          E2: "Chad Momentum™"
+          H1: "Serenity Abundance-Clarke"
+          H5: "Kyle Optimize"
+          C2: "Derek Duediligence"
+          H3: "Rex Grindstone"
+      ch5:
+        title: "The Gladiator Pit"
+        parts:
+          charts:        { dial: ch5.charts, count: [2, 3], defaults: [funnel, unit grid, range strip], required: "a log ladder that pays off the Phase 1 market-size claim, and a gap bar for each acquisition claim it tests" }
+          gate_figures:  [odds, wait]
+          reality_check: { count: [1, 2] }
+          posibot:       { count: 3 }
+          hero:          { count: [1, 2] }
+          guru:          { count: [0, 1] }
+          verdict_band:  { count: 1 }
+      ch6:
+        title: "The Verdict"
+        note: "a short culmination: it assembles what Ch 3-5 and Ch 4 already showed and computes nothing new"
+        parts:
+          scorecard:        { count: 1, what: "the gate" }
+          reasoning:        { what: "prose; the packet carries angles only" }
+          recap_chart:      { count: [0, 1] }
+          reality_check:    { count: [0, 1] }
+          posibot:          { count: [1, 2] }
+          hero:             { count: [0, 1] }
+          technical_images: { count: [0, 1], note: "the recap chart" }
+          verdict_band:     { count: 1, carries: "the verdict" }
+
+    dials:           # outline.v1 §5.7 (few, by the owner's steer). The verdict is computed from the gate, not a dial.
+      ch3.charts:
+        default: "the chapter defaults"
+        allowed: "chart menu types, counts within ch3's parts"
+        rule: "each Phase 1 claim tested in the chapter gets its gap bar or log ladder; the defaults fill the rest"
+      ch5.charts:
+        default: "the chapter defaults"
+        allowed: "chart menu types, counts within ch5's parts"
+        rule: "each Phase 1 claim tested in the chapter gets its gap bar or log ladder; the defaults fill the rest"
+      ch4.cases:
+        allowed: "five molds from the menu"
+        rule: "the selection rule"
+      ch4.names:
+        default: "the naming rule"
+        rule: "the naming rule"
+      rc.labels:
+        allowed: "specific labels"
+        rule: "taken from the fact each box carries"
+      opener.beats:
+        default: "the built beats"
+        from: "Phase 2 evidence"
+
+    setups_out:      # outline.v1 §5.5, handed to Phase 3
+      verdict: "the computed verdict"
+      failed_gates: "each failed gate; the pivot must answer it (a failed Stake means the pivot starts cheap)"
+      winners_edges: "the winners' edges, which show what the system actually rewards"
+      gate_values: "the four gate values, with their rows (Phase 3 scores its pivots against them)"
+      personas: "the five case-file personas: name, mold and outcome (for Ch 8's callbacks)"
+      vocabulary: "unchanged from Phase 1"
+      last_posibot_method: "the last PosiBot delivery method in Ch 6"
+
+    checker:         # outline.v1 §5.6
+      p2.1: "every number cites a fact row, a case row (Ch 4) or the Phase 1 claim row it tests"
+      p2.2: "every Phase 1 numbered claim received is paid off in its mapped chapter (payoff_map)"
+      p2.3: "every chart is a menu type and follows the chart rules: title question, answer callout, scale rules, source line (Ch 3, 5 and 6) and size"
+      p2.4: "Ch 4: five case files of five different molds; each built from at least three case rows of its mold; its numbers are the medians of those rows; one exhibit of the mold's type; the composite stamp present; the winner slots follow the outcome-share rule"
+      p2.5: "every gate figure already appears in Ch 3 or Ch 5 with the same rows, and the verdict follows the gate (\"Probably won't\" unless all four pass)"
+      p2.6: "interstitials stay in their homes, and every count is within its range"
+      p2.7: "tone: no case file or verdict line uses person-blame wording (tone.person_blame_examples and the like); Review also reads for tone"
+      p2.8: "every departure from a default is in the change log"
+
+    packet:          # phase-packet.v1, Phase 2 parts (plus the common parts below)
+      setups_in: "Phase 1's numbered claims (with their tests rows and payoff chapters), the foreshadow, the vocabulary, the last PosiBot method"
+      ch3:
+        opening: "the foreshadow's zero, with its rows"
+        charts: "type, question, answer, rows; the Phase 1 claim tested, where there is one"
+        gate_figures: "the Stake and the Payoff, each a value with its rows"
+        reality_checks: "label, fact rows"
+        posibot: "entries, each with a source and a delivery method; the first differs from Phase 1's last"
+        hero: "beat, rows"
+        verdict: "angle"
+      ch4:
+        cases: "five entries, in rule order, each with mold, name, life position, disposition, the claim row that sold them, \"what it took\" with its case rows, beats, the exhibit (type and median values, with its case rows), the mechanism sentence's angle, the outcome, and N"
+        reality_check: "optional: label and rows"
+        verdict: "angle"
+      ch5:
+        charts: "as in Ch 3; includes the market-size log ladder"
+        gate_figures: "the Odds and the Wait"
+        reality_checks: "as in Ch 3"
+        posibot: "as in Ch 3"
+        hero: "as in Ch 3"
+        verdict: "angle"
+      ch6:
+        scorecard: "the four metrics, each with value, threshold, pass or fail, and the rows already used in Ch 3 or Ch 5"
+        gate_verdict: "the computed verdict"
+        reasoning: "angles only"
+        recap_chart: "optional"
+        posibot: "within Ch 6's counts"
+        hero: "within Ch 6's counts"
+        reality_check: "within Ch 6's counts"
+        verdict: "angle"
+      opener:
+        beats: "each a beat with its rows"
+      setups_out: "see setups_out above"
+
+  # -------------------------------------------------------------------------
+  phase_3:           # outline.v1 §6 (ADR 0050)
+    name: "Solidarity"
+    chapters_in_phase: [ch7, ch8, appendices]
+    job: "hand the reader something true to do instead. Ch 7 is for the reader who got the point; Ch 8 is for the stubborn reader who keeps going anyway, because \"probably won't\" still could. Not a happy ending. A true one."
+    assessment: "the phase where per-topic assessment matters most: candidates come only from evidence rows, the gate scores every one, the agent's judgment covers only relevance, grouping and order, every choice is logged, and the owner approves the first two topics"
+    voice_register:
+      ch7: "Sardonic Authority; the edge stays on the pitch but turns constructive"
+      ch8: "Quiet Reckoning: earned warmth, constructive, real"
+      appendices: "Quiet Reckoning"
+    look: "cream restored, sage"
+    row_kinds: [fact, "case (aftermaths, for callbacks)"]
+    evidence_standard: "the same as Phase 2: no citations in the text, one source line under each chart, the trail in the Sources appendix"
+    no_personal_advice: "Phase 3 states options and facts. It never gives personal financial, legal or tax advice. Where a rule applies (a refund window, a tax treatment, a buyback rule), it says what the rule is and who to ask"
+    interstitials: [pivot]           # no Guru quote, no Reality Check
+    posibot: { lines: "true for the first time: same face, same cheer, but each line comes from a Phase 3 fact (\"KEEP THE DAY JOB!\")" }
+    questions: [P3-Q1, P3-Q2, P3-Q3, P3-Q4, P3-Q5, P3-Q6, P3-Q7, P3-Q8, P3-Q9, P3-Q10, P3-Q11, P3-Q12, P3-Q13, P3-Q14]
+    setups_in: "phase_2.setups_out (Phase 1's vocabulary arrives through Phase 2), plus two compilations from the frozen packets, both read-only: the Sources list and the reference index (every Phase 1 and Phase 2 component's ID, chapter, name and rows)"
+
+    opener:
+      beats: { from: "Phase 3's evidence: the true alternatives", count: "per its built arrangement" }
+
+    bands:           # outline.v1 §6.1: in character, frank and smart, never preachy
+      ch7:
+        - "a matter-of-fact statement of where things stand"
+        - "a sincere well-wish to anyone still pursuing it"
+        - "the hand-off: only readers who haven't got the point and still want to keep trudging forward need Ch 8"
+        - "it ends on ch8.title (default \"…And… for the stubborn fool who must…\"), so the sentence runs across the page break into Ch 8's heading; the ribbing is affectionate, never contempt"
+      ch8:
+        - "smart-arse commentary on the state of the situation"
+        - "that we tried, we gave a damn, and we did what we could"
+        - "parting words, in character: the book's last word"
+      words: "Composition writes them; the outline supplies only the angles and ch8.title"
+
+    pivots:          # outline.v1 §6.2: aim for all four gates, with a gradual fallback
+      tiers:
+        1: "passes all four gates; shown first"
+        2: "passes three; used only to reach the minimum of three pivots; the missed gate is named plainly on the pivot, and the pivot must still beat the topic on that gate"
+        3: "passes two; a last resort, only if Tiers 1 and 2 can't reach three; both misses are named, and the owner is flagged"
+      never: "a pivot that does worse than the topic on any gate"
+      shows: "its result plainly (\"passes 4 of 4\", \"passes 3 of 4: …\"), so the fallback never reads as false hope"
+      kinds: ["get paid to use the skill (employment)", "sell the skill directly (freelance or contract)", "an adjacent small venture that passes the gate", "a skill-building route to a better-paid role", "a use-what-you-built pivot"]
+      min_kinds: 3
+      rank: "by tier, then cheapest Stake"
+      picks_and_shovels: "the parallel investigation of the top affiliate programs (P3-Q14) may supply candidates; each is scored on the four gates like any other pivot, and appears only if its honesty and ethics record is clean (owner, 2026-10-03; ADR 0050 decision 11)"
+
+    chapters:
+      ch7:
+        title: "The Pivot"
+        for: "the reader who got the point"
+        parts:
+          opening:          { what: "answers Ch 6's verdict directly: \"probably won't\" becomes what probably will" }
+          pivots:           { dial: ch7.pivots }
+          gate_strips:      { topic_reference: 1, per_pivot: 1, rule: "four small marks (Stake, Wait, Odds, Payoff): filled for a pass, hollow for a miss, any miss named in a few words; the topic's strip appears once, at the opening; no standalone comparison chart" }
+          answers:          { dial: ch7.answers }
+          repurpose:        { dial: ch7.repurpose }
+          skill_exchange:   { dial: ch7.skills, format: "a full-measure table (ADR 0026): skill -> who pays -> typical pay" }
+          edges:            { dial: ch7.edges }
+          pivot_cards:      { count: [3, 5], rule: "one per pivot shown, each with its gate strip" }
+          posibot:          { count: [2, 3] }
+          hero:             { count: [1, 2] }
+          technical_images: { count: [1, 2], note: "charts from the menu; the gate strips are part of the cards and don't count" }
+          band:             { count: 1, ends_on: ch8.title }
+      ch8:
+        title:              { dial: ch8.title }
+        for: "the stubborn reader who keeps going anyway"
+        parts:
+          honest_way:       { dial: ch8.honest_way }
+          test:             { dial: ch8.test }
+          stop_rules:       { dial: ch8.stop_rules }
+          do_nots:          { dial: ch8.do_nots }
+          references:       { dial: ch8.references }
+          exit_steps:       { dial: ch8.exit_steps, families: [stop, recover, settle, protect] }
+          ledger:           { count: 1, what: "\"what it cost / what you keep\": the typical numbers from the rows, laid out as a template the reader can fill in; it includes the skills and the hours you get back" }
+          watch_for:        { dial: ch8.watch_for }
+          companion_segue:  { dial: companion.segue }
+          callbacks:        { dial: ch8.callbacks }
+          pivot_card:       { count: 1 }
+          posibot:          { count: [1, 3] }
+          hero:             { count: [1, 2] }
+          technical_images: { count: [1, 2] }
+          band:             { count: 1, what: "the book's last word" }
+        exit_step_families:
+          stop: "what keeps charging"
+          recover: "what can be sold"
+          settle: "what is owed"
+          protect: "refund windows, buyback rules, complaints"
+        references:
+          what: "to back a do-not or an honest-way practice, Ch 8 may point to any component anywhere in the book: a Phase 1 claim, a Phase 2 chart or Reality Check, a Ch 4 case file, a gate value"
+          isolation: "only through the reference index, compiled mechanically from the frozen Phase 1 and Phase 2 packets; Ch 8 never reads another phase's working material"
+          shown_as: "chapter and name, reusing the same rows; the stitcher fills in any page number"
+      appendices:
+        sources: "the full trail: every row cited anywhere in the book, grouped by chapter, with its tier; compiled mechanically from the three frozen packets and handed to the Phase 3 packet read-only; Ch 4 lists its case rows by composite, never by person; printed as a bulleted list from Research's source list, one bullet per source, fields separated by commas (publisher or outlet, title, date, link, tier), never a person's name"
+        appendix_a: "what Tiers 1-4 mean"
+        results_typical:
+          pages: 1
+          title: "flips the \"*results not typical\" disclaimer the pitch hides in its fine print"
+          states:
+            - "every figure is the typical result (the median), never the best case"
+            - "every Ch 4 person is a composite of at least three documented cases"
+            - "numbers come only from sources we can name, vetted by Research's rule (ADR 0030)"
+            - "gaps stay gaps and are never estimated"
+            - "nobody selling the dream paid for this book"
+            - "the one thing we do sell, the companion pamphlet, and what is in it"
+            - "if y-it ever earns from affiliate links (parked; ADR 0050 decision 11), that too, plainly"
+
+    dials:           # outline.v1 §6.4 (the widest of the three phases)
+      ch7.pivots:
+        default: 4
+        range: [3, 5]
+        from: [P3-Q3, P3-Q14]
+        rule: "candidates come only from P3-Q3 rows, and from the picks-and-shovels findings (P3-Q14) where the honesty and ethics record is clean, each scored on the four gates; fill by tier (pivots.tiers); never one that's worse than the topic on any gate; at least three kinds among those shown; ranked by tier, then cheapest Stake"
+      ch7.answers:
+        rule: "each failed gate received from Phase 2 is matched to a pivot that passes it; if none exists, it is flagged as a gap, never papered over"
+      ch7.repurpose:
+        default: 6
+        range: [4, 8]
+        from: [P3-Q13]
+        rule: "each acquired skill, tool, cost or concept is mapped to its best evidenced reuse; items with no evidenced reuse are named plainly as sunk"
+      ch7.skills:
+        default: 4
+        range: [3, 6]
+        from: [P3-Q1, P3-Q2]
+        rule: "only skills the scheme actually trains, each paired with paid demand"
+      ch7.edges:
+        default: "one per winner's edge received"
+        from: [P3-Q4]
+        rule: "the slow route, or \"can't be built later\" (E4 The Open Window: timing can't be bought back)"
+      ch8.honest_way:
+        default: 4
+        range: [3, 5]
+        from: [P3-Q10]
+        rule: "only methods with evidence of effect for people without a hidden edge, or pure risk-reducers; ordered by impact on the gate, so the practice that most improves the Odds or the Stake comes first; written as curated segues, not a manual"
+      ch8.test:
+        default: "the family template"
+        from: [P3-Q12]
+        rule: "the smallest honest test: a bounded experiment with a capped Stake, a stop date and the numbers that mean stop, using the topic's numbers"
+        open: "the family template is not defined in canon yet (see `open`)"
+      ch8.stop_rules:
+        default: "the family template"
+        from: [P3-Q12]
+        rule: "the gate thresholds turned into personal tripwires, decided in advance, with the topic's P3-Q12 numbers"
+        open: "the family template is not defined in canon yet (see `open`)"
+      ch8.do_nots:
+        default: 6
+        range: [5, 7]
+        from: [P3-Q11]
+        rule: "the most costly first; each names the trap the system sets, never the reader's character; the full list goes to the pamphlet"
+      companion.segue:
+        default: 1
+        range: [1, 1]
+        rule: "one plain, priced line in Ch 8 saying what the pamphlet holds; the book exposes the upsell ladder (H4), so it must never read like one"
+      ch8.exit_steps:
+        default: 6
+        range: [4, 9]
+        from: [P3-Q5, P3-Q6, P3-Q7]
+        rule: "topic-specific, ordered by money saved, each tied to rows; only steps that apply to this topic"
+      ch8.watch_for:
+        default: 2
+        range: [1, 3]
+        from: [P3-Q8]
+      ch8.callbacks:
+        default: 0
+        range: [0, 5]
+        from: [P3-Q9]
+        rule: "only for personas whose mold has P3-Q9 aftermath rows"
+      ch8.references:
+        default: "as needed"
+        from: "the reference index"
+        rule: "each backs a do-not or a practice with a component from anywhere in the book"
+      posibot.lines:
+        rule: "each line is drawn from a pivot or exit fact"
+      ch8.title:
+        default: "For the Stubborn Fool Who Must"
+        allowed: ["For the Stubborn Fool Who Must", "You Stubborn Fool", "Still Here, You Stubborn Fool?", "Fine, You Stubborn Fool", "Onward, You Stubborn Fool"]
+        rule: "chosen per book and logged; the same value is Ch 8's heading and the last words of Ch 7's band, word for word (case, a leading \"And…\" and the trailing ellipsis are free); the owner can add iterations"
+      bands:
+        rule: "fixed structure (bands); Composition writes the words; the outline supplies only the angles and ch8.title"
+      opener.beats:
+        default: "the built beats"
+        from: "Phase 3 evidence"
+
+    setups_out: "none: Phase 3 closes the book; the stitcher adds the issue index and the back matter (ADR 0042, ADR 0046)"
+    to_companion_pamphlet: ["the full honest way", "the full do-not list", "the P3-Q12 tracking numbers, for its spreadsheets and any mini app", "the picks-and-shovels findings (P3-Q14)"]   # a read-only copy, outside the book run
+
+    checker:         # outline.v1 §6.6
+      p3.1: "every number cites a row: fact, or case for callbacks"
+      p3.2: "pivots: every pivot cites its gate rows; a picks-and-shovels pivot also cites a clean honesty and ethics record (P3-Q14); Tier 2 or Tier 3 pivots appear only when Tier 1 can't reach three; every miss is named on the pivot; none is worse than the topic on any gate; there are 3-5, of at least three kinds, ranked by tier and then Stake; any Tier 3 pivot is flagged to the owner"
+      p3.3: "every failed gate received has an answering pivot, or a gap flagged to the owner"
+      p3.4: "every edge received has its slow route, or the \"can't be built later\" line"
+      p3.5: "exit steps are topic-specific, tied to rows, and ordered by money saved"
+      p3.6: "no personal advice: no financial, legal or tax recommendations (\"you should invest\", \"we recommend buying\" and the like); a rule is stated with whom to ask"
+      p3.7: "callbacks appear only where aftermath case rows support them"
+      p3.8: "PosiBot lines are drawn from Phase 3 facts; the delivery-method spacing holds across the Ch 6 -> Ch 7 seam"
+      p3.9: "interstitials: Pivot cards only"
+      p3.10: "tone: no person-blame wording"
+      p3.11: "the Sources appendix lists exactly the rows cited in the three frozen packets"
+      p3.12: "every departure from a default is in the change log"
+      p3.13: "every honest-way practice and every do-not cites rows; no do-not blames the reader"
+      p3.14: "there is exactly one companion segue, in Ch 8; it says plainly what the pamphlet holds and what it costs"
+      p3.15: "every repurposing item cites a reuse row, or is named plainly as sunk"
+      p3.16: "Ch 7's band ends on ch8.title word for word (case and punctuation free), and Ch 8's heading is ch8.title, an approved iteration"
+      p3.17: "every cross-reference in Ch 8 resolves to a component in the reference index, and its facts cite that component's rows"
+
+    packet:          # phase-packet.v1, Phase 3 parts (plus the common parts below)
+      setups_in: "from Phase 2: the verdict, the failed gates, the four gate values with their rows, the winners' edges, the five personas, the vocabulary, the last PosiBot method; plus the compiled Sources list and the reference index"
+      ch7:
+        opening: "the angle that answers the verdict"
+        pivots: "3-5 entries of at least three kinds, each with its tier (1-3) and any named misses, a name, its kind, the four gate values with their rows, the failed gates it answers, and the first step's angle"
+        gate_strips: "the topic's reference strip, plus each pivot's four pass/miss marks with any miss named"
+        repurpose: "4-8 items, each with what was acquired and its best evidenced reuse with its rows, or \"sunk\""
+        skills: "3-6 rows of skill -> who pays -> typical pay, with their rows"
+        edges: "each received edge with its slow route (rows), or \"can't be built later\""
+        pivot_cards: "one per pivot"
+        posibot: "each line with its source fact and delivery method"
+        hero: "beat, rows"
+        band: "the angles for the matter-of-fact statement and the well-wish; it ends on exactly ch8_title"
+      ch8:
+        ch8_title: "the default or an approved iteration; the chapter heading and the last words of Ch 7's band"
+        honest_way: "3-5 practices, each with evidence rows and the gate it improves"
+        test: "the smallest honest test: a capped Stake, a stop date and the stop numbers, from the family template and the topic's rows"
+        stop_rules: "the gate thresholds as personal tripwires"
+        do_nots: "5-7 traps, each with its cost rows"
+        exit_steps: "4-9 entries, ordered by money saved, each with its family (stop, recover, settle or protect), its angle and its rows"
+        ledger: "\"what it cost / what you keep\", with its rows"
+        watch_for: "1-3 next pitches, each with how it works and its rows"
+        companion_segue: "exactly one: what the pamphlet holds, and its price"
+        callbacks: "0-5, each with a persona and its aftermath case rows"
+        pivot_card: "one"
+        posibot: "each line with its source fact and delivery method"
+        hero: "beat, rows"
+        band: "the angles for the book's last word"
+      appendices:
+        sources: "the compiled list (read-only)"
+        tiers: "Appendix A"
+        results_typical: "the one in-character page, with its plain facts"
+      opener:
+        beats: "each a beat with its rows"
+      to_companion_pamphlet: "the full honest way, the full do-not list, the P3-Q12 tracking numbers, the picks-and-shovels findings (P3-Q14)"
+
+# ---------------------------------------------------------------------------
+# Every packet (phase-packet.v1)
+# ---------------------------------------------------------------------------
+packet_common:
+  header: "topic slug, phase number, spine version (outline.v1 plus the commit), packet version, checker result, owner approval (first two topics)"
+  base_rules: "a reference, by version, to the base rules (voice, palette, type, page rules, components); referenced, not copied"
+  dials: "the value of every dial in the phase"
+  parts: "every required part, chapter by chapter, with its source row IDs"
+  setups: "what this phase receives and hands on"
+  change_log: "each departure from a default: the dial, the value, the reason, the row IDs"
+  rows: "every cited row, copied in full, so Composition never queries Research"
+  never:
+    - "Phase 1: fact rows"
+    - "any phase: another phase's material, except the setups it receives"
+    - "any phase: image prompts or finished sentences (Composition writes those)"
+
+# ---------------------------------------------------------------------------
+# Open: places where the spine points at something canon hasn't defined yet.
+# The owner decides; until then the Outline agent flags rather than guesses.
+# ---------------------------------------------------------------------------
+open:
+  family_template: "ch8.test and ch8.stop_rules default to \"the family template\", but topic families and their templates are defined only in reference/phase-3-framework-go-big.md (§2 topic families, §3.3 family modules), which ADR 0050 keeps as a reference, not canon"
+  format_capacities: "the words dial needs the designer to publish each format's word capacity (a designer card)"
+  companion_pamphlet: "its price ($0.99 or $1.99) and where it is produced (ADR 0050)"
+  own_affiliate_income: "parked (owner, 2026-10-03; ADR 0050 decision 11); if it ever happens, the Results Typical page says so plainly, and the FTC requires the disclosure"

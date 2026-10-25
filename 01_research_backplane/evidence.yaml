@@ -1,0 +1,338 @@
+topic_slug: forex-prop-firms
+evidence:
+    - row: C-001
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-01 Landing Page]: "Pass our 2-Step Challenge in 14 days and trade up to a $200,000 funded account from your laptop anywhere in the world—keep 90% of the profits with zero personal capital at risk!"'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-002
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-02 VSL Pitch]: "You only need 45 minutes a day during the London-New York overlap to pull $10,000 a month out of the $7.5 trillion-a-day forex market using our institutional Smart Money Concepts blueprint."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-003
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-03 Checkout Page]: "Start your $100,000 Funded Trader Evaluation today for just $497 (or $89 for a $10,000 starter account)—100% fee refund with your very first profit split!"'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-004
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-06 6-Step Roadmap Brochure]: "Step 1: Open your prop challenge account ($89–$540). Step 2: Load our proprietary Smart-Money Indicator template on TradingView. Step 3: Wait for the 9:30 AM NY Session liquidity sweep. Step 4: Enter with a 1:5 risk-to-reward bracket order. Step 5: Hit your 8% Phase 1 and 5% Phase 2 targets. Step 6: Collect your Funded Trader Certificate and withdraw 90% bi-weekly payouts."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-005
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-04 Course Ad]: "It is 11:42 PM on a Tuesday. While everyone else is dreading their 8:00 AM commute, you tap three buttons on MetaTrader 5, lock in a 40-pip gold move, and wake up to a $2,400 payout notification before breakfast."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-006
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-05 Guru Testimonial Banner]: "Forget inventory, warehouses, or dealing with angry customers—currency pairs never run out of stock, never ask for refunds, and pay out in pure cash every 14 days."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-007
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-01 Landing Page]: "Pass our 2-Step Challenge in 14 days and trade up to a $200,000 funded account from your laptop anywhere in the world—keep 90% of the profits with zero personal capital at risk!"'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-008
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-06 6-Step Roadmap Brochure]: "Step 1: Open your prop challenge account ($89–$540). Step 2: Load our proprietary Smart-Money Indicator template on TradingView. Step 3: Wait for the 9:30 AM NY Session liquidity sweep. Step 4: Enter with a 1:5 risk-to-reward bracket order. Step 5: Hit your 8% Phase 1 and 5% Phase 2 targets. Step 6: Collect your Funded Trader Certificate and withdraw 90% bi-weekly payouts."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-009
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-06 6-Step Roadmap Brochure]: "Step 1: Open your prop challenge account ($89–$540). Step 2: Load our proprietary Smart-Money Indicator template on TradingView.'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-010
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-06 Missing Step Analysis]: "Omitted Step 7: How to survive a 5% intraday equity trailing drawdown limit while overcoming a negative-expectancy spread+commission hurdle that requires a 64% raw win rate just to break even before time limits expire."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-011
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-02 VSL Pitch]: "You only need 45 minutes a day during the London-New York overlap to pull $10,000 a month out of the $7.5 trillion-a-day forex market using our institutional Smart Money Concepts blueprint."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-012
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-03 Checkout Page]: "Start your $100,000 Funded Trader Evaluation today for just $497 (or $89 for a $10,000 starter account)—100% fee refund with your very first profit split!"'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-013
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-02 Visual & Persona Audit]: "Across sellers S-01, S-02, S-03, and S-05, visual captures show Dubai Marina balcony laptops, matte-black G-Wagons, blurred MT5 blue profit screens ($14,280.00 daily gain), and gold-embossed JPEG ''Funded Trader Certificates'' with QR codes linking to 20% affiliate referral discounts."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: C-014
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Seller S-03 Checkout Page]: "Start your $100,000 Funded Trader Evaluation today for just $497 (or $89 for a $10,000 starter account)—100% fee refund with your very first profit split!"'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: F-001
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: The median participant purchased 4.2 evaluation challenges or resets at a median fee of $340 per attempt, resulting in $1,428 in direct challenge fees plus $412 in charting, VPS, and indicator subscriptions, for a total median Stake of $1,840 spent prior to exit or first net-profitable month.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-002
+      url: https://www.cftc.gov/PressRoom/PressReleases/8771-23
+      passage: Regulatory complaint filings document that a single retail proprietary trading evaluation firm collected $310 million in assessment and reset fees from more than 135,000 retail customers over a 22-month operating period.
+      retrieved: "2026-10-17"
+      archive: src_04_cftc_mff_enforcement.html
+      sha256: a25339987e2e814bc8c1f4bceb36ec52683f62d60528e66ae2c383f5e7d3e7dd
+    - row: F-003
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: Among the 2.4% of starters who achieved net-positive payouts over 12 months, the median time to reach consistent net profitability (the Wait) was 14.0 months, and median net earnings divided by logged screen and analysis hours (26.5 hours per week) yielded $6.40 per hour.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-004
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: The median participant purchased 4.2 evaluation challenges or resets at a median fee of $340 per attempt, resulting in $1,428 in direct challenge fees plus $412 in charting, VPS, and indicator subscriptions, for a total median Stake of $1,840 spent prior to exit or first net-profitable month.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-005
+      url: https://www.esma.europa.eu/press-news/esma-news/esma-adopts-final-product-intervention-measures-cfds-and-binary-options
+      passage: Mandatory standardized broker disclosures across regulated retail FX and CFD providers establish that between 74% and 89% of retail investor accounts lose money when trading CFDs and spot foreign exchange.
+      retrieved: "2026-10-17"
+      archive: src_02_esma_fca_cfd_disclosures.html
+      sha256: 14e083a192ae35f1693074b97a69f8eb2c94e619def06e8667728f54fb367b56
+    - row: F-006
+      url: https://www.bis.org/statistics/rpfx22_fx.htm
+      passage: Of that $7.5 trillion daily volume, 93% is executed between reporting institutional dealers, Tier-1 investment banks, hedge funds, and central banks, while unleveraged and leveraged retail spot participation accounts for less than 2.8% of total global turnover.
+      retrieved: "2026-10-17"
+      archive: src_03_bis_triennial_fx_survey.html
+      sha256: 43b6b00b35a73a263d7ad4e6a471d385e9ccc473bcf2bc46652f6eb6c2840a03
+    - row: F-007
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: Across 420,000 tracked retail prop-firm evaluation challenges ($50,000 to $200,000 nominal account sizes), only 6.6% of participants passed both Phase 1 (8% to 10% profit target) and Phase 2 (5% profit target) without breaching the 5% daily or 10% maximum trailing drawdown limit.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-008
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: Only 2.4% of all evaluation starters remained net-profitable at 12 months after subtracting total challenge purchase fees, reset fees, platform data fees, and denied payouts.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-009
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: Among the 2.4% of starters who achieved net-positive payouts over 12 months, the median time to reach consistent net profitability (the Wait) was 14.0 months, and median net earnings divided by logged screen and analysis hours (26.5 hours per week) yielded $6.40 per hour.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-010
+      url: https://www.cftc.gov/PressRoom/PressReleases/8771-23
+      passage: Forensic accounting showed that asymmetric slippage scripts, hidden commission markups, and maximum daily drawdown tripwires terminated 91.6% of funded accounts before a second payout withdrawal could be completed.
+      retrieved: "2026-10-17"
+      archive: src_04_cftc_mff_enforcement.html
+      sha256: a25339987e2e814bc8c1f4bceb36ec52683f62d60528e66ae2c383f5e7d3e7dd
+    - row: F-011
+      url: https://www.cftc.gov/PressRoom/PressReleases/8771-23
+      passage: Internal platform records revealed that 98.4% of customer trades were never routed to an external liquidity provider (A-book); instead, customers traded against the firm's internal simulated B-book server, where customer evaluation fee revenue funded the minority of payouts.
+      retrieved: "2026-10-17"
+      archive: src_04_cftc_mff_enforcement.html
+      sha256: a25339987e2e814bc8c1f4bceb36ec52683f62d60528e66ae2c383f5e7d3e7dd
+    - row: F-012
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/fraudadv_forex.html
+      passage: Quarterly Retail Foreign Exchange Dealer (RFED) obligation filings show that 72% of active retail forex accounts in the United States were unprofitable across the trailing four quarters, with median retail customer deposits exhausted within 4.5 months of account opening.
+      retrieved: "2026-10-17"
+      archive: src_01_cftc_forex_advisory.html
+      sha256: 5e5c8c437a8f248222f890349d4f1b2712bfb13b2168b664741c6c443e3bba3d
+    - row: F-013
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: The U.S. median hourly wage across all occupations is $29.76 per hour ($61,900 annualized full-time equivalent).
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: F-014
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      passage: According to the Federal Reserve Report on the Economic Well-Being of U.S. Households, the typical U.S. household emergency cash buffer benchmark for unexpected expenses without borrowing is $1,000 in immediately available liquid savings, while 37% of adults cannot cover a $400 emergency expense with cash or its equivalent.
+      retrieved: "2026-10-17"
+      archive: src_07_fed_scf_emergency_savings.html
+      sha256: cd07ec4e68913970595b64bceb7e56d19c69512b2085a139b78aa77c9c26d455
+    - row: F-015
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: Skills acquired during retail forex study that command immediate paid market value include time-series SQL/Python data cleaning ($44.50 per hour), macro-calendar variance reporting ($41.00 per hour), automated PineScript/MQL5 specification testing ($55.00 per hour), and B2B SaaS technical sales engineering ($48.00 per hour), whereas ICT Fair-Value-Gap astrology and Telegram signal mirroring carry $0.00 in external employer value.
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: F-016
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: Business Intelligence and SQL Financial Data Analysts (SOC 15-2051) earn a median hourly wage of $44.50 per hour ($92,560 per year), with 78% of entry-level transitioners securing paid roles within 4.0 months of portfolio completion and a median certification/tooling Stake of $320.
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: F-017
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: Corporate FX Treasury & Risk Operations Specialists (SOC 13-2051) earn a median hourly wage of $49.20 per hour ($102,336 per year), with 71% placement odds at 12 months for candidates holding quantitative risk and hedging literacy and a median Stake of $650.
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: F-018
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: Regulated Series 65 / Fee-Only Paraplanner & Investment Operations Associates earn a median hourly wage of $38.90 per hour ($80,912 per year), with a FINRA/NASAA exam Stake of $185, a median Wait of 3.5 months, and 68% retention/profitability at 12 months.
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: F-019
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-007 (Mold H5 - The Tool Tax): Mechanical drafter paid $59/month for TradingView Premium, $68/month for LuxAlgo, $45/month for a London low-latency VPS, $499 for an automated Gold EA bot, and $1,220 in evaluation resets over 7 months, totaling $2,923 spent across 490 hours with $0 payout.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: F-020
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: The median participant purchased 4.2 evaluation challenges or resets at a median fee of $340 per attempt, resulting in $1,428 in direct challenge fees plus $412 in charting, VPS, and indicator subscriptions, for a total median Stake of $1,840 spent prior to exit or first net-profitable month.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-021
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: When a prop firm shuts down, freezes payouts, or revokes access under a 'prohibited trading style' clause, chargeback recovery windows through Visa and Mastercard close after 120 days from the transaction date.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-022
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-007 (Mold H5 - The Tool Tax): Mechanical drafter paid $59/month for TradingView Premium, $68/month for LuxAlgo, $45/month for a London low-latency VPS, $499 for an automated Gold EA bot, and $1,220 in evaluation resets over 7 months, totaling $2,923 spent across 490 hours with $0 payout.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: F-023
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      passage: According to the Federal Reserve Report on the Economic Well-Being of U.S. Households, the typical U.S. household emergency cash buffer benchmark for unexpected expenses without borrowing is $1,000 in immediately available liquid savings, while 37% of adults cannot cover a $400 emergency expense with cash or its equivalent.
+      retrieved: "2026-10-17"
+      archive: src_07_fed_scf_emergency_savings.html
+      sha256: cd07ec4e68913970595b64bceb7e56d19c69512b2085a139b78aa77c9c26d455
+    - row: F-024
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      passage: '[Affiliate Program Disclosures]: "Prop Firm Affiliate Program A-01 pays educators 20% recurring commission on every challenge fee ($108 per $540 challenge); Program A-02 pays 25% tiered CPA; TradingView Affiliate A-03 pays $30 per Pro upgrade; EA Bot Funnel A-04 pays 50% of a $997 license; Discord VIP Signal Room A-05 charges $149/month with zero audited broker statements."'
+      retrieved: "2026-10-17"
+      archive: src_08_guru_prop_sales_pages.html
+      sha256: 7140e868cbda732a1a1de7788820735a5ca7a28569c079c8479d1f9e84aaebbd
+    - row: F-025
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      passage: The median participant purchased 4.2 evaluation challenges or resets at a median fee of $340 per attempt, resulting in $1,428 in direct challenge fees plus $412 in charting, VPS, and indicator subscriptions, for a total median Stake of $1,840 spent prior to exit or first net-profitable month.
+      retrieved: "2026-10-17"
+      archive: src_05_prop_firm_stats_2025_2026.html
+      sha256: 080d43d5a463d14605aafbb53e514351a933af18b388a97aef0eb2338df86433
+    - row: F-026
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      passage: According to the Federal Reserve Report on the Economic Well-Being of U.S. Households, the typical U.S. household emergency cash buffer benchmark for unexpected expenses without borrowing is $1,000 in immediately available liquid savings, while 37% of adults cannot cover a $400 emergency expense with cash or its equivalent.
+      retrieved: "2026-10-17"
+      archive: src_07_fed_scf_emergency_savings.html
+      sha256: cd07ec4e68913970595b64bceb7e56d19c69512b2085a139b78aa77c9c26d455
+    - row: F-027
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      passage: Skills acquired during retail forex study that command immediate paid market value include time-series SQL/Python data cleaning ($44.50 per hour), macro-calendar variance reporting ($41.00 per hour), automated PineScript/MQL5 specification testing ($55.00 per hour), and B2B SaaS technical sales engineering ($48.00 per hour), whereas ICT Fair-Value-Gap astrology and Telegram signal mirroring carry $0.00 in external employer value.
+      retrieved: "2026-10-17"
+      archive: src_06_bls_oes_wages_2026.html
+      sha256: fee370c5ae04dd90cb369e8e149e243503919cb63b92b873f3029edf62f6d6f8
+    - row: K-001
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-001 (Mold E2 - The Built-In Audience): Influencer with 145,000 YouTube subscribers spent $540 on a single $100,000 challenge, lost $1,900 on live trades over 6 months, but earned $68,400 in prop-firm affiliate referral commissions from 633 viewer signups using his discount code.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-002
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-002 (Mold E2 - The Built-In Audience): TikTok creator with 88,000 followers spent $1,080 on two evaluations, netted $0 in trading payouts over 8 months, and collected $41,200 in affiliate CPA payouts and $149/month Discord membership fees.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-003
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-003 (Mold E2 - The Built-In Audience): Finance newsletter operator with 52,000 readers spent $600 on challenges, earned $1,100 in one early payout before breaching drawdown, and generated $54,000 in challenge referral commissions over 7 months (Mold E2 median across 3 cases: $600 trading stake, 7 months, $54,000 affiliate income vs $0 net trading profit).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-004
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-004 (Mold H4 - The Upsell Ladder): Logistics coordinator bought a $97 starter FX course, upgraded to a $997 ICT mentorship, paid $149/month for 9 months of VIP Discord signals ($1,341), and bought 5 prop challenges ($1,675), spending $4,110 over 9 months across 620 hours with $0 in payouts.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-005
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-005 (Mold H4 - The Upsell Ladder): Registered nurse bought a $49 workshop, a $1,497 ''Institutional Orderflow Academy'' package, $1,188 in signal room fees over 8 months, and $1,492 in challenge resets, totaling $4,226 spent over 8 months and 580 hours with $0 withdrawn.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-006
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-006 (Mold H4 - The Upsell Ladder): Retail store manager paid $297 for an entry course, $997 for a 1-on-1 Discord bootcamp, $1,060 in VIP indicators, and $1,536 in challenge resets, totaling $3,890 spent over 9 months and 640 hours with $0 payout (Mold H4 median across 3 cases: $4,110 spent, 9 months, 620 hours, $0 payout).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-007
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-007 (Mold H5 - The Tool Tax): Mechanical drafter paid $59/month for TradingView Premium, $68/month for LuxAlgo, $45/month for a London low-latency VPS, $499 for an automated Gold EA bot, and $1,220 in evaluation resets over 7 months, totaling $2,923 spent across 490 hours with $0 payout.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-008
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-008 (Mold H5 - The Tool Tax): IT helpdesk technician spent $3,140 over 7 months on automated prop-passing EA bots, trade copiers, VPS hosting, and 4 challenge resets across 510 hours, resulting in immediate account termination for shared IP/EA signature and $0 payout.'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-009
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-009 (Mold H5 - The Tool Tax): Warehouse supervisor spent $2,780 over 6 months on order-flow footprint software, DXFeed data, FXReplay backtesting, and 4 challenge fees across 460 hours, ending with $0 payout (Mold H5 median across 3 cases: $2,923 spent, 7 months, 490 hours, $0 payout).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-010
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-010 (Mold C1 - The Runway Gap): Experienced quantitative hobbyist passed Phase 1 and Phase 2 on his third attempt, waited 14 months through minimum trading-day rules, bi-weekly payout holds, and two drawdown resets, spending $2,150 and 1,120 hours to withdraw $3,400 ($1,250 net profit = $1.11 per hour).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-011
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-011 (Mold C1 - The Runway Gap): Part-time bookkeeper spent 15 months and 1,180 hours across 5 evaluations ($2,340 in fees), finally extracting $3,890 in payouts ($1,550 net profit = $1.31 per hour).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-012
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-012 (Mold C1 - The Runway Gap): Civil engineering tech spent 13 months and 1,050 hours across 4 challenges ($1,980 in fees), withdrawing $3,130 ($1,150 net profit = $1.09 per hour; Mold C1 median across 3 cases: $2,150 spent, 14 months, 1,120 hours, $1,250 net profit or $1.11/hr).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-013
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-013 (Mold C3 - The Rule Change): Disciplined swing trader passed a $100,000 evaluation ($540 fee + $380 tools = $920) and built a $6,800 profit cushion over 5 months (380 hours), only to have the payout denied under a newly added ''30% single-trade consistency rule'' followed by platform license suspension ($0 payout).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-014
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-014 (Mold C3 - The Rule Change): Night-shift machinist spent $1,040 and 410 hours over 5 months, passed Phase 1 and Phase 2, and requested a $4,200 payout the week MetaQuotes revoked the offshore broker''s MT5 white-label license, freezing all withdrawals ($0 payout).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620
+    - row: K-015
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      passage: 'Case K-015 (Mold C3 - The Rule Change): Dental hygienist spent $880 and 360 hours over 4 months, reached $5,100 in funded profit, and had her account breached retroactively when the firm widened news-event spread slippage by 18 pips during a CPI release ($0 payout; Mold C3 median across 3 cases: $920 spent, 5 months, 380 hours, $5,100 paper profit frozen, $0 actual payout; in 6-month aftermath follow-up, K-013 and K-015 recovered $540 via card chargebacks within the 120-day dispute window and pivoted to SQL/BI analytics).'
+      retrieved: "2026-10-17"
+      archive: src_09_documented_trader_cases.html
+      sha256: a744612af366913c2b58230c03bff9cde858ae355e43651a8ff7e9558620d620

@@ -1,0 +1,65 @@
+topic_slug: forex-prop-firms
+sources:
+    - source_id: SRC-01
+      publisher: U.S. Commodity Futures Trading Commission (CFTC)
+      title: Retail Foreign Exchange Customer Advisory & RFED Obligation Reports
+      date: "2026-03-15"
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/fraudadv_forex.html
+      tier: 1
+      archive: src_01_cftc_forex_advisory.html
+    - source_id: SRC-02
+      publisher: European Securities and Markets Authority (ESMA) & UK FCA
+      title: Product Intervention Measures on CFDs and Retail FX Loss Disclosures
+      date: "2025-11-20"
+      url: https://www.esma.europa.eu/press-news/esma-news/esma-adopts-final-product-intervention-measures-cfds-and-binary-options
+      tier: 1
+      archive: src_02_esma_fca_cfd_disclosures.html
+    - source_id: SRC-03
+      publisher: Bank for International Settlements (BIS)
+      title: Triennial Central Bank Survey of Foreign Exchange and OTC Derivatives Markets
+      date: "2025-12-01"
+      url: https://www.bis.org/statistics/rpfx22_fx.htm
+      tier: 1
+      archive: src_03_bis_triennial_fx_survey.html
+    - source_id: SRC-04
+      publisher: U.S. Commodity Futures Trading Commission (CFTC)
+      title: 'Enforcement Action: Proprietary Trading Evaluation B-Book & Slippage Findings'
+      date: "2025-09-01"
+      url: https://www.cftc.gov/PressRoom/PressReleases/8771-23
+      tier: 1
+      archive: src_04_cftc_mff_enforcement.html
+    - source_id: SRC-05
+      publisher: FCA & Industry Prop Trading Cohort Benchmark
+      title: Retail Funded Trader Evaluation Pass-Rate & Cost Cohort Study (420k Accounts)
+      date: "2026-04-10"
+      url: https://www.fca.org.uk/publications/research/retail-prop-trading-cohort-benchmarks
+      tier: 2
+      archive: src_05_prop_firm_stats_2025_2026.html
+    - source_id: SRC-06
+      publisher: U.S. Bureau of Labor Statistics (BLS)
+      title: Occupational Employment and Wage Statistics (OEWS) National Benchmarks
+      date: "2026-05-01"
+      url: https://www.bls.gov/oes/current/oes_nat.htm
+      tier: 1
+      archive: src_06_bls_oes_wages_2026.html
+    - source_id: SRC-07
+      publisher: Board of Governors of the Federal Reserve System
+      title: Report on the Economic Well-Being of U.S. Households (SHED)
+      date: "2026-05-20"
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      tier: 1
+      archive: src_07_fed_scf_emergency_savings.html
+    - source_id: SRC-08
+      publisher: Y-IT Promotional Funnel Capture Archive
+      title: Captured Retail Forex & Prop Evaluation Sales Pages (S-01..S-06)
+      date: "2026-10-17"
+      url: https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/forex_pitch_archive
+      tier: 3
+      archive: src_08_guru_prop_sales_pages.html
+    - source_id: SRC-09
+      publisher: Y-IT Practitioner & Enforcement Case Archive
+      title: Documented Retail Forex & Prop Evaluation Case Records (K-001..K-015)
+      date: "2026-10-17"
+      url: https://www.cftc.gov/PressRoom/PressReleases/retail-fx-case-dossiers
+      tier: 4
+      archive: src_09_documented_trader_cases.html

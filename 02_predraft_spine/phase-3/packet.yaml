@@ -1,0 +1,41 @@
+topic_slug: forex-prop-firms
+phase: 3
+spine_version: outline.v1@282d710
+packet_version: 1
+dials:
+    ch7.pivots: 4
+    ch7.repurpose: 6
+    ch7.skills: 4
+    ch8.callbacks: 2
+    ch8.do_nots: 6
+    ch8.exit_steps: 6
+    ch8.honest_way: 4
+    ch8.watch_for: 3
+    companion.segue: 1
+cited_rows:
+    - F-001
+    - F-003
+    - F-004
+    - F-007
+    - F-008
+    - F-009
+    - F-010
+    - F-013
+    - F-014
+    - F-015
+    - F-016
+    - F-017
+    - F-018
+    - F-019
+    - F-020
+    - F-021
+    - F-022
+    - F-023
+    - F-024
+    - F-025
+    - F-026
+    - F-027
+    - K-013
+    - K-015
+ch7_pivots: 4
+ch8_title: For the Stubborn Fool Who Must

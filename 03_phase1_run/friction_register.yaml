@@ -1,0 +1,74 @@
+records:
+  - friction_id: FRIC-001
+    pathway_step_ids:
+      - STEP-001
+      - STEP-006
+    mechanism: "Simulated Demo Environment vs. Live Market Execution: Both the evaluation stages and the post-qualification 'funded' stage operate inside simulated trading environments ('Grow & Monetize Your Demo Trading', 'Simulated trading program services')."
+    conditions: "Applies across standard retail CFD and futures evaluation challenges (SRC-001, SRC-004)."
+    consequence: "Participant trades do not execute against external interbank liquidity by default; the prop firm acts as the simulated program operator and rulebook administrator."
+    frequency_status: "CORROBORATED across 4/4 inspected first-party seller disclosures (SRC-001..SRC-004); exact percentage of internal B-book vs hedged A-book routing across the broader industry requires regulatory docket audit in Phase 2."
+    marketing_treatment: "Hero headlines emphasize six- and seven-figure capital ceilings ('$2M', '$4,000,000', 'We sponsor your trading journey') while placing 'Demo Trading' or 'Simulated trading program services' in sub-copy or legal footers."
+    source_ids:
+      - SRC-001
+      - SRC-004
+      - LIVE-SRC-001
+    evidence_status: VERIFIED
+    confidence: High
+    limitations: "Home page captures confirm simulated program structure; firm-by-firm hedging ratios are not disclosed on public home pages."
+    phase2_question: "What proportion of retail prop-firm trades are internally simulated vs routed to external liquidity providers, and how does that align operator revenue with customer challenge fees?"
+
+  - friction_id: FRIC-002
+    pathway_step_ids:
+      - STEP-003
+      - STEP-004
+      - STEP-005
+    mechanism: "Effective Risk Capital Compression via Maximum Loss Limits: An advertised '$100,000' account with a 10%–12% maximum loss limit (SRC-002) terminates at $88,000–$90,000 equity, meaning actual risk buffer is $10,000–$12,000."
+    conditions: "Mandatory across all inspected evaluation challenges (SRC-001..SRC-004)."
+    consequence: "A Phase 1 profit target of +8% to +10% against a 5% daily / 10%–12% max loss limit requires generating an 80%–100% return on actual allowed drawdown without touching the daily loss wire."
+    frequency_status: "STRUCTURAL (100% of fixed/trailing drawdown evaluation accounts)."
+    marketing_treatment: "Marketing anchors on the nominal account size ('$100,000', '$200,000', 'up to $4,000,000') rather than the permitted drawdown allowance."
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-003
+    evidence_status: VERIFIED
+    confidence: High
+    limitations: "Exact daily vs trailing drawdown calculation varies by plan sub-type (static vs trailing high-water mark)."
+    phase2_question: "What is the mathematical pass probability of hitting +8% and +5% profit targets before hitting a 5% daily or 10% trailing loss barrier under realistic retail spread and commission drag?"
+
+  - friction_id: FRIC-003
+    pathway_step_ids:
+      - STEP-001
+      - STEP-003
+      - STEP-007
+    mechanism: "Non-Refundable Upfront Fee Upon Breach & Reset Loop: The upfront evaluation fee is refunded only after passing all evaluation stages and reaching an approved reward payout; breaching any loss rule forfeits the fee and requires paid re-entry."
+    conditions: "Triggered whenever daily loss or maximum loss limit is breached during STEP-003..STEP-005."
+    consequence: "Participants who fail evaluation stages absorb 100% of cumulative upfront challenge and reset fees with zero payout."
+    frequency_status: "UNKNOWN from seller home pages alone (sellers do not publish cohort failure rates on home pages; reserved for Phase 2 regulatory and cohort audit)."
+    marketing_treatment: "Promoters highlight 'No recurring costs' (SRC-002) or 'Fee refunded with first reward' without stating the fraction of entrants who reach first reward."
+    source_ids:
+      - SRC-001
+      - SRC-002
+      - SRC-004
+    evidence_status: CORROBORATED
+    confidence: High
+    limitations: "Home-page captures do not disclose average number of challenges purchased per user."
+    phase2_question: "Across independent regulatory and cohort studies, how many challenges does the median participant purchase, and what percentage of entrants ever receive a fee refund + payout?"
+
+  - friction_id: FRIC-004
+    pathway_step_ids:
+      - STEP-007
+    mechanism: "Survivorship Selection in Highlighted Payout Displays: Seller home pages display large individual payouts ('Payouts of $98,038', 'Payouts of $35,000' in SRC-003) and cumulative firm-wide totals ('$316.1M+ Rewards sent' in SRC-002; '$1.5B+ paid' in SRC-004) without cohort denominators."
+    conditions: "Observed across 3/4 seller home pages (SRC-002, SRC-003, SRC-004)."
+    consequence: "Prospective buyers see upper-tail payout figures without knowing the baseline pass rate, median payout, or net cohort return after challenge fees."
+    frequency_status: "OBSERVED on 3/4 inspected seller landing pages."
+    marketing_treatment: "Presented as scrolling social-proof carousels ('Real Traders. Real Results.' in SRC-003) with small-print caveats ('Individual results vary. *Based on internal data of YTD average' in SRC-004)."
+    source_ids:
+      - SRC-002
+      - SRC-003
+      - SRC-004
+      - LIVE-SRC-024
+    evidence_status: VERIFIED
+    confidence: High
+    limitations: "Sample size limited to 4 major first-party seller home pages captured on 2026-10-24."
+    phase2_question: "What is the true 12-month survival rate and median hourly return across the full denominator of evaluation starters?"

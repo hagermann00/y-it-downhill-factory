@@ -1,0 +1,754 @@
+topic_slug: forex-prop-firms
+rows:
+    - id: C-001
+      kind: claim
+      question: P1-Q1
+      phases:
+        - 1
+        - 2
+      text: Pass our 2-Step Challenge in 14 days and trade up to a $200,000 funded account from your laptop anywhere in the world—keep 90% of the profits with zero personal capital at risk!
+      number: 14 days, $200,000, 90%
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-01
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-004
+        - F-008
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-002
+      kind: claim
+      question: P1-Q1
+      phases:
+        - 1
+        - 2
+      text: You only need 45 minutes a day during the London-New York overlap to pull $10,000 a month out of the $7.5 trillion-a-day forex market using our institutional Smart Money Concepts blueprint.
+      number: 45 minutes, $10,000, $7.5 trillion
+      venue: video
+      seen: "2026-10-17"
+      seller: S-02
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-003
+        - F-006
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-003
+      kind: claim
+      question: P1-Q2
+      phases:
+        - 1
+        - 2
+      text: Start your $100,000 Funded Trader Evaluation today for just $497 (or $89 for a $10,000 starter account)—100% fee refund with your very first profit split!
+      number: $100,000, $497, $89, 100%
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-03
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-001
+        - F-004
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-004
+      kind: claim
+      question: P1-Q3
+      phases:
+        - 1
+        - 2
+      text: 'Insider vocabulary tokens: ''funded trader'', ''Smart Money Concepts'', ''liquidity sweep'', ''90% profit split'', ''Funded Trader Certificate''.'
+      number: 90%
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-02
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-005
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-005
+      kind: claim
+      question: P1-Q4
+      phases:
+        - 1
+        - 2
+      text: It is 11:42 PM on a Tuesday. While everyone else is dreading their 8:00 AM commute, you tap three buttons on MetaTrader 5, lock in a 40-pip gold move, and wake up to a $2,400 payout notification before breakfast.
+      number: 40, $2,400
+      venue: ad
+      seen: "2026-10-17"
+      seller: S-04
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-003
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-006
+      kind: claim
+      question: P1-Q5
+      phases:
+        - 1
+      text: Forget inventory, warehouses, or dealing with angry customers—currency pairs never run out of stock, never ask for refunds, and pay out in pure cash every 14 days.
+      number: 14 days
+      venue: webinar
+      seen: "2026-10-17"
+      seller: S-05
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-004
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-007
+      kind: claim
+      question: P1-Q6
+      phases:
+        - 1
+      text: 'Composite social-proof testimonial banner: funded trader certificate holders thanking the 90% bi-weekly profit split for replacing their corporate salaries.'
+      number: 90%
+      venue: social post
+      seen: "2026-10-17"
+      seller: S-05
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-008
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-008
+      kind: claim
+      question: P1-Q7
+      phases:
+        - 1
+      text: 'The 6-Step Funded Trader Roadmap: Step 1 Open challenge ($89-$540), Step 2 Load Smart-Money template, Step 3 Wait for 9:30 AM NY sweep, Step 4 Enter 1:5 R:R bracket, Step 5 Hit 8% Phase 1 and 5% Phase 2 targets, Step 6 Withdraw 90% payouts.'
+      number: 8%, 5%, 90%
+      venue: course page
+      seen: "2026-10-17"
+      seller: S-06
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-007
+        - F-008
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-009
+      kind: claim
+      question: P1-Q8
+      phases:
+        - 1
+        - 2
+      text: 'Quoted starter kit parts: Prop Challenge Account ($89–$540), TradingView Charting, and Smart-Money Indicator Template.'
+      number: $89, $540
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-06
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-001
+        - F-004
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-010
+      kind: claim
+      question: P1-Q9
+      phases:
+        - 1
+        - 2
+      text: 'Omitted Step 7: How to survive a 5% intraday equity trailing drawdown limit while overcoming a negative-expectancy spread+commission hurdle that requires a 64% raw win rate just to break even before time limits expire.'
+      number: 5%, 64%
+      venue: course page
+      seen: "2026-10-17"
+      seller: S-06
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-007
+        - F-010
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-011
+      kind: claim
+      question: P1-Q10
+      phases:
+        - 1
+      text: 'Roadmap TIP reassurance: Simply set your 1:5 bracket order and let institutional order flow do the heavy lifting in 45 minutes a day.'
+      number: 45 minutes
+      venue: course page
+      seen: "2026-10-17"
+      seller: S-02
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-003
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-012
+      kind: claim
+      question: P1-Q11
+      phases:
+        - 1
+      text: 'Pitch venues and collage artifacts: YouTube VSLs, checkout discount timers ($497 for $100,000 challenge), and gold-embossed Funded Trader Certificates.'
+      number: $497, $100,000
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-03
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-002
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-013
+      kind: claim
+      question: P1-Q12
+      phases:
+        - 1
+      text: Across sellers S-01, S-02, S-03, and S-05, visual captures show Dubai Marina balcony laptops, matte-black G-Wagons, blurred MT5 blue profit screens ($14,280.00 daily gain), and gold-embossed JPEG 'Funded Trader Certificates'.
+      number: $14,280.00, 20%
+      venue: ad
+      seen: "2026-10-17"
+      seller: S-02
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-005
+      source: src_08_guru_prop_sales_pages.html
+    - id: C-014
+      kind: claim
+      question: P1-Q1
+      phases:
+        - 1
+        - 2
+      text: 'Second P1-Q1 promise row: Trade institutional capital with 100% fee refund on your first split and zero inventory headaches.'
+      number: 100%
+      venue: sales page
+      seen: "2026-10-17"
+      seller: S-03
+      capture: src_08_guru_prop_sales_pages.html
+      tests:
+        - F-008
+      source: src_08_guru_prop_sales_pages.html
+    - id: F-001
+      kind: fact
+      question: P2-Q1
+      phases:
+        - 2
+      text: The median participant purchased 4.2 evaluation challenges or resets at a median fee of $340 per attempt ($1,428 in direct challenge fees) plus $412 in charting, VPS, and indicator subscriptions, totaling $1,840.
+      number: 4.2, $340, $1,428, $412, $1,840
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-002
+      kind: fact
+      question: P2-Q2
+      phases:
+        - 2
+      text: A single retail prop evaluation firm collected $310 million in assessment and reset fees from more than 135,000 retail customers over 22 months while routing 98.4% of trades to an internal simulated B-book server.
+      number: $310, 135,000, 22
+      seen: "2026-10-17"
+      capture: src_04_cftc_mff_enforcement.html
+      tier: 1
+      market: US
+      source: src_04_cftc_mff_enforcement.html
+    - id: F-003
+      kind: fact
+      question: P2-Q3
+      phases:
+        - 2
+        - 3
+      text: 'The Payoff: Among the 2.4% of starters who achieved net-positive payouts over 12 months, median net earnings divided by logged screen and analysis hours (26.5 hours per week) yielded $6.40 per hour.'
+      number: 2.4%, 12, 26.5, $6.40
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-004
+      kind: fact
+      question: P2-Q4
+      phases:
+        - 2
+        - 3
+      text: 'The Stake: Median cash spent up to the first net-profitable month or exit is $1,840 ($1,428 in evaluation/reset fees + $412 in software/data tools).'
+      number: $1,840, $1,428, $412
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-005
+      kind: fact
+      question: P2-Q5
+      phases:
+        - 2
+      text: Regulated broker disclosures across ESMA and the FCA establish that between 74% and 89% of retail investor accounts lose money when trading CFDs and spot foreign exchange, and 94.2% earn less than minimum wage.
+      number: 74%, 89%
+      seen: "2026-10-17"
+      capture: src_02_esma_fca_cfd_disclosures.html
+      tier: 1
+      market: US
+      source: src_02_esma_fca_cfd_disclosures.html
+    - id: F-006
+      kind: fact
+      question: P2-Q6
+      phases:
+        - 2
+      text: Global OTC foreign exchange turnover is $7.5 trillion per day, of which 93% is institutional dealer/interbank volume and less than 2.8% is retail spot participation.
+      number: $7.5, 93%, 2.8%
+      seen: "2026-10-17"
+      capture: src_03_bis_triennial_fx_survey.html
+      tier: 1
+      market: US
+      source: src_03_bis_triennial_fx_survey.html
+    - id: F-007
+      kind: fact
+      question: P2-Q7
+      phases:
+        - 2
+        - 3
+      text: 'The Odds (Pass Rate): Across 420,000 tracked retail prop-firm challenges, only 6.6% passed both Phase 1 (8% to 10% target) and Phase 2 (5% target) without breaching the 5% daily or 10% maximum trailing drawdown limit.'
+      number: 420,000, 6.6%, 8%, 10%, 5%
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-008
+      kind: fact
+      question: P2-Q7
+      phases:
+        - 2
+        - 3
+      text: 'The Odds (12-Month Net Profitable): Only 2.4% of all evaluation starters remained net-profitable at 12 months after subtracting challenge fees, resets, data fees, and denied payouts.'
+      number: 2.4%, 12
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-009
+      kind: fact
+      question: P2-Q8
+      phases:
+        - 2
+        - 3
+      text: 'The Wait: Among the 2.4% of starters who achieved net-positive payouts over 12 months, the median time to reach consistent net profitability was 14.0 months.'
+      number: 2.4%, 12, 14.0
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-010
+      kind: fact
+      question: P2-Q9
+      phases:
+        - 2
+      text: Asymmetric slippage scripts, hidden commission markups, and maximum daily drawdown tripwires terminated 91.6% of funded accounts before a second payout withdrawal could be completed.
+      number: 91.6%
+      seen: "2026-10-17"
+      capture: src_04_cftc_mff_enforcement.html
+      tier: 1
+      market: US
+      source: src_04_cftc_mff_enforcement.html
+    - id: F-011
+      kind: fact
+      question: P2-Q10
+      phases:
+        - 2
+      text: 98.4% of customer trades on investigated prop platforms were never routed to an external liquidity provider (A-book); customers traded against the firm's internal simulated B-book server funded by evaluation fees.
+      number: 98.4%
+      seen: "2026-10-17"
+      capture: src_04_cftc_mff_enforcement.html
+      tier: 1
+      market: US
+      source: src_04_cftc_mff_enforcement.html
+    - id: F-012
+      kind: fact
+      question: P2-Q11
+      phases:
+        - 2
+        - 3
+      text: Quarterly CFTC RFED filings show 72% of US retail forex accounts were unprofitable across trailing four quarters, with median retail deposits exhausted within 4.5 months.
+      number: 72%, 4.5
+      seen: "2026-10-17"
+      capture: src_01_cftc_forex_advisory.html
+      tier: 1
+      market: US
+      source: src_01_cftc_forex_advisory.html
+    - id: F-013
+      kind: fact
+      question: P2-Q12
+      phases:
+        - 2
+        - 3
+      text: The U.S. median hourly wage across all occupations is $29.76 per hour ($61,900 annualized full-time equivalent).
+      number: $29.76, $61,900
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: F-014
+      kind: fact
+      question: P2-Q12
+      phases:
+        - 2
+        - 3
+      text: The typical U.S. household emergency cash buffer benchmark for unexpected expenses without borrowing is $1,000 in immediately available liquid savings, while 37% of adults cannot cover a $400 emergency expense.
+      number: $1,000, 37%, $400
+      seen: "2026-10-17"
+      capture: src_07_fed_scf_emergency_savings.html
+      tier: 1
+      market: US
+      source: src_07_fed_scf_emergency_savings.html
+    - id: F-015
+      kind: fact
+      question: P3-Q1
+      phases:
+        - 3
+      text: 'Transferable skills trained by retail FX study: time-series SQL/Python data cleaning ($44.50/hr), macro-calendar variance reporting ($41.00/hr), automated PineScript/MQL5 specification testing ($55.00/hr), and B2B SaaS technical sales ($48.00/hr).'
+      number: $44.50, $41.00, $55.00, $48.00
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: F-016
+      kind: fact
+      question: P3-Q2
+      phases:
+        - 3
+      text: Business Intelligence and SQL Financial Data Analysts (SOC 15-2051) earn a median hourly wage of $44.50 per hour ($92,560 per year), with 78% placement odds within 4.0 months and a $320 Stake.
+      number: $44.50, $92,560, 78%, 4.0, $320
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: F-017
+      kind: fact
+      question: P3-Q3
+      phases:
+        - 3
+      text: Pivot 2 — Corporate FX Treasury & Risk Operations Specialists (SOC 13-2051) earn $49.20 per hour ($102,336/yr), with 71% placement odds at 12 months, a 4.5-month Wait, and a $650 Stake. Pivot 3 — Freelance Python/PineScript Automation Contractors earn $55.00 per hour with a $150 Stake, 2.5-month Wait, and 62% 12-month profitability. Pivot 4 — Regulated Series 65 Paraplanners earn $38.90 per hour with a $185 Stake, 3.5-month Wait, and 68% 12-month retention.
+      number: $49.20, $102,336, 71%, 12, $650
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: F-018
+      kind: fact
+      question: P3-Q4
+      phases:
+        - 3
+      text: 'Slow route to building real market edges: institutional licensing (Series 3 / Series 65 / CFA) or building a verified B2B technical audience over 12–24 months rather than buying challenge resets.'
+      number: 65, $38.90, $185, 3.5, 68%
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: F-019
+      kind: fact
+      question: P3-Q5
+      phases:
+        - 3
+      text: 'Recurring subscription purge priority: Discord VIP Signal Rooms ($149/month), third-party indicator plugins ($68/month), TradingView Premium ($59/month), and London VPS hosting ($45/month).'
+      number: $59, $68, $45, $499, $1,220, $2,923
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      source: src_09_documented_trader_cases.html
+    - id: F-020
+      kind: fact
+      question: P3-Q6
+      phases:
+        - 3
+      text: 'Recoverable hardware & annual software pro-rata value: multi-monitor mounts, mechanical keypads, and unused annual charting/data subscriptions worth $180 to $450 on secondary resale.'
+      number: $412, $1,840
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-021
+      kind: fact
+      question: P3-Q7
+      phases:
+        - 3
+      text: 'Chargeback & Tax Rules: Visa/Mastercard chargeback windows for misrepresented or frozen prop evaluations close after 120 days; IRC Section 988 and Section 1256 govern spot FX vs futures tax treatment (ask a CPA).'
+      number: 120 days
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-022
+      kind: fact
+      question: P3-Q8
+      phases:
+        - 3
+      text: 'Next-wave recovery pitches to watch for: $499 ''Guaranteed Prop-Pass EA Bots'' (shared IP bans), unregulated offshore Crypto Prop evaluations, and fake ''Forex Fund Recovery'' upfront-fee agencies.'
+      number: $499, $2,923, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      source: src_09_documented_trader_cases.html
+    - id: F-023
+      kind: fact
+      question: P3-Q10
+      phases:
+        - 3
+      text: 'Honest-way risk reducers & P3-Q11/P3-Q12 boundaries: 90-day zero-fee demo/micro-lot statistical proof (minimum 100 logged trades with <3% max drawdown) before paying any fee; cap personal Stake at $500 (well under the $1,000 household emergency benchmark).'
+      number: $1,000, 37%, $400
+      seen: "2026-10-17"
+      capture: src_07_fed_scf_emergency_savings.html
+      tier: 1
+      market: US
+      source: src_07_fed_scf_emergency_savings.html
+    - id: F-024
+      kind: fact
+      question: P3-Q14
+      phases:
+        - 3
+      text: 'Affiliate disclosures: Prop Firm Affiliate Program A-01 pays 20% recurring commission ($108 per $540 challenge); A-02 pays 25%; TradingView A-03 pays $30; EA Bot A-04 pays 50% of $997; VIP Signal Room A-05 charges $149/month.'
+      number: 20%, $108, $540, 25%, $30, 50%, $997, $149
+      seen: "2026-10-17"
+      capture: src_08_guru_prop_sales_pages.html
+      tier: 3
+      market: US
+      source: src_08_guru_prop_sales_pages.html
+    - id: F-025
+      kind: fact
+      question: P3-Q11
+      phases:
+        - 3
+      text: 'Six high-cost system traps (Do-Nots): buying evaluation resets ($340 median fee x 4.2 attempts = $1,428), paying $149/month for unverified Discord signals, purchasing $499 ''prop-pass'' EA bots, trading news releases under asymmetric slippage scripts (91.6% termination rate), risking more than $1,000 emergency savings, and holding offshore unlicensed prop balances.'
+      number: 4.2, $340, $1,428, $1,840
+      seen: "2026-10-17"
+      capture: src_05_prop_firm_stats_2025_2026.html
+      tier: 2
+      market: US
+      source: src_05_prop_firm_stats_2025_2026.html
+    - id: F-026
+      kind: fact
+      question: P3-Q12
+      phases:
+        - 3
+      text: 'Smallest Honest Test & Personal Stop Rules: $0 evaluation fees for 90 days (3.0 months), hard personal Stake ceiling of $500 (50% of the $1,000 Federal Reserve household emergency buffer), hard Wait stop at 6.0 months, and immediate stop if net hourly return stays below $29.76/hr after 12 months.'
+      number: $1,000, $400
+      seen: "2026-10-17"
+      capture: src_07_fed_scf_emergency_savings.html
+      tier: 1
+      market: US
+      source: src_07_fed_scf_emergency_savings.html
+    - id: F-027
+      kind: fact
+      question: P3-Q13
+      phases:
+        - 3
+      text: 'Repurposing matrix: SQL/Python time-series cleaning ($44.50/hr), PineScript/MQL5 test automation ($55.00/hr), macro variance reporting ($41.00/hr), and B2B technical sales ($48.00/hr) are directly reusable; ICT Fair-Value-Gap courses and expired prop reset fees carry $0.00 reuse value and are named plainly as sunk.'
+      number: $44.50, $41.00, $55.00, $48.00, $0.00
+      seen: "2026-10-17"
+      capture: src_06_bls_oes_wages_2026.html
+      tier: 1
+      market: US
+      source: src_06_bls_oes_wages_2026.html
+    - id: K-001
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold E2 Case 1: YouTube creator (145,000 subscribers) spent $540 on a challenge, lost $1,900 on live trades over 6 months, and earned $68,400 in affiliate referral commissions from 633 viewer signups.'
+      number: 145,000, $540, $1,900, 6, $68,400, 633
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: E2
+      source: src_09_documented_trader_cases.html
+    - id: K-002
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold E2 Case 2: TikTok creator (88,000 followers) spent $1,080 on two evaluations, netted $0 in trading payouts over 8 months, and collected $41,200 in affiliate CPA payouts and $149/month Discord fees.'
+      number: 88,000, $1,080, $0, 8, $41,200, $149
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: E2
+      source: src_09_documented_trader_cases.html
+    - id: K-003
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold E2 Case 3: Finance newsletter operator (52,000 readers) spent $600 on challenges, earned $1,100 in one early payout before breaching drawdown, and generated $54,000 in challenge referral commissions over 7 months.'
+      number: 52,000, $600, $1,100, $54,000, 7
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: E2
+      source: src_09_documented_trader_cases.html
+    - id: K-004
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H4 Case 1: Logistics coordinator bought $97 starter course, $997 ICT mentorship, $1,341 in VIP signals (9 months), and $1,675 in prop challenges, spending $4,110 over 9 months and 620 hours with $0 payout.'
+      number: $97, $997, $1,341, $1,675, $4,110, 9, 620, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H4
+      source: src_09_documented_trader_cases.html
+    - id: K-005
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H4 Case 2: Registered nurse spent $4,226 ($49 workshop, $1,497 academy, $1,188 signals, $1,492 resets) over 8 months and 580 hours with $0 withdrawn.'
+      number: $4,226, $49, $1,497, $1,188, $1,492, 8, 580, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H4
+      source: src_09_documented_trader_cases.html
+    - id: K-006
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H4 Case 3: Retail store manager spent $3,890 ($297 course, $997 bootcamp, $1,060 indicators, $1,536 resets) over 9 months and 640 hours with $0 payout.'
+      number: $3,890, $297, $997, $1,060, $1,536, 9, 640, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H4
+      source: src_09_documented_trader_cases.html
+    - id: K-007
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H5 Case 1: Mechanical drafter spent $2,923 over 7 months and 490 hours on TradingView Premium ($59/mo), LuxAlgo ($68/mo), London VPS ($45/mo), $499 Gold EA bot, and $1,220 in resets, with $0 payout.'
+      number: $2,923, 7, 490, $59, $68, $45, $499, $1,220, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H5
+      source: src_09_documented_trader_cases.html
+    - id: K-008
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H5 Case 2: IT helpdesk technician spent $3,140 over 7 months and 510 hours on prop-passing EA bots, trade copiers, VPS hosting, and 4 resets, ending with account termination and $0 payout.'
+      number: $3,140, 7, 510, 4, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H5
+      source: src_09_documented_trader_cases.html
+    - id: K-009
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold H5 Case 3: Warehouse supervisor spent $2,780 over 6 months and 460 hours on footprint software, DXFeed data, FXReplay, and 4 challenges, ending with $0 payout.'
+      number: $2,780, 6, 460, 4, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: H5
+      source: src_09_documented_trader_cases.html
+    - id: K-010
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold C1 Case 1: Quantitative hobbyist spent 14 months, 1,120 hours, and $2,150 across 3 attempts to withdraw $3,400 ($1,250 net profit = $1.11/hr).'
+      number: 14, 1,120, $2,150, $3,400, $1,250, $1.11
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C1
+      source: src_09_documented_trader_cases.html
+    - id: K-011
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold C1 Case 2: Part-time bookkeeper spent 15 months, 1,180 hours, and $2,340 across 5 evaluations, extracting $3,890 in payouts ($1,550 net profit = $1.31/hr).'
+      number: 15, 1,180, $2,340, $3,890, $1,550, $1.31
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C1
+      source: src_09_documented_trader_cases.html
+    - id: K-012
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold C1 Case 3: Civil engineering tech spent 13 months, 1,050 hours, and $1,980 across 4 challenges, withdrawing $3,130 ($1,150 net profit = $1.09/hr).'
+      number: 13, 1,050, $1,980, $3,130, $1,150, $1.09
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C1
+      source: src_09_documented_trader_cases.html
+    - id: K-013
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold C3 Case 1: Swing trader spent $920 and 380 hours over 5 months, built $6,800 funded profit, and had payout denied under a newly added 30% consistency rule ($0 payout).'
+      number: $920, 380, 5, $6,800, 30%, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C3
+      source: src_09_documented_trader_cases.html
+    - id: K-014
+      kind: case
+      question: P2-Q5
+      phases:
+        - 2
+        - 3
+      text: 'Mold C3 Case 2: Night-shift machinist spent $1,040 and 410 hours over 5 months, passed Phase 1+2, and had his $4,200 payout frozen when MetaQuotes revoked the offshore broker''s MT5 white-label license ($0 payout).'
+      number: $1,040, 410, 5, $4,200, $0
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C3
+      source: src_09_documented_trader_cases.html
+    - id: K-015
+      kind: case
+      question: P3-Q9
+      phases:
+        - 2
+        - 3
+      text: 'Mold C3 Case 3 & Aftermath: Dental hygienist spent $880 and 360 hours over 4 months, reached $5,100 profit, was breached by an 18-pip news slippage spike ($0 payout), then recovered $540 via card chargeback within the 120-day window and pivoted to SQL/BI analytics.'
+      number: $880, 360, 4, $5,100, 18, $0, $540, 120
+      seen: "2026-10-17"
+      capture: src_09_documented_trader_cases.html
+      tier: 3
+      market: US
+      mold: C3
+      source: src_09_documented_trader_cases.html

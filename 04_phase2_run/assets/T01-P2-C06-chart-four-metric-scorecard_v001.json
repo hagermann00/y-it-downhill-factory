@@ -1,0 +1,27 @@
+{
+  "asset_id": "T01-P2-C06-chart-four-metric-scorecard_v001",
+  "topic": 1,
+  "phase": 2,
+  "chapter": 6,
+  "slot": "chart",
+  "slug": "four-metric-scorecard",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P2-C06-chart-four-metric-scorecard_v001.svg",
+  "prompt_path": "T01-P2-C06-chart-four-metric-scorecard_v001.prompt.md",
+  "meta_path": "T01-P2-C06-chart-four-metric-scorecard_v001.json",
+  "sha256": "bb7efafdb43d020d7f3b8af1e88412fce969d5ecb689a0bd069fca4f9a9a96f7",
+  "prompt_sha256": "1202b5ae0d62f4a8db23a24c372ba21bd3017678cdf2f7c50c3ee0921ed2d1dc",
+  "chart_type": "scorecard",
+  "cited_rows": [
+    "F-001",
+    "F-003",
+    "F-004",
+    "F-007",
+    "F-008",
+    "F-009",
+    "F-013",
+    "F-014"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

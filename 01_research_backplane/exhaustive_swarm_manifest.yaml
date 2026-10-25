@@ -1,0 +1,274 @@
+topic_slug: forex-prop-firms
+generated_at: "2026-10-24T10:25:00Z"
+execution_standard: SPEC-2026-EXHAUSTIVE-SWARM-V2 (Multi-Engine + Free Public Datasets + 14-Mold Empirical Population)
+per_call_hard_cap_usd: 0.15
+minimum_sources_target: 100
+substrates:
+    - id: SUB-01-FLASH-LITE
+      role: High-Volume Bulk Evidence Extractor & Affiliate Link Harvester
+      model_identifier: gemini-2.5-flash-lite
+      auth_route: Direct REST API (brihag8 free/low-cost project only)
+      env_key_name: GEMINI_API_KEY
+      cost_tier: FREE_TIER_OR_SUB_CENT ($0.10/1M in)
+      per_call_hard_cap_usd: 0.15
+      mechanisms_served:
+        - RM-01
+        - RM-02
+        - RM-05
+        - RM-06
+        - RM-12
+        - AFFILIATE_EXTRACTOR
+      env_ready: true
+    - id: SUB-02-FLASH-REASONER
+      role: Claim-to-Test Linker, Contradiction Engine & Beneficial Mechanism Synthesizer
+      model_identifier: gemini-2.5-flash
+      auth_route: Direct REST API (brihag8 free/low-cost project only)
+      env_key_name: GEMINI_API_KEY
+      cost_tier: FREE_TIER_OR_LOW_COST
+      per_call_hard_cap_usd: 0.15
+      mechanisms_served:
+        - RM-03
+        - RM-04
+        - RM-07
+        - RM-08
+        - RM-09
+        - RM-13
+        - BM-01..BM-08
+      env_ready: true
+    - id: SUB-03-GEMINI-DEEP-RESEARCH
+      role: 5-Track Autonomous Deep Research Sweep & NotebookLM 38-Question Assurance Audit
+      model_identifier: gemini-deep-research + notebooklm-38q-auditor
+      auth_route: gemini-webui MCP + Scribe Reduction Pipeline
+      env_key_name: GEMINI_WEBUI_MCP
+      cost_tier: INCLUDED_SUBSCRIPTION ($0 marginal)
+      per_call_hard_cap_usd: 0
+      mechanisms_served:
+        - TRACK-1-REGULATORY
+        - TRACK-2-COHORT
+        - TRACK-3-SELLER-FUNNELS
+        - TRACK-4-CASE-AUTOPSIES
+        - TRACK-5-AFFILIATES-AND-PIVOTS
+      env_ready: true
+    - id: SUB-04-CLAUDE-HAIKU-AUDITOR
+      role: Independent 20-Fact / 10-Table-Cell Verbatim Trace Checker & Tone Gatekeeper
+      model_identifier: claude-haiku-4-5
+      auth_route: Headless Claude Code CLI OAuth Subscription Route (never ANTHROPIC_API_KEY)
+      env_key_name: CLAUDE_CLI_OAUTH
+      cost_tier: INCLUDED_OAUTH_SUBSCRIPTION ($0 API spend)
+      per_call_hard_cap_usd: 0
+      mechanisms_served:
+        - TRACE_AUDIT_9_4
+        - CONTRADICTION_VERIFIER
+        - TONE_AND_SCHEMA_GATE
+      env_ready: true
+    - id: SUB-05-LOCAL-AND-OPEN-WEIGHT-DEV-MODELS
+      role: On-Demand 12GB Dedicated Local VRAM + Elastic Cloud GPU Open-Weight Inference Array (Never Forced; Tapped for Heavy Parsing, Math & Code Verification)
+      model_identifier: 12b-local-vram-quant | 32b-code-verifier | 70b-open-weight-reasoner
+      auth_route: Tier 0 Local 12GB VRAM GPU + Tier 1 Open-Weight Inference Pool + Tier 2 Elastic Cloud GPU Array + Tier 3 Open Model Hub
+      env_key_name: LOCAL_OLLAMA
+      cost_tier: FREE ($0.00 Local 12GB VRAM) or Sub-Cent On-Demand
+      per_call_hard_cap_usd: 0.15
+      mechanisms_served:
+        - HTML_CLEANUP
+        - DEDUPLICATION
+        - INITIAL_RELEVANCE_TRIAGE
+        - ON_DEMAND_QUANT_SIMULATION
+        - ADVERSARIAL_MATH_CHECK
+      env_ready: true
+search_engines:
+    - id: SEARCH-01-EXA
+      name: Neural Semantic Vector Search Index
+      endpoint: https://api.exa.ai/search
+      env_key_name: EXA_API_KEY
+      cost_tier: FREE_CREDITS_OR_LOW_COST
+      query_types:
+        - Practitioner post-mortems
+        - Court & bankruptcy dockets
+        - Quantitative autopsies
+        - Non-SEO technical breakdowns
+      env_ready: false
+    - id: SEARCH-02-TAVILY
+      name: Agentic Grounding & Fact-Verification Search Index
+      endpoint: https://api.tavily.com/search
+      env_key_name: TAVILY_API_KEY
+      cost_tier: FREE_TIER_1000_MO_OR_LOW_COST
+      query_types:
+        - RM-04 adversarial fact queries
+        - Multi-source claim testing (RM-07)
+        - Picks-and-shovels vendor audits (P3-Q14)
+      env_ready: false
+    - id: SEARCH-03-PARALLEL
+      name: High-Concurrency Batch Entity-Graph Search API
+      endpoint: https://api.parallel.ai/v1/search
+      env_key_name: PARALLEL_API_KEY
+      cost_tier: HIGH_CONCURRENCY_BATCH
+      query_types:
+        - Simultaneous 50-URL entity/actor graph expansion (RM-02)
+        - Cross-competitor pricing & affiliate commission sweeps
+      env_ready: false
+    - id: SEARCH-04-BRAVE
+      name: Independent Non-Ad-Biased Web Search Index
+      endpoint: https://api.search.brave.com/res/v1/web/search
+      env_key_name: BRAVE_API_KEY
+      cost_tier: FREE_TIER_2000_Q_OR_LOW_COST
+      query_types:
+        - Independent web index
+        - Prop firm payout denial threads
+        - Uncensored trader complaint logs
+        - Affiliate partner terms
+      env_ready: false
+    - id: SEARCH-05-DUCKDUCKGO
+      name: Zero-Cost Statutory & Document Dork Sweeper
+      endpoint: https://html.duckduckgo.com/html/
+      env_key_name: NONE_FREE_PUBLIC
+      cost_tier: 100%_FREE_UNLIMITED
+      query_types:
+        - site:.gov enforcement dorks
+        - site:cftc.gov / site:ftc.gov / site:sec.gov
+        - filetype:pdf cohort disclosures
+        - Zero-key fallback
+      env_ready: true
+crawlers_and_rerankers:
+    - id: CRAWL-01-FIRECRAWL
+      name: Headless Dynamic-JS Checkout Funnel & Pricing Extractor
+      endpoint: https://api.firecrawl.dev/v1/scrape
+      env_key_name: FIRECRAWL_API_KEY
+      cost_tier: FREE_TIER_OR_LOW_COST
+      purpose: Renders dynamic JS checkout pages (S-01..S-06), upsell timers, and affiliate terms into clean Markdown + raw HTML.
+      env_ready: false
+    - id: CRAWL-02-JINA-READER
+      name: Zero-Cost URL-to-Markdown Document Streamer
+      endpoint: https://r.jina.ai/
+      env_key_name: NONE_FREE_PUBLIC
+      cost_tier: 100%_FREE
+      purpose: Zero-cost clean Markdown conversion of regulatory advisories, academic papers, and documentation pages.
+      env_ready: true
+    - id: CRAWL-03-MSEDGE-DOM
+      name: Native Headless Chromium DOM Archiver
+      endpoint: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe --headless --dump-dom
+      env_key_name: LOCAL_MSEDGE_BIN
+      cost_tier: 100%_FREE_LOCAL
+      purpose: Saves immutable local HTML snapshots into 01_research_backplane/pages/*.html with SHA-256 verification.
+      env_ready: true
+    - id: CRAWL-04-WAYBACK-CDX
+      name: Temporal CDX Snapshot & Historical DOM Registry
+      endpoint: https://web.archive.org/cdx/search/cdx
+      env_key_name: NONE_FREE_PUBLIC
+      cost_tier: 100%_FREE_PUBLIC
+      purpose: Recovers historical seller pricing pages, deleted guru earnings claims, and Z1-L4 discontinuous rule changes.
+      env_ready: true
+    - id: CRAWL-05-COHERE-RERANK
+      name: Cross-Encoder Semantic Quantitative Signal Scorer
+      endpoint: https://api.cohere.com/v2/rerank
+      env_key_name: COHERE_API_KEY
+      cost_tier: TRIAL_OR_SUB_CENT
+      purpose: Scores 100+ harvested pages for quantitative density before passing top passages to extraction.
+      env_ready: false
+free_public_datasets:
+    - id: DATA-01-BQ-BLS
+      name: 'Columnar OLAP Public Dataset: U.S. Bureau of Labor Statistics (BLS OEWS & CPI)'
+      provider: Columnar OLAP Statistical Lakehouse + BLS.gov
+      dataset_or_endpoint: olap-public-data.bls.* / https://api.bls.gov/publicAPI/v2/timeseries/data/
+      source_tier: 1
+      questions_answered:
+        - P2-Q12
+        - P3-Q1
+        - P3-Q2
+        - P3-Q3
+      description: Authoritative U.S. median hourly wage ($29.76/hr) and occupational wage distributions for all Chapter 7 Career/Skill Pivots ($38.90-$55.00/hr).
+    - id: DATA-02-BQ-SEC
+      name: 'Columnar OLAP Public Dataset: SEC EDGAR Quarterly & Annual Financials'
+      provider: Columnar OLAP Statistical Lakehouse + SEC EDGAR EFTS
+      dataset_or_endpoint: olap-public-data.sec_quarterly_financials / https://efts.sec.gov/LATEST/search-index
+      source_tier: 1
+      questions_answered:
+        - P2-Q2
+        - P2-Q4
+        - P3-Q14
+      description: Audited 10-K/10-Q filings for public platforms, brokers, and tool vendors (revenue share, take-rates, customer acquisition cost, ARPU).
+    - id: DATA-03-BQ-CFPB-FTC
+      name: 'Columnar OLAP Public Dataset: CFPB Consumer Complaints & Federal Enforcement Dockets'
+      provider: Columnar OLAP Statistical Lakehouse + FTC.gov / CFTC.gov
+      dataset_or_endpoint: olap-public-data.cfpb_complaints / https://www.cftc.gov/PressRoom/PressReleases
+      source_tier: 1
+      questions_answered:
+        - P2-Q1
+        - P2-Q5
+        - P2-Q9
+        - P3-Q7
+        - P3-Q15
+      description: Federal enforcement actions, B-book counterparty disclosures, receivership accounting, and consumer refund/dispute recovery rates.
+    - id: DATA-04-BQ-GOOGLE-TRENDS
+      name: 'Columnar OLAP Public Dataset: Search Demand Velocity Time-Series'
+      provider: Columnar OLAP Statistical Lakehouse
+      dataset_or_endpoint: olap-public-data.search_trends.top_terms
+      source_tier: 2
+      questions_answered:
+        - P1-Q1
+        - P2-Q9
+        - P3-Q8
+      description: Empirical search demand velocity curves to classify topics across Hot (40%), Classic (40%), and Evergreen (20%) bands and track contagion into 'Next Pitches'.
+    - id: DATA-05-FRED-SHED
+      name: Federal Reserve Economic Data (FRED) & SHED Household Well-Being Survey
+      provider: Board of Governors of the Federal Reserve System
+      dataset_or_endpoint: https://api.stlouisfed.org/fred/ / https://www.federalreserve.gov/consumerscommunities/shed.htm
+      source_tier: 1
+      questions_answered:
+        - P2-Q12
+        - P3-Q13
+      description: Household liquid emergency savings baseline ($1,000 Stake threshold) and risk-free Treasury/index benchmarks for 'The Boring Benchmark'.
+    - id: DATA-06-BIS-ESMA-FCA
+      name: BIS Central Bank Triennial Survey & ESMA/FCA Mandatory Broker Loss Registries
+      provider: Bank for International Settlements (BIS), ESMA, UK FCA
+      dataset_or_endpoint: https://stats.bis.org/api/v1/ / https://www.esma.europa.eu/ / https://www.fca.org.uk/
+      source_tier: 1
+      questions_answered:
+        - P2-Q1
+        - P2-Q2
+        - P2-Q5
+        - P2-Q6
+      description: Global OTC FX turnover ($7.5T/day, 93% institutional) and mandated European/UK broker disclosures showing 74%-89% retail account loss rates.
+    - id: DATA-07-OPENALEX-ARXIV
+      name: OpenAlex, Crossref, SSRN & Academic Longitudinal Cohort Registry
+      provider: OpenAlex REST API + Crossref DOI Registry + SSRN
+      dataset_or_endpoint: https://api.openalex.org/works?search=
+      source_tier: 1
+      questions_answered:
+        - P2-Q3
+        - P2-Q5
+        - P2-Q6
+        - P3-Q10
+      description: Peer-reviewed longitudinal day-trading, e-commerce, and creator-economy cohort studies (N >= 1,000 participants).
+    - id: DATA-08-KAGGLE-AND-HF-DATASETS
+      name: On-Demand Elastic GPU & Parquet Cohort Datasets (12GB Local VRAM + Cloud GPU Array)
+      provider: Elastic Cloud GPU & Parquet Dataset Registry + Open-Weight Hub + Columnar OLAP Sandbox
+      dataset_or_endpoint: https://huggingface.co/api/datasets
+      source_tier: 2
+      questions_answered:
+        - P2-Q3
+        - P2-Q5
+        - P2-Q6
+        - P3-Q10
+        - P3-Q13
+      description: On-demand empirical CSV/Parquet datasets (e.g., e-commerce order logs, historical OHLCV tick data, SaaS churn tables, creator RPM distributions) tapped on 12GB Local VRAM or Elastic Cloud GPUs whenever a topic needs custom cohort crunching without forcing unnecessary overhead.
+query_fanout_matrix:
+    vector_1_regulatory_tier1_ddg_and_edgar:
+        - '"forex-prop-firms" enforcement action OR complaint OR receivership site:cftc.gov OR site:ftc.gov OR site:sec.gov'
+        - '"retail foreign exchange" OR "funded trader" loss percentage OR unprofitable site:.gov'
+        - bigquery-public-data.bls.wm_series SOC 15-2051 13-2051 median hourly wage
+    vector_2_cohort_studies_exa_and_openalex:
+        - '"forex-prop-firms" empirical cohort survival rate net profit after fees N='
+        - '"proprietary trading" evaluation pass rate Phase 1 Phase 2 payout attrition cohort'
+        - retail day trading effective hourly wage after spread commission swap drag
+    vector_3_seller_funnels_firecrawl_and_wayback:
+        - '"forex-prop-firms" "funded account" "keep 90%" challenge fee checkout pricing'
+        - '"use code" "off your challenge" prop firm affiliate commission rate CPA'
+        - wayback cdx prop firm terms of service consistency rule news trading slippage
+    vector_4_case_autopsies_brave_and_tavily:
+        - '"forex-prop-firms" "spent $" "months" "hours" payout denied OR breached post-mortem'
+        - prop firm affiliate dashboard revenue vs trading profit screenshot OR disclosure
+        - Automated EA prop pass bot account terminated shared IP signature
+    vector_5_affiliates_and_beneficial_mechanisms_parallel:
+        - top financial data analytics SQL Python certification affiliate program CPA commission
+        - QuantConnect TradingView partner affiliate commission structure cookie window
+        - institutional FX position sizing drawdown ruin boundary walk-forward backtest protocol

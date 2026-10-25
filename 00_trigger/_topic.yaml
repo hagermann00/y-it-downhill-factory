@@ -1,0 +1,31 @@
+topic_id: "T01"
+slug: "forex-prop-firms"
+title: "Forex Trading & Prop Firms"
+subtitle: "Funded Trader Challenges, 100x Leverage, and the B-Book Margin Machine"
+blueprint_cover_noun: "FOREX PROP CHALLENGE"
+category: "Retail Trading & Funded Account Evaluations"
+canon_lock_date: "2026-10-17"
+quarantined_topics_excluded:
+  - "dropshipping"
+target_specs:
+  trim_size_in: "6.00x9.00"
+  bleed_size_in: "6.125x9.25"
+  min_pages: 50
+  max_pages: 80
+  target_pages: 64
+  chapters: 8
+  questions_count: 38
+  ch4_composite_cases: 5
+  ch7_practical_pivots: 4
+  cover_concepts: 5
+selected_ch4_molds:
+  - "E2"
+  - "H4"
+  - "H5"
+  - "C1"
+  - "C3"
+four_metric_gate_thresholds:
+  the_stake_max_usd: 1000
+  the_wait_max_months: 6
+  the_odds_min_pct_12mo: 50.0
+  the_payoff_min_hourly_usd: 29.76

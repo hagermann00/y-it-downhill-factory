@@ -1,0 +1,25 @@
+topic_slug: forex-prop-firms
+market: US
+metrics:
+  stake:
+    value: "$1,840"
+    threshold: "<= $1,000 (US household emergency savings)"
+    passes: false
+    cited_rows: ["F-001", "F-004", "F-014"]
+  wait:
+    value: "14.0 months"
+    threshold: "<= 6.0 months"
+    passes: false
+    cited_rows: ["F-009"]
+  odds:
+    value: "2.4% profitable at 12 months (6.6% pass Phase 1+2)"
+    threshold: ">= 50.0% at 12 months"
+    passes: false
+    cited_rows: ["F-007", "F-008"]
+  payoff:
+    value: "$6.40/hr (survivors' median net hourly earnings)"
+    threshold: ">= $29.76/hr (US median hourly wage)"
+    passes: false
+    cited_rows: ["F-003", "F-013"]
+verdict: "Probably won't work"
+gates_passed: 0

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Y-IT Companion Pocket Pamphlet ($1.99)</title>
+<style>
+  @page {
+    size: 6.125in 9.25in;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 6.125in;
+    background: #FFFFFF;
+    font-family: 'Segoe UI', 'Work Sans', -apple-system, sans-serif;
+    color: #0F172A;
+    font-size: 9.5pt;
+    line-height: 1.42;
+  }
+  /* Full-bleed page canvas (6.125in x 9.25in).
+     Safe body text margins are enforced by padding (0.52in top/bottom, 0.62in gutter, 0.54in outer). */
+  .kdp-page {
+    width: 6.125in;
+    height: 9.25in;
+    padding: 0.50in 0.54in 0.48in 0.62in;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kdp-page.verso-page {
+    padding: 0.50in 0.62in 0.48in 0.54in;
+  }
+  .kdp-page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Full-Bleed Phase Theme Palettes & Edge Bleed Bars */
+  .theme-front {
+    background: radial-gradient(circle at 50% 18%, #FFFFFF 0%, #F5F2EB 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0F172A;
+    border-bottom: 0.10in solid #0F172A;
+  }
+  .theme-phase1 {
+    background: linear-gradient(180deg, #FFFDF7 0%, #FEFCE8 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0D9488;
+    border-right: 0.08in solid #F59E0B;
+  }
+  .theme-flatpack {
+    background: linear-gradient(180deg, #F4F7FB 0%, #E0F2FE 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #2563EB;
+    border-left: 0.08in solid #1D4ED8;
+  }
+  .theme-phase2 {
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #DC2626;
+  }
+  .theme-amber-ch4 {
+    background: linear-gradient(180deg, #EFE5CE 0%, #E6D5B8 100%);
+    color: #1C1917;
+    border-top: 0.16in solid #78350F;
+    border-bottom: 0.10in solid #78350F;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 9.0pt;
+  }
+  .theme-phase3 {
+    background: linear-gradient(180deg, #F7FAF7 0%, #ECFDF5 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #15803D;
+  }
+  .theme-back {
+    background: #F8FAFC;
+    color: #0F172A;
+    border-top: 0.12in solid #334155;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #CBD5E1;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-header {
+    border-bottom: 2px solid #78350F;
+    color: #78350F;
+  }
+  .page-content {
+    flex: 1;
+    overflow: visible;
+  }
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CBD5E1;
+    padding-top: 5px;
+    margin-top: 6px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-footer {
+    border-top: 1.5px solid #78350F;
+    color: #78350F;
+  }
+
+  /* Regular body text strictly respects the inner measure */
+  h1 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 20.5pt;
+    line-height: 1.06;
+    margin: 0 0 7px 0;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 13pt;
+    line-height: 1.14;
+    margin: 7px 0 4px 0;
+    color: #0F172A;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 10pt;
+    font-weight: 800;
+    margin: 5px 0 3px 0;
+    color: #1E293B;
+  }
+  p {
+    margin: 0 0 6px 0;
+    text-align: justify;
+  }
+  .phase-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.6pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #0F172A;
+    margin-bottom: 5px;
+  }
+
+  /* TASTEFUL MARGIN-CROSSING INTERSTITIALS, IMAGES, POSIBOT & VERDICT BANDS:
+     These elements step 0.22in to 0.54in outside the body text column into the outer margin
+     or full-bleed edge while keeping their internal text safely padded. */
+  .callout-guru {
+    background: #FEF3C7;
+    border: 2px solid #D97706;
+    border-left: 8px solid #D97706;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(217, 119, 6, 0.22);
+  }
+  .callout-rc {
+    background: #FEE2E2;
+    border: 2px solid #DC2626;
+    border-left: 8px solid #991B1B;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(153, 27, 27, 0.20);
+  }
+  .callout-pivot {
+    background: #DCFCE7;
+    border: 2px solid #16A34A;
+    border-left: 8px solid #15803D;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 7px -0.22in;
+    font-size: 8.8pt;
+    box-shadow: 3px 4px 0px rgba(21, 128, 61, 0.20);
+  }
+  /* Verdict band bleeds all the way across the outer trim edge */
+  .verdict-band {
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 9px 0.54in 9px 0.62in;
+    margin: 9px -0.54in 0 -0.62in;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 8.3pt;
+    border-top: 3px solid #F59E0B;
+    border-bottom: 3px solid #F59E0B;
+  }
+  .missing-step-box {
+    border: 3px dashed #DC2626;
+    background: #FEF2F2;
+    padding: 12px 16px;
+    margin: 10px -0.24in;
+    text-align: center;
+    box-shadow: 4px 4px 0px rgba(220, 38, 38, 0.18);
+  }
+  .dossier-box {
+    border: 2px solid #78350F;
+    background: #F5EBD6;
+    padding: 8px 13px;
+    margin: 6px -0.18in;
+    box-shadow: 3px 3px 0px rgba(120, 53, 15, 0.18);
+  }
+  .stamp-badge {
+    display: inline-block;
+    border: 2px solid #991B1B;
+    color: #991B1B;
+    padding: 1px 7px;
+    font-family: 'Consolas', monospace;
+    font-weight: 900;
+    font-size: 8pt;
+    text-transform: uppercase;
+    transform: rotate(-1.2deg);
+  }
+  table.yit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 8.1pt;
+  }
+  table.yit-table th {
+    background: #0F172A;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 4px 6px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.7pt;
+  }
+  table.yit-table td {
+    border: 1px solid #CBD5E1;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+  .theme-amber-ch4 table.yit-table th {
+    background: #78350F;
+  }
+  .theme-amber-ch4 table.yit-table td {
+    border: 1px solid #A16207;
+  }
+  /* Images and PosiBot cards step tastefully across the margin line (-0.26in) */
+  .asset-frame {
+    width: calc(100% + 0.52in);
+    margin: 7px -0.26in;
+    text-align: center;
+  }
+  .asset-frame img {
+    width: 100%;
+    max-height: 2.38in;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1.5px solid #94A3B8;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 0px rgba(15, 23, 42, 0.16);
+  }
+  .gate-strip {
+    font-family: 'Consolas', monospace;
+    font-size: 7.9pt;
+    font-weight: 700;
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin: 5px -0.16in;
+    border-left: 5px solid #22C55E;
+  }
+  .strike {
+    text-decoration: line-through;
+    color: #94A3B8;
+  }
+</style>
+</head>
+<body>
+<section class="kdp-page theme-phase3 recto-page" data-page="1">
+  <div class="page-header">
+    <span>Y-IT COMPANION POCKET PAMPHLET ($1.99)</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    <h1>THE PRE-DEPOSIT PROP &amp; FOREX SURVIVAL MANUAL</h1><p><strong>Standalone Post-Sale Companion Pocket Pamphlet ($1.99) · Zero Subscriptions · Zero Guru Upsells</strong></p><div class="callout-pivot">Contains the 8 Proven In-The-Wild Beneficial Mechanisms (<code>BM-01..BM-08</code>) engineered into 7 Field Modules (<code>P1..P7</code>):<br>• <strong>Module P1 (<code>BM-01</code>):</strong> The True-Risk Drawdown De-Masking Worksheet<br>• <strong>Module P2 (<code>BM-02</code>):</strong> The 0.25% Quarter-Kelly Position Sizer &amp; 2-Strike Lock<br>• <strong>Module P3 (<code>BM-03</code>):</strong> Regulated CME Micro FX (<code>M6E</code>) vs Offshore B-Book Gate<br>• <strong>Module P4 (<code>BM-04</code>):</strong> The 30-Minute News-Window Blackout &amp; T-Cost Filter<br>• <strong>Module P5 (<code>BM-05</code>):</strong> The 90-Day / 100-Trade Zero-Fee Paper Expectancy Ledger<br>• <strong>Module P6 (<code>BM-06, BM-07</code>):</strong> The 120-Day Chargeback Dispute &amp; Fine-Print Audit Kit<br>• <strong>Module P7 (<code>BM-08</code>):</strong> The 30-Day Quantitative Skill Translation Matrix (<code>$38.90–$55.00/hr</code>)</div>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 1 OF 8 · MODULES P1–P7 (BM-01..BM-08)</span>
+    <span>PAGE 01 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 verso-page" data-page="2">
+  <div class="page-header">
+    <span>PAMPHLET · MODULES P1 & P2 (TRUE-RISK & QUARTER-KELLY)</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULES P1 &amp; P2: DE-MASKING LEVERAGE &amp; QUARTER-KELLY SIZING (<code>[F-023]</code>)</h2><p><strong>Module P1 (<code>BM-01</code> — True-Risk De-Masking):</strong> Never size against nominal headline capital (<code>$100,000</code>). Your real capital is the <strong>Maximum Trailing Drawdown Allowance</strong> (<code>$5,000</code> daily / <code>$10,000</code> max).<br>• <strong>Module P2 (<code>BM-02</code> — 0.25% Nominal / 2.5% True-Buffer Cap):</strong> Cap per-trade risk at <code>0.25%</code> of nominal (<code>$250</code> on a $100k challenge = <code>2.5%</code> of real drawdown buffer).<br>• <strong>The 2-Strike Intraday Lock:</strong> Hard stop at 2 losing trades in a 24-hour window (max <code>-0.50%</code> intraday loss—10x safer than the 5% absorbing barrier).</p>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 2 OF 8 · BM-01 & BM-02</span>
+    <span>PAGE 02 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 recto-page" data-page="3">
+  <div class="page-header">
+    <span>PAMPHLET · MODULES P3 & P4 (CME M6E & NEWS BLACKOUT)</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULES P3 &amp; P4: REGULATED VENUE GATE &amp; T-COST FILTER (<code>[F-023, F-025]</code>)</h2><p><strong>Module P3 (<code>BM-03</code> — Regulated Exchange Gate):</strong> Trade regulated cash micro-lots (<code>0.01</code>) or CME Micro FX Futures (<code>M6E / M6B</code>, centralized clearing, transparent depth-of-book, IRC Section 1256 60/40 tax treatment) instead of offshore unlicensed B-book simulators.<br>• <strong>Module P4 (<code>BM-04</code> — 30-Minute News Blackout):</strong> Flatten all positions 15 minutes before and 15 minutes after Tier-1 macro releases (CPI, NFP, FOMC) to defeat asymmetric stop-loss slippage (<code>[K-015]</code>).</p>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 3 OF 8 · BM-03 & BM-04</span>
+    <span>PAGE 03 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 verso-page" data-page="4">
+  <div class="page-header">
+    <span>PAMPHLET · MODULE P5: 90-DAY 100-TRADE LEDGER (PART I)</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULE P5 (<code>BM-05</code>): THE 90-DAY ZERO-FEE PAPER LEDGER (TRADES 001–050)</h2><p>Log 100 consecutive trades on a free demo account over 90 days with realistic slippage before spending $1 (<code>[F-026]</code>):</p><div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/05_phase3_run/assets/T01-P3-C08-posibot-ninety-day-paper-test_v001.svg" alt="90 Day Test PosiBot"></div>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 4 OF 8 · BM-05</span>
+    <span>PAGE 04 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 recto-page" data-page="5">
+  <div class="page-header">
+    <span>PAMPHLET · MODULE P5: 90-DAY 100-TRADE LEDGER (PART II)</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULE P5 (CONT.): EXPECTANCY &amp; SHARPE TRACKING GRID (TRADES 051–100)</h2><table class="yit-table"><tr><th>TradeBatch</th><th>Win % (&ge;55%?)</th><th>Max Intraday DD (&lt;2.5%?)</th><th>Net R-Multiple (&gt;+0.25R?)</th><th>Hours Logged</th></tr><tr><td><code>#001–025</code></td><td>______%</td><td>______%</td><td>________ R</td><td>______ hrs</td></tr><tr><td><code>#026–050</code></td><td>______%</td><td>______%</td><td>________ R</td><td>______ hrs</td></tr><tr><td><code>#051–075</code></td><td>______%</td><td>______%</td><td>________ R</td><td>______ hrs</td></tr><tr><td><code>#076–100</code></td><td>______%</td><td>______%</td><td>________ R</td><td>______ hrs</td></tr></table>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 5 OF 8 · BM-05 TRACKING GRID</span>
+    <span>PAGE 05 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 verso-page" data-page="6">
+  <div class="page-header">
+    <span>PAMPHLET · MODULE P6: 120-DAY CHARGEBACK & FINE-PRINT KIT</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULE P6 (<code>BM-06, BM-07</code>): THE 120-DAY CHARGEBACK &amp; CONTRACT AUDIT (<code>[F-021, K-015]</code>)</h2><p><strong>1. Pre-Purchase Fine-Print Red Flags (<code>BM-07</code>):</strong> Walk away immediately if the contract contains: (a) Equity-high intraday trailing drawdown, (b) Retroactive 30% single-trade consistency rules, (c) Mandatory minimum trading days combined with news blackouts, or (d) Unilateral B-book execution clauses.<br><strong>2. Visa Reason Code 13.1 / Mastercard 4853 Dispute Kit (<code>BM-06</code>):</strong> File within <strong>120 days</strong> of transaction date when a firm freezes withdrawals or revokes its MT5 license. Attach: (1) Checkout receipt, (2) SHA-256 archived Terms PDF, (3) Withdrawal denial screenshot.</p>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 6 OF 8 · BM-06 & BM-07</span>
+    <span>PAGE 06 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 recto-page" data-page="7">
+  <div class="page-header">
+    <span>PAMPHLET · MODULE P7: 30-DAY SKILL TRANSLATION MATRIX</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    <h2>MODULE P7 (<code>BM-08</code>): 30-DAY QUANTITATIVE SKILL TRANSLATION MATRIX (<code>[F-015..F-018, F-024]</code>)</h2><table class="yit-table" style="font-size:7.6pt;"><tr><th>Retail Trading Habit</th><th>Corporate / Contract Equivalent</th><th>Audited BLS Pay</th></tr><tr><td>Coding MT5 / PineScript indicators</td><td><strong>Quant Backtest &amp; Execution Engineer</strong></td><td><code>$55.00/hr</code></td></tr><tr><td>Tracking FX macro &amp; rates calendars</td><td><strong>Corporate FX Treasury Risk Analyst</strong></td><td><code>$49.20/hr</code></td></tr><tr><td>Building equity-curve &amp; win-rate sheets</td><td><strong>Financial Data / SQL BI Analyst</strong></td><td><code>$44.50/hr</code></td></tr><tr><td>Explaining drawdown &amp; risk rules</td><td><strong>Series 65 Registered Paraplanner</strong></td><td><code>$38.90/hr</code></td></tr></table>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 7 OF 8 · BM-08 & P3-Q14</span>
+    <span>PAGE 07 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-phase3 verso-page" data-page="8">
+  <div class="page-header">
+    <span>PAMPHLET · PERSONAL TRIPWIRE SCORECARD</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    <h2>PERSONAL STOP-RULE TRIPWIRES (<code>[F-026]</code>)</h2><div class="verdict-band">STAKE CAP: $500 · WAIT CAP: 6.0 MONTHS · PAYOFF FLOOR: $29.76/HR · ITISWHATITIS.BIZ</div>
+  </div>
+  <div class="page-footer">
+    <span>PAMPHLET PAGE 8 OF 8</span>
+    <span>PAGE 08 OF 64</span>
+  </div>
+</section>
+</body>
+</html>

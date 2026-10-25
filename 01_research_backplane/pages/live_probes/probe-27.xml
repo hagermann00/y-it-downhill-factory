@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NCAodg57NrWiU8HqsCyLADnQhAA</id>
+  <title>arXiv Query: search_query=all:drawdown OR all:ruin OR all:probability OR all:trading&amp;id_list=&amp;start=0&amp;max_results=4</title>
+  <updated>2026-10-25T01:40:53Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:drawdown+OR+(all:ruin+OR+(all:probability+OR+all:trading))&amp;start=0&amp;max_results=4&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>4</opensearch:itemsPerPage>
+  <opensearch:totalResults>248574</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1506.00166v2</id>
+    <title>Optimal Investment to Minimize the Probability of Drawdown</title>
+    <updated>2016-02-15T18:07:26Z</updated>
+    <link href="https://arxiv.org/abs/1506.00166v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1506.00166v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We determine the optimal investment strategy in a Black-Scholes financial market to minimize the so-called {\it probability of drawdown}, namely, the probability that the value of an investment portfolio reaches some fixed proportion of its maximum value to date. We assume that the portfolio is subject to a payout that is a deterministic function of its value, as might be the case for an endowment fund paying at a specified rate, for example, at a constant rate or at a rate that is proportional to the fund's value.</summary>
+    <category term="q-fin.MF" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-05-30T21:12:14Z</published>
+    <arxiv:comment>To appear in Stochastics. Keywords: Optimal investment, stochastic optimal control, probability of drawdown</arxiv:comment>
+    <arxiv:primary_category term="q-fin.MF"/>
+    <author>
+      <name>Bahman Angoshtari</name>
+    </author>
+    <author>
+      <name>Erhan Bayraktar</name>
+    </author>
+    <author>
+      <name>Virginia R. Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1206.6268v1</id>
+    <title>Maximizing Utility of Consumption Subject to a Constraint on the Probability of Lifetime Ruin</title>
+    <updated>2012-06-27T13:53:37Z</updated>
+    <link href="https://arxiv.org/abs/1206.6268v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1206.6268v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this note, we explicitly solve the problem of maximizing utility of consumption (until the minimum of bankruptcy and the time of death) with a constraint on the probability of lifetime ruin, which can be interpreted as a risk measure on the whole path of the wealth process.</summary>
+    <category term="q-fin.PM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2012-06-27T13:53:37Z</published>
+    <arxiv:comment>Keywords: Utility maximization from consumption, probability of lifetime ruin constraint, nonconvex risk constraint on the entire path of the wealth process</arxiv:comment>
+    <arxiv:primary_category term="q-fin.PM"/>
+    <arxiv:journal_ref>Finance and Research Letters, (2008), 5 (4), 204-212</arxiv:journal_ref>
+    <author>
+      <name>Erhan Bayraktar</name>
+    </author>
+    <author>
+      <name>Virginia R. Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1507.08713v3</id>
+    <title>Minimizing the Probability of Lifetime Drawdown under Constant Consumption</title>
+    <updated>2016-05-19T12:58:02Z</updated>
+    <link href="https://arxiv.org/abs/1507.08713v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1507.08713v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We assume that an individual invests in a financial market with one riskless and one risky asset, with the latter's price following geometric Brownian motion as in the Black-Scholes model. Under a constant rate of consumption, we find the optimal investment strategy for the individual who wishes to minimize the probability that her wealth drops below some fixed proportion of her maximum wealth to date, the so-called probability of {\it lifetime drawdown}. If maximum wealth is less than a particular value, $m^*$, then the individual optimally invests in such a way that maximum wealth never increases above its current value. By contrast, if maximum wealth is greater than $m^*$ but less than the safe level, then the individual optimally allows the maximum to increase to the safe level.</summary>
+    <category term="q-fin.PM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.PR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-07-31T00:33:12Z</published>
+    <arxiv:comment>To appear in Insurance: Mathematics and Economics. Keywords: Optimal investment, stochastic optimal control, probability of drawdown. arXiv admin note: text overlap with arXiv:0806.2358</arxiv:comment>
+    <arxiv:primary_category term="q-fin.PM"/>
+    <author>
+      <name>Bahman Angoshtari</name>
+    </author>
+    <author>
+      <name>Erhan Bayraktar</name>
+    </author>
+    <author>
+      <name>Virginia R. Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0806.2358v1</id>
+    <title>Minimizing the Probability of Ruin when Consumption is Ratcheted</title>
+    <updated>2008-06-14T04:11:35Z</updated>
+    <link href="https://arxiv.org/abs/0806.2358v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0806.2358v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We assume that an agent's rate of consumption is {\it ratcheted}; that is, it forms a non-decreasing process. Given the rate of consumption, we act as financial advisers and find the optimal investment strategy for the agent who wishes to minimize his probability of ruin.</summary>
+    <category term="q-fin.RM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2008-06-14T04:11:35Z</published>
+    <arxiv:comment>Key Words: Self-annuitization, optimal investment, stochastic optimal control, probability of ruin, ratcheting of consumption</arxiv:comment>
+    <arxiv:primary_category term="q-fin.RM"/>
+    <author>
+      <name>Erhan Bayraktar</name>
+    </author>
+    <author>
+      <name>Virginia R. Young</name>
+    </author>
+  </entry>
+</feed>

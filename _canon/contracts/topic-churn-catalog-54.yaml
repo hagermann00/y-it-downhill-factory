@@ -1,0 +1,538 @@
+# Master Topic Churn Catalog (Estate-Wide Canonical Inventory)
+# SSOT: D:\hq\_core\registry\TOPIC_CHURN_CATALOG.yaml
+# Mirrored to: D:\y-it-research\queue\canonical-topic-queue.yaml
+# Total Topics: 54
+# Architecture: 4-Stage Gated Promotion Pipeline (Lab -> Crucible -> Registry -> Promoted Airlock)
+# Execution Standard: SPEC-2026-NATIVE-DEEP-RESEARCH-V1 (15-20 min, 30-80 queries, 40-100 sources)
+
+version: "2026.1.0"
+updated_at: "2026-10-03T21:55:00Z"
+governance: "D:\\hq\\_core\\00_INDEX.md"
+execution_spec: "D:\\core\\docs\\standards\\BRIGENTIC_NATIVE_DEEP_RESEARCH_STANDARDIZATION_SPEC.md"
+
+summary:
+  total_count: 54
+  bands:
+    band_1_to_4: 4
+    band_a: 6
+    band_b: 15
+    band_c: 16
+    band_d: 13
+  categories:
+    ecommerce: 8
+    emerging_tech: 7
+    content_digital_products: 9
+    trading_investing: 7
+    services: 8
+    real_estate: 2
+    guru_scam_exposure: 4
+    personal_brand_influencing: 5
+    flipping_resale: 4
+
+topics:
+  # --- BAND 1-4: CORE PILOT CADENCE ---
+  - slug: dropshipping
+    label: "Dropshipping"
+    category: "Ecommerce"
+    tier: classic
+    band: "1"
+    edition: print+digital
+    status: queued
+    designer_seed: true
+    focus: "Meta/TikTok ad arbitrage, Shopify/DSers/AutoDS stack, Stripe reserve cliffs, CBO testing, 99.4% churn"
+
+  - slug: ai-automation-agency
+    label: "AI Automation Agency (AAA)"
+    category: "Emerging Tech"
+    tier: hot
+    band: "2"
+    edition: print+digital
+    status: queued
+    focus: "Voice agents, make.com/zapier workflows, retainer churn, cold outreach fatigue, SMB client acquisition"
+
+  - slug: fba
+    label: "Amazon FBA Private Label"
+    category: "Ecommerce"
+    tier: classic
+    band: "3"
+    edition: print+digital
+    status: queued
+    designer_seed: true
+    focus: "Helium10/Jungle Scout, Chinese supplier hijackers, PPC bidding wars, storage fees, account suspensions"
+
+  - slug: tiktok-shop
+    label: "TikTok Shop & Creator Affiliate"
+    category: "Ecommerce"
+    tier: hot
+    band: "4"
+    edition: print+digital
+    status: queued
+    focus: "2-day SLA domestic dispatch, sample requests, affiliate commissions, algorithm throttles, counterfeit takedowns"
+
+  # --- BAND A: HIGH-VOLUME TIER 1 EXPLORATION ---
+  - slug: print-on-demand
+    label: "Print-on-Demand (POD)"
+    category: "Ecommerce"
+    tier: classic
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "Printify/Printful, Etsy/Shopify integration, razor-thin $2-$4 net margins, IP infringement bans"
+
+  - slug: ai-content-hustle
+    label: "AI Content Hustle & Faceless Channels"
+    category: "Content / Digital Products"
+    tier: hot
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "Midjourney/ElevenLabs/CapCut pipelines, YouTube monetization demonetization, TikTok Creator Rewards penalties"
+
+  - slug: forex-trading
+    label: "Forex Trading & Prop Firms"
+    category: "Trading / Investing"
+    tier: classic
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "Funded account challenges (FTMO), spread slippage, drawdowns, broker B-booking, 95%+ challenge failure rate"
+
+  - slug: micro-saas-tools
+    label: "Micro-SaaS Tools & AI Wrappers"
+    category: "Emerging Tech"
+    tier: hot
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "OpenAI API wrapper churn, Stripe billing integration, CAC escalation, feature copycats, single-developer burn"
+
+  - slug: stock-photography
+    label: "Stock Photography & Generative Assets"
+    category: "Content / Digital Products"
+    tier: evergreen
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "Adobe Stock/Shutterstock, generative flooding, royalty collapse to pennies, acceptance guidelines"
+
+  - slug: airbnb-arbitrage
+    label: "Airbnb Arbitrage & Rental Subleasing"
+    category: "Ecommerce"
+    tier: evergreen
+    band: "A"
+    edition: print+digital
+    status: queued
+    focus: "Master leases, municipal short-term rental bans, furnishing debt, occupancy troughs, cleaning fee backlash"
+
+  # --- BAND B: CORE MONETIZATION & INFLUENCE ---
+  - slug: affiliate-marketing
+    label: "Affiliate Marketing"
+    category: "Content / Digital Products"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "SEO niche sites, Google helpful content update wipes, affiliate program commission cuts (Amazon Assoc), tracking fraud"
+
+  - slug: course-creation
+    label: "Course Creation & Info-Products"
+    category: "Content / Digital Products"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Skool/Kajabi communities, high refund rates, webinar funnel collapse, paid traffic fatigue, guru parody stigma"
+
+  - slug: kindle-publishing
+    label: "Kindle Direct Publishing (KDP)"
+    category: "Content / Digital Products"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "AI low-content book spam, Amazon 3-book/day cap, trademark traps, trademark bots, ghostwriting fees"
+
+  - slug: youtube-channel
+    label: "YouTube Channel & AdSense"
+    category: "Content / Digital Products"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "4,000 hour / 1,000 sub threshold, CPM variation, creator burnout, copyright strikes, sponsored content rate drops"
+
+  - slug: crypto
+    label: "Crypto Day Trading & Meme Coins"
+    category: "Trading / Investing"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    designer_seed: true
+    focus: "Pump.fun meme coin rugs, DEX liquidity snipers, wallet drainers, MEV bots, tax tracking nightmares"
+
+  - slug: options-trading
+    label: "Options Trading & 0DTE"
+    category: "Trading / Investing"
+    tier: hot
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Theta decay, 0DTE gamma blowups, Discord alert room pump-and-dumps, margin liquidation, PDT rule"
+
+  - slug: day-trading-general
+    label: "Day Trading General"
+    category: "Trading / Investing"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    merge_into: "options-trading?"
+    focus: "Small account blowups, pattern day trader restrictions, commission churn, psychological tilting"
+
+  - slug: shopify-store
+    label: "Branded Shopify Store"
+    category: "Ecommerce"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Inventory financing, warehousing, Klaviyo retention flows, post-purchase apps, Shopify fee increases"
+
+  - slug: etsy-handmade
+    label: "Etsy Handmade & Vintage"
+    category: "Ecommerce"
+    tier: evergreen
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Offsite ads fee forced enrollment, dropshipping impostor infiltration, handmade audit bans, search algorithm flux"
+
+  - slug: social-media-agency
+    label: "Social Media Management Agency (SMMA)"
+    category: "Services"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Contractor churn, demanding low-ticket SMB clients, platform algorithm shifts, organic reach death"
+
+  - slug: no-code-app-builder
+    label: "No-Code App Agency (Bubble/FlutterFlow)"
+    category: "Emerging Tech"
+    tier: hot
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Workload unit (WU) pricing spikes on Bubble, database scaling roadblocks, client custom code demands"
+
+  - slug: real-estate-wholesaling
+    label: "Real Estate Wholesaling"
+    category: "Real Estate"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "Cold calling DNC violations, earnest money forfeitures, assignable contract state bans, buyer list flakes"
+
+  - slug: mlm
+    label: "Multi-Level Marketing (MLM)"
+    category: "Guru / Scam Exposure"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "FTC pyramid scheme guidelines, inventory loading, upline manipulation, 99.6% participant net loss statistic"
+
+  - slug: high-ticket-coaching
+    label: "High-Ticket Coaching & Masterminds"
+    category: "Guru / Scam Exposure"
+    tier: classic
+    band: "B"
+    edition: print+digital
+    status: queued
+    focus: "High-pressure closing scripts, third-party financing predatory loans, FTC deceptive earnings crackdowns"
+
+  - slug: onlyfans
+    label: "Creator Subscriptions & OF Management (OFM)"
+    category: "Personal Brand / Influencing"
+    tier: hot
+    band: "B"
+    edition: digital-only
+    status: queued
+    focus: "OFM agency contracts, chat operator outsourcing fraud, chargebacks, banking de-platforming, 2257 compliance"
+
+  # --- BAND C: BROAD SERVICE & NICHE MODELS ---
+  - slug: newsletter-monetization
+    label: "Newsletter Monetization (Beehiiv/Substack)"
+    category: "Content / Digital Products"
+    tier: hot
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Paid recommendation loops (Boosts), sponsored CPC collapse, open rate spoofing (Apple MPP), churn"
+
+  - slug: digital-products
+    label: "Digital Products & Templates (Notion/Canva)"
+    category: "Content / Digital Products"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Gumroad 10% fee hike, pirating on Telegram/Google Drive, Gumroad/LemonSqueezy tax compliance"
+
+  - slug: linkedin-ghostwriting
+    label: "LinkedIn Ghostwriting"
+    category: "Content / Digital Products"
+    tier: hot
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Broetry format saturation, executive ghostwriting churn, AI text detection backlash, engagement pods"
+
+  - slug: podcast-monetization
+    label: "Podcast Monetization"
+    category: "Content / Digital Products"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Host-read sponsor minimum download thresholds (5k-10k/ep), equipment overspend, listener drop-off"
+
+  - slug: stock-trading-bots
+    label: "Stock Trading Bots & Algorithmic Trading"
+    category: "Trading / Investing"
+    tier: hot
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Backtesting curve-fitting, API rate limits, execution latency slippage, regime change catastrophic loss"
+
+  - slug: virtual-assistant
+    label: "Virtual Assistant Agency"
+    category: "Services"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Global wage arbitrage, Upwork/Fiverr fee cuts, client bypass disintermediation, turnover"
+
+  - slug: freelance-writing
+    label: "Freelance Writing & Copywriting"
+    category: "Services"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Generative AI replacement of entry-level content, race to bottom bidding, client ghosting"
+
+  - slug: web-design-agency
+    label: "Web Design Agency (Webflow/Framer)"
+    category: "Services"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Scope creep, client content delay bottlenecks, monthly maintenance retainer conversion drop"
+
+  - slug: seo-services
+    label: "SEO Services & Link Building"
+    category: "Services"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Google AI Overviews zero-click traffic collapse, client churn after algorithmic dips, PBN penalties"
+
+  - slug: email-marketing-agency
+    label: "Email Marketing Agency"
+    category: "Services"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Google/Yahoo 2024 DMARC/DKIM/SPF deliverability mandates, spam complaint thresholds (<0.3%)"
+
+  - slug: fitness-coaching
+    label: "Online Fitness Coaching"
+    category: "Services"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "January seasonal spikes, 90-day client drop-off, liability/insurance traps, app subscription stacking"
+
+  - slug: tiktok-influencer
+    label: "TikTok Influencer Career"
+    category: "Personal Brand / Influencing"
+    tier: hot
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Creator fund low RPM ($0.02-$0.04), brand deal payment terms (Net 60-90), burnout from daily posting"
+
+  - slug: micro-influencer
+    label: "Micro-Influencer Monetization"
+    category: "Personal Brand / Influencing"
+    tier: hot
+    band: "C"
+    edition: print+digital
+    status: queued
+    merge_into: "tiktok-influencer?"
+    focus: "Free product gifting in lieu of cash, micro-agency rev-share cuts, algorithmic shadowbans"
+
+  - slug: personal-brand-thought-leader
+    label: "Personal Brand Thought Leader"
+    category: "Personal Brand / Influencing"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Content treadmill, audience fatigue, monetization conversion rates, high production overhead"
+
+  - slug: influencer-marketing
+    label: "Influencer Marketing Agency"
+    category: "Personal Brand / Influencing"
+    tier: classic
+    band: "C"
+    edition: print+digital
+    status: queued
+    merge_into: "tiktok-influencer?"
+    focus: "Creator no-shows, fake follower audits, brand attribution disputes, agency cash flow float"
+
+  - slug: arbitrage-flipping
+    label: "Retail & Thrift Arbitrage"
+    category: "Flipping / Resale"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "eBay fees, packaging material costs, gas/mileage expenses, unsellable inventory accumulation"
+
+  - slug: facebook-marketplace-flipping
+    label: "Facebook Marketplace Flipping"
+    category: "Flipping / Resale"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    merge_into: "arbitrage-flipping?"
+    focus: "No-show buyers, scam Zelle payment requests, localized safety risks, vehicle transportation overhead"
+
+  - slug: local-lead-generation
+    label: "Local Lead Generation (Rank & Rent)"
+    category: "Lead Generation"
+    tier: evergreen
+    band: "C"
+    edition: print+digital
+    status: queued
+    focus: "Google Business Profile (GBP) postcard verification bans, local contractor non-payment, VOIP phone line overhead"
+
+  # --- BAND D: LONG-TAIL & NICHE SPECIFICS ---
+  - slug: amazon-merch
+    label: "Amazon Merch on Demand"
+    category: "Ecommerce"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "print-on-demand"
+    focus: "Tier progression throttling, strict copyright takedowns, zero customer contact list access"
+
+  - slug: crypto-pump-and-dump
+    label: "Crypto Pump and Dumps & Telegram Signals"
+    category: "Trading / Investing"
+    tier: hot
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "crypto"
+    focus: "Telegram group admin dumping, honeypot smart contracts, SEC criminal enforcement, wash trading"
+
+  - slug: crypto-guru-programs
+    label: "Crypto Guru Masterminds"
+    category: "Guru / Scam Exposure"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "crypto"
+    focus: "Course fees paid in non-refundable crypto, affiliate exchange link kickbacks, fabricated screenshot profits"
+
+  - slug: real-estate-guru-programs
+    label: "Real Estate Guru Seminars"
+    category: "Guru / Scam Exposure"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "real-estate-wholesaling"
+    focus: "Free hotel weekend to $40k coaching upsell ladder, FTC lawsuits against Nudge LLC / Zurixx"
+
+  - slug: ai-art-commissions
+    label: "AI Art Commissions & Stock"
+    category: "Emerging Tech"
+    tier: hot
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "ai-content-hustle"
+    focus: "Copyright Office non-copyrightable rulings, portfolio rejection on ArtStation, race-to-zero pricing"
+
+  - slug: prompt-engineering
+    label: "Prompt Engineering Services"
+    category: "Emerging Tech"
+    tier: hot
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "ai-content-hustle"
+    focus: "Rapid obsolescence via frontier reasoning models, market collapse of standalone prompt marketplaces"
+
+  - slug: nft-creation
+    label: "NFT Creation & Web3 Collectibles"
+    category: "Emerging Tech"
+    tier: evergreen
+    band: "D"
+    edition: print+digital
+    status: queued
+    focus: "95%+ volume collapse from 2021 peak, gas fees, OpenSea royalty enforcement abandonment, wash trading"
+
+  - slug: shopify-app-development
+    label: "Shopify App Development"
+    category: "Emerging Tech"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "micro-saas-tools"
+    focus: "Shopify App Store 0% revenue share threshold, App Store ads tax, built-in feature cannibalization"
+
+  - slug: digital-product-resale-plr
+    label: "Digital Product Resale PLR / MRR"
+    category: "Flipping / Resale"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "digital-products"
+    focus: "Master Resell Rights pyramid dynamics, outdated content bundles, saturated identical PDF ebooks"
+
+  - slug: domain-flipping
+    label: "Domain Name Flipping"
+    category: "Flipping / Resale"
+    tier: evergreen
+    band: "D"
+    edition: print+digital
+    status: queued
+    focus: "Annual renewal holding costs, .com vs new TLD illiquidity, GoDaddy aftermarket fees, trademark UDRP claims"
+
+  - slug: passive-income-myths
+    label: "Passive Income Myths (Capstone Anthology)"
+    category: "Guru / Scam Exposure"
+    tier: classic
+    band: "D"
+    edition: print+digital
+    status: queued
+    merge_into: "capstone-anthology"
+    focus: "Comprehensive synthesis of survivorship bias, guru business model unmasking, and empirical labor math"

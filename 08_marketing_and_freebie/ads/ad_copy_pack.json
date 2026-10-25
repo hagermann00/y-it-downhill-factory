@@ -1,0 +1,45 @@
+{
+  "campaigns": [
+    {
+      "channel": "High-Intent Search Paid / Organic",
+      "hook": "Before you type that 20% prop firm discount code, see why the influencer makes $108–$162 every time you breach your 5% daily drawdown.",
+      "id": "MON-01"
+    },
+    {
+      "channel": "Chargeback \u0026 Frozen Payout Recovery",
+      "hook": "Prop Firm Denied Your Payout Under a Retroactive 30% Consistency Rule? Read the 120-Day Visa/Mastercard Dispute Protocol (Reason Code 13.1 / 4853).",
+      "id": "MON-02"
+    },
+    {
+      "channel": "B-Book vs Regulated CME Micro FX (M6E)",
+      "hook": "98.4% of retail prop trades never leave an internal B-book simulator. Compare offshore challenges vs regulated CME Micro FX Futures (IRC Section 1256).",
+      "id": "MON-03"
+    },
+    {
+      "channel": "Quantitative Career Pivot ($38.90–$55.00/hr)",
+      "hook": "Stop donating 26.5 hours/week to a $6.40/hr prop simulator. Translate your Python, PineScript \u0026 SQL habits into a $44.50–$55.00/hr analyst role.",
+      "id": "MON-04"
+    },
+    {
+      "channel": "Subscription \u0026 Indicator Detox",
+      "hook": "Spending $276/month on TradingView Premium, LuxAlgo, VPS boxes, and VIP Discord rooms? Run the 90-Day Zero-Fee Paper Gate first.",
+      "id": "MON-05"
+    },
+    {
+      "channel": "Spouse / Family Pre-Deposit Intervention",
+      "hook": "A '$100,000 Funded Account' with a 5% daily drawdown is a $5,000 account in a Halloween costume. First 2 chapters free at itiswhatitis.biz.",
+      "id": "MON-06"
+    },
+    {
+      "channel": "Tax \u0026 Accounting Reality (IRC 988 vs 1256)",
+      "hook": "Prop evaluation fees are non-recoverable service expenses—not Section 1256 capital losses. Read the forensic accounting breakdown.",
+      "id": "MON-07"
+    },
+    {
+      "channel": "25-Min Dual-Persona Commuter Podcap",
+      "hook": "Listen to the Forensic Accountant vs. the 2:00 AM ICT Believer dissect 420,000 prop challenges in 25 minutes.",
+      "id": "MON-08"
+    }
+  ],
+  "topic_slug": "forex-prop-firms"
+}

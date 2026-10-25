@@ -1,0 +1,2405 @@
+topic_slug: forex-prop-firms
+topic_family: F4 (Trading & Investing)
+topic_archetype: 'ARCH-1: SPECULATION_BBOOK'
+started_at_utc: "2026-10-25T01:40:44Z"
+completed_at_utc: "2026-10-25T01:41:07Z"
+total_elapsed_ms: 23117
+total_queries_executed: 45
+total_bytes_harvested: 2026627
+total_validated_sources: 206
+probes:
+    - probe_id: PROBE-01
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #1: retail foreign exchange'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=retail+foreign+exchange&per_page=8
+      http_status: 200
+      bytes_received: 18674
+      latency_ms: 268
+      payload_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:44Z"
+    - probe_id: PROBE-02
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #2: commodity futures trading commission forex'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=commodity+futures+trading+commission+forex&per_page=8
+      http_status: 200
+      bytes_received: 19692
+      latency_ms: 177
+      payload_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:44Z"
+    - probe_id: PROBE-03
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #3: deceptive earnings claims business opportunity'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=deceptive+earnings+claims+business+opportunity&per_page=8
+      http_status: 200
+      bytes_received: 25417
+      latency_ms: 166
+      payload_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:44Z"
+    - probe_id: PROBE-04
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #4: leveraged retail derivatives'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=leveraged+retail+derivatives&per_page=8
+      http_status: 200
+      bytes_received: 22699
+      latency_ms: 196
+      payload_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:44Z"
+    - probe_id: PROBE-05
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #5: proprietary trading risk controls'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=proprietary+trading+risk+controls&per_page=8
+      http_status: 200
+      bytes_received: 22676
+      latency_ms: 178
+      payload_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:45Z"
+    - probe_id: PROBE-06
+      round: 1
+      mechanism: RM-04/RM-05
+      provider: US-Federal-Register-API
+      query_or_target: 'Federal Register Regulatory Vector #6: consumer financial protection foreign exchange'
+      endpoint_url: https://www.federalregister.gov/api/v1/documents.json?conditions[term]=consumer+financial+protection+foreign+exchange&per_page=8
+      http_status: 200
+      bytes_received: 18580
+      latency_ms: 194
+      payload_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:45Z"
+    - probe_id: PROBE-07
+      round: 1
+      mechanism: RM-05/RM-06
+      provider: Tier1-Direct-Authority
+      query_or_target: BIS Triennial Central Bank Survey of FX & OTC Derivatives ($7.5T/day)
+      endpoint_url: https://www.bis.org/statistics/rpfx22_fx.htm
+      http_status: 200
+      bytes_received: 140760
+      latency_ms: 1558
+      payload_sha256: 0c874b1dec4dbc6a3df802afe9eba2f1c51b5699f73e0e043d036faf95e5e5c2
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:40:46Z"
+    - probe_id: PROBE-08
+      round: 1
+      mechanism: RM-05/RM-06
+      provider: Tier1-Direct-Authority
+      query_or_target: Federal Reserve Report on the Economic Well-Being of U.S. Households (SHED)
+      endpoint_url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      http_status: 200
+      bytes_received: 89957
+      latency_ms: 209
+      payload_sha256: c1a9ec1e714752ab7baaad0ae49d7f75fb4a9a889c8f9a38fdd2877e55780880
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:40:47Z"
+    - probe_id: PROBE-09
+      round: 1
+      mechanism: RM-05/RM-06
+      provider: Tier1-Direct-Authority
+      query_or_target: SEC Investor.gov High-Yield & Forex Trading Risk Bulletin
+      endpoint_url: https://www.investor.gov/introduction-investing/investing-basics/glossary/foreign-currency-trading-forex
+      http_status: 403
+      bytes_received: 481
+      latency_ms: 226
+      payload_sha256: c8cad28c7cc2c91e45fb0d69737b0a279543cde407c63521f46be6ac0fa6a60a
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:40:47Z"
+    - probe_id: PROBE-10
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #1: retail foreign exchange trading profitability'
+      endpoint_url: https://api.openalex.org/works?search=retail+foreign+exchange+trading+profitability&per-page=8
+      http_status: 200
+      bytes_received: 126740
+      latency_ms: 472
+      payload_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:47Z"
+    - probe_id: PROBE-11
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #2: day trading individual investor performance transaction costs'
+      endpoint_url: https://api.openalex.org/works?search=day+trading+individual+investor+performance+transaction+costs&per-page=8
+      http_status: 200
+      bytes_received: 147085
+      latency_ms: 384
+      payload_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:48Z"
+    - probe_id: PROBE-12
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #3: contract for difference retail investor losses leverage'
+      endpoint_url: https://api.openalex.org/works?search=contract+for+difference+retail+investor+losses+leverage&per-page=8
+      http_status: 200
+      bytes_received: 132543
+      latency_ms: 414
+      payload_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:48Z"
+    - probe_id: PROBE-13
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #4: foreign exchange market microstructure retail order flow'
+      endpoint_url: https://api.openalex.org/works?search=foreign+exchange+market+microstructure+retail+order+flow&per-page=8
+      http_status: 200
+      bytes_received: 141112
+      latency_ms: 279
+      payload_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:49Z"
+    - probe_id: PROBE-14
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #5: overconfidence retail currency traders gambler ruin'
+      endpoint_url: https://api.openalex.org/works?search=overconfidence+retail+currency+traders+gambler+ruin&per-page=8
+      http_status: 200
+      bytes_received: 123674
+      latency_ms: 210
+      payload_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:49Z"
+    - probe_id: PROBE-15
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #6: algorithmic trading backtest overfitting walk forward'
+      endpoint_url: https://api.openalex.org/works?search=algorithmic+trading+backtest+overfitting+walk+forward&per-page=8
+      http_status: 200
+      bytes_received: 132682
+      latency_ms: 202
+      payload_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:49Z"
+    - probe_id: PROBE-16
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #7: business intelligence data analyst wage return career'
+      endpoint_url: https://api.openalex.org/works?search=business+intelligence+data+analyst+wage+return+career&per-page=8
+      http_status: 200
+      bytes_received: 121636
+      latency_ms: 287
+      payload_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:50Z"
+    - probe_id: PROBE-17
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #8: financial influencer affiliate marketing disclosure consumer'
+      endpoint_url: https://api.openalex.org/works?search=financial+influencer+affiliate+marketing+disclosure+consumer&per-page=8
+      http_status: 200
+      bytes_received: 132370
+      latency_ms: 287
+      payload_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:50Z"
+    - probe_id: PROBE-18
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #9: household emergency savings liquid financial buffer survey'
+      endpoint_url: https://api.openalex.org/works?search=household+emergency+savings+liquid+financial+buffer+survey&per-page=8
+      http_status: 200
+      bytes_received: 145562
+      latency_ms: 303
+      payload_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:50Z"
+    - probe_id: PROBE-19
+      round: 2
+      mechanism: RM-05/RM-07
+      provider: OpenAlex-Academic-API
+      query_or_target: 'OpenAlex Cohort Vector #10: kelly criterion drawdown stopping time position sizing'
+      endpoint_url: https://api.openalex.org/works?search=kelly+criterion+drawdown+stopping+time+position+sizing&per-page=8
+      http_status: 200
+      bytes_received: 155899
+      latency_ms: 286
+      payload_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+      items_extracted: 8
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-20
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #1: retail forex trading profitability spread'
+      endpoint_url: https://api.crossref.org/works?query=retail+forex+trading+profitability+spread&rows=6
+      http_status: 200
+      bytes_received: 13880
+      latency_ms: 252
+      payload_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-21
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #2: proprietary trading drawdown evaluation risk'
+      endpoint_url: https://api.crossref.org/works?query=proprietary+trading+drawdown+evaluation+risk&rows=6
+      http_status: 200
+      bytes_received: 12514
+      latency_ms: 152
+      payload_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-22
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #3: retail CFD leverage regulatory intervention'
+      endpoint_url: https://api.crossref.org/works?query=retail+CFD+leverage+regulatory+intervention&rows=6
+      http_status: 200
+      bytes_received: 28047
+      latency_ms: 115
+      payload_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-23
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #4: forex broker conflict of interest market making'
+      endpoint_url: https://api.crossref.org/works?query=forex+broker+conflict+of+interest+market+making&rows=6
+      http_status: 200
+      bytes_received: 43305
+      latency_ms: 142
+      payload_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-24
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #5: foreign exchange news announcement spread slippage'
+      endpoint_url: https://api.crossref.org/works?query=foreign+exchange+news+announcement+spread+slippage&rows=6
+      http_status: 200
+      bytes_received: 26937
+      latency_ms: 111
+      payload_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:51Z"
+    - probe_id: PROBE-25
+      round: 2
+      mechanism: RM-05/RM-08
+      provider: Crossref-DOI-Registry
+      query_or_target: 'Crossref DOI Vector #6: walk forward optimization trading strategy robustness'
+      endpoint_url: https://api.crossref.org/works?query=walk+forward+optimization+trading+strategy+robustness&rows=6
+      http_status: 200
+      bytes_received: 17600
+      latency_ms: 121
+      payload_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+      items_extracted: 6
+      timestamp_utc: "2026-10-25T01:40:52Z"
+    - probe_id: PROBE-26
+      round: 2
+      mechanism: RM-05/BM
+      provider: arXiv-Quant-Finance-API
+      query_or_target: 'arXiv Quantitative Preprint Vector #1: all:foreign+exchange+retail+trading'
+      endpoint_url: http://export.arxiv.org/api/query?search_query=all:foreign+exchange+retail+trading&max_results=4
+      http_status: 200
+      bytes_received: 10057
+      latency_ms: 474
+      payload_sha256: beebf9a6921072fa8c92aaac795adf1b6a9e1a04fb92aa4869aa83d23e1684c9
+      items_extracted: 4
+      timestamp_utc: "2026-10-25T01:40:52Z"
+    - probe_id: PROBE-27
+      round: 2
+      mechanism: RM-05/BM
+      provider: arXiv-Quant-Finance-API
+      query_or_target: 'arXiv Quantitative Preprint Vector #2: all:drawdown+ruin+probability+trading'
+      endpoint_url: http://export.arxiv.org/api/query?search_query=all:drawdown+ruin+probability+trading&max_results=4
+      http_status: 200
+      bytes_received: 6922
+      latency_ms: 1005
+      payload_sha256: 2e74e980cf02aac5f944edb512d9ed6f755475498f0f96b7c773b9d1c558e3be
+      items_extracted: 4
+      timestamp_utc: "2026-10-25T01:40:53Z"
+    - probe_id: PROBE-28
+      round: 2
+      mechanism: RM-05/BM
+      provider: arXiv-Quant-Finance-API
+      query_or_target: 'arXiv Quantitative Preprint Vector #3: all:backtest+overfitting+sharpe'
+      endpoint_url: http://export.arxiv.org/api/query?search_query=all:backtest+overfitting+sharpe&max_results=4
+      http_status: 200
+      bytes_received: 8578
+      latency_ms: 270
+      payload_sha256: f5567db6e96dd8884694c37981a04da683bb6dc731ec869ada44e253cf4fbd72
+      items_extracted: 4
+      timestamp_utc: "2026-10-25T01:40:53Z"
+    - probe_id: PROBE-29
+      round: 2
+      mechanism: RM-05/BM
+      provider: arXiv-Quant-Finance-API
+      query_or_target: 'arXiv Quantitative Preprint Vector #4: all:limit+order+book+slippage+execution'
+      endpoint_url: http://export.arxiv.org/api/query?search_query=all:limit+order+book+slippage+execution&max_results=4
+      http_status: 200
+      bytes_received: 9039
+      latency_ms: 562
+      payload_sha256: acc4947733bd0e7de671d7da0a697c3cb1c548029f3fcc9eb5c114fa8c4831ac
+      items_extracted: 4
+      timestamp_utc: "2026-10-25T01:40:54Z"
+    - probe_id: PROBE-30
+      round: 3
+      mechanism: RM-06/Z1-L4
+      provider: Wayback-Machine-CDX-API
+      query_or_target: 'Wayback CDX Historical Capture: ftmo.com'
+      endpoint_url: https://web.archive.org/cdx/search/cdx?url=ftmo.com&output=json&limit=4
+      http_status: 200
+      bytes_received: 534
+      latency_ms: 7648
+      payload_sha256: 595cb540f9187f8ecd3bb2a45f8533e95120161eaa600237c9e79dbcaf57d44a
+      items_extracted: 3
+      timestamp_utc: "2026-10-25T01:41:02Z"
+    - probe_id: PROBE-31
+      round: 3
+      mechanism: RM-06/Z1-L4
+      provider: Wayback-Machine-CDX-API
+      query_or_target: 'Wayback CDX Historical Capture: cftc.gov/LearnAndProtect'
+      endpoint_url: https://web.archive.org/cdx/search/cdx?url=cftc.gov%2FLearnAndProtect&output=json&limit=4
+      http_status: 200
+      bytes_received: 657
+      latency_ms: 607
+      payload_sha256: 29f372eb4e5285e1f7b29ed9d0ac9fbec4ae81b8396e88fda1747c0da73bb7e3
+      items_extracted: 3
+      timestamp_utc: "2026-10-25T01:41:02Z"
+    - probe_id: PROBE-32
+      round: 3
+      mechanism: RM-06/Z1-L4
+      provider: Wayback-Machine-CDX-API
+      query_or_target: 'Wayback CDX Historical Capture: forex.com'
+      endpoint_url: https://web.archive.org/cdx/search/cdx?url=forex.com&output=json&limit=4
+      http_status: 200
+      bytes_received: 562
+      latency_ms: 649
+      payload_sha256: 8099e11f31aca48723111c0aa4d588b7b577bcfc642e388fbcce9acc0eb735cc
+      items_extracted: 3
+      timestamp_utc: "2026-10-25T01:41:03Z"
+    - probe_id: PROBE-33
+      round: 3
+      mechanism: RM-09/RM-12
+      provider: HN-Algolia-Practitioner-API
+      query_or_target: 'Practitioner Discussion Sweep: prop trading firm forex'
+      endpoint_url: https://hn.algolia.com/api/v1/search?query=prop+trading+firm+forex&tags=story&hitsPerPage=5
+      http_status: 200
+      bytes_received: 1304
+      latency_ms: 318
+      payload_sha256: c018a21151353cd0ed1af4c632c146830b355662ec123667ba55b7a88035e9be
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:03Z"
+    - probe_id: PROBE-34
+      round: 3
+      mechanism: RM-09/RM-12
+      provider: HN-Algolia-Practitioner-API
+      query_or_target: 'Practitioner Discussion Sweep: retail forex broker'
+      endpoint_url: https://hn.algolia.com/api/v1/search?query=retail+forex+broker&tags=story&hitsPerPage=5
+      http_status: 200
+      bytes_received: 7083
+      latency_ms: 272
+      payload_sha256: 5e91a208c212a05c1b85efc4a2b7fcaa7b32d639d6e91cc8f7b2fbbe575c9edc
+      items_extracted: 3
+      timestamp_utc: "2026-10-25T01:41:03Z"
+    - probe_id: PROBE-35
+      round: 3
+      mechanism: RM-09/RM-12
+      provider: HN-Algolia-Practitioner-API
+      query_or_target: 'Practitioner Discussion Sweep: python backtesting trading strategy'
+      endpoint_url: https://hn.algolia.com/api/v1/search?query=python+backtesting+trading+strategy&tags=story&hitsPerPage=5
+      http_status: 200
+      bytes_received: 16917
+      latency_ms: 340
+      payload_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+      items_extracted: 5
+      timestamp_utc: "2026-10-25T01:41:04Z"
+    - probe_id: PROBE-36
+      round: 3
+      mechanism: RM-09/RM-12
+      provider: HN-Algolia-Practitioner-API
+      query_or_target: 'Practitioner Discussion Sweep: SQL python data analyst transition'
+      endpoint_url: https://hn.algolia.com/api/v1/search?query=SQL+python+data+analyst+transition&tags=story&hitsPerPage=5
+      http_status: 200
+      bytes_received: 8392
+      latency_ms: 224
+      payload_sha256: 45fe066b1abafa73992c9037c889c0a4c5180d8d6bd7daefec32b47c8c1fdfc3
+      items_extracted: 2
+      timestamp_utc: "2026-10-25T01:41:04Z"
+    - probe_id: PROBE-37
+      round: 3
+      mechanism: P3-Q14/BM
+      provider: GitHub-OpenSource-Index
+      query_or_target: 'Open-Source Alternative Benchmark: forex backtesting python'
+      endpoint_url: https://api.github.com/search/repositories?q=forex+backtesting+python&per_page=5
+      http_status: 200
+      bytes_received: 28909
+      latency_ms: 409
+      payload_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+      items_extracted: 5
+      timestamp_utc: "2026-10-25T01:41:04Z"
+    - probe_id: PROBE-38
+      round: 3
+      mechanism: P3-Q14/BM
+      provider: GitHub-OpenSource-Index
+      query_or_target: 'Open-Source Alternative Benchmark: kelly criterion position sizing python'
+      endpoint_url: https://api.github.com/search/repositories?q=kelly+criterion+position+sizing+python&per_page=5
+      http_status: 200
+      bytes_received: 30615
+      latency_ms: 276
+      payload_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+      items_extracted: 5
+      timestamp_utc: "2026-10-25T01:41:05Z"
+    - probe_id: PROBE-39
+      round: 3
+      mechanism: P3-Q14/BM
+      provider: GitHub-OpenSource-Index
+      query_or_target: 'Open-Source Alternative Benchmark: walk forward analysis trading python'
+      endpoint_url: https://api.github.com/search/repositories?q=walk+forward+analysis+trading+python&per_page=5
+      http_status: 200
+      bytes_received: 29024
+      latency_ms: 290
+      payload_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+      items_extracted: 5
+      timestamp_utc: "2026-10-25T01:41:05Z"
+    - probe_id: PROBE-40
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: U.S. CFTC (RFED & Enforcement Dockets)'
+      endpoint_url: https://api.duckduckgo.com/?q=U.S.+CFTC+%28RFED+%26+Enforcement+Dockets%29&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 1228
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:06Z"
+    - probe_id: PROBE-41
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: SEC / FINRA'
+      endpoint_url: https://api.duckduckgo.com/?q=SEC+%2F+FINRA&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 73
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:06Z"
+    - probe_id: PROBE-42
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: BIS Triennial Central Bank Survey'
+      endpoint_url: https://api.duckduckgo.com/?q=BIS+Triennial+Central+Bank+Survey&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 74
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:06Z"
+    - probe_id: PROBE-43
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: ESMA & UK FCA Mandatory CFD/FX Disclosures'
+      endpoint_url: https://api.duckduckgo.com/?q=ESMA+%26+UK+FCA+Mandatory+CFD%2FFX+Disclosures&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 72
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:06Z"
+    - probe_id: PROBE-44
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: U.S. BLS OEWS'
+      endpoint_url: https://api.duckduckgo.com/?q=U.S.+BLS+OEWS&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 70
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:07Z"
+    - probe_id: PROBE-45
+      round: 3
+      mechanism: RM-01/RM-02
+      provider: DuckDuckGo-ZeroCost-API
+      query_or_target: 'Entity & Authority Graph: Federal Reserve SHED'
+      endpoint_url: https://api.duckduckgo.com/?q=Federal+Reserve+SHED&format=json
+      http_status: 200
+      bytes_received: 1252
+      latency_ms: 75
+      payload_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+      items_extracted: 1
+      timestamp_utc: "2026-10-25T01:41:07Z"
+validated_sources:
+    - source_id: LIVE-SRC-001
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Information Collection Renewal; Submission for OMB Review; Retail Foreign Exchange Transactions'
+      publisher_or_id: 'Doc #2026-07664'
+      published_date: "2026-04-20"
+      url: https://www.federalregister.gov/documents/2026/04/20/2026-07664/agency-information-collection-activities-information-collection-renewal-submission-for-omb-review
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-002
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Information Collection Renewal; Comment Request; Retail Foreign Exchange Transactions'
+      publisher_or_id: 'Doc #2026-02622'
+      published_date: "2026-02-10"
+      url: https://www.federalregister.gov/documents/2026/02/10/2026-02622/agency-information-collection-activities-information-collection-renewal-comment-request-retail
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-003
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Notice of Intent To Renew Collection 3038-0023, Registration Under the Commodity Exchange Act'
+      publisher_or_id: 'Doc #2025-22108'
+      published_date: "2025-12-05"
+      url: https://www.federalregister.gov/documents/2025/12/05/2025-22108/agency-information-collection-activities-notice-of-intent-to-renew-collection-3038-0023-registration
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-004
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Notice of Intent To Extend'
+      publisher_or_id: 'Doc #2026-19338'
+      published_date: "2026-09-22"
+      url: https://www.federalregister.gov/documents/2026/09/22/2026-19338/agency-information-collection-activities-notice-of-intent-to-extend
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-005
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Agency Information Collection Activities Under OMB Review
+      publisher_or_id: 'Doc #2026-03890'
+      published_date: "2026-02-26"
+      url: https://www.federalregister.gov/documents/2026/02/26/2026-03890/agency-information-collection-activities-under-omb-review
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-006
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Notice of Intent To Extend Collection 3038-0055, Privacy of Consumer Financial Information'
+      publisher_or_id: 'Doc #2025-22808'
+      published_date: "2025-12-15"
+      url: https://www.federalregister.gov/documents/2025/12/15/2025-22808/agency-information-collection-activities-notice-of-intent-to-extend-collection-3038-0055-privacy-of
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-007
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Proposed Collection Renewal; Comment Request'
+      publisher_or_id: 'Doc #2026-21741'
+      published_date: "2026-10-26"
+      url: https://www.federalregister.gov/documents/2026/10/26/2026-21741/agency-information-collection-activities-proposed-collection-renewal-comment-request
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-008
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Notice of Intent To Extend Collection 3038-0072, Registration of Swap Dealers and Major Swap Participants'
+      publisher_or_id: 'Doc #2026-05792'
+      published_date: "2026-03-25"
+      url: https://www.federalregister.gov/documents/2026/03/25/2026-05792/agency-information-collection-activities-notice-of-intent-to-extend-collection-3038-0072
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: aa8db274fa05a07245990821aa885b6945b3302268c5efb5533b6bf8663ef6b4
+    - source_id: LIVE-SRC-009
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Notice of Intent To Extend'
+      publisher_or_id: 'Doc #2026-19338'
+      published_date: "2026-09-22"
+      url: https://www.federalregister.gov/documents/2026/09/22/2026-19338/agency-information-collection-activities-notice-of-intent-to-extend
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-010
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Prediction Markets; Public Interest Determinations
+      publisher_or_id: 'Doc #2026-11854'
+      published_date: "2026-06-12"
+      url: https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-011
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Commodity Pool Operators, Commodity Trading Advisors, and Commodity Pools Operated: Updating the `Qualified Eligible Person'' Definition; Adding Minimum Disclosure Requirements for Pools and Trading Programs; Permitting Monthly Account Statements for Funds of Funds; Technical Amendments'
+      publisher_or_id: 'Doc #2024-21682'
+      published_date: "2024-09-26"
+      url: https://www.federalregister.gov/documents/2024/09/26/2024-21682/commodity-pool-operators-commodity-trading-advisors-and-commodity-pools-operated-updating-the
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-012
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Foreign Boards of Trade
+      publisher_or_id: 'Doc #2024-17828'
+      published_date: "2024-08-15"
+      url: https://www.federalregister.gov/documents/2024/08/15/2024-17828/foreign-boards-of-trade
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-013
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Self-Regulatory Organizations; KalshiEX LLC; Notice of Filing and Immediate Effectiveness of a Proposed Rule Change Relating to Listing Standards for Security Futures Products
+      publisher_or_id: 'Doc #2026-19409'
+      published_date: "2026-09-23"
+      url: https://www.federalregister.gov/documents/2026/09/23/2026-19409/self-regulatory-organizations-kalshiex-llc-notice-of-filing-and-immediate-effectiveness-of-a
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-014
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Foreign Boards of Trade
+      publisher_or_id: 'Doc #2024-04117'
+      published_date: "2024-03-01"
+      url: https://www.federalregister.gov/documents/2024/03/01/2024-04117/foreign-boards-of-trade
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-015
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Operational Resilience Framework for Futures Commission Merchants, Swap Dealers, and Major Swap Participants
+      publisher_or_id: 'Doc #2023-28745'
+      published_date: "2024-01-24"
+      url: https://www.federalregister.gov/documents/2024/01/24/2023-28745/operational-resilience-framework-for-futures-commission-merchants-swap-dealers-and-major-swap
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-016
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Commodity Pool Operators, Commodity Trading Advisors, and Commodity Pools: Updating the `Qualified Eligible Person'' Definition; Adding Minimum Disclosure Requirements for Pools and Trading Programs; Permitting Monthly Account Statements for Funds of Funds; Technical Amendments'
+      publisher_or_id: 'Doc #2023-22324'
+      published_date: "2023-10-12"
+      url: https://www.federalregister.gov/documents/2023/10/12/2023-22324/commodity-pool-operators-commodity-trading-advisors-and-commodity-pools-updating-the-qualified
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 991f46af3c3083fc7483d937c409cb9af3cdc6b72e16a35455466b9703b52b49
+    - source_id: LIVE-SRC-017
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Rule on Impersonation of Government and Businesses
+      publisher_or_id: 'Doc #2026-20143'
+      published_date: "2026-10-01"
+      url: https://www.federalregister.gov/documents/2026/10/01/2026-20143/rule-on-impersonation-of-government-and-businesses
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-018
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Trade Regulation Rule on Unfair or Deceptive Fees
+      publisher_or_id: 'Doc #2024-30293'
+      published_date: "2025-01-10"
+      url: https://www.federalregister.gov/documents/2025/01/10/2024-30293/trade-regulation-rule-on-unfair-or-deceptive-fees
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-019
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Regulatory Agenda
+      publisher_or_id: 'Doc #2026-16617'
+      published_date: "2026-08-14"
+      url: https://www.federalregister.gov/documents/2026/08/14/2026-16617/regulatory-agenda
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-020
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Semiannual Regulatory Agenda
+      publisher_or_id: 'Doc #2025-18319'
+      published_date: "2025-09-22"
+      url: https://www.federalregister.gov/documents/2025/09/22/2025-18319/semiannual-regulatory-agenda
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-021
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Trade Regulation Rule on Unfair or Deceptive Fees
+      publisher_or_id: 'Doc #2023-24234'
+      published_date: "2023-11-09"
+      url: https://www.federalregister.gov/documents/2023/11/09/2023-24234/trade-regulation-rule-on-unfair-or-deceptive-fees
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-022
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Prohibited Terms and Conditions in Agreements for Consumer Financial Products or Services (Regulation AA)
+      publisher_or_id: 'Doc #2025-00633'
+      published_date: "2025-01-14"
+      url: https://www.federalregister.gov/documents/2025/01/14/2025-00633/prohibited-terms-and-conditions-in-agreements-for-consumer-financial-products-or-services-regulation
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-023
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Semiannual Regulatory Agenda
+      publisher_or_id: 'Doc #2024-16468'
+      published_date: "2024-08-16"
+      url: https://www.federalregister.gov/documents/2024/08/16/2024-16468/semiannual-regulatory-agenda
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-024
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Trade Regulation Rule on the Use of Consumer Reviews and Testimonials
+      publisher_or_id: 'Doc #2024-18519'
+      published_date: "2024-08-22"
+      url: https://www.federalregister.gov/documents/2024/08/22/2024-18519/trade-regulation-rule-on-the-use-of-consumer-reviews-and-testimonials
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 9d8dd1014062bf584011da8eee58a1fb84f613cd5ae15ec9b87315269d18eb47
+    - source_id: LIVE-SRC-025
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Request for Comment on the Extension of Standard Futures Contracts to 24/7 Trading and on Perpetual Contracts Referencing Physically Delivered or Storable Energy Commodities
+      publisher_or_id: 'Doc #2026-12784'
+      published_date: "2026-06-25"
+      url: https://www.federalregister.gov/documents/2026/06/25/2026-12784/request-for-comment-on-the-extension-of-standard-futures-contracts-to-247-trading-and-on-perpetual
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-026
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets'
+      publisher_or_id: 'Doc #2026-05960'
+      published_date: "2026-03-27"
+      url: https://www.federalregister.gov/documents/2026/03/27/2026-05960/regulatory-capital-rules-regulatory-capital-and-standardized-approach-for-risk-weighted-assets
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-027
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Investment of Customer Funds by Futures Commission Merchants and Derivatives Clearing Organizations
+      publisher_or_id: 'Doc #2024-30927'
+      published_date: "2025-01-22"
+      url: https://www.federalregister.gov/documents/2025/01/22/2024-30927/investment-of-customer-funds-by-futures-commission-merchants-and-derivatives-clearing-organizations
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-028
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Regulation Crypto Asset Transactions and Regulation Crypto Asset Markets
+      publisher_or_id: 'Doc #2026-20888'
+      published_date: "2026-10-13"
+      url: https://www.federalregister.gov/documents/2026/10/13/2026-20888/regulation-crypto-asset-transactions-and-regulation-crypto-asset-markets
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-029
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Prediction Markets; Public Interest Determinations
+      publisher_or_id: 'Doc #2026-11854'
+      published_date: "2026-06-12"
+      url: https://www.federalregister.gov/documents/2026/06/12/2026-11854/prediction-markets-public-interest-determinations
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-030
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Conflicts and Affiliations
+      publisher_or_id: 'Doc #2026-15948'
+      published_date: "2026-08-06"
+      url: https://www.federalregister.gov/documents/2026/08/06/2026-15948/conflicts-and-affiliations
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-031
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations'
+      publisher_or_id: 'Doc #2026-05959'
+      published_date: "2026-03-27"
+      url: https://www.federalregister.gov/documents/2026/03/27/2026-05959/regulatory-capital-rule-category-i-and-ii-banking-organizations-banking-organizations-with
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-032
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Commission Guidance Regarding the Listing of Voluntary Carbon Credit Derivative Contracts; Request for Comment
+      publisher_or_id: 'Doc #2023-28532'
+      published_date: "2023-12-27"
+      url: https://www.federalregister.gov/documents/2023/12/27/2023-28532/commission-guidance-regarding-the-listing-of-voluntary-carbon-credit-derivative-contracts-request
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 50e43a09eafce6883203dbd059b7d578c32ed481ae817822269fd151c2fe259c
+    - source_id: LIVE-SRC-033
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Information Collection Renewal; Comment Request; Reporting, Recordkeeping, and Disclosure Requirements Associated With Proprietary Trading and Certain Interests in and Relationships With Covered Funds'
+      publisher_or_id: 'Doc #2026-02788'
+      published_date: "2026-02-12"
+      url: https://www.federalregister.gov/documents/2026/02/12/2026-02788/agency-information-collection-activities-information-collection-renewal-comment-request-reporting
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-034
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Agency Information Collection Activities: Information Collection Renewal; Submission for OMB Review; Reporting, Recordkeeping, and Disclosure Requirements Associated With Proprietary Trading and Certain Interests in and Relationships With Covered Funds'
+      publisher_or_id: 'Doc #2026-08405'
+      published_date: "2026-04-30"
+      url: https://www.federalregister.gov/documents/2026/04/30/2026-08405/agency-information-collection-activities-information-collection-renewal-submission-for-omb-review
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-035
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 1,2-Dichloroethane; Draft Risk Evaluation Under the Toxic Substances Control Act (TSCA); Notice of Availability and Request for Comment
+      publisher_or_id: 'Doc #2025-20240'
+      published_date: "2025-11-19"
+      url: https://www.federalregister.gov/documents/2025/11/19/2025-20240/12-dichloroethane-draft-risk-evaluation-under-the-toxic-substances-control-act-tsca-notice-of
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-036
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Proposed Third-Party Risk Management Guidance
+      publisher_or_id: 'Doc #2026-18859'
+      published_date: "2026-09-15"
+      url: https://www.federalregister.gov/documents/2026/09/15/2026-18859/proposed-third-party-risk-management-guidance
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-037
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Firearm Activities in Foreign Trade Zones, Customs-Bonded Warehouses
+      publisher_or_id: 'Doc #2026-09162'
+      published_date: "2026-05-08"
+      url: https://www.federalregister.gov/documents/2026/05/08/2026-09162/firearm-activities-in-foreign-trade-zones-customs-bonded-warehouses
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-038
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations'
+      publisher_or_id: 'Doc #2026-05959'
+      published_date: "2026-03-27"
+      url: https://www.federalregister.gov/documents/2026/03/27/2026-05959/regulatory-capital-rule-category-i-and-ii-banking-organizations-banking-organizations-with
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-039
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Privacy Act of 1974; System of Records
+      publisher_or_id: 'Doc #2026-08978'
+      published_date: "2026-05-06"
+      url: https://www.federalregister.gov/documents/2026/05/06/2026-08978/privacy-act-of-1974-system-of-records
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-040
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Investment Company Cross Trading
+      publisher_or_id: 'Doc #2026-21037'
+      published_date: "2026-10-15"
+      url: https://www.federalregister.gov/documents/2026/10/15/2026-21037/investment-company-cross-trading
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: e19c26e175ac3d64afb7995520cdb87c167cdb868edbe6e11610bbea5d23a9f5
+    - source_id: LIVE-SRC-041
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Improving Customer Service and Protecting Consumers Through Onshoring
+      publisher_or_id: 'Doc #2026-07960'
+      published_date: "2026-04-23"
+      url: https://www.federalregister.gov/documents/2026/04/23/2026-07960/improving-customer-service-and-protecting-consumers-through-onshoring
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-042
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Fair Lending Report of the Consumer Financial Protection Bureau
+      publisher_or_id: 'Doc #2024-14533'
+      published_date: "2024-07-02"
+      url: https://www.federalregister.gov/documents/2024/07/02/2024-14533/fair-lending-report-of-the-consumer-financial-protection-bureau
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-043
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Uniform Financial Institutions Rating System
+      publisher_or_id: 'Doc #2026-09944'
+      published_date: "2026-05-19"
+      url: https://www.federalregister.gov/documents/2026/05/19/2026-09944/uniform-financial-institutions-rating-system
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-044
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Defining Larger Participants of a Market for General-Use Digital Consumer Payment Applications
+      publisher_or_id: 'Doc #2024-27836'
+      published_date: "2024-12-10"
+      url: https://www.federalregister.gov/documents/2024/12/10/2024-27836/defining-larger-participants-of-a-market-for-general-use-digital-consumer-payment-applications
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-045
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: 'Consumer Financial Protection Circular 2024-02: Deceptive Marketing Practices About the Speed or Cost of Sending a Remittance Transfer'
+      publisher_or_id: 'Doc #2024-08007'
+      published_date: "2024-04-17"
+      url: https://www.federalregister.gov/documents/2024/04/17/2024-08007/consumer-financial-protection-circular-2024-02-deceptive-marketing-practices-about-the-speed-or-cost
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-046
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Required Rulemaking on Personal Financial Data Rights
+      publisher_or_id: 'Doc #2024-25079'
+      published_date: "2024-11-18"
+      url: https://www.federalregister.gov/documents/2024/11/18/2024-25079/required-rulemaking-on-personal-financial-data-rights
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-047
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Semiannual Reporting
+      publisher_or_id: 'Doc #2026-09095'
+      published_date: "2026-05-07"
+      url: https://www.federalregister.gov/documents/2026/05/07/2026-09095/semiannual-reporting
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-048
+      provider: U.S. Federal Register (Tier 1 Gov)
+      tier: 1
+      title: Privacy Act of 1974; System of Records
+      publisher_or_id: 'Doc #2026-00704'
+      published_date: "2026-01-15"
+      url: https://www.federalregister.gov/documents/2026/01/15/2026-00704/privacy-act-of-1974-system-of-records
+      vector: P2-Q1/P2-Q5/P2-Q9
+      probe_sha256: 202fdfbe2f2fcda5819ded7719d5ebc7cdd7cfee429e9377f031ffaf20016a5e
+    - source_id: LIVE-SRC-049
+      provider: Bank for International Settlements (BIS)
+      tier: 1
+      title: BIS Triennial Central Bank Survey of FX & OTC Derivatives ($7.5T/day)
+      publisher_or_id: Bank for International Settlements (BIS)
+      published_date: 2025-2026
+      url: https://www.bis.org/statistics/rpfx22_fx.htm
+      vector: P2-Q1/P2-Q6
+      probe_sha256: 0c874b1dec4dbc6a3df802afe9eba2f1c51b5699f73e0e043d036faf95e5e5c2
+    - source_id: LIVE-SRC-050
+      provider: Board of Governors of the Federal Reserve System
+      tier: 1
+      title: Federal Reserve Report on the Economic Well-Being of U.S. Households (SHED)
+      publisher_or_id: Board of Governors of the Federal Reserve System
+      published_date: 2025-2026
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      vector: P2-Q12/P3-Q13
+      probe_sha256: c1a9ec1e714752ab7baaad0ae49d7f75fb4a9a889c8f9a38fdd2877e55780880
+    - source_id: LIVE-SRC-051
+      provider: U.S. Securities and Exchange Commission (SEC)
+      tier: 1
+      title: SEC Investor.gov High-Yield & Forex Trading Risk Bulletin
+      publisher_or_id: U.S. Securities and Exchange Commission (SEC)
+      published_date: 2025-2026
+      url: https://www.investor.gov/introduction-investing/investing-basics/glossary/foreign-currency-trading-forex
+      vector: P2-Q5/P3-Q15
+      probe_sha256: c8cad28c7cc2c91e45fb0d69737b0a279543cde407c63521f46be6ac0fa6a60a
+    - source_id: LIVE-SRC-052
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Profits and speculation in intra-day foreign exchange trading
+      publisher_or_id: https://openalex.org/W1545312394
+      published_date: "2006"
+      url: https://doi.org/10.1016/j.finmar.2006.05.003
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-053
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: International Trade and Retailing
+      publisher_or_id: https://openalex.org/W1667355172
+      published_date: "2009"
+      url: https://doi.org/10.2139/ssrn.1368663
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-054
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Uncharted waters: Investors get access to foreign exchange-traded funds'
+      publisher_or_id: https://openalex.org/W3212874430
+      published_date: "2021"
+      url: https://doi.org/10.32609/0042-8736-2021-11-54-70
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-055
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Combining Deep Learning on Order Books with Reinforcement Learning for Profitable Trading
+      publisher_or_id: https://openalex.org/W4388877259
+      published_date: "2023"
+      url: https://doi.org/10.2139/ssrn.4611708
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-056
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'International trade and retailing: Diversity versus accessibility and the creation of retail deserts'
+      publisher_or_id: https://openalex.org/W1961520485
+      published_date: "2007"
+      url: https://openalex.org/W1961520485
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-057
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: USE OF FOREIGN EXPERIENCE IN THE DEVELOPMENT OF A COMPLEX OF MARKETING IN RETAIL TRADE
+      publisher_or_id: https://openalex.org/W7216900983
+      published_date: "2023"
+      url: https://openalex.org/W7216900983
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-058
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Trading foreign exchange carry portfolios
+      publisher_or_id: https://openalex.org/W131273219
+      published_date: "2011"
+      url: https://openalex.org/W131273219
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-059
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'The Retail FX Trader: Random Trading and the Negative Sum Game'
+      publisher_or_id: https://openalex.org/W2226072593
+      published_date: "2016"
+      url: https://doi.org/10.2139/ssrn.2711214
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 5c5866018d09b1cbd24f0e8f5498bd5b96921fee7e3751387974130cc9f96a1f
+    - source_id: LIVE-SRC-060
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Do Individual Day Traders Make Money? Evidence from Taiwan
+      publisher_or_id: https://openalex.org/W2405630229
+      published_date: "2004"
+      url: https://openalex.org/W2405630229
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-061
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Trading Is Hazardous to Your Wealth: The Common Stock Investment Performance of Individual Investors'
+      publisher_or_id: https://openalex.org/W3122890729
+      published_date: "2000"
+      url: https://doi.org/10.1111/0022-1082.00226
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-062
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Do Individual Investors Ignore Transaction Costs?
+      publisher_or_id: https://openalex.org/W3145926639
+      published_date: "2017"
+      url: https://doi.org/10.2139/ssrn.2972845
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-063
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The Economic Consequences of Lower Retail Trading Costs
+      publisher_or_id: https://openalex.org/W7203840936
+      published_date: "2026"
+      url: https://doi.org/10.2139/ssrn.7306779
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-064
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Transaction Costs of Factor-Investing Strategies
+      publisher_or_id: https://openalex.org/W2924572297
+      published_date: "2019"
+      url: https://doi.org/10.1080/0015198x.2019.1567190
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-065
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Portfolio Concentration and the Performance of Individual Investors
+      publisher_or_id: https://openalex.org/W3124521753
+      published_date: "2008"
+      url: https://doi.org/10.1017/s0022109000004233
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-066
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Overconfident individual day traders: Evidence from the Taiwan futures market'
+      publisher_or_id: https://openalex.org/W3123078299
+      published_date: "2013"
+      url: https://doi.org/10.1016/j.jbankfin.2013.04.036
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-067
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: OPTIMAL MEAN REVERSION TRADING WITH TRANSACTION COSTS AND STOP-LOSS EXIT
+      publisher_or_id: https://openalex.org/W2951233714
+      published_date: "2015"
+      url: https://doi.org/10.1142/s021902491550020x
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 81ce3c2de7ba32fcd21581454cc1efc5a5ea10ea0f5ff62c29e13485d07aca46
+    - source_id: LIVE-SRC-068
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Should retail investors’ leverage be limited?
+      publisher_or_id: https://openalex.org/W3122597088
+      published_date: "2018"
+      url: https://doi.org/10.1016/j.jfineco.2018.10.017
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-069
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Should Retail Investors' Leverage Be Limited?
+      publisher_or_id: https://openalex.org/W3121929857
+      published_date: "2017"
+      url: https://doi.org/10.3386/w24176
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-070
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Contracts for dummies? The performance of investors in contracts for difference
+      publisher_or_id: https://openalex.org/W3123205204
+      published_date: "2013"
+      url: https://doi.org/10.1111/acfi.12018
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-071
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Retail ETF investing
+      publisher_or_id: https://openalex.org/W4390058762
+      published_date: "2023"
+      url: https://doi.org/10.1111/eufm.12471
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-072
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: New retail investors in France
+      publisher_or_id: https://openalex.org/W4400154464
+      published_date: "2023"
+      url: https://doi.org/10.1787/2cd2565d-en
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-073
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Transparent structured products for retail investors
+      publisher_or_id: https://openalex.org/W4206179727
+      published_date: "2022"
+      url: https://doi.org/10.1016/j.ejor.2022.01.014
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-074
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Transparency in IPO mechanism: Retail investors’ participation, IPO pricing and returns'
+      publisher_or_id: https://openalex.org/W1975684060
+      published_date: "2012"
+      url: https://doi.org/10.1016/j.jbankfin.2012.03.010
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-075
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Retail investors in the foreign exchange market
+      publisher_or_id: https://openalex.org/W3089763376
+      published_date: "2020"
+      url: https://doi.org/10.15611/pn.2020.6.13
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 71fb5cac1c713130f96d93cb82e51588b14ea509ff615625391872b27675a672
+    - source_id: LIVE-SRC-076
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Order Flow-Based Microstructure Analysis of the Spot Exchange Rate in Zambia
+      publisher_or_id: https://openalex.org/W7113383738
+      published_date: "0"
+      url: https://openalex.org/W7113383738
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-077
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Microstructure of Foreign Exchange Markets
+      publisher_or_id: https://openalex.org/W2943118206
+      published_date: "2019"
+      url: https://doi.org/10.1093/acrefore/9780190625979.013.318
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-078
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The market microstructure approach to foreign exchange - Looking back and looking forward
+      publisher_or_id: https://openalex.org/W3124756266
+      published_date: "2012"
+      url: https://openalex.org/W3124756266
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-079
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The intraday relationship between order flow and exchange rates in the foreign exchange market
+      publisher_or_id: https://openalex.org/W2783751154
+      published_date: "2017"
+      url: https://openalex.org/W2783751154
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-080
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The Microstructure of Currency Markets
+      publisher_or_id: https://openalex.org/W1580819330
+      published_date: "2013"
+      url: https://doi.org/10.1002/9781118681145.ch5
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-081
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Market Microstructure and Intermediation
+      publisher_or_id: https://openalex.org/W2163588977
+      published_date: "1996"
+      url: https://doi.org/10.1257/jep.10.3.135
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-082
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Macroeconomic News, Order Flows, and Exchange Rates
+      publisher_or_id: https://openalex.org/W2157764735
+      published_date: "2008"
+      url: https://doi.org/10.1017/s0022109000003598
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-083
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Foreign Exchange Market Structure, Players, and Evolution
+      publisher_or_id: https://openalex.org/W2095867786
+      published_date: "2012"
+      url: https://doi.org/10.1002/9781118445785.ch1
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 38a5a4d61556c0fc388d110f6a0dce6f971a7b741bc11cd0980329255dc6f739
+    - source_id: LIVE-SRC-084
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Regulating Public Morals and Private Markets: Online Securities Trading, Internet Gambling and the Speculation Paradox'
+      publisher_or_id: https://openalex.org/W3124053013
+      published_date: "2006"
+      url: https://openalex.org/W3124053013
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-085
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Trading is a losing game: an audit of deceptive choice architecture in demo-mode Contract for Difference (CFD) trading apps'
+      publisher_or_id: https://openalex.org/W4408685377
+      published_date: "2025"
+      url: https://doi.org/10.1017/bpp.2024.62
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-086
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Trading foreign exchange carry portfolios
+      publisher_or_id: https://openalex.org/W131273219
+      published_date: "2011"
+      url: https://openalex.org/W131273219
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-087
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Becoming bourgeois : merchant culture in the antebellum and confederate south /'
+      publisher_or_id: https://openalex.org/W2616783526
+      published_date: "2000"
+      url: https://openalex.org/W2616783526
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-088
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Online Herding Activity
+      publisher_or_id: https://openalex.org/W3203346611
+      published_date: "2021"
+      url: https://openalex.org/W3203346611
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-089
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Cryptocurrency and the Future of Money: A Student''s Perspective'
+      publisher_or_id: https://openalex.org/W4416814278
+      published_date: "2025"
+      url: https://doi.org/10.55248/gengpi.06.1125.38147
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-090
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Bubbles, Crises, and Heterogeneous Beliefs
+      publisher_or_id: https://openalex.org/W3125127649
+      published_date: "2013"
+      url: https://doi.org/10.3386/w18905
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-091
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The impact of a speculative stock market on institutional investors
+      publisher_or_id: https://openalex.org/W814782726
+      published_date: "2012"
+      url: https://openalex.org/W814782726
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: c4191cdf004817d524b50c1e0bb051bf6826e156df5f6b65a701f4a464c0727d
+    - source_id: LIVE-SRC-092
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Deep Reinforcement Learning for Cryptocurrency Trading: Practical Approach to Address Backtest Overfitting'
+      publisher_or_id: https://openalex.org/W4297833239
+      published_date: "2022"
+      url: https://doi.org/10.48550/arxiv.2209.05559
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-093
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Is Invariance Possible? The Kac Ratio as a Method for Mitigating Overfitting in Algorithmic Trading
+      publisher_or_id: https://openalex.org/W7163909508
+      published_date: "2026"
+      url: https://doi.org/10.2139/ssrn.6827500
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-094
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: When Backtests Agree but the Data Doesn't
+      publisher_or_id: https://openalex.org/W7213291923
+      published_date: "2026"
+      url: https://doi.org/10.5281/zenodo.22760800
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-095
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Design and Implementation of an AI-Driven Algorithmic Trading Simulation Platform for Strategy Backtesting and Forecasting
+      publisher_or_id: https://openalex.org/W7117765640
+      published_date: "2025"
+      url: https://doi.org/10.56977/jicce.2025.23.4.327
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-096
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Deep learning in the stock market—a systematic survey of practice, backtesting, and applications
+      publisher_or_id: https://openalex.org/W4283764803
+      published_date: "2022"
+      url: https://doi.org/10.1007/s10462-022-10226-0
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-097
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: A reproducible approach to equity backtesting
+      publisher_or_id: https://openalex.org/W3009397465
+      published_date: "2019"
+      url: https://openalex.org/W3009397465
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-098
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'VIX constant maturity futures trading strategy: A walk-forward machine learning study'
+      publisher_or_id: https://openalex.org/W4394963629
+      published_date: "2024"
+      url: https://doi.org/10.1371/journal.pone.0302289
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-099
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Econometric Modelling and Algorithmic Trading of Bitcoin: ARIMA-GARCH Volatility Analysis and Backtested Strategy Evaluation'
+      publisher_or_id: https://openalex.org/W7154954205
+      published_date: "2026"
+      url: https://doi.org/10.2139/ssrn.6467818
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 4d6e529bd44637f15cc9a10d8266a3e37b68f341cc1543680e3bf7d386f01ddc
+    - source_id: LIVE-SRC-100
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The moderating influence of core self-evaluation, emotional intelligence and extraversion on career success
+      publisher_or_id: https://openalex.org/W2520993877
+      published_date: "2014"
+      url: https://openalex.org/W2520993877
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-101
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'The art of fighting back: dissertation on business leader''s comebacks after a career setback'
+      publisher_or_id: https://openalex.org/W634762885
+      published_date: "2010"
+      url: https://openalex.org/W634762885
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-102
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Artificial Intelligence in the Modern Workplace: Ethics, Entry-Level Displacement, and the Erosion of the Career Ladder'
+      publisher_or_id: https://openalex.org/W7149931328
+      published_date: "2026"
+      url: https://doi.org/10.18535/ijecs/v15i03.5455
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-103
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Revolutionizing business management: Implementing artificial intelligence in administrative and marketing services for PYMEs'
+      publisher_or_id: https://openalex.org/W7132170505
+      published_date: "2025"
+      url: https://openalex.org/W7132170505
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-104
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'The Fetish of Personal Growth: Corporate Narratives and Career Development in the Business Services Sector'
+      publisher_or_id: https://openalex.org/W7221713036
+      published_date: "2026"
+      url: https://doi.org/10.1007/s12115-026-01324-8
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-105
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Fit for Purpose? An Exploration of Non-degree Pathways into Data Analysis Careers
+      publisher_or_id: https://openalex.org/W7115037365
+      published_date: "2023"
+      url: https://openalex.org/W7115037365
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-106
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The Impact of Artificial Intelligence and Blockchain on the Accounting Profession
+      publisher_or_id: https://openalex.org/W3034698100
+      published_date: "2020"
+      url: https://doi.org/10.1109/access.2020.3000505
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-107
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'APPLICATION OF ARTIFICIAL INTELLIGENCE TECHNOLOGIESIN THE LABOR MARKET: ECONOMIC AND SOCIALPERSPECTIVES'
+      publisher_or_id: https://openalex.org/W7168031551
+      published_date: "2025"
+      url: https://doi.org/10.71447/3005-2696-2025-1-42
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: d0d7065d1b29cbfb4e34199ed6d6682a1657dd63d0ec15de1b2f6376a0dbc515
+    - source_id: LIVE-SRC-108
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Public Disclosure and Consumer Financial Protection
+      publisher_or_id: https://openalex.org/W4367843815
+      published_date: "2020"
+      url: https://doi.org/10.1017/s0022109023000613
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-109
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The Influence of Live Streaming and Affiliate Marketing on Impulsive Buying among Shopee E-Commerce Consumers in Medan with Consumer Trust as Intervening Variable
+      publisher_or_id: https://openalex.org/W7163816146
+      published_date: "2026"
+      url: https://doi.org/10.55927/fjmr.v5i5.85
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-110
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Influence of TikTok affiliate video marketing strategies on Millennials’ purchase intention
+      publisher_or_id: https://openalex.org/W7135015805
+      published_date: "2026"
+      url: https://doi.org/10.30574/wjarr.2026.29.3.0588
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-111
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Turning Trust to Transactions: Tracking Affiliate Marketing and FTC Compliance in YouTube’s Influencer Economy'
+      publisher_or_id: https://openalex.org/W7162319530
+      published_date: "2026"
+      url: https://doi.org/10.1609/icwsm.v20i1.42748
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-112
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Turning Trust to Transactions: Tracking Affiliate Marketing and FTC Compliance in YouTube''s Influencer Economy'
+      publisher_or_id: https://openalex.org/W7134016697
+      published_date: "2026"
+      url: https://openalex.org/W7134016697
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-113
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: FIQH MUAMALAH TERHADAP PRAKTIK AFFILIATE MARKETING DAN INFLUENCER ECONOMY
+      publisher_or_id: https://openalex.org/W7217889451
+      published_date: "2026"
+      url: https://openalex.org/W7217889451
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-114
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Affiliate marketing strategy design for an IT company
+      publisher_or_id: https://openalex.org/W7132672904
+      published_date: "2023"
+      url: https://openalex.org/W7132672904
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-115
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Affiliate Marketing in SMEs: The Moderating Effect of Developmental Culture'
+      publisher_or_id: https://openalex.org/W3177823997
+      published_date: "2021"
+      url: https://doi.org/10.47836/pjssh.29.2.27
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: dd1d292f5682a95f6f0914448c39b1f6b8f2fa2f497511492546533e8bdd6d7a
+    - source_id: LIVE-SRC-116
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Why Do Households Lack Emergency Savings? The Role of Financial Capability
+      publisher_or_id: https://openalex.org/W3028550447
+      published_date: "2020"
+      url: https://doi.org/10.1007/s10834-020-09679-8
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-117
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: The Interaction of Emergency Funds Debt-to-Income Ratio and Retirement Savings in Improving the Financial Resilience of Indonesian Households
+      publisher_or_id: https://openalex.org/W7214754239
+      published_date: "2026"
+      url: https://doi.org/10.29406/jmm.v22i1.9009
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-118
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Inequalities in household wealth and financial insecurity of households
+      publisher_or_id: https://openalex.org/W4366769200
+      published_date: "2021"
+      url: https://doi.org/10.1787/b60226a0-en
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-119
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Psychological characteristics and household savings behavior: The importance of accounting for latent heterogeneity'
+      publisher_or_id: https://openalex.org/W2793312903
+      published_date: "2018"
+      url: https://doi.org/10.1016/j.jebo.2018.02.013
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-120
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Coping With a Crisis: Financial Resources Available to Low- and Moderate-Income Households in Emergencies'
+      publisher_or_id: https://openalex.org/W2889841637
+      published_date: "2017"
+      url: https://doi.org/10.7936/k7m32v90
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-121
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Financial Ratios and Perceived Household Financial Satisfaction
+      publisher_or_id: https://openalex.org/W2028619646
+      published_date: "2013"
+      url: https://doi.org/10.4148/jft.v4i1.1839
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-122
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Household savings in rural Pakistan
+      publisher_or_id: https://openalex.org/W4213349108
+      published_date: "2002"
+      url: https://doi.org/10.53846/goediss-1868
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-123
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Financial Shocks and Financial Well-Being: What Builds Resiliency in Lower-Income Households?'
+      publisher_or_id: https://openalex.org/W3208456340
+      published_date: "2021"
+      url: https://doi.org/10.1007/s11205-021-02828-y
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: 45605347a28a27efe7b004c48e920ec18e6258f8f3169efde56a4e5a5a4c6373
+    - source_id: LIVE-SRC-124
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: A Machine Learning Framework for S&P 500 Directional Classification and Kelly-Optimal Position Sizing
+      publisher_or_id: https://openalex.org/W7213974984
+      published_date: "2026"
+      url: https://doi.org/10.54254/2754-1169/2026.ld37209
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-125
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Leverage, drawdowns and risk relativity
+      publisher_or_id: https://openalex.org/W7213412993
+      published_date: "2026"
+      url: https://doi.org/10.1007/s10436-026-00491-2
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-126
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Enhancing Time-Series Momentum Strategies Using Deep Neural Networks
+      publisher_or_id: https://openalex.org/W2936510019
+      published_date: "2019"
+      url: https://doi.org/10.3905/jfds.2019.1.015
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-127
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Econometric analysis of explosive financial time series
+      publisher_or_id: https://openalex.org/W7214413283
+      published_date: "2026"
+      url: https://openalex.org/W7214413283
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-128
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Harvesting the Volatility Risk Premium: A Learning-to-Rank Approach'
+      publisher_or_id: https://openalex.org/W7204229247
+      published_date: "2026"
+      url: https://doi.org/10.48550/arxiv.2608.24786
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-129
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: 'Portfolio Construction Under Behavioral Distortions and Narrow Framing: A Machine Learning Approach'
+      publisher_or_id: https://openalex.org/W7128422765
+      published_date: "2026"
+      url: https://doi.org/10.3390/math14040607
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-130
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: A Stock Price Prediction Approach Based on Time Series Decomposition and Multi-Scale CNN using OHLCT Images
+      publisher_or_id: https://openalex.org/W4404340194
+      published_date: "2024"
+      url: https://doi.org/10.48550/arxiv.2410.19291
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-131
+      provider: OpenAlex Peer-Reviewed Index (Tier 1)
+      tier: 1
+      title: Systematic review of reinforcement learning for automated equity portfolio management from single agent to multi agent systems
+      publisher_or_id: https://openalex.org/W7167833660
+      published_date: "2026"
+      url: https://doi.org/10.1007/s10791-026-10336-1
+      vector: P2-Q3/P2-Q5/P2-Q6
+      probe_sha256: fc5511ebe18df4f77b5af775607b83db8a398a531f35f902af09e50d63b324a6
+    - source_id: LIVE-SRC-132
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'Uninformative Feedback and Risk Taking: Evidence from Retail Forex Trading'
+      publisher_or_id: National Bureau of Economic Research
+      published_date: 2020-2026
+      url: https://doi.org/10.3386/w22146
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-133
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'Uninformative Feedback and Risk Taking: Evidence from Retail Forex Trading'
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.2540584
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-134
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: INCREASING FOREX TRADING PROFITABILITY WITH LSTM CANDLESTICK PATTERN RECOGNITION AND TICK VOLUME INDICATOR
+      publisher_or_id: Federal Research Center &quot;Computer Science and Control&quot; of the Russian Academy of Sciences
+      published_date: 2020-2026
+      url: https://doi.org/10.14357/19922264220304
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-135
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'The Future of Forex Trading: Algorithms, Artificial Intelligence, and Social Forex Trading'
+      publisher_or_id: Springer International Publishing
+      published_date: 2020-2026
+      url: https://doi.org/10.1007/978-3-319-92913-2_8
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-136
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Retail Trading and Momentum Profitability
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.3486843
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-137
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: How to Make Informed Decisions in Forex Trading?
+      publisher_or_id: OMICS Publishing Group
+      published_date: 2020-2026
+      url: https://doi.org/10.4172/2168-9458.1000e105
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: a7b90526291f17b5420329f106c063df0a37a907897e235f60d57d329e022231
+    - source_id: LIVE-SRC-138
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Risk averse fractional trading using the current drawdown
+      publisher_or_id: Infopro Digital Services Limited
+      published_date: 2020-2026
+      url: https://doi.org/10.21314/jor.2018.388
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-139
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Proof-of-Concept Risk Assessment of Trading Algorithm Performance with Quantum Amplitude Estimation, Focused on Maximum Drawdown
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.7635403
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-140
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Interest Rate Proprietary Trading Strategies
+      publisher_or_id: WORLD SCIENTIFIC
+      published_date: 2020-2026
+      url: https://doi.org/10.1142/9789812706652_0015
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-141
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Risk Metrics in Leverage Space and Drawdown
+      publisher_or_id: Wiley
+      published_date: 2020-2026
+      url: https://doi.org/10.1002/9781119198314.ch5
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-142
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Proprietary Trading and the Real Economy
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.2235694
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-143
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: '&lt;p&gt;Valuing Proprietary Trading Firm Evaluation Contracts: Closed Form, Cross-Firm Dispersion and the Source of the Margin&lt;/p&gt;'
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.7260819
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: fb10f9a88592b1a3d3170d4212a2478eb9a188d41fbf3849903795ccccb39f5d
+    - source_id: LIVE-SRC-144
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: A Study of Algorithmic Transparency, Regulatory Gaps, and Retail Investor Protection in Crypto and CFD Markets
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.6735439
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-145
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 4.2. Regulatory barriers in the retail business
+      publisher_or_id: Organisation for Economic Co-Operation and Development  (OECD)
+      published_date: 2020-2026
+      url: https://doi.org/10.1787/604355132064
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-146
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Should Retail Investors' Leverage Be Limited?
+      publisher_or_id: National Bureau of Economic Research
+      published_date: 2020-2026
+      url: https://doi.org/10.3386/w24176
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-147
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Should Retail Investors' Leverage Be Limited?
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.2150980
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-148
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'Exchanges are Using Federal Derivatives Law to Provide Gambling Products to Retail Traders: A Descriptive Account with Suggestions for Regulatory Intervention&amp;nbsp;'
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.5282276
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-149
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Retail Leverage, Margin-Financing Overheating, and Market Reversal Predictability
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.6729965
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 6e52dafe89439b2fc20c64f437e681d2755afbc5a6a7dd43a7ce8c515fb654e9
+    - source_id: LIVE-SRC-150
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'Broker Trading Volume and Analysts’ Earnings Forecasts: A Conflict of Interest?*'
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.3374932
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-151
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Selecting a FOREX Broker
+      publisher_or_id: Wiley
+      published_date: 2020-2026
+      url: https://doi.org/10.1002/9781119202950.ch7
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-152
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Choosing a Forex Broker
+      publisher_or_id: Wiley
+      published_date: 2020-2026
+      url: https://doi.org/10.1002/9781119204831.app6
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-153
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Continuous Time Decision-Making in a Partially Decentralized Multiple Dealership Forex Market, and the Equilibrium Exchange Rate
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.264588
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-154
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Network Analysis of Cross-Correlations on Forex Market during Crises. Globalisation on Forex Market
+      publisher_or_id: MDPI AG
+      published_date: 2020-2026
+      url: https://doi.org/10.3390/e23030352
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-155
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Opening an Account
+      publisher_or_id: Apress
+      published_date: 2020-2026
+      url: https://doi.org/10.1007/978-1-4302-4051-8_8
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: c49758c2b98b3656a9fbf334aaa59b10f72a96c5283886b99e8c1314e91e8891
+    - source_id: LIVE-SRC-156
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Determinants of the Spread in a Two-Tier Foreign Exchange Market
+      publisher_or_id: International Monetary Fund (IMF)
+      published_date: 2020-2026
+      url: https://doi.org/10.5089/9781451961348.001.a001
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-157
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: A Survey of Announcement Effects on Foreign Exchange Volatility and Jumps
+      publisher_or_id: Federal Reserve Bank of St. Louis
+      published_date: 2020-2026
+      url: https://doi.org/10.20955/r.93.361-385
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-158
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: 'Newsmetrics: Measurement of News Impact in the Foreign Exchange Market'
+      publisher_or_id: Routledge
+      published_date: 2020-2026
+      url: https://doi.org/10.4324/9781351152440-1
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-159
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Development Banking, Intermediation Spread, and the Foreign Exchange Constraint in Small Open Economies
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.7305554
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-160
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Development Banking, Intermediation Spread, and the Foreign Exchange Constraint in Small Open Economies
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.6966584
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-161
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: A Survey of Announcement Effects on Foreign Exchange Returns
+      publisher_or_id: Federal Reserve Bank of St. Louis
+      published_date: 2020-2026
+      url: https://doi.org/10.20955/r.92.417-64
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: d26a2cc1996127a8711a98cc26f226710d56e7b8075b26cd3225aa3dea3f3ace
+    - source_id: LIVE-SRC-162
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Adaptive Multi-Asset Trading Strategy Optimization via Genetic Algorithms with Walk-Forward Robustness Analysis
+      publisher_or_id: ADBA Information Technology and Publishing Limited Company
+      published_date: 2020-2026
+      url: https://doi.org/10.69882/adba.iteb.2026013
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-163
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Real-World Viability of Cointegration-Based Forex Pairs Trading Strategy with Walk-Forward Optimization
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.5068086
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-164
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: A Novel Approach to Trading Strategy Parameter Optimization, using Double Out-of-Sample Data and Walk-Forward Techniques
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.6217160
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-165
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Ensembled Lstm with Walk Forward Optimization in Algorithmic Trading
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.4516294
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-166
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Walk Forward Correlation A Diagnostic for Over-Fitting and Structural Edge in Trading Strategy Optimisation
+      publisher_or_id: Elsevier BV
+      published_date: 2020-2026
+      url: https://doi.org/10.2139/ssrn.6324079
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-167
+      provider: Crossref DOI Registry (Tier 1/2)
+      tier: 1
+      title: Walk‐Forward Analysis
+      publisher_or_id: Wiley
+      published_date: 2020-2026
+      url: https://doi.org/10.1002/9781119196969.ch11
+      vector: P2-Q2/P2-Q5/P3-Q10
+      probe_sha256: 90c03ad6b1bf2d60fc2ca407f5f2274391c904c484325d3c057720d65f7cf2b6
+    - source_id: LIVE-SRC-168
+      provider: arXiv Preprint Archive (Tier 1)
+      tier: 1
+      title: 'arXiv Quantitative Preprint Vector #1: all:foreign+exchange+retail+trading (Extracted 4 preprints)'
+      publisher_or_id: Cornell arXiv
+      published_date: 2024-2026
+      url: http://export.arxiv.org/api/query?search_query=all:foreign+exchange+retail+trading&max_results=4
+      vector: P2-Q5/BM-01/BM-02
+      probe_sha256: beebf9a6921072fa8c92aaac795adf1b6a9e1a04fb92aa4869aa83d23e1684c9
+    - source_id: LIVE-SRC-169
+      provider: arXiv Preprint Archive (Tier 1)
+      tier: 1
+      title: 'arXiv Quantitative Preprint Vector #2: all:drawdown+ruin+probability+trading (Extracted 4 preprints)'
+      publisher_or_id: Cornell arXiv
+      published_date: 2024-2026
+      url: http://export.arxiv.org/api/query?search_query=all:drawdown+ruin+probability+trading&max_results=4
+      vector: P2-Q5/BM-01/BM-02
+      probe_sha256: 2e74e980cf02aac5f944edb512d9ed6f755475498f0f96b7c773b9d1c558e3be
+    - source_id: LIVE-SRC-170
+      provider: arXiv Preprint Archive (Tier 1)
+      tier: 1
+      title: 'arXiv Quantitative Preprint Vector #3: all:backtest+overfitting+sharpe (Extracted 4 preprints)'
+      publisher_or_id: Cornell arXiv
+      published_date: 2024-2026
+      url: http://export.arxiv.org/api/query?search_query=all:backtest+overfitting+sharpe&max_results=4
+      vector: P2-Q5/BM-01/BM-02
+      probe_sha256: f5567db6e96dd8884694c37981a04da683bb6dc731ec869ada44e253cf4fbd72
+    - source_id: LIVE-SRC-171
+      provider: arXiv Preprint Archive (Tier 1)
+      tier: 1
+      title: 'arXiv Quantitative Preprint Vector #4: all:limit+order+book+slippage+execution (Extracted 4 preprints)'
+      publisher_or_id: Cornell arXiv
+      published_date: 2024-2026
+      url: http://export.arxiv.org/api/query?search_query=all:limit+order+book+slippage+execution&max_results=4
+      vector: P2-Q5/BM-01/BM-02
+      probe_sha256: acc4947733bd0e7de671d7da0a697c3cb1c548029f3fcc9eb5c114fa8c4831ac
+    - source_id: LIVE-SRC-172
+      provider: Internet Archive Wayback CDX (Tier 3)
+      tier: 3
+      title: 'Wayback CDX Historical Capture: ftmo.com'
+      publisher_or_id: ftmo.com
+      published_date: 2023-2026
+      url: https://web.archive.org/cdx/search/cdx?url=ftmo.com&output=json&limit=4
+      vector: P1-Q5/P2-Q9
+      probe_sha256: 595cb540f9187f8ecd3bb2a45f8533e95120161eaa600237c9e79dbcaf57d44a
+    - source_id: LIVE-SRC-173
+      provider: Internet Archive Wayback CDX (Tier 3)
+      tier: 3
+      title: 'Wayback CDX Historical Capture: cftc.gov/LearnAndProtect'
+      publisher_or_id: cftc.gov/LearnAndProtect
+      published_date: 2023-2026
+      url: https://web.archive.org/cdx/search/cdx?url=cftc.gov%2FLearnAndProtect&output=json&limit=4
+      vector: P1-Q5/P2-Q9
+      probe_sha256: 29f372eb4e5285e1f7b29ed9d0ac9fbec4ae81b8396e88fda1747c0da73bb7e3
+    - source_id: LIVE-SRC-174
+      provider: Internet Archive Wayback CDX (Tier 3)
+      tier: 3
+      title: 'Wayback CDX Historical Capture: forex.com'
+      publisher_or_id: forex.com
+      published_date: 2023-2026
+      url: https://web.archive.org/cdx/search/cdx?url=forex.com&output=json&limit=4
+      vector: P1-Q5/P2-Q9
+      probe_sha256: 8099e11f31aca48723111c0aa4d588b7b577bcfc642e388fbcce9acc0eb735cc
+    - source_id: LIVE-SRC-175
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: Prop trading firms – the alternative and the reality
+      publisher_or_id: HN-49485361
+      published_date: "2026-08-28T23:16:29Z"
+      url: https://forexmechanics.com/choosing-broker/prop-trading/
+      vector: RM-12/P3-Q3
+      probe_sha256: c018a21151353cd0ed1af4c632c146830b355662ec123667ba55b7a88035e9be
+    - source_id: LIVE-SRC-176
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'A-Book vs. B-Book: how retail forex brokers fill your orders'
+      publisher_or_id: HN-49441735
+      published_date: "2026-08-25T22:49:43Z"
+      url: https://forexmechanics.com/choosing-broker/execution-models/
+      vector: RM-12/P3-Q3
+      probe_sha256: 5e91a208c212a05c1b85efc4a2b7fcaa7b32d639d6e91cc8f7b2fbbe575c9edc
+    - source_id: LIVE-SRC-177
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'Show HN: A free social trading app to collaborate or copy trade'
+      publisher_or_id: HN-33031700
+      published_date: "2022-09-30T06:38:18Z"
+      url: https://thetradehub.net
+      vector: RM-12/P3-Q3
+      probe_sha256: 5e91a208c212a05c1b85efc4a2b7fcaa7b32d639d6e91cc8f7b2fbbe575c9edc
+    - source_id: LIVE-SRC-178
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'Show HN: We used mathematics to solve the forex data availability problem'
+      publisher_or_id: HN-45735164
+      published_date: "2025-10-28T16:40:41Z"
+      url: https://demo.queyn.com
+      vector: RM-12/P3-Q3
+      probe_sha256: 5e91a208c212a05c1b85efc4a2b7fcaa7b32d639d6e91cc8f7b2fbbe575c9edc
+    - source_id: LIVE-SRC-179
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: Backtesting a trading strategy in Python with yfinance
+      publisher_or_id: HN-49050067
+      published_date: "2026-07-25T18:09:42Z"
+      url: https://www.nwcast.com/article/guide-how-to-backtest-a-trading-strategy-in-python-20260706
+      vector: RM-12/P3-Q3
+      probe_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+    - source_id: LIVE-SRC-180
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: Backtesting a Trading Strategy in Python with Datalore and AI Assistant
+      publisher_or_id: HN-39951655
+      published_date: "2024-04-06T11:17:33Z"
+      url: https://blog.jetbrains.com/datalore/2024/04/05/backtesting-a-trading-strategy-in-python-with-datalore-and-ai-assistant/
+      vector: RM-12/P3-Q3
+      probe_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+    - source_id: LIVE-SRC-181
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'Show HN: Market Trade Simulator for AI Agent with No Strategy Restrictions'
+      publisher_or_id: HN-47275976
+      published_date: "2026-03-06T15:19:03Z"
+      url: https://github.com/nima555/hawk-bt
+      vector: RM-12/P3-Q3
+      probe_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+    - source_id: LIVE-SRC-182
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'Show HN: PyBroker – Algotrading in Python with Machine Learning'
+      publisher_or_id: HN-35084227
+      published_date: "2023-03-09T17:51:17Z"
+      url: https://github.com/edtechre/pybroker
+      vector: RM-12/P3-Q3
+      probe_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+    - source_id: LIVE-SRC-183
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: 'Show HN: QuantDinger–An open-source, local AI quantitative trading platform'
+      publisher_or_id: HN-46756710
+      published_date: "2026-01-25T18:32:04Z"
+      url: https://news.ycombinator.com/item?id=46756710
+      vector: RM-12/P3-Q3
+      probe_sha256: 2efa99bdfbaa54fa849ea79d90d1e73327217e795ba55163576b83dbb7c41b6d
+    - source_id: LIVE-SRC-184
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: Contribute to Firefox or learn Python and C?
+      publisher_or_id: HN-27228222
+      published_date: "2021-05-20T22:27:55Z"
+      url: https://news.ycombinator.com/item?id=27228222
+      vector: RM-12/P3-Q3
+      probe_sha256: 45fe066b1abafa73992c9037c889c0a4c5180d8d6bd7daefec32b47c8c1fdfc3
+    - source_id: LIVE-SRC-185
+      provider: Practitioner Technical Archive (Tier 4)
+      tier: 4
+      title: Does anyone regret going back for another degree in CS?
+      publisher_or_id: HN-26211356
+      published_date: "2021-02-21T06:35:30Z"
+      url: https://news.ycombinator.com/item?id=26211356
+      vector: RM-12/P3-Q3
+      probe_sha256: 45fe066b1abafa73992c9037c889c0a4c5180d8d6bd7daefec32b47c8c1fdfc3
+    - source_id: LIVE-SRC-186
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: "kernc/backtesting.py (9126 stars): \U0001F50E \U0001F4C8 \U0001F40D \U0001F4B0  Backtest trading strategies in Python."
+      publisher_or_id: kernc/backtesting.py
+      published_date: "2026"
+      url: https://github.com/kernc/backtesting.py
+      vector: P3-Q10/BM-06
+      probe_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+    - source_id: LIVE-SRC-187
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'kieran-mackle/AutoTrader (1277 stars): A Python-based development platform for automated trading systems - from backtesting to optimisation to livetrading.'
+      publisher_or_id: kieran-mackle/AutoTrader
+      published_date: "2026"
+      url: https://github.com/kieran-mackle/AutoTrader
+      vector: P3-Q10/BM-06
+      probe_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+    - source_id: LIVE-SRC-188
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'quantfreedom/QuantFreedom (71 stars): Professional Backtesting Engine for crypto, stocks and forex'
+      publisher_or_id: quantfreedom/QuantFreedom
+      published_date: "2026"
+      url: https://github.com/quantfreedom/QuantFreedom
+      vector: P3-Q10/BM-06
+      probe_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+    - source_id: LIVE-SRC-189
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'Lumiwealth/lumibot (2164 stars): Python trading framework with AI agents that actually place the trade. Backtest, paper and live trade on 12 brokers: stocks, options, futures, forex, crypto and prediction markets.'
+      publisher_or_id: Lumiwealth/lumibot
+      published_date: "2026"
+      url: https://github.com/Lumiwealth/lumibot
+      vector: P3-Q10/BM-06
+      probe_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+    - source_id: LIVE-SRC-190
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: "blankly-finance/blankly (2482 stars): \U0001F680 \U0001F4B8  Easily build, backtest and deploy your algo in just a few lines of code. Trade stocks, cryptos, and forex across exchanges w/ one package."
+      publisher_or_id: blankly-finance/blankly
+      published_date: "2026"
+      url: https://github.com/blankly-finance/blankly
+      vector: P3-Q10/BM-06
+      probe_sha256: 530c3fc724514908ecfd0a2bd1f783f8885feeede8a6a274530d965d15e6a5f2
+    - source_id: LIVE-SRC-191
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER (9 stars):  Real-time trading compliance engine — evaluates trades against prop-firm drawdown and risk limits before execution, with OCR signal extraction and Kelly Criterion position sizing.'
+      publisher_or_id: Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER
+      published_date: "2026"
+      url: https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER
+      vector: P3-Q10/BM-06
+      probe_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+    - source_id: LIVE-SRC-192
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'urshayan/KellyOne (2 stars): KellyOne — A Python Tkinter app that applies the Kelly Criterion to help traders and investors optimize position sizing and manage portfolio risk intelligently.'
+      publisher_or_id: urshayan/KellyOne
+      published_date: "2026"
+      url: https://github.com/urshayan/KellyOne
+      vector: P3-Q10/BM-06
+      probe_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+    - source_id: LIVE-SRC-193
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'lf4096/kellyfolio (2 stars): A self-hosted portfolio optimizer that turns your market views into concrete position sizes — for stocks and options, using the Kelly criterion.'
+      publisher_or_id: lf4096/kellyfolio
+      published_date: "2026"
+      url: https://github.com/lf4096/kellyfolio
+      vector: P3-Q10/BM-06
+      probe_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+    - source_id: LIVE-SRC-194
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'trojanhorse01/sports-arbitrage-screener (0 stars): Cross-market sports betting arbitrage screener with Kelly Criterion position sizing (Python, BeautifulSoup, Selenium)'
+      publisher_or_id: trojanhorse01/sports-arbitrage-screener
+      published_date: "2026"
+      url: https://github.com/trojanhorse01/sports-arbitrage-screener
+      vector: P3-Q10/BM-06
+      probe_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+    - source_id: LIVE-SRC-195
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'malikprerna/quant-trading-system-garch-cointegration-kelly (0 stars): A professional-grade quantitative trading system combining GARCH volatility forecasting, Cointegration pairs trading, and Kelly Criterion position sizing. Fetches real market data, generates trading signals, backtests strategies, and calculates optimal bet sizes. Built entirely in Python.'
+      publisher_or_id: malikprerna/quant-trading-system-garch-cointegration-kelly
+      published_date: "2026"
+      url: https://github.com/malikprerna/quant-trading-system-garch-cointegration-kelly
+      vector: P3-Q10/BM-06
+      probe_sha256: 7303136845f0baa76a9b597fd75e7701239d5d8bffcbd3d6ef9010f3ccd78b42
+    - source_id: LIVE-SRC-196
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'harveybc/heuristic-strategy (7 stars): Heuristic trading strategy lab: Backtrader backtesting, DEAP genetic optimization, walk-forward analysis and a reusable contract-typed trade-lifecycle policy'
+      publisher_or_id: harveybc/heuristic-strategy
+      published_date: "2026"
+      url: https://github.com/harveybc/heuristic-strategy
+      vector: P3-Q10/BM-06
+      probe_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+    - source_id: LIVE-SRC-197
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'zachisit/july-backtester (11 stars): Python backtesting engine for US equity strategies. Point-in-time survivorship-free universes, Monte Carlo (+ block-bootstrap) & Walk-Forward Analysis, advanced position sizing, data-quality validation, intraday, regime heatmaps, PDF tearsheets, and ML-ready trade export. Five data providers — free with Yahoo Finance, no API key required.'
+      publisher_or_id: zachisit/july-backtester
+      published_date: "2026"
+      url: https://github.com/zachisit/july-backtester
+      vector: P3-Q10/BM-06
+      probe_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+    - source_id: LIVE-SRC-198
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'oager/walkforward-engine (3 stars): Bot-agnostic walk-forward analysis engine with out-of-sample survival gating, Monte Carlo path risk, and selection-overfit backstops (PBO/CSCV, trial-deflated Sharpe)'
+      publisher_or_id: oager/walkforward-engine
+      published_date: "2026"
+      url: https://github.com/oager/walkforward-engine
+      vector: P3-Q10/BM-06
+      probe_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+    - source_id: LIVE-SRC-199
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'TjTheDj2011/backtest-lab (3 stars): Multi-asset portfolio backtesting engine for Python. Weights-based strategies, walk-forward analysis, and comprehensive metrics.'
+      publisher_or_id: TjTheDj2011/backtest-lab
+      published_date: "2026"
+      url: https://github.com/TjTheDj2011/backtest-lab
+      vector: P3-Q10/BM-06
+      probe_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+    - source_id: LIVE-SRC-200
+      provider: GitHub Open-Source Benchmark (Tier 3)
+      tier: 3
+      title: 'alejandropalo/walk-forward-toolkit (0 stars): Out-of-sample validation for trading strategies. Walk-forward analysis, parameter stability, cost sensitivity.'
+      publisher_or_id: alejandropalo/walk-forward-toolkit
+      published_date: "2026"
+      url: https://github.com/alejandropalo/walk-forward-toolkit
+      vector: P3-Q10/BM-06
+      probe_sha256: 64e5fbe367c32b1684d89ddeb30eb3cc5b783018b10879dd4b6c4c379ad290fe
+    - source_id: LIVE-SRC-201
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: U.S. CFTC (RFED & Enforcement Dockets)'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=U.S.+CFTC+%28RFED+%26+Enforcement+Dockets%29&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+    - source_id: LIVE-SRC-202
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: SEC / FINRA'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=SEC+%2F+FINRA&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+    - source_id: LIVE-SRC-203
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: BIS Triennial Central Bank Survey'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=BIS+Triennial+Central+Bank+Survey&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+    - source_id: LIVE-SRC-204
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: ESMA & UK FCA Mandatory CFD/FX Disclosures'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=ESMA+%26+UK+FCA+Mandatory+CFD%2FFX+Disclosures&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+    - source_id: LIVE-SRC-205
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: U.S. BLS OEWS'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=U.S.+BLS+OEWS&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe
+    - source_id: LIVE-SRC-206
+      provider: DuckDuckGo Entity Graph (Tier 3)
+      tier: 3
+      title: 'Entity & Actor Graph Node: Federal Reserve SHED'
+      publisher_or_id: DuckDuckGo Instant Answer API
+      published_date: "2026"
+      url: https://api.duckduckgo.com/?q=Federal+Reserve+SHED&format=json
+      vector: RM-02
+      probe_sha256: 475bca74ddf7ad5c440ae1ba42a6e3983d3f4474aa37d301c7cccd0bd9b09dfe

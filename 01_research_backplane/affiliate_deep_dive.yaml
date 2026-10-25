@@ -1,0 +1,157 @@
+topic_slug: forex-prop-firms
+authority: "ADR 0050 §11 + Owner Directive (Extensive 3-Layer Affiliate Mechanism & Own-Profit Monetization Audit)"
+
+# ==============================================================================
+# LAYER 1A: PREDATORY & EXTRACTION AFFILIATE MECHANISMS EXPOSED (P2-Q2, Ch 4 E2, Ch 5)
+# ==============================================================================
+extraction_mechanisms_exposed:
+  - mechanism_id: "AFF-MECH-01"
+    name: "First-Order & Reset CPA Challenge Loop"
+    linked_register_ids: ["AFF-01", "AFF-02"]
+    commission_rate: "20% to 25% of initial checkout ($81-$135 on a $540 100k challenge) + 10%-15% on reload/reset codes"
+    cookie_and_attribution: "60-to-90-day last-touch cookie + hardcoded influencer vanity coupon code (e.g., CONVICTION20)"
+    payout_trigger_and_clawback: "Instant commission credit upon card settlement; zero clawback when the referred customer breaches Phase 1/2 drawdown."
+    structural_conflict: >
+      Because 93.4% of evaluation buyers fail [F-007] and the median buyer purchases 4.2 challenges [F-001], an affiliate
+      with 88,000 followers nets $54,000 in risk-free CPA commissions while netting $0 from actual trading [K-001..K-003].
+    book_integration: "Chapter 4 Case File #01 (Mold E2 Marcus Conviction™) & Chapter 5 Picks-and-Shovels Ledger"
+
+  - mechanism_id: "AFF-MECH-02"
+    name: "Offshore Introducing Broker (IB) Lot-Volume & B-Book Loss Rebate"
+    linked_register_ids: ["AFF-02"]
+    commission_rate: "$6 to $15 per round-turn standard lot traded OR 30%-50% net revenue share on client B-book losses"
+    cookie_and_attribution: "Permanent account-level IB tag bound at KYC registration"
+    payout_trigger_and_clawback: "Credited daily/weekly per lot closed; higher leverage (500:1) directly multiplies IB rebates before account exhaustion."
+    structural_conflict: >
+      Signal room leaders incentivize over-leveraged high-frequency Gold (XAU/USD) scalping (15-30 trades/week) because every
+      lot generates an IB rebate even as spread drag destroys the follower's equity.
+    book_integration: "Chapter 3 Section 2 (The B-Book Arcade) & Chapter 5"
+
+  - mechanism_id: "AFF-MECH-03"
+    name: "Recurring SaaS, Indicator & Low-Latency VPS Stack Kickbacks"
+    linked_register_ids: ["AFF-03"]
+    commission_rate: "$30 flat CPA on charting upgrades + 20%-40% recurring monthly rev-share on $68/mo indicators & $45/mo VPS"
+    cookie_and_attribution: "30-day referral link embedded in 'Mandatory Setup Checklist' PDF"
+    payout_trigger_and_clawback: "Paid monthly for the life of the user's subscription, starting on Day 1 before the user places a single trade."
+    structural_conflict: >
+      Creates Mold H5 (The Tool Tax): beginners are told they cannot trade without a $172/mo software stack, generating
+      risk-free recurring SaaS commissions for the educator regardless of trading failure.
+    book_integration: "Chapter 2 Parts List Payoff, Chapter 4 Case File #03 (Mold H5 Devon Precision)"
+
+  - mechanism_id: "AFF-MECH-04"
+    name: "Automated 'Prop-Pass EA Bot' & License Split Funnel"
+    linked_register_ids: ["AFF-04"]
+    commission_rate: "50% gross revenue share on $499-$997 unlicensed MetaTrader EA bot scripts"
+    cookie_and_attribution: "Telegram DM checkout link / Stripe payment link"
+    payout_trigger_and_clawback: " strictly non-refundable digital download ('all sales final upon license key issuance')."
+    structural_conflict: >
+      Hundreds of buyers run the identical EA script on the same prop firm server, triggering automated termination for
+      'prohibited shared EA signature / IP clustering' [K-008] while the bot seller keeps 100% of the $499-$997 fee.
+    book_integration: "Chapter 4 Case File #03 (Mold H5) & Chapter 8 Do-Not #4"
+
+  - mechanism_id: "AFF-MECH-05"
+    name: "Tiered Curriculum & VIP Discord Signal Escalator"
+    linked_register_ids: ["AFF-05"]
+    commission_rate: "80%-90% net creator keep via Whop/Skool ($297 entry -> $997 academy -> $149/mo VIP signals)"
+    cookie_and_attribution: "Owned email/Discord funnel with automated failure-diagnosis upsell triggers"
+    payout_trigger_and_clawback: "Recurring monthly billing; cancellation hidden behind multi-step support tickets."
+    structural_conflict: >
+      Every time a student breaches a challenge, the curriculum diagnoses the loss as 'missing Phase 2 institutional order-flow
+      context,' selling the next rung of the ladder ($4,110 median spend in Mold H4 [K-004..K-006]).
+    book_integration: "Chapter 4 Case File #02 (Mold H4 Elena Diligence) & Chapter 8 Watch-Fors"
+
+# ==============================================================================
+# LAYER 1B: PARALLEL PICKS-AND-SHOVELS AUDIT (P3-Q14 — Track Record, Honesty, Ethics)
+# ==============================================================================
+picks_and_shovels_audit:
+  - vendor_class: "Charting & Historical Replay Platforms (e.g., TradingView Basic/Free vs Paid Add-Ons)"
+    track_record: "Established 10+ year B2B/retail charting utility; legitimate financial technology infrastructure."
+    honesty_rating: "PASS (Base Platform) / FAIL (Third-Party '92% Win-Rate SMC' Indicator Vendors)"
+    ethics_rating: "PASS on Free/Basic Web Tier; caution on annual auto-renewal upsells."
+    practitioner_verdict: "Use the $0 Free Web Tier for historical walk-forward testing; never pay $68/mo for third-party neon indicators."
+  - vendor_class: "Open-Source & Institutional Quant Sandboxes (e.g., Python Pandas / QuantConnect / Backtesting.py)"
+    track_record: "Industry-standard quantitative research tools used by actual institutional desks and BI analysts."
+    honesty_rating: "PASS (Zero 'get-rich-quick' claims; transparent documentation)"
+    ethics_rating: "PASS (Open-source MIT/Apache licenses or transparent compute tiers)"
+    practitioner_verdict: "Cleared for Chapter 7 Pivot #1/#2 and Companion Pamphlet P1/P4 integration."
+  - vendor_class: "Prop Challenge Aggregators, Signal Rooms & EA Bot Vendors"
+    track_record: "High regulatory mortality (CFTC enforcement, MetaQuotes license revocations, rapid rebranding)."
+    honesty_rating: "FAIL (Survivorship-biased payouts; concealed 93.4% failure rate and 98.4% B-book execution)"
+    ethics_rating: "FAIL (Retroactive consistency rules, 120-day chargeback stalling)"
+    practitioner_verdict: "BARRED from Chapter 7/Pamphlet recommendations; exposed in Chapters 3, 4, 5, and 8."
+
+# ==============================================================================
+# LAYER 1C: Y-IT OWN-PROFIT ETHICAL AFFILIATE & AD MONETIZATION INVENTORY
+# (Cleared for Ch 7, Back-Matter QR, Stage 08 Email/Ad Funnels, & Stage 09 Podcap)
+# ==============================================================================
+ethical_monetization_inventory_for_yit_profit:
+  ftc_and_canon_compliance_rule: >
+    Per ADR 0050 §8 & §11, no raw tracking URL is ever printed in book prose. Print/digital editions use clean
+    Y-IT shortlinks/QR slugs (y-it.co/r/fx-...) that route through our controlled redirect server, and the
+    'Results Typical' back-matter page explicitly discloses any affiliate commission in plain English.
+
+  partner_candidates:
+    - partner_id: "YIT-AFF-01"
+      category: "Skill-Pivot Certification (Feeds Ch 7 Pivot #1: SQL & Python Financial BI Analyst — $44.50/hr)"
+      partner_programs: "DataCamp / Coursera Plus / Maven Analytics Financial Data Track"
+      commission_structure: "$45 - $85 CPA per annual enrollment OR 25%-35% revenue share"
+      cookie_window_days: 30
+      estimated_epc: "$3.80 - $6.20"
+      placement_slots:
+        - "Ch 7 Pivot #1 Starter Sheet (Pamphlet P7)"
+        - "Stage 08 Email #3 ('The 4 Career Pivots That Beat the Casino')"
+        - "Stage 06 Back-Matter QR Hub (y-it.co/r/fx-sql-pivot)"
+      ethical_clearance: "CLEARED — Costs <= $320 total Stake, directly builds a portable $44.50/hr BLS-verified skill [F-016]."
+
+    - partner_id: "YIT-AFF-02"
+      category: "Quantitative Backtesting & Algorithmic Contract Literacy (Feeds Ch 7 Pivot #2 — $55.00/hr)"
+      partner_programs: "QuantConnect Institutional Research Tier / Python Quant Modeling Bootcamps"
+      commission_structure: "20% - 30% recurring partner credit / $50 qualified referral bounty"
+      cookie_window_days: 45
+      estimated_epc: "$2.90 - $4.50"
+      placement_slots:
+        - "Pamphlet Module P1 & P3 (The 100-Trade Walk-Forward Paper Protocol)"
+        - "Stage 08 Landing Page Post-Opt-In Resource Vault"
+      ethical_clearance: "CLEARED — Teaches actual out-of-sample code verification and freelance quantitative development [F-017]."
+
+    - partner_id: "YIT-AFF-03"
+      category: "Regulated Fiduciary & Advisory Exam Prep (Feeds Ch 7 Pivot #3: Series 65 Paraplanner — $38.90/hr)"
+      partner_programs: "Kaplan Financial / Achievable Series 65 & SIE Exam Prep"
+      commission_structure: "$35 - $75 CPA per exam-prep package ($150-$250 retail cost)"
+      cookie_window_days: 30
+      estimated_epc: "$3.10 - $5.00"
+      placement_slots:
+        - "Ch 7 Pivot #3 Starter Sheet (Pamphlet P7)"
+        - "Stage 08 Email #3 Career Transition Matrix"
+      ethical_clearance: "CLEARED — Low Stake ($185 exam + prep), regulated fiduciary career path with 68% 12-mo placement [F-017]."
+
+    - partner_id: "YIT-AFF-04"
+      category: "Subscription Cancellation & Virtual Card Firewalls (Feeds Ch 8 X1: Stop the Bleeding)"
+      partner_programs: "Privacy.com Virtual Merchant-Locked Cards / RocketMoney Subscription Auditor"
+      commission_structure: "$15 - $40 CPA per activated free/paid account"
+      cookie_window_days: 30
+      estimated_epc: "$2.40 - $4.10"
+      placement_slots:
+        - "Pamphlet Module P6 (The Exit & Subscription Cancellation Kit)"
+        - "Stage 08 Email #2 ('How to Stop the $412 Tool Tax in 10 Minutes')"
+      ethical_clearance: "CLEARED — Directly prevents recurring unauthorized reset/indicator billing [F-019]."
+
+    - partner_id: "YIT-AFF-05"
+      category: "Boring Benchmark: Regulated SIPC/FDIC Treasury & Index Platforms (Feeds Ch 7/8 Boring Benchmark)"
+      partner_programs: "Fidelity / Vanguard / Interactive Brokers (Regulated Cash & T-Bill Accounts — Zero Prop Challenges)"
+      commission_structure: "$50 - $100 Funded Account CPA (where partner program applies; otherwise zero-commission editorial link)"
+      cookie_window_days: 30
+      estimated_epc: "$4.00 - $7.50"
+      placement_slots:
+        - "Pamphlet Module P4-B (Trade vs. Index/Treasury Historical Simulator)"
+      ethical_clearance: "CLEARED — Regulated SIPC-protected accounts only; stated as historical benchmark fact, never personal financial advice."
+
+    - partner_id: "YIT-AFF-06"
+      category: "Tax-Loss Reconciliation & Trader Accounting Software (Feeds Ch 8 X3: Settle)"
+      partner_programs: "TradeLog / TurboTax Premier / CPA Freelance Expense Trackers"
+      commission_structure: "15% - 25% seasonal CPA ($20-$55 per filing)"
+      cookie_window_days: 45
+      estimated_epc: "$2.20 - $3.90"
+      placement_slots:
+        - "Pamphlet Module P6 (Exit Kit Tax & Expense Documentation Checklist)"
+      ethical_clearance: "CLEARED — Helps exiting participants properly document sunk evaluation/software expenses with a qualified tax professional."

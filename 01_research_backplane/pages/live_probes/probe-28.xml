@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/WJSTcx6luFijZpCLnx10S98xgqM</id>
+  <title>arXiv Query: search_query=all:backtest OR all:overfitting OR all:sharpe&amp;id_list=&amp;start=0&amp;max_results=4</title>
+  <updated>2026-10-25T01:40:54Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:backtest+OR+(all:overfitting+OR+all:sharpe)&amp;start=0&amp;max_results=4&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>4</opensearch:itemsPerPage>
+  <opensearch:totalResults>50826</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/1509.08248v1</id>
+    <title>Correctness of Backtest Engines</title>
+    <updated>2015-09-28T09:30:12Z</updated>
+    <link href="https://arxiv.org/abs/1509.08248v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1509.08248v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In recent years several trading platforms appeared which provide a backtest engine to calculate historic performance of self designed trading strategies on underlying candle data. The construction of a correct working backtest engine is, however, a subtle task as shown by Maier-Paape and Platen (cf. arXiv:1412.5558 [q-fin.TR]). Several platforms are struggling on the correctness.
+  In this work, we discuss the problem how the correctness of backtest engines can be verified. We provide models for candles and for intra-period prices which will be applied to conduct a proof of correctness for a given backtest engine if the here provided tests on specific model candles are successful. Furthermore, we hint to algorithmic considerations in order to allow for a fast implementation of these tests necessary for the proof of correctness.</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.CP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-09-28T09:30:12Z</published>
+    <arxiv:comment>15 pages, 6 figures; Keywords: backtest evaluation, historical simulation, trading system, candle chart, imperfect data, price model, correctness test, backtest correctness</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <author>
+      <name>Robert Löw</name>
+    </author>
+    <author>
+      <name>Stanislaus Maier-Paape</name>
+    </author>
+    <author>
+      <name>Andreas Platen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1412.5558v1</id>
+    <title>Backtest of Trading Systems on Candle Charts</title>
+    <updated>2014-12-17T20:07:35Z</updated>
+    <link href="https://arxiv.org/abs/1412.5558v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1412.5558v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we try to design the necessary calculation needed for backtesting trading systems when only candle chart data are available. We lay particular emphasis on situations which are not or not uniquely decidable and give possible strategies to handle such situations.</summary>
+    <category term="q-fin.TR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-fin.CP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-12-17T20:07:35Z</published>
+    <arxiv:comment>12 pages, 19 figures; Keywords: backtest evaluation, historical simulation, trading system, candle chart, imperfect data</arxiv:comment>
+    <arxiv:primary_category term="q-fin.TR"/>
+    <arxiv:journal_ref>IFTA Journal, pp. 10-17, 2016</arxiv:journal_ref>
+    <author>
+      <name>Stanislaus Maier-Paape</name>
+    </author>
+    <author>
+      <name>Andreas Platen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.09219v1</id>
+    <title>AlgoXpert Alpha Research Framework. A Rigorous IS WFA OOS Protocol for Mitigating Overfitting in Quantitative Strategies</title>
+    <updated>2026-03-10T05:40:23Z</updated>
+    <link href="https://arxiv.org/abs/2603.09219v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.09219v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transitioning a strategy from backtest to live trading is a common failure point for quantitative systems due to parameter overfitting, selection bias, and sensitivity to regime changes. This paper presents the AlgoXpert Alpha Research Framework, a standardized protocol that evaluates strategies across three stages: In Sample (IS), which focuses on stable parameter regions instead of single optima; Walk Forward Analysis (WFA) using rolling windows and purge gaps to reduce information leakage, supported by majority pass and catastrophic veto rules; and Out of Sample (OOS) testing under strict parameter lock with no further tuning.
+  The framework applies a defense in depth structure that includes structural safeguards such as cliff veto, execution controls such as spread and leverage guards, and equity protection mechanisms such as circuit breakers and a kill switch. A case study on USDJPY M5 intraday data demonstrates how to detect overfitting through performance decay and drawdown behavior across chronological stages. A post validation comparison of four alpha variants (v1 to v4) shows rank reversal when the objective changes from maximizing Sharpe to minimizing maximum drawdown, highlighting the trade off between risk adjusted performance and tail risk control.</summary>
+    <category term="q-fin.PM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-10T05:40:23Z</published>
+    <arxiv:comment>Alpha Research Framework; Walk-Forward Analysis; Purged Validation; Pa rameter Stability; Backtest Overfitting; Selection Bias; Execution-Aware Backtesting; Stress Testing; Kill Switch; Out-of-Sample Verification. 19 Pages, 2 figures</arxiv:comment>
+    <arxiv:primary_category term="q-fin.PM"/>
+    <author>
+      <name>The Anh Pham</name>
+    </author>
+    <author>
+      <name>Bao Chan Nguyen</name>
+    </author>
+    <author>
+      <name>Nguyet Nguyen Thi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.05559v6</id>
+    <title>Deep Reinforcement Learning for Cryptocurrency Trading: Practical Approach to Address Backtest Overfitting</title>
+    <updated>2023-01-31T14:54:22Z</updated>
+    <link href="https://arxiv.org/abs/2209.05559v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.05559v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Designing profitable and reliable trading strategies is challenging in the highly volatile cryptocurrency market. Existing works applied deep reinforcement learning methods and optimistically reported increased profits in backtesting, which may suffer from the false positive issue due to overfitting. In this paper, we propose a practical approach to address backtest overfitting for cryptocurrency trading using deep reinforcement learning. First, we formulate the detection of backtest overfitting as a hypothesis test. Then, we train the DRL agents, estimate the probability of overfitting, and reject the overfitted agents, increasing the chance of good trading performance. Finally, on 10 cryptocurrencies over a testing period from 05/01/2022 to 06/27/2022 (during which the crypto market crashed two times), we show that the less overfitted deep reinforcement learning agents have a higher return than that of more overfitted agents, an equal weight strategy, and the S&amp;P DBM Index (market benchmark), offering confidence in possible deployment to a real market.</summary>
+    <category term="q-fin.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-12T19:18:48Z</published>
+    <arxiv:primary_category term="q-fin.ST"/>
+    <author>
+      <name>Berend Jelmer Dirk Gort</name>
+    </author>
+    <author>
+      <name>Xiao-Yang Liu</name>
+    </author>
+    <author>
+      <name>Xinghang Sun</name>
+    </author>
+    <author>
+      <name>Jiechao Gao</name>
+    </author>
+    <author>
+      <name>Shuaiyu Chen</name>
+    </author>
+    <author>
+      <name>Christina Dan Wang</name>
+    </author>
+    <arxiv:doi>10.48550/arXiv.2209.05559</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.48550/arXiv.2209.05559" title="doi"/>
+  </entry>
+</feed>

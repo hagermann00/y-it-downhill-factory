@@ -1,0 +1,83 @@
+topic_slug: forex-prop-firms
+topic_label: Forex Prop Firms
+family_code: F4
+family_name: Trading & Investing
+archetype_code: 'ARCH-1: SPECULATION_BBOOK'
+velocity_tier: classic
+unit_economic_kill_eq: Asymmetric Drawdown Barrier (5% daily vs 8-10% target) + Spread/Slippage Drag + 98.4% B-Book Counterparty Routing -> 91-98% Attrition & Reset-Fee Harvesting
+primary_authorities:
+    - U.S. CFTC (RFED & Enforcement Dockets)
+    - SEC / FINRA
+    - BIS Triennial Central Bank Survey
+    - ESMA & UK FCA Mandatory CFD/FX Disclosures
+    - U.S. BLS OEWS
+    - Federal Reserve SHED
+federal_register_terms:
+    - retail foreign exchange
+    - commodity futures trading commission forex
+    - deceptive earnings claims business opportunity
+    - leveraged retail derivatives
+    - proprietary trading risk controls
+    - consumer financial protection foreign exchange
+direct_tier1_urls:
+    - label: BIS Triennial Central Bank Survey of FX & OTC Derivatives ($7.5T/day)
+      url: https://www.bis.org/statistics/rpfx22_fx.htm
+      publisher: Bank for International Settlements (BIS)
+      vector: P2-Q1/P2-Q6
+    - label: Federal Reserve Report on the Economic Well-Being of U.S. Households (SHED)
+      url: https://www.federalreserve.gov/publications/report-economic-well-being-us-households.htm
+      publisher: Board of Governors of the Federal Reserve System
+      vector: P2-Q12/P3-Q13
+    - label: SEC Investor.gov High-Yield & Forex Trading Risk Bulletin
+      url: https://www.investor.gov/introduction-investing/investing-basics/glossary/foreign-currency-trading-forex
+      publisher: U.S. Securities and Exchange Commission (SEC)
+      vector: P2-Q5/P3-Q15
+openalex_queries:
+    - retail foreign exchange trading profitability
+    - day trading individual investor performance transaction costs
+    - contract for difference retail investor losses leverage
+    - foreign exchange market microstructure retail order flow
+    - overconfidence retail currency traders gambler ruin
+    - algorithmic trading backtest overfitting walk forward
+    - business intelligence data analyst wage return career
+    - financial influencer affiliate marketing disclosure consumer
+    - household emergency savings liquid financial buffer survey
+    - kelly criterion drawdown stopping time position sizing
+crossref_queries:
+    - retail forex trading profitability spread
+    - proprietary trading drawdown evaluation risk
+    - retail CFD leverage regulatory intervention
+    - forex broker conflict of interest market making
+    - foreign exchange news announcement spread slippage
+    - walk forward optimization trading strategy robustness
+arxiv_queries:
+    - all:foreign+exchange+retail+trading
+    - all:drawdown+ruin+probability+trading
+    - all:backtest+overfitting+sharpe
+    - all:limit+order+book+slippage+execution
+wayback_targets:
+    - ftmo.com
+    - cftc.gov/LearnAndProtect
+    - forex.com
+practitioner_hn_queries:
+    - prop trading firm forex
+    - retail forex broker
+    - python backtesting trading strategy
+    - SQL python data analyst transition
+open_source_tool_queries:
+    - forex backtesting python
+    - kelly criterion position sizing python
+    - walk forward analysis trading python
+likely_dominant_molds:
+    - E2
+    - H4
+    - H5
+    - C1
+    - C3
+family_honest_test_module: F4 Paper First, Position Limits & The Index Baseline
+family_exit_module: Close Leveraged Positions, Cancel Chart/Signal/VPS Subscriptions, Audit 120-Day Chargeback Window
+affiliate_ecosystem_focus:
+    - Prop Challenge CPA Referral Codes (20-25%)
+    - Offshore Broker IB Lot Rebates ($6-$15/lot)
+    - TradingView/Indicator Recurring SaaS Kickbacks
+    - 'Ethical Pivot: SQL/Python Financial BI & QuantConnect'

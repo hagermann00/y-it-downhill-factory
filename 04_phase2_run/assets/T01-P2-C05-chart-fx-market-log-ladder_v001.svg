@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320">
+  <rect x="2" y="2" width="556" height="316" rx="8" fill="#FFFFFF" stroke="#1E293B" stroke-width="2"/>
+  <rect x="2" y="2" width="556" height="58" rx="8" fill="#0F172A"/>
+  <text x="18" y="24" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="700" fill="#38BDF8">CHART EXHIBIT // LOG LADDER</text>
+  <text x="18" y="45" font-family="'Big Shoulders Display', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF">Who Actually Trades the $7.5 Trillion-a-Day FX Market?</text>
+  <rect x="372" y="14" width="172" height="34" rx="5" fill="#1E40AF"/>
+  <text x="458" y="35" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">93% INSTITUTIONAL</text>
+  
+    <text x="18" y="100" font-family="'Work Sans', sans-serif" font-size="11.5" font-weight="600" fill="#1E293B">Tier-1 Banks &amp; Institutional Dealers</text>
+    <rect x="195" y="86" width="250" height="20" rx="3" fill="#1E40AF"/>
+    <text x="453" y="100" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700" fill="#0F172A">$6.97T/day (93.0%)</text>
+    <text x="18" y="134" font-family="'Work Sans', sans-serif" font-size="11.5" font-weight="600" fill="#1E293B">Central Banks &amp; Hedge Funds</text>
+    <rect x="195" y="120" width="18" height="20" rx="3" fill="#1E40AF"/>
+    <text x="221" y="134" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700" fill="#0F172A">$525B/day (7.0%)</text>
+    <text x="18" y="168" font-family="'Work Sans', sans-serif" font-size="11.5" font-weight="600" fill="#1E293B">All Retail Spot FX Worldwide</text>
+    <rect x="195" y="154" width="8" height="20" rx="3" fill="#1E40AF"/>
+    <text x="211" y="168" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700" fill="#0F172A">&lt;2.8% Retail Slice</text>
+    <text x="18" y="202" font-family="'Work Sans', sans-serif" font-size="11.5" font-weight="600" fill="#1E293B">Prop Challenge Starters Net-Profitable</text>
+    <rect x="195" y="188" width="8" height="20" rx="3" fill="#1E40AF"/>
+    <text x="211" y="202" font-family="'IBM Plex Mono', monospace" font-size="11" font-weight="700" fill="#0F172A">2.4% of Prop Starters</text>
+  <line x1="16" y1="286" x2="544" y2="286" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="18" y="304" font-family="'IBM Plex Mono', monospace" font-size="9.5" fill="#475569">Source: BIS Triennial Central Bank Survey [F-006]</text>
+</svg>

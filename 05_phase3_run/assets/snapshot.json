@@ -1,0 +1,137 @@
+{
+  "topic_slug": "forex-prop-firms",
+  "generated_at": "2026-10-24T09:15:00Z",
+  "total_assets": 6,
+  "assets": [
+    {
+      "asset_id": "T01-P3-C07-chart-pivot-payoff-comparison_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 7,
+      "slot": "chart",
+      "slug": "pivot-payoff-comparison",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.svg",
+      "prompt_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.prompt.md",
+      "meta_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.json",
+      "sha256": "2ec81bc9694c8b9f43900916c388152440ad6b106c7cd0acbe5edd8968a9228b",
+      "prompt_sha256": "aff46c0acceeddeaceb680cabb22f9d06550ade89b2bdbb8441ade164f0d95cd",
+      "chart_type": "range strip",
+      "cited_rows": [
+        "F-003",
+        "F-013",
+        "F-015",
+        "F-016",
+        "F-017"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+      "asset_id": "T01-P3-C07-comic-papercraft-diorama-strip_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 7,
+      "slot": "comic",
+      "slug": "papercraft-diorama-strip",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.svg",
+      "prompt_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.prompt.md",
+      "meta_path": "T01-P3-C07-comic-papercraft-diorama-strip_v001.json",
+      "sha256": "3d873983412666b564d100a6e780c5417f7a3089d9f84a0e32664cb98b4a6b40",
+      "prompt_sha256": "dba70c06be9ace8e710ce08ea6665980dc6675764719e7b270862747163441c8",
+      "cited_rows": [
+        "F-016",
+        "F-017"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+      "asset_id": "T01-P3-C07-posibot-keep-the-day-job_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 7,
+      "slot": "posibot",
+      "slug": "keep-the-day-job",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C07-posibot-keep-the-day-job_v001.svg",
+      "prompt_path": "T01-P3-C07-posibot-keep-the-day-job_v001.prompt.md",
+      "meta_path": "T01-P3-C07-posibot-keep-the-day-job_v001.json",
+      "sha256": "467111ad5b4536e9a4699942111bd2cce6e9f7cd0ced2769fd7834343f2f5890",
+      "prompt_sha256": "84763b33f42df5c660001bfa1d68b0bdc8efff767029a8456572c04ca762fd5e",
+      "delivery_method": "flip chart",
+      "cited_rows": [
+        "F-016"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+      "asset_id": "T01-P3-C08-diagram-research-machine-left_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 8,
+      "slot": "diagram",
+      "slug": "research-machine-left",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C08-diagram-research-machine-left_v001.svg",
+      "prompt_path": "T01-P3-C08-diagram-research-machine-left_v001.prompt.md",
+      "meta_path": "T01-P3-C08-diagram-research-machine-left_v001.json",
+      "sha256": "c8fa51c8d343ab17dc6ea3652d9374b3fac13a934e0c4899e014c577bece74e8",
+      "prompt_sha256": "a90f7e08df4c287e2531105aba821725a355883fa488135f7f13d41a7111aee4",
+      "cited_rows": [
+        "F-001",
+        "F-006",
+        "F-013",
+        "F-014"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+      "asset_id": "T01-P3-C08-diagram-research-machine-right_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 8,
+      "slot": "diagram",
+      "slug": "research-machine-right",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C08-diagram-research-machine-right_v001.svg",
+      "prompt_path": "T01-P3-C08-diagram-research-machine-right_v001.prompt.md",
+      "meta_path": "T01-P3-C08-diagram-research-machine-right_v001.json",
+      "sha256": "3c8801d6df59d324f5bb9266d369cd8d3cc5d1c7ea78faf183b243a3bd44307a",
+      "prompt_sha256": "c0b936af0e6cd90517769b42bf6624053dcb0c2682f4b5dced73e349776b2157",
+      "cited_rows": [
+        "F-001",
+        "F-003",
+        "F-007",
+        "F-008",
+        "F-009"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    },
+    {
+      "asset_id": "T01-P3-C08-posibot-ninety-day-paper-test_v001",
+      "topic": 1,
+      "phase": 3,
+      "chapter": 8,
+      "slot": "posibot",
+      "slug": "ninety-day-paper-test",
+      "version": 1,
+      "extension": "svg",
+      "relative_path": "T01-P3-C08-posibot-ninety-day-paper-test_v001.svg",
+      "prompt_path": "T01-P3-C08-posibot-ninety-day-paper-test_v001.prompt.md",
+      "meta_path": "T01-P3-C08-posibot-ninety-day-paper-test_v001.json",
+      "sha256": "ca471935c4cf610d395eb5cf1bd71fbb6dfc09eb2b59b0df4ee35267f793854a",
+      "prompt_sha256": "94fea1ce930c32f041a0fb4bc719894ce96b7f76e00c0179faf0a29447a6af7c",
+      "delivery_method": "picket sign",
+      "cited_rows": [
+        "F-023",
+        "F-026"
+      ],
+      "created_at": "2026-10-24T09:15:00Z"
+    }
+  ]
+}

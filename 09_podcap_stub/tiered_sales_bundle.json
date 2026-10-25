@@ -1,0 +1,41 @@
+{
+  "adr_reference": "ADR 0038 — Podcap Audio-First Product Format \u0026 Tiered Sales Bundle",
+  "tiers": [
+    {
+      "deliverables": [
+        "08_marketing_and_freebie/freebie/ch1_ch2_free_giveaway.pdf"
+      ],
+      "name": "The Sucker's Roadmap Freebie Pack (Chapters 1 \u0026 2 + 3-Min Audio Teaser)",
+      "price_usd": 0,
+      "tier_id": "TIER-0-FREEBIE"
+    },
+    {
+      "deliverables": [
+        "07_assembly_kdp/build/book_complete_kdp.pdf"
+      ],
+      "name": "Y-IT Core 64-Page Forensic Book (Digital PDF / KDP 6x9 Paperback)",
+      "price_ebook": 9.99,
+      "price_print": 14.99,
+      "tier_id": "TIER-1-CORE-BOOK"
+    },
+    {
+      "deliverables": [
+        "06_covers_and_matter/pamphlet/companion_pamphlet.pdf"
+      ],
+      "name": "Y-IT Standalone Companion Pocket Pamphlet (90-Day Ledger \u0026 Chargeback Guide)",
+      "price_usd": 1.99,
+      "tier_id": "TIER-2-COMPANION-PAMPHLET"
+    },
+    {
+      "deliverables": [
+        "07_assembly_kdp/build/book_complete_kdp.pdf",
+        "06_covers_and_matter/pamphlet/companion_pamphlet.pdf",
+        "09_podcap_stub/podcap_25min_script.md"
+      ],
+      "name": "Complete 64-Page Book + 25-Min Dual-Persona Podcap + Companion Pamphlet",
+      "price_usd": 19.99,
+      "tier_id": "TIER-3-FULL-AUTOPSY-PODCAP-BUNDLE"
+    }
+  ],
+  "topic_slug": "forex-prop-firms"
+}

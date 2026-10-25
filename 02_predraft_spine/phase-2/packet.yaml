@@ -1,0 +1,58 @@
+topic_slug: forex-prop-firms
+phase: 2
+spine_version: outline.v1@282d710
+packet_version: 1
+dials:
+    ch3.charts:
+        - waterfall
+        - split bar
+        - hourly meter
+        - gap bar
+    ch4.cases: 5
+    ch5.charts:
+        - log ladder
+        - funnel
+        - unit grid
+    ch6.verdict: Probably won't work
+    last_posibot_meth: receipt tape
+cited_rows:
+    - C-001
+    - C-002
+    - C-003
+    - C-009
+    - C-010
+    - F-001
+    - F-002
+    - F-003
+    - F-004
+    - F-005
+    - F-006
+    - F-007
+    - F-008
+    - F-009
+    - F-010
+    - F-011
+    - F-012
+    - F-013
+    - F-014
+    - K-001
+    - K-002
+    - K-003
+    - K-004
+    - K-005
+    - K-006
+    - K-007
+    - K-008
+    - K-009
+    - K-010
+    - K-011
+    - K-012
+    - K-013
+    - K-014
+    - K-015
+ch4_molds:
+    - E2
+    - H4
+    - H5
+    - C1
+    - C3

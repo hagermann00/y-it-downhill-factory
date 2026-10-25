@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="600" height="900">
+  <defs>
+    <pattern id="grid1" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#93C5FD" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="600" height="900" fill="#1E3A8A"/>
+  <rect x="0" y="0" width="600" height="900" fill="url(#grid1)"/>
+  <rect x="28" y="28" width="544" height="844" rx="8" fill="none" stroke="#F8FAFC" stroke-width="3"/>
+
+  <!-- Top Series Tagline Banner -->
+  <rect x="48" y="48" width="504" height="54" rx="4" fill="#0F172A"/>
+  <text x="300" y="81" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="700" fill="#F8FAFC">Why It Probably Won&apos;t WORK — Yeah… about that.</text>
+
+  <!-- Blueprint Callout Label -->
+  <text x="56" y="138" font-family="'IBM Plex Mono', monospace" font-size="12" font-weight="700" fill="#FDE047">[COVER CONCEPT 01 // BLUEPRINT SPEC]</text>
+
+  <!-- Main Title Block -->
+  <rect x="48" y="154" width="504" height="170" rx="6" fill="#FFFFFF" stroke="#0F172A" stroke-width="4"/>
+  <text x="300" y="218" text-anchor="middle" font-family="'Big Shoulders Display', 'Impact', sans-serif" font-size="30" font-weight="900" fill="#0F172A">why your FOREX PROP CHALLENGE probably will Fail</text>
+  <rect x="76" y="246" width="448" height="52" rx="4" fill="#DC2626"/>
+  <text x="300" y="278" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="700" fill="#FFFFFF">EVEN IF YOUR AI CHAT BOT LIKES YOUR CHANCES!</text>
+
+  <!-- Center Illustration Frame with PosiBot -->
+  <rect x="68" y="352" width="464" height="340" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="3"/>
+  <!-- Candlestick cliff drop -->
+  <polyline points="96,420 160,395 220,430 280,385 330,580 410,635 495,655" fill="none" stroke="#EF4444" stroke-width="6"/>
+  <!-- PosiBot in Center -->
+  <g transform="translate(215, 445)">
+    <rect x="25" y="10" width="110" height="84" rx="12" fill="#C8A27A" stroke="#785A3C" stroke-width="3"/>
+    <rect x="37" y="22" width="86" height="60" rx="8" fill="#0F172A"/>
+    <circle cx="62" cy="45" r="7" fill="#00F0FF"/>
+    <circle cx="98" cy="45" r="7" fill="#00F0FF"/>
+    <path d="M 56 64 Q 80 80 104 64" fill="none" stroke="#00F0FF" stroke-width="4.5" stroke-linecap="round"/>
+    <rect x="5" y="102" width="150" height="56" rx="6" fill="#FEF08A" stroke="#0F172A" stroke-width="3"/>
+    <text x="80" y="136" text-anchor="middle" font-family="'Big Shoulders Display', sans-serif" font-size="22" font-weight="900" fill="#0F172A">90% PROFIT SPLIT!*</text>
+  </g>
+  <text x="300" y="672" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11.5" fill="#94A3B8">*97.6% of starters net-unprofitable at Month 12 [F-008]</text>
+
+  <!-- Bottom Hook Banner (from ME ODDEN CAR TOON_files) -->
+  <rect x="48" y="724" width="504" height="118" rx="6" fill="#FEF08A" stroke="#0F172A" stroke-width="3.5"/>
+  <text x="300" y="764" text-anchor="middle" font-family="'Work Sans', sans-serif" font-size="16" font-weight="800" fill="#0F172A">We reveal the secret method in the first 2 chapters... First 2 chapters free!</text>
+  <text x="300" y="796" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="700" fill="#B91C1C">AUDITED VERDICT: 0 OF 4 GATES PASSED · $1,840 MEDIAN STAKE</text>
+  <text x="300" y="824" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#1E293B">Y-IT IMPRINT · ITISWHATITIS.BIZ</text>
+</svg>

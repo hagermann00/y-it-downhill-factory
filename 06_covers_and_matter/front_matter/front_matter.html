@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Front Matter (Pages 1-6)</title>
+<style>
+  @page {
+    size: 6.125in 9.25in;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 6.125in;
+    background: #FFFFFF;
+    font-family: 'Segoe UI', 'Work Sans', -apple-system, sans-serif;
+    color: #0F172A;
+    font-size: 9.5pt;
+    line-height: 1.42;
+  }
+  /* Full-bleed page canvas (6.125in x 9.25in).
+     Safe body text margins are enforced by padding (0.52in top/bottom, 0.62in gutter, 0.54in outer). */
+  .kdp-page {
+    width: 6.125in;
+    height: 9.25in;
+    padding: 0.50in 0.54in 0.48in 0.62in;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .kdp-page.verso-page {
+    padding: 0.50in 0.62in 0.48in 0.54in;
+  }
+  .kdp-page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Full-Bleed Phase Theme Palettes & Edge Bleed Bars */
+  .theme-front {
+    background: radial-gradient(circle at 50% 18%, #FFFFFF 0%, #F5F2EB 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0F172A;
+    border-bottom: 0.10in solid #0F172A;
+  }
+  .theme-phase1 {
+    background: linear-gradient(180deg, #FFFDF7 0%, #FEFCE8 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #0D9488;
+    border-right: 0.08in solid #F59E0B;
+  }
+  .theme-flatpack {
+    background: linear-gradient(180deg, #F4F7FB 0%, #E0F2FE 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #2563EB;
+    border-left: 0.08in solid #1D4ED8;
+  }
+  .theme-phase2 {
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #DC2626;
+  }
+  .theme-amber-ch4 {
+    background: linear-gradient(180deg, #EFE5CE 0%, #E6D5B8 100%);
+    color: #1C1917;
+    border-top: 0.16in solid #78350F;
+    border-bottom: 0.10in solid #78350F;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 9.0pt;
+  }
+  .theme-phase3 {
+    background: linear-gradient(180deg, #F7FAF7 0%, #ECFDF5 100%);
+    color: #0F172A;
+    border-top: 0.14in solid #15803D;
+  }
+  .theme-back {
+    background: #F8FAFC;
+    color: #0F172A;
+    border-top: 0.12in solid #334155;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #CBD5E1;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-header {
+    border-bottom: 2px solid #78350F;
+    color: #78350F;
+  }
+  .page-content {
+    flex: 1;
+    overflow: visible;
+  }
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #CBD5E1;
+    padding-top: 5px;
+    margin-top: 6px;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 7.4pt;
+    color: #475569;
+  }
+  .theme-amber-ch4 .page-footer {
+    border-top: 1.5px solid #78350F;
+    color: #78350F;
+  }
+
+  /* Regular body text strictly respects the inner measure */
+  h1 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 20.5pt;
+    line-height: 1.06;
+    margin: 0 0 7px 0;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-family: 'Impact', 'Big Shoulders Display', 'Arial Black', sans-serif;
+    font-size: 13pt;
+    line-height: 1.14;
+    margin: 7px 0 4px 0;
+    color: #0F172A;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 10pt;
+    font-weight: 800;
+    margin: 5px 0 3px 0;
+    color: #1E293B;
+  }
+  p {
+    margin: 0 0 6px 0;
+    text-align: justify;
+  }
+  .phase-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.6pt;
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #0F172A;
+    margin-bottom: 5px;
+  }
+
+  /* TASTEFUL MARGIN-CROSSING INTERSTITIALS, IMAGES, POSIBOT & VERDICT BANDS:
+     These elements step 0.22in to 0.54in outside the body text column into the outer margin
+     or full-bleed edge while keeping their internal text safely padded. */
+  .callout-guru {
+    background: #FEF3C7;
+    border: 2px solid #D97706;
+    border-left: 8px solid #D97706;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(217, 119, 6, 0.22);
+  }
+  .callout-rc {
+    background: #FEE2E2;
+    border: 2px solid #DC2626;
+    border-left: 8px solid #991B1B;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 8px -0.22in;
+    font-size: 8.9pt;
+    box-shadow: 3px 4px 0px rgba(153, 27, 27, 0.20);
+  }
+  .callout-pivot {
+    background: #DCFCE7;
+    border: 2px solid #16A34A;
+    border-left: 8px solid #15803D;
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin: 7px -0.22in;
+    font-size: 8.8pt;
+    box-shadow: 3px 4px 0px rgba(21, 128, 61, 0.20);
+  }
+  /* Verdict band bleeds all the way across the outer trim edge */
+  .verdict-band {
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 9px 0.54in 9px 0.62in;
+    margin: 9px -0.54in 0 -0.62in;
+    font-family: 'Consolas', 'IBM Plex Mono', monospace;
+    font-size: 8.3pt;
+    border-top: 3px solid #F59E0B;
+    border-bottom: 3px solid #F59E0B;
+  }
+  .missing-step-box {
+    border: 3px dashed #DC2626;
+    background: #FEF2F2;
+    padding: 12px 16px;
+    margin: 10px -0.24in;
+    text-align: center;
+    box-shadow: 4px 4px 0px rgba(220, 38, 38, 0.18);
+  }
+  .dossier-box {
+    border: 2px solid #78350F;
+    background: #F5EBD6;
+    padding: 8px 13px;
+    margin: 6px -0.18in;
+    box-shadow: 3px 3px 0px rgba(120, 53, 15, 0.18);
+  }
+  .stamp-badge {
+    display: inline-block;
+    border: 2px solid #991B1B;
+    color: #991B1B;
+    padding: 1px 7px;
+    font-family: 'Consolas', monospace;
+    font-weight: 900;
+    font-size: 8pt;
+    text-transform: uppercase;
+    transform: rotate(-1.2deg);
+  }
+  table.yit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6px 0;
+    font-size: 8.1pt;
+  }
+  table.yit-table th {
+    background: #0F172A;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 4px 6px;
+    font-family: 'Consolas', monospace;
+    font-size: 7.7pt;
+  }
+  table.yit-table td {
+    border: 1px solid #CBD5E1;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+  .theme-amber-ch4 table.yit-table th {
+    background: #78350F;
+  }
+  .theme-amber-ch4 table.yit-table td {
+    border: 1px solid #A16207;
+  }
+  /* Images and PosiBot cards step tastefully across the margin line (-0.26in) */
+  .asset-frame {
+    width: calc(100% + 0.52in);
+    margin: 7px -0.26in;
+    text-align: center;
+  }
+  .asset-frame img {
+    width: 100%;
+    max-height: 2.38in;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1.5px solid #94A3B8;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 0px rgba(15, 23, 42, 0.16);
+  }
+  .gate-strip {
+    font-family: 'Consolas', monospace;
+    font-size: 7.9pt;
+    font-weight: 700;
+    background: #0F172A;
+    color: #F8FAFC;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin: 5px -0.16in;
+    border-left: 5px solid #22C55E;
+  }
+  .strike {
+    text-decoration: line-through;
+    color: #94A3B8;
+  }
+</style>
+</head>
+<body>
+<section class="kdp-page theme-front recto-page" data-page="1">
+  <div class="page-header">
+    <span>Y-IT SERIES · HALF-TITLE</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div style="margin-top: 1.5in; text-align: center;">
+  <div class="phase-badge">Y-IT FORENSIC FIELD GUIDE SERIES · ISSUE #01</div>
+  <h1 style="font-size: 28pt; line-height: 1.25; margin-top: 18px;">
+    Why It <span class="strike">Could.</span> <span class="strike">Would.</span> <span class="strike">Has.</span> <span class="strike">Might.</span><br>
+    <span style="color: #DC2626; font-size: 32pt;">Probably Won't.</span><br>
+    <span style="font-size: 36pt; letter-spacing: 2px;">WORK</span>
+  </h1>
+  <p style="text-align: center; font-size: 16pt; font-style: italic; font-weight: 700; color: #475569; margin-top: 14px;">
+    Yeah… about that.
+  </p>
+  <hr style="width: 50%; margin: 28px auto; border: 1px solid #CBD5E1;">
+  <p style="text-align: center; font-family: 'Consolas', monospace; font-size: 9pt; color: #334155;">
+    VOLUME 01: FOREX TRADING &amp; PROP FIRMS<br>
+    Audited CFTC, BIS, ESMA/FCA &amp; BLS Edition
+  </p>
+</div>
+  </div>
+  <div class="page-footer">
+    <span>IIWII IMPRINT // SERIES TAGLINE LOCK</span>
+    <span>PAGE 01 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-front verso-page" data-page="2">
+  <div class="page-header">
+    <span>FRONTISPIECE · BLUEPRINT ARCHITECTURE</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h3>FRONTISPIECE EXHIBIT: THE ANATOMY OF A MODERN HUSTLE PITCH</h3>
+<p>Before you wire <code>$497</code> to an offshore evaluation portal, study the two visual engines that power the retail prop-trading boom: the high-gloss lifestyle promise and the burning galleon underneath.</p>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/_canon/assets/covers_blueprint/blueprint_cover_populated_ref.jpg" alt="Blueprint Cover Reference" style="max-height: 2.95in;"></div>
+<div class="asset-frame"><img src="file:///D:/y-it-downhill-factory/_canon/assets/covers_blueprint/sinking_ship_posibot_cover_v1.jpg" alt="Sinking Ship PosiBot Reference" style="max-height: 2.75in;"></div>
+
+  </div>
+  <div class="page-footer">
+    <span>CANONICAL COVER PLATE · ME ODDEN CAR TOON ARCHIVE</span>
+    <span>PAGE 02 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-front recto-page" data-page="3">
+  <div class="page-header">
+    <span>TITLE PAGE · TOPIC 01</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div style="margin-top: 0.6in; text-align: center; border: 4px solid #0F172A; padding: 24px 18px; margin-left: -0.18in; margin-right: -0.18in; background: #FFFFFF; box-shadow: 5px 6px 0px #0F172A;">
+  <div class="phase-badge" style="background:#DC2626;">AUDITED VERDICT: PROBABLY WON'T WORK (2.4% ODDS)</div>
+  <h1 style="font-size: 24pt; margin-top: 14px; color: #0F172A;">
+    WHY YOUR FOREX PROP CHALLENGE PROBABLY WILL FAIL
+  </h1>
+  <div style="background: #FEF08A; border: 2px solid #0F172A; padding: 6px; margin: 12px -10px; font-family: 'Consolas', monospace; font-weight: 900; font-size: 10.2pt;">
+    EVEN IF YOUR AI CHAT BOT LIKES YOUR CHANCES!
+  </div>
+  <p style="text-align: center; font-size: 10.8pt; font-weight: 700; color: #334155; margin: 14px 0;">
+    Funded Trader Evaluations, 100x Leverage, Dubai Balcony Laptops, and the $310 Million B-Book Reset Machine
+  </p>
+  <hr style="border: 1px dashed #94A3B8; margin: 18px 0;">
+  <p style="text-align: center; font-family: 'Consolas', monospace; font-size: 8.8pt; color: #1E293B;">
+    <strong>We reveal the secret method in the first 2 chapters...</strong><br>
+    (And why Step 7 was mysteriously left out of your starter box.)
+  </p>
+  <p style="text-align: center; font-family: 'Consolas', monospace; font-size: 8.5pt; margin-top: 24px; color: #64748B;">
+    BY THE IIWII / Y-IT FORENSIC DESK · OCTOBER 2026
+  </p>
+</div>
+  </div>
+  <div class="page-footer">
+    <span>ITISWHATITIS.BIZ // Y-IT PRESS</span>
+    <span>PAGE 03 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-front verso-page" data-page="4">
+  <div class="page-header">
+    <span>COPYRIGHT & COLOPHON</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>COPYRIGHT, EDITION &amp; EVIDENTIARY NOTICE</h2>
+<p><strong>Copyright © 2026 It Is What It Is (IIWII) / Y-IT Imprint.</strong> All rights reserved.</p>
+<p><strong>No Personal Financial, Legal, or Tax Advice:</strong> This publication presents audited regulatory statistics, industry cohort medians, and statutory citations for educational and satirical analysis only. It never gives personal financial, investment, legal, or tax advice (<code>outline-spine.v1.yaml §6</code>). Where a regulatory or tax rule applies (such as Visa/Mastercard 120-day dispute windows or IRC Sections 988 and 1256), the rule is stated plainly alongside the professional credential to consult (CPA, Enrolled Agent, or issuing bank dispute department).</p>
+<div class="callout-rc">
+  <strong>THE Y-IT EVIDENTIARY STANDARD:</strong><br>
+  • <strong>Phase 1 (Chapters 1–2):</strong> Quotes the industry pitch in its own words and numbers (<code>Claim Rows C-001..C-014</code>). Zero audited failure statistics appear in Phase 1.<br>
+  • <strong>Phase 2 (Chapters 3–6):</strong> Tests every claim against government and cohort data (<code>Fact Rows F-001..F-014</code>) and 15 documented practitioner cases grouped into 5 composite molds (<code>Case Rows K-001..K-015</code>).<br>
+  • <strong>Phase 3 (Chapters 7–8):</strong> Scores concrete career and freelance pivots against the exact same 4-Metric Gate (<code>Fact Rows F-015..F-027</code>).
+</div>
+<p style="font-family: 'Consolas', monospace; font-size: 8pt; color: #475569; margin-top: 12px;">
+  Print Specification: Amazon KDP Paperback · Trim 6.00" × 9.00" · Full Bleed 6.125" × 9.25" · 64 Pages · Spine Width 0.144" (No Spine Text Permitted Under 80 Pages).
+</p>
+  </div>
+  <div class="page-footer">
+    <span>KDP 6.00x9.00 TRIM · 64 PAGES · NO SPINE TEXT (<80P RULE)</span>
+    <span>PAGE 04 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-front recto-page" data-page="5">
+  <div class="page-header">
+    <span>DEDICATION & HOW THIS BOOK WORKS</span>
+    <span>[RECTO · ODD]</span>
+  </div>
+  <div class="page-content">
+    
+<div class="callout-guru" style="background:#FFFFFF; border-color:#0F172A; border-left-width:8px;">
+  <p style="font-size: 10.6pt; font-style: italic; font-weight: 700; margin:0; text-align:left;">
+    "For everyone who ever calculated 1% daily compounding on a cocktail napkin at 1:30 AM, priced out a matte-black Porsche configurator by 1:45 AM, and got stopped out on GBP/JPY by 2:10 AM."
+  </p>
+</div>
+<h2>HOW TO READ THIS THREE-PHASE FIELD GUIDE</h2>
+<p>Most books about side hustles make one of two fatal errors: either they are written by an affiliate marketer trying to sell you a <code>$997</code> course, or they are written by a scolding newspaper columnist who thinks anyone who wants to escape a cubicle is an idiot. We don't do either.</p>
+<table class="yit-table">
+  <tr><th>Phase</th><th>Chapters</th><th>Voice &amp; Evidence Rule</th></tr>
+  <tr><td><strong>Phase 1: Vibrant Hope</strong></td><td>Ch 1 – Ch 2<br>(pp. 07–18)</td><td><strong>Deadpan Corporate Sincerity.</strong> We pitch you the dream at full strength using the gurus' own words (<code>C-001..C-014</code>). Zero cynicism, zero failure stats.</td></tr>
+  <tr><td><strong>Phase 2: Demolition</strong></td><td>Ch 3 – Ch 6<br>(pp. 19–44)</td><td><strong>Sardonic Authority &amp; Coroner's Autopsy.</strong> We turn the lights on, open the CFTC B-book filings, and run 5 composite case files on aged amber paper.</td></tr>
+  <tr><td><strong>Phase 3: Solidarity</strong></td><td>Ch 7 – Ch 8<br>(pp. 45–56)</td><td><strong>Constructive Solidarity &amp; Quiet Reckoning.</strong> Four <code>$38.90–$55.00/hr</code> pivots that pass all 4 gates—plus a roll-cage manual for the stubborn fool who stays.</td></tr>
+</table>
+  </div>
+  <div class="page-footer">
+    <span>RESPECT THE PHASING · THREE ACTS, THREE RULES</span>
+    <span>PAGE 05 OF 64</span>
+  </div>
+</section>
+<section class="kdp-page theme-front verso-page" data-page="6">
+  <div class="page-header">
+    <span>TABLE OF CONTENTS · 64-PAGE SYNCHRONIZED FOLIO</span>
+    <span>[VERSO · EVEN]</span>
+  </div>
+  <div class="page-content">
+    
+<h2>SYNCHRONIZED TABLE OF CONTENTS</h2>
+<table class="yit-table">
+  <tr><th>Section / Chapter</th><th>Format &amp; Core Content</th><th>Recto Page</th></tr>
+  <tr><td><strong>Front Matter</strong></td><td>Series Tagline, Frontispiece, Title, Evidentiary Standard &amp; TOC</td><td><strong>p. 01</strong></td></tr>
+  <tr><td><strong>PHASE 1 · VIBRANT HOPE</strong></td><td><strong>Ch 1: The Promise</strong> (Glossy Magazine-Ad Collage)</td><td><strong>p. 07</strong></td></tr>
+  <tr><td><strong>Chapter 2</strong></td><td><strong>The Sucker's Roadmap</strong> (Flat-Pack Manual · Missing Step 7)</td><td><strong>p. 13</strong></td></tr>
+  <tr><td><strong>PHASE 2 · DEMOLITION</strong></td><td><strong>Ch 3: The Money Pit</strong> ($1,840 Stake, 98.4% B-Book, $6.40/hr Payoff)</td><td><strong>p. 19</strong></td></tr>
+  <tr><td><strong>Chapter 4 (Amber Insert)</strong></td><td><strong>Tales from the Trenches</strong> (5 Composite Case Files · Zero Jokes)</td><td><strong>p. 25</strong></td></tr>
+  <tr><td><strong>Chapter 5</strong></td><td><strong>Exit Liquidity</strong> ($7.5T BIS Ladder, 6.6% Pass, 2.4% Odds)</td><td><strong>p. 37</strong></td></tr>
+  <tr><td><strong>Chapter 6</strong></td><td><strong>The Verdict</strong> (The 4-Metric Gate Scorecard: 0 of 4 Passed)</td><td><strong>p. 41</strong></td></tr>
+  <tr><td><strong>PHASE 3 · SOLIDARITY</strong></td><td><strong>Ch 7: The Pivot</strong> (4 Gate-Passed Roles, 3D Papercraft Comic)</td><td><strong>p. 45</strong></td></tr>
+  <tr><td><strong>Chapter 8</strong></td><td><strong>For the Stubborn Fool Who Must</strong> (90-Day Test, 120-Day Chargeback)</td><td><strong>p. 51</strong></td></tr>
+  <tr><td><strong>BACK MATTER</strong></td><td><strong>Appendix A:</strong> Audited Sources &amp; Tiers (<code>C-001..K-015</code>)</td><td><strong>p. 57</strong></td></tr>
+  <tr><td><strong>Appendix B &amp; Disclosures</strong></td><td>20-Term Unvarnished Glossary, <em>Results Typical</em>, IIWII Colophon &amp; Index</td><td><strong>p. 59</strong></td></tr>
+</table>
+  </div>
+  <div class="page-footer">
+    <span>ALL CHAPTERS OPEN ON RECTO (ODD) PAGES</span>
+    <span>PAGE 06 OF 64</span>
+  </div>
+</section>
+</body>
+</html>

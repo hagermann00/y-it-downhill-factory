@@ -1,0 +1,24 @@
+{
+  "asset_id": "T01-P3-C07-chart-pivot-payoff-comparison_v001",
+  "topic": 1,
+  "phase": 3,
+  "chapter": 7,
+  "slot": "chart",
+  "slug": "pivot-payoff-comparison",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.svg",
+  "prompt_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.prompt.md",
+  "meta_path": "T01-P3-C07-chart-pivot-payoff-comparison_v001.json",
+  "sha256": "2ec81bc9694c8b9f43900916c388152440ad6b106c7cd0acbe5edd8968a9228b",
+  "prompt_sha256": "aff46c0acceeddeaceb680cabb22f9d06550ade89b2bdbb8441ade164f0d95cd",
+  "chart_type": "range strip",
+  "cited_rows": [
+    "F-003",
+    "F-013",
+    "F-015",
+    "F-016",
+    "F-017"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

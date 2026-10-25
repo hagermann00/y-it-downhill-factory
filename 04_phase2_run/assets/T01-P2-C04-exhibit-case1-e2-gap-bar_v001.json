@@ -1,0 +1,22 @@
+{
+  "asset_id": "T01-P2-C04-exhibit-case1-e2-gap-bar_v001",
+  "topic": 1,
+  "phase": 2,
+  "chapter": 4,
+  "slot": "exhibit",
+  "slug": "case1-e2-gap-bar",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P2-C04-exhibit-case1-e2-gap-bar_v001.svg",
+  "prompt_path": "T01-P2-C04-exhibit-case1-e2-gap-bar_v001.prompt.md",
+  "meta_path": "T01-P2-C04-exhibit-case1-e2-gap-bar_v001.json",
+  "sha256": "ec67f950ff58945136f1d13cb8c08a5b68e780537103f51950091e53e6dfd29e",
+  "prompt_sha256": "a172c48cf46191759fddd3366cb2bb8e8cfd479e693450253e5094501eb99e7d",
+  "chart_type": "gap bar",
+  "cited_rows": [
+    "K-001",
+    "K-002",
+    "K-003"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

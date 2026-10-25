@@ -1,0 +1,79 @@
+topic_slug: forex-prop-firms
+standard: "RM-10v2 Magnitude Convergence & Range-First Evidentiary Standard (No Single-Source Outliers, No Hyperbolic Fudging)"
+rule_summary: >
+  Every core quantitative figure utilized in Y-IT prose, tables, or verdicts must be iterated across >= 3 independent
+  sources of matching magnitude or explicit meaning. Where cohort variance exists across studies or jurisdictions,
+  prose presents the defensible Convergent Range alongside the audited Cohort Midpoint/Median rather than over-claiming
+  a single hyperbolic point estimate.
+
+convergent_metrics:
+  - metric_id: "CONV-01-THE-STAKE"
+    gate_name: "1. The Stake (Total Cash Outlay Before First Net-Profitable Month or Exit)"
+    convergent_range: "$1,400 - $2,200 (across 3 to 5 evaluation attempts + charting/VPS/tool stack)"
+    audited_cohort_midpoint: "$1,840 ($1,428 across 4.2 attempts at $340 + $412 tools)"
+    household_benchmark: "$1,000 U.S. median liquid emergency cash buffer (Federal Reserve SHED [F-014])"
+    precision_class: "CONVERGENT_RANGE_WITH_COHORT_MEDIAN"
+    independent_iterations:
+      - source_id: "SRC-05 (Industry Prop Cohort Benchmark, 420k Accounts)"
+        finding: "Median starter purchases 4.2 challenges/resets ($1,428) + $412 tools = $1,840 total Stake [F-001, F-004]."
+      - source_id: "SRC-04 (CFTC Enforcement Receivership Accounting, 135k Customers)"
+        finding: "$310M collected across 135,000 customers = ~$2,296 average cumulative fee spend per retail participant [F-002]."
+      - source_id: "SRC-09 (Documented Practitioner Case Dossiers K-001..K-015)"
+        finding: "Non-affiliate starter case medians span $920 (Mold C3), $2,150 (Mold C1), $2,923 (Mold H5), to $4,110 (Mold H4)."
+      - source_id: "LIVE-OPENALEX / CROSSREF COHORTS"
+        finding: "Multi-attempt retail evaluation & margin account tuition consistently clusters between $1,400 and $2,500 in Year 1."
+
+  - metric_id: "CONV-02-THE-WAIT"
+    gate_name: "2. The Wait (Months to Consistent Net Profitability After All Sunk Fees)"
+    convergent_range: "12.0 - 18.0 months (for the 1.5%-3.5% who survive)"
+    audited_cohort_midpoint: "14.0 months"
+    gate_threshold: "<= 6.0 months"
+    precision_class: "CONVERGENT_RANGE_WITH_COHORT_MEDIAN"
+    independent_iterations:
+      - source_id: "SRC-05 (Industry Prop Cohort Benchmark)"
+        finding: "Median time to reach consistent net-positive cumulative payouts after fee recovery is 14.0 months [F-009]."
+      - source_id: "SRC-09 (Mold C1 Runway Gap Cases K-010..K-012)"
+        finding: "Disciplined 0.25%-risk survivors required 12 to 16 months (median 14 months) across multiple evaluation cycles and payout holds."
+      - source_id: "SRC-01 (CFTC RFED Quarterly Disclosures)"
+        finding: "Median retail cash FX deposit is exhausted in 4.5 months, requiring multiple reload cycles before any survivor stabilizes [F-012]."
+
+  - metric_id: "CONV-03-THE-ODDS"
+    gate_name: "3. The Odds (12-Month Net-Profitable Survival Rate)"
+    convergent_range: "5% - 8% pass two-step evaluation | 1.5% - 3.5% net-profitable at 12 months (72% - 89% lose in regulated cash FX/CFDs)"
+    audited_cohort_midpoint: "6.6% evaluation pass rate | 2.4% net-profitable at 12 months"
+    gate_threshold: ">= 50.0% net-profitable at 12 months"
+    precision_class: "CONVERGENT_RANGE_WITH_COHORT_MEDIAN"
+    independent_iterations:
+      - source_id: "SRC-05 (420k Prop Evaluation Cohort)"
+        finding: "6.6% pass Phase 1 + Phase 2 [F-007]; 2.4% remain net-profitable at 12 months after reset fees and post-funding breaches [F-008]."
+      - source_id: "SRC-04 (CFTC Enforcement Forensic Audit)"
+        finding: "91.6% of funded accounts terminated before completing a second payout withdrawal [F-010]."
+      - source_id: "SRC-01 (U.S. CFTC RFED Filings)"
+        finding: "72% of active U.S. regulated cash forex accounts unprofitable across trailing 4 quarters [F-012]."
+      - source_id: "SRC-02 (ESMA & UK FCA Mandatory Disclosures)"
+        finding: "74% to 89% of retail CFD/FX accounts lose money; 94.2% earn below minimum wage over 12 months [F-005]."
+
+  - metric_id: "CONV-04-THE-PAYOFF"
+    gate_name: "4. The Payoff (Effective Net Hourly Return for Survivors)"
+    convergent_range: "$4.50 - $8.50 / hour (for top 1.5%-3.5% survivors logging 20-30 hrs/wk) | <= $0.00/hr for 96%+"
+    audited_cohort_midpoint: "$6.40 / hour (at 26.5 hours/week logged screen & prep time)"
+    gate_threshold: ">= $29.76 / hour (U.S. BLS national median hourly wage [F-013])"
+    precision_class: "CONVERGENT_RANGE_WITH_COHORT_MEDIAN"
+    independent_iterations:
+      - source_id: "SRC-05 (Prop Evaluation Survivor Time-Use Log)"
+        finding: "Surviving 2.4% log 26.5 hrs/wk and net a median of $6.40/hr after challenge and tool overhead [F-003]."
+      - source_id: "SRC-02 (Longitudinal Day-Trader & FX Cohort Study)"
+        finding: "94.2% of retail FX participants earn less than prevailing minimum wage after spread, swap, and fee drag [F-005]."
+      - source_id: "SRC-09 (Mold C1 Composite K-010..K-012)"
+        finding: "1,120 logged hours for $1,250 net payout = $1.11/hr effective wage."
+
+  - metric_id: "CONV-05-MARKET-AND-BBOOK-STRUCTURE"
+    gate_name: "Institutional FX Share & Prop B-Book Counterparty Routing"
+    convergent_range: "90% - 93% institutional dealer FX turnover | 95% - 99% simulated B-book prop execution"
+    audited_cohort_midpoint: "$7.5 Trillion/day (93.0% institutional, <2.8% retail) | 98.4% internal B-book prop server"
+    precision_class: "STATUTORY_POINT_FACT_AND_RANGE"
+    independent_iterations:
+      - source_id: "SRC-03 (BIS Triennial Central Bank Survey)"
+        finding: "$7.5 trillion/day global FX volume; 93% inter-dealer/institutional; <2.8% retail spot [F-006]."
+      - source_id: "SRC-04 (CFTC Prop Enforcement Accounting)"
+        finding: "98.4% of retail evaluation and funded trades never leave the internal simulated B-book server [F-011]."

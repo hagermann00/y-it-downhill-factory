@@ -1,0 +1,43 @@
+topic_slug: forex-prop-firms
+market: US
+pivots:
+  - id: PIV-01
+    tier: 1
+    name: "SQL & Python Financial BI / Risk Data Analyst"
+    kind: "get paid to use the skill (employment)"
+    stake: "$320"
+    wait: "4.0 months"
+    odds: "78% at 12 months"
+    payoff: "$44.50/hr ($92,560/yr)"
+    gates_passed: "4 of 4"
+    cited_rows: ["F-015", "F-016"]
+  - id: PIV-02
+    tier: 1
+    name: "Freelance PineScript / Python Backtesting & Execution Contractor"
+    kind: "sell the skill directly (freelance or contract)"
+    stake: "$150"
+    wait: "2.5 months"
+    odds: "62% at 12 months"
+    payoff: "$55.00/hr"
+    gates_passed: "4 of 4"
+    cited_rows: ["F-015", "F-017"]
+  - id: PIV-03
+    tier: 1
+    name: "Regulated Series 65 Paraplanner & Fee-Only Advisory Operations"
+    kind: "a skill-building route to a better-paid role"
+    stake: "$185"
+    wait: "3.5 months"
+    odds: "68% at 12 months"
+    payoff: "$38.90/hr ($80,912/yr)"
+    gates_passed: "4 of 4"
+    cited_rows: ["F-017", "F-018"]
+  - id: PIV-04
+    tier: 1
+    name: "Corporate FX Treasury & Commercial Hedging Analyst"
+    kind: "get paid to use the skill (employment)"
+    stake: "$650"
+    wait: "4.5 months"
+    odds: "71% at 12 months"
+    payoff: "$49.20/hr ($102,336/yr)"
+    gates_passed: "4 of 4"
+    cited_rows: ["F-017"]

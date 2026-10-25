@@ -1,0 +1,21 @@
+{
+  "asset_id": "T01-P2-C03-chart-payoff-hourly-meter_v001",
+  "topic": 1,
+  "phase": 2,
+  "chapter": 3,
+  "slot": "chart",
+  "slug": "payoff-hourly-meter",
+  "version": 1,
+  "extension": "svg",
+  "relative_path": "T01-P2-C03-chart-payoff-hourly-meter_v001.svg",
+  "prompt_path": "T01-P2-C03-chart-payoff-hourly-meter_v001.prompt.md",
+  "meta_path": "T01-P2-C03-chart-payoff-hourly-meter_v001.json",
+  "sha256": "52b3481fc80606c35e15ae8f6f1d92af3b3b42e6fbe003bb518a2ae0583a91c9",
+  "prompt_sha256": "de52ad917c490ec1a07cdfb12838d605a9e1f7fd83ddbfa3b4167e30f2dd82b5",
+  "chart_type": "hourly meter",
+  "cited_rows": [
+    "F-003",
+    "F-013"
+  ],
+  "created_at": "2026-10-24T09:15:00Z"
+}

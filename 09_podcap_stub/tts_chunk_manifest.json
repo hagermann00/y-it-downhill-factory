@@ -1,0 +1,9 @@
+{
+  "chunks_count": 5,
+  "singleton_lock_rule": "D:\\hq\\_record\\tts.lock (Sequential queue regulation required)",
+  "topic_slug": "forex-prop-firms",
+  "voices": {
+    "ANALYST": "en-US-Forensic-Baritone",
+    "BELIEVER": "en-US-Conversational-Tenor"
+  }
+}

@@ -1,0 +1,14 @@
+topic_slug: forex-prop-firms
+topic_age_note: Multi-year empirical history
+estimated_topic_age_years: 6.5
+validated_source_count: 206
+populated_molds_count: 5
+validated_pivots_count: 4
+static_front_matter_pages: 6
+static_core_back_matter_pages: 6
+natural_bibliography_page_range: 1–4 pages (scales directly with validated source count)
+natural_interior_page_range: Independent sum of Ch 1–2 + Ch 3/5/6 data depth + Ch 4 vetted molds + Ch 7 vetted pivots + Ch 8 exit protocol
+natural_total_book_page_range: 40–84 pages realistic Series envelope (topic-specific natural range computed from independent section yields)
+min_realistic_pages: 59
+max_realistic_pages: 69
+orthogonal_independence_rule: 'Section lengths are NOT assumed to be correlated: a young topic with sparse historical data may still yield many strong Chapter 7 pivots, and an older topic may yield fewer pivots. We include everything that clears the quality and context bar—never stretching or compacting to hit a fixed number.'

@@ -1,0 +1,154 @@
+topic_slug: forex-prop-firms
+questions:
+    - id: P1-Q1
+      phase: 1
+      question: What are the primary headline promises (income, freedom, speed, low effort) made by Forex & Prop Firm pitches?
+      feeds: ch1.sections
+    - id: P1-Q2
+      phase: 1
+      question: What specific pitch numbers ($10k/mo, $200k funded account, 90% profit split) anchor the marketing hook?
+      feeds: ch1.verdict, setups_out
+    - id: P1-Q3
+      phase: 1
+      question: What vocabulary tokens ('funded trader', 'liquidity sweep', 'smart money concepts', 'payout certificate') define the insider pitch?
+      feeds: vocabulary
+    - id: P1-Q4
+      phase: 1
+      question: What late-night emotional trigger and aspirational scene opens the pitch (and what does the zero dashboard look like)?
+      feeds: opener.beats, foreshadow
+    - id: P1-Q5
+      phase: 1
+      question: How does the composite Guru / Prop CEO voice frame the opportunity as a moral and intellectual upgrade?
+      feeds: ch1.guru
+    - id: P1-Q6
+      phase: 1
+      question: What composite social-proof testimonials and payout certificates are displayed to erase skepticism?
+      feeds: ch1.testimonies
+    - id: P1-Q7
+      phase: 1
+      question: What are the exact 5 to 7 steps presented in the beginner 'Funded Trader Roadmap'?
+      feeds: ch2.steps
+    - id: P1-Q8
+      phase: 1
+      question: What starter kit items and entry prices ($89–$540 challenge, TradingView, indicator pack) are quoted up front?
+      feeds: ch2.parts
+    - id: P1-Q9
+      phase: 1
+      question: What is the single fatal missing step (Step N+1) omitted from the beginner roadmap?
+      feeds: ch2.missing_step
+    - id: P1-Q10
+      phase: 1
+      question: What breezy 'Pro Tips' and fake troubleshooting reassurance lines accompany the assembly manual?
+      feeds: ch2.tips, ch2.troubleshooting
+    - id: P1-Q11
+      phase: 1
+      question: Where does the pitch live (YouTube VSLs, TikTok lifestyle clips, Discord rooms, checkout banners) and what collage artifacts represent it?
+      feeds: ch1.artifacts
+    - id: P1-Q12
+      phase: 1
+      question: What recurring visual trends (Dubai balconies, G-Wagons, blue MT5 screens, gold certificates) appear across >=3 sellers?
+      feeds: ch1.visual_trend
+    - id: P2-Q1
+      phase: 2
+      question: What is the true itemized 6-month cost waterfall (challenges, resets, data, indicators, VPS, courses) vs. the advertised entry fee?
+      feeds: ch3.charts (waterfall)
+    - id: P2-Q2
+      phase: 2
+      question: How is revenue split between the ecosystem sellers (prop firms, affiliates, tool vendors) and retail participants?
+      feeds: ch3.charts (split bar)
+    - id: P2-Q3
+      phase: 2
+      question: 'What is the Payoff: what do surviving net-profitable traders actually earn per hour worked?'
+      feeds: gate.payoff, ch3
+    - id: P2-Q4
+      phase: 2
+      question: 'What is the Stake: what is the median cash spent before the first net-profitable month or exit?'
+      feeds: gate.stake, ch3
+    - id: P2-Q5
+      phase: 2
+      question: What documented real-world practitioner cases illustrate the 5 dominant systemic molds (E2, H4, H5, C1, C3)?
+      feeds: ch4.cases
+    - id: P2-Q6
+      phase: 2
+      question: What is the true size and institutional composition of the $7.5T/day FX market vs. the tiny retail slice?
+      feeds: ch5.charts (log ladder)
+    - id: P2-Q7
+      phase: 2
+      question: 'What are the Odds: what percentage of starters pass Phases 1+2 and remain net-profitable at 12 months?'
+      feeds: gate.odds, ch5
+    - id: P2-Q8
+      phase: 2
+      question: 'What is the Wait: how many months does it take the median survivor to reach consistent net profitability?'
+      feeds: gate.wait, ch5
+    - id: P2-Q9
+      phase: 2
+      question: What asymmetric structural rules (5% daily trailing drawdown, B-book slippage, consistency clauses) engineer account breaches?
+      feeds: ch5.reality_checks
+    - id: P2-Q10
+      phase: 2
+      question: How does the B-book prop evaluation business model profit directly from customer challenge failures?
+      feeds: ch3.reality_checks, ch5
+    - id: P2-Q11
+      phase: 2
+      question: How do all four gate metrics combine into the Chapter 6 Verdict Scorecard?
+      feeds: ch6.scorecard
+    - id: P2-Q12
+      phase: 2
+      question: What are the US national benchmark figures for median hourly wage ($29.76/hr) and household emergency savings ($1,000)?
+      feeds: gate.thresholds
+    - id: P3-Q1
+      phase: 3
+      question: What genuine analytical, technical, and quantitative skills does a retail forex/prop participant actually build?
+      feeds: ch7.skills
+    - id: P3-Q2
+      phase: 3
+      question: Which employers and B2B markets pay for those skills, and at what verified median hourly rates?
+      feeds: ch7.skills
+    - id: P3-Q3
+      phase: 3
+      question: What 3 to 5 concrete career/venture pivots pass the 4-Metric Gate (Stake, Wait, Odds, Payoff)?
+      feeds: ch7.pivots
+    - id: P3-Q4
+      phase: 3
+      question: For the winners' structural edges identified in Chapter 4, what is the honest slow route to building them?
+      feeds: ch7.edges
+    - id: P3-Q5
+      phase: 3
+      question: What recurring subscriptions (TradingView, VPS, Discord rooms, EA licenses) must be stopped first on exit, ordered by money saved?
+      feeds: ch8.exit_steps (stop)
+    - id: P3-Q6
+      phase: 3
+      question: What hardware, software licenses, or prepayments can be recovered or resold on exit?
+      feeds: ch8.exit_steps (recover)
+    - id: P3-Q7
+      phase: 3
+      question: What chargeback windows (120-day Visa/Mastercard) and tax treatment rules (IRC 988/1256 vs. evaluation fees) apply on exit?
+      feeds: ch8.exit_steps (settle, protect)
+    - id: P3-Q8
+      phase: 3
+      question: What 1 to 3 'recovery scam' or next-wave pitches (AI Pass-Bots, Crypto Prop Firms, Recovery Agencies) target exiting traders?
+      feeds: ch8.watch_for
+    - id: P3-Q9
+      phase: 3
+      question: What documented 6-month aftermath outcomes exist for the Chapter 4 case molds?
+      feeds: ch8.callbacks
+    - id: P3-Q10
+      phase: 3
+      question: For the stubborn reader who continues, what 3 to 5 evidence-backed practices genuinely reduce risk or improve odds?
+      feeds: ch8.honest_way
+    - id: P3-Q11
+      phase: 3
+      question: What 5 to 7 high-cost system traps ('Do-Nots') must a continuing trader refuse?
+      feeds: ch8.do_nots
+    - id: P3-Q12
+      phase: 3
+      question: What specific numbers define the Smallest Honest Test (90-day zero-fee proof) and personal Stop-Rule tripwires?
+      feeds: ch8.test, ch8.stop_rules
+    - id: P3-Q13
+      phase: 3
+      question: How can each acquired tool, skill, or sunk expense be repurposed (or plainly written off as sunk)?
+      feeds: ch7.repurpose
+    - id: P3-Q14
+      phase: 3
+      question: What do the affiliate commission structures in the forex/prop ecosystem reveal, and which clean 'picks-and-shovels' roles pass the ethics gate?
+      feeds: ch7.pivots, affiliates
